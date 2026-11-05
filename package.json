@@ -1,0 +1,55 @@
+{
+  "name": "humanizer-lists",
+  "version": "0.4.0",
+  "description": "Humanizer skill for Italian, Spanish, Dutch and German: rewrites AI-sounding text so it reads like the writer, with a rewriting guide per language and measured lists of AI tells with a dependency-free checker.",
+  "license": "MIT",
+  "author": "Samet Demirtas",
+  "homepage": "https://github.com/SametDemirtas/humanizer-lists#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SametDemirtas/humanizer-lists.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SametDemirtas/humanizer-lists/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/matcher.mjs",
+    "./de": "./de/patterns.json",
+    "./es": "./es/patterns.json",
+    "./it": "./it/patterns.json",
+    "./nl": "./nl/patterns.json",
+    "./schema": "./schema/patterns.schema.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "schema/",
+    "*/patterns.json",
+    "skills/",
+    "licenses/",
+    "NOTICE.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/matcher.test.mjs test/lists.test.mjs test/human-genres.test.mjs test/evaluate.test.mjs test/skill.test.mjs",
+    "eval": "node scripts/evaluate.mjs",
+    "build:skill": "node scripts/build-skill.mjs",
+    "prepublishOnly": "npm test && node scripts/build-skill.mjs --check"
+  },
+  "keywords": [
+    "humanizer",
+    "ai-writing",
+    "claude-skill",
+    "ai-writing-tells",
+    "writing",
+    "llm",
+    "italian",
+    "spanish",
+    "dutch",
+    "german"
+  ]
+}

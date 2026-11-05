@@ -1,0 +1,901 @@
+{
+ "language": "de",
+ "prompts": [
+  {
+   "id": "blog-1-A",
+   "genre": "blog",
+   "scenario": 1,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Kannst du mir einen Blogbeitrag über meinen ersten Halbmarathon schreiben? Bin letzten Sonntag in Leipzig 2:11 gelaufen, nach sechs Monaten Training. Im März hatte ich Knieschmerzen und hätte fast hingeschmissen, meine Physiotherapeutin hat mich dann wieder hingekriegt. Nächstes Ziel: 10 km unter 50 Minuten."
+  },
+  {
+   "id": "blog-1-B",
+   "genre": "blog",
+   "scenario": 1,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich hab einen kleinen privaten Blog, den vor allem Freunde und Familie lesen, und möchte über meinen ersten Halbmarathon schreiben. Ton: ehrlich, ein bisschen selbstironisch, nicht pathetisch. Ca. 500–600 Wörter, Ich-Form, so dass ich es direkt so posten kann. Meine Stichpunkte:\n- Halbmarathon Leipzig, letzten Sonntag, Zeit 2:11:08\n- sechs Monate Training, dreimal pro Woche, meistens morgens vor der Arbeit\n- im März Schmerzen außen am rechten Knie, zwei Wochen Pause, wollte eigentlich aufhören\n- meine Physio (Frau Brandt) meinte: weniger Umfang, mehr Krafttraining für Hüfte und Oberschenkel, kürzere Schritte. Hat funktioniert\n- bei km 17 richtig eingebrochen, aber durchgezogen\n- nächstes Ziel: 10 km unter 50 Minuten im Frühjahr\nBitte keine Platzhalter und keine Zwischenüberschriften."
+  },
+  {
+   "id": "blog-2-A",
+   "genre": "blog",
+   "scenario": 2,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich brauch einen Rezeptpost für meinen Foodblog: der Zitronenkuchen von meiner Oma, den sie jedes Jahr an Ostern gebacken hat. Ich nehm etwas weniger Zucker als sie. Ein paar Tipps zum Backofen wären auch gut."
+  },
+  {
+   "id": "blog-2-B",
+   "genre": "blog",
+   "scenario": 2,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Für meinen Foodblog möchte ich das Rezept für Omas Zitronenkuchen veröffentlichen. Aufbau: kurze persönliche Einleitung (3–4 Sätze), dann Zutatenliste, Zubereitung und am Ende Tipps. Locker und herzlich, Leser bitte duzen.\n\nInfos:\nOma Hildegard aus Bamberg hat den Kuchen jedes Jahr an Ostern gebacken, Kastenform, mit Zitronenguss\nihr Original: 250 g Zucker – ich nehme nur 180 g, schmeckt frischer und trotzdem süß genug\naußerdem 250 g weiche Butter, 4 Eier, 250 g Mehl, 1 TL Backpulver, Saft und Abrieb von 2 Bio-Zitronen, für den Guss 150 g Puderzucker + Zitronensaft\nOfen: 175 °C Ober-/Unterhitze, ca. 55 Minuten. Umluft trocknet ihn aus! Stäbchenprobe machen, ab Minute 40 mit Alufolie abdecken, falls er oben zu dunkel wird\nGuss erst drauf, wenn der Kuchen lauwarm ist"
+  },
+  {
+   "id": "blog-3-A",
+   "genre": "blog",
+   "scenario": 3,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Hilfst du mir bei einem Post für meinen Reiseblog? 5 Tage Hüttenwanderung im Allgäu mit meiner Schwester, am dritten Tag hat es durchgeregnet. Schönster Moment war der Sonnenaufgang am letzten Morgen am Prinz-Luitpold-Haus."
+  },
+  {
+   "id": "blog-3-B",
+   "genre": "blog",
+   "scenario": 3,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Hallo! Ich schreibe einen Reiseblog und brauche einen Beitrag über unsere Hüttentour im Allgäu. Zielgruppe sind Leute, die so eine Tour selbst planen, also gern ein paar praktische Infos einstreuen, aber erzählerisch bleiben. Länge ungefähr 700 Wörter, Ich-Perspektive, keine Emojis.\n\nMeine Notizen:\n- 5 Tage mit meiner Schwester Jule, Start in Oberstdorf, Ende in Hinterstein\n- Übernachtungen: Waltenbergerhaus, Rappenseehütte, Kemptner Hütte, Prinz-Luitpold-Haus\n- Tag 3: Dauerregen, sieben Stunden nass bis auf die Haut, abends Schuhe in den Trockenraum, Stimmung trotzdem gut, riesiger Kaiserschmarrn auf der Kemptner Hütte\n- bester Moment: Sonnenaufgang am letzten Morgen vor dem Prinz-Luitpold-Haus, alles still, wir beide mit Kaffeebecher auf der Bank\n- Matratzenlager mit 20 Leuten, Ohrstöpsel mitnehmen!"
+  },
+  {
+   "id": "blog-4-A",
+   "genre": "blog",
+   "scenario": 4,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Blogbeitrag für unseren DIY-Blog bitte: Wir haben unser Bad an drei Wochenenden selbst renoviert, Kosten ungefähr 2.400 €. Zwei Fehler sind uns passiert (Fugen und Silikon), und ich will erzählen, was wir nächstes Mal anders machen würden."
+  },
+  {
+   "id": "blog-4-B",
+   "genre": "blog",
+   "scenario": 4,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Mein Mann und ich betreiben einen kleinen DIY-Blog und wollen über unsere Badrenovierung berichten. Bitte in der Wir-Form, locker, mit konkreten Tipps, 600–800 Wörter, Zwischenüberschriften gern. Keine Platzhalter, das soll so online gehen.\n\nFakten:\n- Bad ca. 6 qm, Altbauwohnung in Kassel\n- drei Wochenenden: 1. alte Fliesen raus, 2. neue Fliesen verlegt, 3. Fugen, Silikon, WC und Waschtisch\n- Kosten insgesamt ca. 2.400 €, davon ungefähr 900 € für Fliesen\n- Fehler 1: Fugenmasse zu früh abgewaschen, Fugen ausgewaschen, mussten teilweise neu gemacht werden\n- Fehler 2: Silikon ohne Abklebeband gezogen, sah furchtbar aus, alles wieder rausgeschnitten\n- würden anders machen: Fliesenschneider leihen statt billig kaufen, mehr Trocknungszeit einplanen"
+  },
+  {
+   "id": "blog-5-A",
+   "genre": "blog",
+   "scenario": 5,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich hab eine kleine Bäckerei und will für unsere Website einen Blogbeitrag: Ab Montag gibt's bei uns glutenfreies Brot. Wir haben acht Monate rumprobiert, das Brot kostet 4,50 € und am Samstagvormittag kann man es kostenlos probieren."
+  },
+  {
+   "id": "blog-5-B",
+   "genre": "blog",
+   "scenario": 5,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich brauche Hilfe bei einem Blogbeitrag für die Website unserer Bäckerei (Bäckerei Hofmann in Münster-Hiltrup). Es geht um den Start unseres glutenfreien Brotes. Lesen werden das vor allem Stammkunden, also gern persönlich und aus meiner Sicht als Inhaberin (Petra Hofmann). Maximal 400 Wörter, ehrlich, kein Werbesprech.\n\n- ab Montag, 3. März, jeden Tag im Sortiment\n- acht Monate Testbacken, erst mit Buchweizen und Hirse hat es richtig geklappt\n- Preis 4,50 € für 750 g\n- Samstag, 1. März, 8–12 Uhr: kostenlose Verkostung im Laden\n- wichtig: In unserer Backstube wird auch Weizen verarbeitet, für Menschen mit Zöliakie also nicht garantiert spurenfrei"
+  },
+  {
+   "id": "blog-6-A",
+   "genre": "blog",
+   "scenario": 6,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Unsere Tochter (11) hat vor zwei Monaten ihr erstes Smartphone bekommen. Kannst du daraus einen Beitrag für meinen Elternblog machen? Welche Regeln wir in der Familie abgemacht haben und was davon wirklich funktioniert."
+  },
+  {
+   "id": "blog-6-B",
+   "genre": "blog",
+   "scenario": 6,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Für meinen Elternblog möchte ich einen Erfahrungsbericht schreiben, Thema erstes Smartphone mit 11. Leser sind andere Eltern, viele mit Kindern kurz vor dem Wechsel auf die weiterführende Schule. Ehrlich, nicht belehrend, ca. 600 Wörter, Ich-Form.\n\nMeine Notizen:\nLina, 11, 6. Klasse Gymnasium in Freiburg, Handy seit den Sommerferien\nRegeln: kein Handy im Kinderzimmer über Nacht, Ladestation in der Küche ab 20:30 / werktags 1 Std. Bildschirmzeit, am Wochenende 2 / WhatsApp ja, TikTok nein / neue Apps nur nach Absprache / wir lesen nicht heimlich mit, dafür zeigt sie uns Chats, wenn ihr was komisch vorkommt\nwas funktioniert: Ladestation (klappt fast immer), die Abmachung mit den komischen Nachrichten (sie kam schon zweimal von selbst zu uns)\nwas nicht: das tägliche Limit, ständige Diskussionen, wir haben auf ein Wochenkontingent umgestellt\nFazit nach zwei Monaten: besser als befürchtet"
+  },
+  {
+   "id": "blog-7-A",
+   "genre": "blog",
+   "scenario": 7,
+   "style": "A",
+   "variety": "de-AT",
+   "request": "Mach mir bitte einen Blogeintrag über mein erstes Jahr im Gemeinschaftsgarten in Graz: Die Paradeiser sind nix geworden, die Fisolen dafür super. Und was ich übers Gießen gelernt hab."
+  },
+  {
+   "id": "blog-7-B",
+   "genre": "blog",
+   "scenario": 7,
+   "style": "B",
+   "variety": "de-AT",
+   "request": "Ich schreib seit dem Frühjahr einen kleinen Gartenblog und will jetzt ein Resümee über mein erstes Jahr mit einem Beet im Nachbarschaftsgarten in Graz-Lend ziehen (8 m²). Ton: gemütlich, ein bisserl selbstironisch, für andere Anfängerinnen und Anfänger. So 500–700 Wörter. Bitte nix dazuerfinden, was nicht in meinen Notizen steht.\n\n- Paradeiser: 6 Pflanzen, im August Braunfäule, fast alles hin. Zu spät ausgegeizt und zu eng gepflanzt\n- Fisolen: Stangenfisolen, riesige Ernte, hab die halbe Gartengruppe versorgt\n- Gießen: am Anfang jeden Abend ein bissl → falsch. Besser seltener, dafür durchdringend, und in der Früh. Mulchen mit Rasenschnitt hat viel gebracht\n- Regentonne teilen wir uns, Gießplan in der WhatsApp-Gruppe\n- nächstes Jahr: Paradeiser unter einem Dach, weniger Zucchini"
+  },
+  {
+   "id": "blog-8-A",
+   "genre": "blog",
+   "scenario": 8,
+   "style": "A",
+   "variety": "de-CH",
+   "request": "Ich hab gerade «Homo faber» von Max Frisch fertig gelesen und möchte eine Rezension für meinen Buchblog. Gefallen hat mir der nüchterne Berichtston von Walter Faber, gezogen hat sich für mich der Teil in Guatemala. Machst du mir einen Text?"
+  },
+  {
+   "id": "blog-8-B",
+   "genre": "blog",
+   "scenario": 8,
+   "style": "B",
+   "variety": "de-CH",
+   "request": "Für meinen Buchblog (Leserschaft vor allem Deutschschweiz, viele lesen in Buchclubs) brauche ich eine Rezension zu «Homo faber» von Max Frisch. Ich habe es jetzt zum ersten Mal seit der Kanti in Aarau wieder gelesen. Bitte ca. 450 Wörter, Ich-Form, Schweizer Rechtschreibung, die Inhaltsangabe kurz halten und keine grossen Spoiler zum Ende.\n\nGefallen hat mir: der Berichtston – Faber glaubt an Technik und Statistik und merkt nicht, wie er sich selbst belügt; die Szenen auf der Schiffsreise mit Sabeth; wie kurz und dicht das Buch ist.\nGezogen hat sich: die Passagen in Guatemala, die Notlandung in der Wüste fand ich spannender als die Plantage; manchmal nervt Faber einfach.\nFazit: 4 von 5 Sternen, lohnt sich auch für alle, die es in der Schule gehasst haben."
+  },
+  {
+   "id": "email-1-A",
+   "genre": "email",
+   "scenario": 1,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Kannst du mir eine kurze Rundmail an die Kolleginnen und Kollegen formulieren? Monika Becker geht nach 32 Jahren in der Stadtbibliothek in Rente. Abschiedsfeier ist Freitag, 14. Juni, um 17 Uhr im Lesesaal. Wir sammeln für einen E-Reader, 10 € pro Person, bitte bis Mittwoch bei mir abgeben."
+  },
+  {
+   "id": "email-1-B",
+   "genre": "email",
+   "scenario": 1,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich arbeite in der Stadtbibliothek Osnabrück und organisiere den Abschied für unsere Kollegin Monika Becker. Bitte eine Rundmail ans ganze Team (ca. 25 Leute, wir duzen uns alle), herzlich, aber nicht kitschig, höchstens 150 Wörter. Monika ist natürlich nicht im Verteiler.\n\n- Monika geht nach 32 Jahren in den Ruhestand\n- Feier: Freitag, 14. Juni, 17:00 Uhr im Lesesaal (nach Schließung)\n- Geschenk: ein E-Reader, jede/r gibt 10 €, bitte bis Mittwoch, 12. Juni, bei mir abgeben (Raum 2.14 oder an der Ausleihtheke)\n- wer etwas zu essen mitbringen will, bitte kurz Bescheid sagen\nUnterschreiben mit Katrin"
+  },
+  {
+   "id": "email-2-A",
+   "genre": "email",
+   "scenario": 2,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Brauche eine Mail an unsere Kunden: Wir (IT-Dienstleister, 12 Leute) ziehen zum 1. September in ein neues Büro. Telefonnummern bleiben gleich, Parkplätze gibt's hinterm Gebäude."
+  },
+  {
+   "id": "email-2-B",
+   "genre": "email",
+   "scenario": 2,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Bitte formulieren Sie eine Kundeninformation per E-Mail zu unserem Umzug, inklusive Betreffzeile. Wir sind ein kleines IT-Systemhaus in Nürnberg mit 12 Mitarbeitenden, unsere Kunden sind überwiegend Arztpraxen und Kanzleien, also eher förmlich und in der Sie-Form. Kurz und klar.\n\nDaten:\nalte Adresse: Fürther Straße 88, 90429 Nürnberg\nneue Adresse ab 1. September: Am Tullnaupark 4, 90402 Nürnberg\nTelefonnummern und E-Mail-Adressen bleiben gleich\nBesucherparkplätze hinter dem Gebäude, Zufahrt über die Ostseite\nam 29. und 30. August nur eingeschränkt erreichbar, die Notfall-Hotline läuft wie gewohnt\nAbsender: Thomas Kreuzer, Geschäftsführer, Kreuzer IT GmbH"
+  },
+  {
+   "id": "email-3-A",
+   "genre": "email",
+   "scenario": 3,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "hilf mir mal bitte bei einer Mail an meinen Vermieter: Die Heizung geht seit einer Woche nicht richtig, ich hab die Heizkörper schon entlüftet. Er soll bitte jemanden vorbeischicken, ich bin ab 17 Uhr zu Hause."
+  },
+  {
+   "id": "email-3-B",
+   "genre": "email",
+   "scenario": 3,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich muss meinem Vermieter wegen der Heizung schreiben. Er ist ein älterer Herr (Herr Wiesner), eigentlich nett, reagiert aber gern langsam. Die Mail soll höflich, aber bestimmt sein, damit klar ist, dass es jetzt dringend ist. Sie-Form, schlicht, ohne Paragrafen zu zitieren.\n\nFakten: Wohnung Lindenstraße 12, 2. OG links, Hannover-Linden. Seit Montag letzter Woche werden Wohnzimmer und Bad nur lauwarm, das Schlafzimmer gar nicht. Ich habe alle Heizkörper entlüftet, hat nichts gebracht. Den Druck an der Therme hab ich nicht geprüft, weiß nicht wie. Nachts draußen um die 0 Grad. Bitte einen Handwerker schicken – ich bin werktags ab 17 Uhr da, samstags ganztägig. Er hat meine Handynummer."
+  },
+  {
+   "id": "email-4-A",
+   "genre": "email",
+   "scenario": 4,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Mail an die Eltern der U12: Wir haben am Sonntag die Kreismeisterschaft gewonnen, Finale 3:1! Danke an alle, die gefahren sind. Nächsten Freitag ist Pizzaabend, die Getränke zahlt der Trainer."
+  },
+  {
+   "id": "email-4-B",
+   "genre": "email",
+   "scenario": 4,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich bin Teammanagerin der U12 beim TSV Eintracht Ahlten und muss eine Mail an alle Eltern verschicken. Locker, wir duzen uns, darf ruhig ein bisschen stolz klingen. Höchstens 200 Wörter, geht über die Eltern-Mailingliste, also reiner Text.\n\n- Sonntag Kreismeisterschaft (Hallenturnier in Lehrte) gewonnen\n- Finale gegen den SV Arpke 3:1, Tore: Ben (2) und Emil\n- großes Danke an alle Eltern, die gefahren sind und an der Seitenlinie standen\n- Pizzaabend nächsten Freitag, 18 Uhr, Pizzeria Da Toni in Ahlten, Kinder und Eltern willkommen\n- Trainer Uwe zahlt die Getränke\n- Zusage bis Mittwoch an mich wegen der Tischreservierung\nGruß, Sandra"
+  },
+  {
+   "id": "email-5-A",
+   "genre": "email",
+   "scenario": 5,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Mach mir eine Mail an meine Freunde: Meine Oma wird 90, Überraschungsparty am Samstag, 12. Oktober, bei ihr zu Hause. Jeder soll ein Foto fürs Album mitbringen. Und bloß nichts verraten!"
+  },
+  {
+   "id": "email-5-B",
+   "genre": "email",
+   "scenario": 5,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich will per Mail an meine Freunde und ein paar Cousins und Cousinen (ca. 15 Leute) eine Einladung schicken. Lustig und warm, nicht zu lang, Betreff bitte mit.\n\nInfos: Meine Oma Gerda wird 90. Überraschungsparty am Samstag, 12. Oktober, ab 15 Uhr bei ihr zu Hause in Bad Kreuznach (Mühlenstraße 7). Meine Tante Birgit lotst sie vorher zum Friseur, also bitte spätestens um 14:45 da sein und nicht direkt vorm Haus parken. Jeder bringt ein ausgedrucktes Foto mit Oma mit, daraus machen wir ein Album. Kuchen gibt's genug. Bitte NICHT verraten, auch nicht aus Versehen am Telefon mit ihr.\nRückmeldung bis 5. Oktober an mich."
+  },
+  {
+   "id": "email-6-A",
+   "genre": "email",
+   "scenario": 6,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Bitte eine kurze Mail an die Klassenlehrerin meiner Tochter: Sie fehlt am Donnerstag und Freitag wegen einer Beerdigung in der Familie. Ich würde gern wissen, welche Hausaufgaben sie nachholen soll."
+  },
+  {
+   "id": "email-6-B",
+   "genre": "email",
+   "scenario": 6,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich muss der Klassenlehrerin meiner Tochter schreiben (Frau Yilmaz, Klasse 7b, Realschule in Bochum). Förmlich, aber freundlich und kurz. Ich möchte nicht zu viel Privates erzählen.\n\n- Emma fehlt am Donnerstag und Freitag\n- Grund: Beerdigung ihres Großvaters in Rostock, wir fahren Mittwochabend los\n- Frage: welche Hausaufgaben/Arbeitsblätter, kann ihre Mitschülerin Lea ihr etwas mitbringen?\n- Mathearbeit am Montag danach – schreibt sie die mit oder später?\n- die schriftliche Entschuldigung reiche ich nach\nUnterschrift: Anja Kowalczyk"
+  },
+  {
+   "id": "email-7-A",
+   "genre": "email",
+   "scenario": 7,
+   "style": "A",
+   "variety": "de-AT",
+   "request": "Kannst du mir eine Mail an die Mitglieder vom Siedlerverein formulieren? Am Dienstag ist von 9 bis 13 Uhr das Wasser abgedreht, weil in unserer Gasse Leitungen getauscht werden. Die Leute sollen sich vorher Flaschen anfüllen. Und wir werden die Gemeinde bitten, dass sie uns nächstes Mal früher Bescheid gibt."
+  },
+  {
+   "id": "email-7-B",
+   "genre": "email",
+   "scenario": 7,
+   "style": "B",
+   "variety": "de-AT",
+   "request": "Ich bin Schriftführerin in der Siedlergemeinschaft Wolkersdorf-Süd (ca. 60 Haushalte) und muss kurzfristig eine Info an alle Mitglieder schicken. Sachlich, freundlich, kurz – wir haben viele ältere Mitglieder, also bitte klar und einfach formuliert. Per Mail, ohne Platzhalter.\n\n- Dienstag, 14. Mai, 9:00–13:00 Uhr kein Wasser in der Feldgasse und den Quergassen\n- Grund: die Gemeinde tauscht die Wasserleitung in der Feldgasse\n- bitte vorher Flaschen und Kübel anfüllen, an die WC-Spülung denken\n- danach kann das Wasser kurz trüb sein, ein paar Minuten laufen lassen\n- wir haben es selbst erst gestern erfahren; der Vorstand schreibt ans Gemeindeamt, dass so etwas künftig mindestens eine Woche vorher angekündigt werden soll\nUnterschrift: Elisabeth Gruber, für den Vorstand"
+  },
+  {
+   "id": "email-8-A",
+   "genre": "email",
+   "scenario": 8,
+   "style": "A",
+   "variety": "de-CH",
+   "request": "Ich hab mich vor zwei Wochen als Lagerkoordinator beworben und noch nichts gehört. Kannst du mir eine kurze Nachfass-Mail schreiben? Interesse ist nach wie vor gross, und ich könnte nächste Woche an jedem Tag zu einem Gespräch kommen."
+  },
+  {
+   "id": "email-8-B",
+   "genre": "email",
+   "scenario": 8,
+   "style": "B",
+   "variety": "de-CH",
+   "request": "Bitte eine Nachfass-Mail an die Personalabteilung, Schweizer Firma, also Schweizer Rechtschreibung. Ich habe mich vor zwei Wochen auf die Stelle «Koordinator Lager & Logistik (80–100 %)» bei der Brunner Logistik AG in Oensingen beworben, Ansprechperson laut Inserat ist Frau Sandra Hug. Bisher kam nur die automatische Eingangsbestätigung.\n\nRein soll: dass ich weiterhin sehr interessiert bin, kurz warum ich passe (8 Jahre im Lager bei einem Grossverteiler, seit 3 Jahren Schichtleiter, Staplerausweis, SAP), und dass ich nächste Woche jeden Tag für ein Gespräch verfügbar bin. Höflich, nicht anbiedernd, max. 120 Wörter. Absender: Marco Bernasconi."
+  },
+  {
+   "id": "essay-1-A",
+   "genre": "essay",
+   "scenario": 1,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich muss für Deutsch eine Erörterung schreiben: Sollten Handys an Schulen verboten werden? Pro und Contra und am Ende meine Meinung. Bin in der 10. Klasse."
+  },
+  {
+   "id": "essay-1-B",
+   "genre": "essay",
+   "scenario": 1,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Hausaufgabe für Deutsch (10. Klasse, Gymnasium in NRW): dialektische Erörterung zum Thema „Sollten Smartphones an Schulen verboten werden?“. Ungefähr 700–800 Wörter. Aufbau: Einleitung mit Hinführung, Pro-Argumente, Contra-Argumente, Schluss mit eigener Meinung. Bitte so, dass es nach einem 16-Jährigen klingt und nicht nach einem Lehrer.\n\nMeine Ideen:\npro Verbot: Ablenkung im Unterricht, Cybermobbing in den Pausen, in der Pause redet keiner mehr miteinander\ncontra: Handy für Notfälle, man kann damit auch lernen (Vokabel-Apps, Recherche), ein Verbot bringt nichts, weil es viele heimlich trotzdem benutzen, besser wäre Medienkompetenz\nmeine Meinung: kein komplettes Verbot, aber im Unterricht weg, in der Pause okay. An unserer Schule gibt es seit diesem Schuljahr Handygaragen in den Klassen, das klappt ganz gut."
+  },
+  {
+   "id": "essay-2-A",
+   "genre": "essay",
+   "scenario": 2,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich bewerbe mich für ein Pflegestudium und muss einen kurzen Essay schreiben, warum ich Pflege studieren will. Mein Opa war lange krank und wurde zu Hause gepflegt, und ich helfe seit über einem Jahr ehrenamtlich in einem Seniorenheim. Kannst du mir daraus einen Text machen?"
+  },
+  {
+   "id": "essay-2-B",
+   "genre": "essay",
+   "scenario": 2,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich bewerbe mich für den Bachelor Pflege an der Hochschule Esslingen und muss einen kurzen Essay (max. 500 Wörter) zur Frage „Warum möchten Sie Pflege studieren?“ einreichen. Ich bin 19 und habe gerade Abi gemacht. Bitte in der Ich-Form, ehrlich, nicht zu dramatisch.\n\nHintergrund:\n- mein Opa hatte Parkinson, die letzten zwei Jahre wurde er zu Hause gepflegt, der ambulante Pflegedienst kam zweimal am Tag\n- mich hat beeindruckt, wie eine Pflegerin (Ulla) mit ihm umgegangen ist, sie hat ihn nie wie einen Patienten behandelt\n- seit 1,5 Jahren ehrenamtlich im Seniorenzentrum St. Martin in Plochingen, jeden Samstag: vorlesen, spazieren gehen, beim Essen helfen\n- ich weiß, dass der Beruf anstrengend ist und nicht gut bezahlt, will es trotzdem\n- Studium statt Ausbildung, weil mich auch Pflegewissenschaft und Praxisanleitung interessieren"
+  },
+  {
+   "id": "essay-3-A",
+   "genre": "essay",
+   "scenario": 3,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Für meinen Schreibkurs an der VHS soll ich einen kurzen Essay schreiben: wie meine Heimatstadt aussah, als ich Kind war, und wie sie heute aussieht. Ich bin in den 80ern in Gelsenkirchen-Buer aufgewachsen. Kannst du mir einen Entwurf schreiben?"
+  },
+  {
+   "id": "essay-3-B",
+   "genre": "essay",
+   "scenario": 3,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "In meinem Schreibkurs an der Volkshochschule (wir sind alle Erwachsene) lautet die Aufgabe: kurzer Essay, ca. 600 Wörter, „Meine Stadt damals und heute“. Ich bin 1976 in Gelsenkirchen-Buer geboren. Bitte persönlich und ruhig im Ton, Ich-Form, eher beobachtend als nostalgisch.\n\nNotizen:\ndamals: Zeche Hugo noch in Betrieb, mein Vater auf Schicht, Kohlenstaub auf den Fensterbänken, die Trinkhalle an unserer Ecke, samstags Schalke im Parkstadion, die Hochstraße voller Geschäfte\nheute: auf dem Zechengelände ist ein Park, viele Läden in der Innenstadt stehen leer, dafür mehr Grün, die Arena statt Parkstadion, viele neue Nachbarn aus verschiedenen Ländern\ngeblieben: die Trinkhalle gibt es noch, mit anderem Besitzer"
+  },
+  {
+   "id": "essay-4-A",
+   "genre": "essay",
+   "scenario": 4,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich soll für unser Stadtmagazin einen Meinungsbeitrag schreiben: Ist Homeoffice gut für Kleinstädte wie Wittlich? Kannst du mir einen Entwurf machen? Ich bin eher dafür, sehe aber auch Probleme."
+  },
+  {
+   "id": "essay-4-B",
+   "genre": "essay",
+   "scenario": 4,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Für das kostenlose Monatsheft in Wittlich (Eifel) schreibe ich ab und zu Meinungsbeiträge. Diesmal: Ist Homeoffice ein Gewinn für kleine Städte wie unsere? Ca. 650 Wörter. Ich bin grundsätzlich dafür, will aber auch die Probleme ansprechen. Die Leser sind eher älter, also bitte nicht zu viele Anglizismen.\n\nMeine Punkte:\n+ junge Familien ziehen zurück, weil sie für Jobs in Trier, Luxemburg oder Köln nicht mehr täglich pendeln müssen\n+ mittags mehr Leben in der Innenstadt, Bäcker und Cafés profitieren\n+ weniger Pendelverkehr\n- Glasfaser noch nicht überall, in manchen Ortsteilen nur 16 Mbit\n- Wohnungen werden teurer\n- manche arbeiten hier, sind aber nicht wirklich angekommen, kaum jemand geht in die Vereine\nFazit: eine Chance, aber die Stadt muss etwas tun (z. B. Coworking-Räume im alten Postgebäude?)"
+  },
+  {
+   "id": "essay-5-A",
+   "genre": "essay",
+   "scenario": 5,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Schulaufsatz, 8. Klasse: eine Person, die mich geprägt hat. Ich will über meine erste Klavierlehrerin schreiben, Frau Lehmann, bei der ich mit sieben angefangen hab. Kannst du mir einen schreiben?"
+  },
+  {
+   "id": "essay-5-B",
+   "genre": "essay",
+   "scenario": 5,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich (14, 8. Klasse) muss einen Aufsatz zum Thema „Ein Mensch, der mich geprägt hat“ schreiben, ca. 500 Wörter. Bitte so formulieren, wie ein Achtklässler schreiben würde, also nicht zu hochgestochen.\n\nStichpunkte:\n- Frau Lehmann, meine erste Klavierlehrerin, Unterricht ab 7 an der Musikschule in Lüneburg, immer dienstags\n- streng beim Üben, aber hat nie geschimpft, wenn was schiefging\n- hat mir erlaubt, auch Filmmusik zu spielen und nicht nur Etüden\n- erstes Vorspiel mit 9, ich war total nervös, sie hat gesagt: „Fehler hört nur, wer die Noten kennt.“\n- sie ist letztes Jahr nach Bayern gezogen, ich hab jetzt einen neuen Lehrer\n- was ich von ihr gelernt habe: dranbleiben, auch wenn es gerade keinen Spaß macht"
+  },
+  {
+   "id": "essay-6-A",
+   "genre": "essay",
+   "scenario": 6,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Hallo, ich lerne Deutsch an der VHS in Frankfurt (B2-Kurs) und muss einen Aufsatz über die Vor- und Nachteile vom Leben in einer Großstadt schreiben, ungefähr 300 Wörter. Kannst du mir einen Text schreiben?"
+  },
+  {
+   "id": "essay-6-B",
+   "genre": "essay",
+   "scenario": 6,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich besuche einen Deutschkurs auf B2-Niveau und wir üben für die telc-Prüfung. Aufgabe: Erörterung „Leben in der Großstadt – Vor- und Nachteile“, 250–350 Wörter, mit Einleitung, Hauptteil und Schluss. Bitte die Sprache auf B2-Niveau, nicht zu kompliziert, ich möchte den Text verstehen und daraus lernen. Ich komme aus Brasilien und wohne seit einem Jahr in Frankfurt am Main, du kannst gern Beispiele von mir einbauen:\n- Vorteile: viele Jobs, gute U-Bahn, viel Kultur (Museumsufer), Menschen aus aller Welt\n- Nachteile: sehr hohe Mieten (ich zahle 780 € für ein Zimmer), laut, wenig Kontakt zu den Nachbarn\n- meine Meinung: für junge Leute gut, mit Familie würde ich lieber in eine kleinere Stadt ziehen"
+  },
+  {
+   "id": "essay-7-A",
+   "genre": "essay",
+   "scenario": 7,
+   "style": "A",
+   "variety": "de-AT",
+   "request": "Ich hätte gern einen persönlichen Essay darüber, was mir ein Jahr ehrenamtlich bei der Team Österreich Tafel in Salzburg gebracht hat. Ich hab jeden Samstag Lebensmittel ausgegeben und dabei viel über Armut gelernt, aber auch über mich selbst."
+  },
+  {
+   "id": "essay-7-B",
+   "genre": "essay",
+   "scenario": 7,
+   "style": "B",
+   "variety": "de-AT",
+   "request": "Ich möchte einen reflektierenden Essay schreiben, der in die Jubiläumsbroschüre unserer Ausgabestelle kommt. Thema: Was mir ein Jahr bei der Team Österreich Tafel beigebracht hat. Ca. 700 Wörter, Ich-Form, nachdenklich, gern mit österreichischem Wortschatz, aber kein Dialekt.\n\nMeine Gedanken in Stichworten:\n- seit letztem Oktober jeden Samstag in der Ausgabestelle Salzburg-Lehen\n- am Anfang unsicher: Wie redet man mit den Leuten, ohne dass es von oben herab wirkt?\n- ein Pensionist, der sich jedes Mal für die Semmeln bedankt und von früher erzählt, als er Schlosser war\n- überrascht hat mich, wie viele Alleinerzieherinnen und Studierende kommen\n- Lebensmittelverschwendung: was die Supermärkte am Samstag abgeben, wäre sonst im Müll\n- gelernt: zuhören, weniger urteilen, meine eigenen Einkäufe besser planen\n- schwierig: Abende, an denen das Gemüse aus ist und Leute mit fast leeren Taschen heimgehen"
+  },
+  {
+   "id": "essay-8-A",
+   "genre": "essay",
+   "scenario": 8,
+   "style": "A",
+   "variety": "de-CH",
+   "request": "Muss für die Schule einen Aufsatz schreiben: Tourismus im Berner Oberland, gut oder schlecht? Ich wohne in Interlaken und bin in der 3. Sek. Kannst du mir einen schreiben?"
+  },
+  {
+   "id": "essay-8-B",
+   "genre": "essay",
+   "scenario": 8,
+   "style": "B",
+   "variety": "de-CH",
+   "request": "Aufsatz für Deutsch, 3. Sek in Interlaken. Thema: «Tourismus in meiner Region – Fluch oder Segen?» Länge 600–700 Wörter, bitte Schweizer Rechtschreibung (ss statt ß). Soll nach einem 15-Jährigen tönen und nicht nach Zeitungsartikel.\n\nWas ich drin haben will:\n- positiv: viele Arbeitsplätze (meine Mutter arbeitet im Hotel), Bergbahnen und Läden leben davon, man trifft Leute aus der ganzen Welt\n- negativ: im Sommer total überfüllt, auf dem Höheweg ein Car nach dem anderen, Wohnungen werden zu Ferienwohnungen, Einheimische finden kaum noch etwas, ein Ticket aufs Jungfraujoch kostet über 200 Franken\n- Beispiel: in Lauterbrunnen wird schon über eine Gebühr für Tagestouristen diskutiert\n- meine Meinung: eher gut, aber es braucht Grenzen"
+  },
+  {
+   "id": "article-1-A",
+   "genre": "article",
+   "scenario": 1,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Kannst du mir einen kurzen Artikel für die Lokalzeitung schreiben? Die Freiwillige Feuerwehr Waldkirch hat am 22. September Tag der offenen Tür mit Programm für Kinder. Die Wehr wird 140 Jahre alt und sucht neue Mitglieder."
+  },
+  {
+   "id": "article-1-B",
+   "genre": "article",
+   "scenario": 1,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich bin Pressewart der Freiwilligen Feuerwehr Waldkirch und schicke den Text an die Lokalredaktion. Bitte im Zeitungsstil, sachlich, mit Überschrift und kurzem Vorspann, ca. 300 Wörter. Ein Zitat vom Kommandanten wäre gut, ich lasse es mir dann von ihm freigeben.\n\nFakten:\n- Tag der offenen Tür am Sonntag, 22. September, 10–17 Uhr, am Feuerwehrhaus\n- Anlass: 140 Jahre Feuerwehr Waldkirch (gegründet 1884)\n- für Kinder: Spritzwand mit Kübelspritze, Rundfahrten im Löschfahrzeug, Hüpfburg, Kinderschminken\n- Vorführungen um 11 und 14 Uhr: Fettexplosion und Rettung aus einem Unfallauto\n- Bewirtung durch die Jugendfeuerwehr\n- Mitgliederwerbung: 48 Aktive, tagsüber oft zu wenige verfügbar, Quereinsteiger ab 17 willkommen, ausdrücklich auch Frauen\n- Kommandant: Stefan Faller"
+  },
+  {
+   "id": "article-2-A",
+   "genre": "article",
+   "scenario": 2,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Für die Lokalzeitung bitte eine kurze Meldung: In Göttingen-Weende eröffnet ein Gemeinschaftsgarten mit 20 Parzellen, 35 Euro im Jahr. Es gibt schon eine Warteliste. Tag der offenen Tür ist am Samstag um 10 Uhr."
+  },
+  {
+   "id": "article-2-B",
+   "genre": "article",
+   "scenario": 2,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Hier sind meine Notizen von der Pressekonferenz, mach bitte einen Artikel für den Lokalteil daraus, ca. 250–300 Wörter, neutral, mit Überschrift. Das Zitat bitte genau so übernehmen.\n\nGemeinschaftsgarten Weende-Nord, Träger Verein Grüne Nachbarschaft e. V., Gelände = ehem. Schulgarten hinter der Grundschule, 20 Beete à ca. 12 qm, Jahresbeitrag 35 €, Wasser + Werkzeug inkl., schon 31 Anfragen -> Warteliste, Vergabe per Los, 4 Beete reserviert für Kita und Seniorenheim. Tag der offenen Tür Sa 10 Uhr, Kaffee, Pflanzentausch. Stadt hat die Fläche für 10 J. verpachtet. Zitat Vorsitzende Anke Meyer-Roß: „Wir wollen, dass hier Leute zusammenkommen, die sich sonst nur im Treppenhaus grüßen.“"
+  },
+  {
+   "id": "article-3-A",
+   "genre": "article",
+   "scenario": 3,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Brauch einen Artikel für unseren Mitarbeiter-Newsletter: Wir haben Dienstrad-Leasing eingeführt und im ersten Monat haben schon 31 Kolleginnen und Kollegen mitgemacht. Bitte mit einem Zitat aus der Personalabteilung."
+  },
+  {
+   "id": "article-3-B",
+   "genre": "article",
+   "scenario": 3,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Für den internen Newsletter der Hübner Verpackungen GmbH (ca. 280 Mitarbeitende, Standort Bielefeld) brauche ich einen kurzen Artikel zum Dienstrad-Leasing. Locker, aber nicht flapsig, wir duzen uns intern. Ca. 250 Wörter, mit Überschrift.\n\n- Start am 1. April, Anbieter JobRad\n- im ersten Monat 31 Kolleginnen und Kollegen dabei, davon 19 mit E-Bike\n- läuft über Gehaltsumwandlung, die Firma übernimmt die Versicherung\n- Zitat von Sabine Krüger, Leiterin Personal – sinngemäß: Sie hat nicht mit so vielen gerechnet, und es geht auch um Gesundheit. Bitte daraus ein Zitat formulieren, ich stimme es mit ihr ab\n- im Juni kommen 20 neue überdachte Fahrradbügel an Tor 2\n- alle Infos im Intranet unter Personal > Benefits"
+  },
+  {
+   "id": "article-4-A",
+   "genre": "article",
+   "scenario": 4,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Kurzer Zeitungsartikel bitte: Der Liederkranz Mosbach sucht Tenöre und Bässe. Proben sind mittwochs um 20 Uhr im Gemeindehaus, an Weihnachten gibt es ein Konzert."
+  },
+  {
+   "id": "article-4-B",
+   "genre": "article",
+   "scenario": 4,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich bin im Vorstand des Liederkranz Mosbach 1846 e. V. und möchte der Lokalzeitung eine Pressemitteilung schicken, weil wir dringend Männerstimmen brauchen. Bitte als Zeitungsartikel in der dritten Person, ca. 200–250 Wörter, freundlich, gern mit einem Augenzwinkern.\n\nInfos:\ngemischter Chor, 38 Sängerinnen, aber nur 5 Tenöre und 6 Bässe\nProben jeden Mittwoch 20:00–21:45 Uhr im katholischen Gemeindehaus St. Cäcilia\nChorleiter: Johannes Albrecht\nWeihnachtskonzert am 3. Advent in der Stiftskirche, u. a. Rutter und deutsche Weihnachtslieder\nNoten lesen nicht nötig, kein Vorsingen\nAnsprechpartner: Werner Stoll"
+  },
+  {
+   "id": "article-5-A",
+   "genre": "article",
+   "scenario": 5,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Bericht für unsere Vereinsseite: Die Volleyball-Damen sind aufgestiegen, 3:2 im entscheidenden Spiel! Bitte mit Zitat vom Trainer und Infos zu den Dauerkarten."
+  },
+  {
+   "id": "article-5-B",
+   "genre": "article",
+   "scenario": 5,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich kümmere mich um die Homepage des TV Hörde und brauche einen Bericht zum Aufstieg unserer ersten Damenmannschaft. Gern mitreißend, aber im Rahmen – das lesen auch unsere Sponsoren. Ca. 300 Wörter mit Überschrift.\n\nSpiel: Samstag, Heimspiel gegen die SG Ruhrtal, 3:2 (25:21, 19:25, 23:25, 25:20, 15:12) → Aufstieg von der Oberliga in die Regionalliga, ca. 340 Zuschauer\nTrainer Murat Aksoy: „Nach dem zweiten verlorenen Satz haben wir uns in der Kabine nur angeschaut. Keine wollte nach Hause.“\nbeste Spielerin: Zuspielerin Lena Hartmann\nDauerkarten für die Regionalliga-Saison: 45 € Erwachsene, 25 € ermäßigt, 30 € für Mitglieder, ab 1. Juli in der Geschäftsstelle und online"
+  },
+  {
+   "id": "article-6-A",
+   "genre": "article",
+   "scenario": 6,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Artikel für die Lokalzeitung: Die Bäckerei Krämer am Marktplatz in Alsfeld macht nach 54 Jahren zu, die Inhaber gehen in Rente. Ein paar Stimmen von Kunden wären schön."
+  },
+  {
+   "id": "article-6-B",
+   "genre": "article",
+   "scenario": 6,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich bin freie Mitarbeiterin bei der Lokalzeitung und war heute Morgen in der Bäckerei Krämer. Hier meine Notizen – bitte mach daraus einen Lokalartikel, ca. 400 Wörter, Überschrift + Vorspann, Zitate wörtlich übernehmen:\n\nBäckerei Krämer, Marktplatz Alsfeld, 1970 gegründet von Heinz Krämer, seit 1994 geführt von Sohn Dieter (63) und seiner Frau Ute (61)\nletzter Verkaufstag: Samstag, 29. Juni\nkein Nachfolger, Tochter ist Lehrerin, zwei Interessenten abgesprungen\nSpezialitäten: Zwiebelkuchen, Rosinenschnecken\nDieter: „Um halb drei aufstehen, 54 Jahre lang – erst mein Vater, dann ich. Irgendwann ist es genug.“\nKundin Hannelore S. (78): „Ich kaufe hier seit 1971 meine Brötchen. Wo soll ich denn jetzt hin?“\nKunde Jonas, Schüler: „Die Rosinenschnecke war seit der fünften Klasse mein Pausenbrot.“\nUte bedankt sich bei der Kundschaft, am letzten Tag gibt es Kaffee und Kuchen für alle\nLaden wird vermietet, Nachnutzung noch offen"
+  },
+  {
+   "id": "article-7-A",
+   "genre": "article",
+   "scenario": 7,
+   "style": "A",
+   "variety": "de-AT",
+   "request": "Für die Schulhomepage bräucht ich einen kurzen Bericht über den Elternabend zu Handyregeln für die 2. Klassen (20. November, 19 Uhr, Turnsaal). Es waren rund 80 Eltern da und wir haben gemeinsame Regeln vereinbart."
+  },
+  {
+   "id": "article-7-B",
+   "genre": "article",
+   "scenario": 7,
+   "style": "B",
+   "variety": "de-AT",
+   "request": "Ich bin im Elternverein des BG/BRG Klosterneuburg und soll für die Schulwebsite einen Bericht über den Elternabend schreiben. Sachlich und freundlich, für Eltern und Lehrkräfte, ca. 350 Wörter, mit Titel.\n\n- Elternabend am 20. November, 19:00 Uhr im Turnsaal, Thema: Smartphone-Regeln für die 2. Klassen\n- rund 80 Eltern, außerdem Direktorin Mag. Claudia Pichler und eine Referentin von Saferinternet.at\n- Vortrag ca. 30 Minuten: Klassenchats, Cybermobbing, Bildschirmzeit\n- danach Diskussion in Kleingruppen\n- gemeinsam vereinbarte Empfehlungen: Handy bleibt während des Unterrichts im Spind; in den Klassen-WhatsApp-Gruppen keine Nachrichten nach 20 Uhr; Eltern sprechen sich ab, damit kein Kind „als Einziges“ eine bestimmte App nicht hat\n- nächster Termin: Feedbackrunde im März"
+  },
+  {
+   "id": "article-8-A",
+   "genre": "article",
+   "scenario": 8,
+   "style": "A",
+   "variety": "de-CH",
+   "request": "Kannst du mir einen kurzen Artikel für den Landboten schreiben? Ein Startup aus Winterthur bringt eine App heraus, mit der WGs gemeinsame Kosten aufteilen können. Sie suchen noch Betatester."
+  },
+  {
+   "id": "article-8-B",
+   "genre": "article",
+   "scenario": 8,
+   "style": "B",
+   "variety": "de-CH",
+   "request": "Ich schreibe für die Lokalredaktion in Winterthur und brauche einen Artikel über ein junges Startup. Bitte Schweizer Rechtschreibung, sachlich mit etwas Leichtigkeit, 300–350 Wörter, mit Titel und Lead.\n\nNotizen vom Gespräch:\nTeilbar GmbH, 2023 gegründet von Nora Keller (27) und Luca Frei (29), beide ZHAW-Absolventen, Büro in einem Coworking-Space beim Bahnhof\nApp «Teilbar»: Miete, Strom, Serafe, Einkäufe, Putzmittel usw. in der WG erfassen, die App rechnet aus, wer wem wie viel schuldet, Zahlung direkt per Twint\nIdee aus ihrer eigenen 5er-WG, vorher eine Excel-Tabelle mit 14 Reitern\ngesucht: 200 Betatesterinnen und -tester, am liebsten WGs aus der Region, Anmeldung über teilbar-app.example.ch\nöffentliche Version im Frühling geplant, Basisversion gratis, Premium Fr. 2.50 pro Monat und WG\nZitat Nora Keller: «Das Geld ist in einer WG selten das Problem. Das Problem ist, wer wann was bezahlt hat.»"
+  },
+  {
+   "id": "social-1-A",
+   "genre": "social",
+   "scenario": 1,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Instagram-Post für meine Bäckerei: Ab Montag gibt's glutenfreies Brot, am Samstag kann man es probieren. Hashtags bitte auch."
+  },
+  {
+   "id": "social-1-B",
+   "genre": "social",
+   "scenario": 1,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Bitte einen Instagram-Post für unsere Bäckerei (Bäckerei Hofmann in Münster-Hiltrup, ca. 1.800 Follower, vor allem aus Münster und Umgebung). Ton: herzlich, ein bisschen stolz, Emojis in Maßen ok. Max. 120 Wörter plus 8–10 Hashtags, gern auch lokale.\n\n- NEU ab Montag, 3. März: glutenfreies Brot, jeden Tag\n- acht Monate getüftelt, mit Buchweizen und Hirse\n- 4,50 € für 750 g\n- Samstag, 1. März, 8–12 Uhr: kostenlose Verkostung im Laden\n- Hinweis: nicht spurenfrei, weil wir in der Backstube auch mit Weizen arbeiten"
+  },
+  {
+   "id": "social-2-A",
+   "genre": "social",
+   "scenario": 2,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "LinkedIn-Post: Ich fange als Projektmanager bei einer Logistikfirma an, nach 6 Jahren bei meinem alten Arbeitgeber. Ich will mich bei meinem Team bedanken."
+  },
+  {
+   "id": "social-2-B",
+   "genre": "social",
+   "scenario": 2,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich brauche einen LinkedIn-Post zu meinem Jobwechsel, aus meiner Sicht geschrieben. Professionell, aber persönlich, höchstens 3 Hashtags, ca. 150 Wörter.\n\n- nach 6 Jahren bei den Stadtwerken Kiel (zuletzt Teamleiter im Einkauf) wechsle ich zum 1. Februar als Projektmanager zur Nordwind Logistik GmbH in Hamburg\n- Dank an mein Team im Einkauf und besonders an meine Chefin Birte Hansen, die mich damals als Quereinsteiger eingestellt hat\n- was ich mitnehme: Ausschreibungen, die SAP-Umstellung 2022, mit Lieferanten verhandeln, ohne Brücken abzubrechen\n- ich freue mich auf Lagerprojekte und Hafenlogistik"
+  },
+  {
+   "id": "social-3-A",
+   "genre": "social",
+   "scenario": 3,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Kannst du mir einen Post für unsere Nachbarschaftsgruppe auf Facebook schreiben? Unser Kater Miso ist weg, grau mit weißen Pfoten, zuletzt gesehen am Dienstagabend beim Eversten Holz."
+  },
+  {
+   "id": "social-3-B",
+   "genre": "social",
+   "scenario": 3,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Unser Kater ist entlaufen und ich will in der Facebook-Gruppe für Oldenburg-Eversten posten. Kurz, gut lesbar auf dem Handy, die wichtigsten Infos ganz oben. Die Telefonnummer setze ich selbst ein, schreib da einfach [Nummer] hin.\n\nMiso, 3 Jahre, Kater, kastriert, grau mit weißen Pfoten, eher schmal, sehr scheu bei Fremden\nzuletzt gesehen: Dienstagabend gegen 21 Uhr am Eversten Holz\ngechippt, kein Halsband\nbitte in Garagen, Gartenhäuschen und Kellern nachschauen\nnicht einfangen, nur melden oder ein Foto machen\nFinderlohn 100 €"
+  },
+  {
+   "id": "social-4-A",
+   "genre": "social",
+   "scenario": 4,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich brauch eine kurze, witzige Instagram-Caption für ein Foto von unserer Wandertour: meine Schwester und ich klatschnass auf der Hütte vor einem riesigen Kaiserschmarrn."
+  },
+  {
+   "id": "social-4-B",
+   "genre": "social",
+   "scenario": 4,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Kurze Instagram-Caption gesucht, max. 2 Sätze, gern mit Wortspiel oder Selbstironie, 1–2 Emojis, 3 Hashtags. Gib mir am besten drei Varianten zur Auswahl.\nFoto: meine Schwester Jule und ich in der Stube der Kemptner Hütte im Allgäu, Regenjacken noch an, Haare klatschnass, vor uns ein Kaiserschmarrn für vier Personen. An dem Tag hatte es sieben Stunden am Stück geregnet."
+  },
+  {
+   "id": "social-5-A",
+   "genre": "social",
+   "scenario": 5,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "LinkedIn-Post: Unser Team hat nach zwei Jahren die Digitalisierung des Stadtarchivs abgeschlossen. Ich möchte ein paar Learnings teilen."
+  },
+  {
+   "id": "social-5-B",
+   "genre": "social",
+   "scenario": 5,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Für LinkedIn: Ich leite beim Stadtarchiv Ulm das Digitalisierungsprojekt und wir sind fertig. Bitte einen Post in meiner Stimme, sachlich mit etwas Stolz, 200–250 Wörter, keine Emojis, 3–4 Hashtags am Ende.\n\nFakten und Learnings:\n- Laufzeit 2 Jahre, Team aus 6 Leuten plus 2 Werkstudierende\n- ca. 410.000 Seiten gescannt: Ratsprotokolle, Bauakten, Fotos\n- ab sofort online recherchierbar im Portal des Stadtarchivs\n- Learning 1: Die Metadaten sind mehr Arbeit als das Scannen\n- Learning 2: früh mit den Nutzerinnen und Nutzern reden (Heimatforscher, Studierende), nicht erst am Ende\n- Learning 3: Alte Handschriften brauchen Menschen, die Kurrent lesen können – wir hatten zwei ehrenamtliche Rentner, ohne die wäre es nicht gegangen\n- Dank ans Team und ans Kulturamt"
+  },
+  {
+   "id": "social-6-A",
+   "genre": "social",
+   "scenario": 6,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Facebook-Post für unseren Chor: Wir suchen Tenöre und Bässe, kein Vorsingen, einfach am Mittwoch vorbeikommen."
+  },
+  {
+   "id": "social-6-B",
+   "genre": "social",
+   "scenario": 6,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Für die Facebook-Seite des Liederkranz Mosbach brauche ich einen Post, mit dem wir Männerstimmen suchen. Zielgruppe: Männer zwischen 30 und 70, die vielleicht mal im Schulchor waren oder nur unter der Dusche singen. Witzig, einladend, nicht zu lang. Emojis ja, aber nicht übertreiben.\nInfos: kein Vorsingen, Noten lesen nicht nötig, einfach mittwochs um 20 Uhr ins katholische Gemeindehaus St. Cäcilia kommen. Danach gehen viele noch auf ein Bier. Wir proben gerade für das Weihnachtskonzert am 3. Advent."
+  },
+  {
+   "id": "social-7-A",
+   "genre": "social",
+   "scenario": 7,
+   "style": "A",
+   "variety": "de-AT",
+   "request": "Instagram-Post: Hab meinen ersten Halbmarathon geschafft, 2:11, beim Vienna City Marathon! Ich will mich bei allen bedanken, die mich unterstützt haben."
+  },
+  {
+   "id": "social-7-B",
+   "genre": "social",
+   "scenario": 7,
+   "style": "B",
+   "variety": "de-AT",
+   "request": "Bitte ein Instagram-Posting zu meinem ersten Halbmarathon. Ich hab ca. 400 Follower, also Freundinnen, Familie, Laufgruppe. Ton: ehrlich, freudig, ein bissl gerührt. Max. 100 Wörter, ein paar Emojis, 4–5 Hashtags.\n- Halbmarathon beim Vienna City Marathon am Sonntag, 2:11:43\n- sechs Monate Training, im März wegen dem Knie fast aufgehört\n- Danke an: meine Physiotherapeutin Verena, die Dienstagslaufgruppe im Prater, meinen Freund Florian, der bei km 18 mit einem Schild an der Ringstraße gestanden ist\n- Ziel fürs nächste Jahr: 10 km unter 50 Minuten"
+  },
+  {
+   "id": "social-8-A",
+   "genre": "social",
+   "scenario": 8,
+   "style": "A",
+   "variety": "de-CH",
+   "request": "Kannst du mir einen LinkedIn-Post schreiben? Meine Firma hat zugemacht und ich suche jetzt eine neue Stelle im Marketing. Ich will zeigen, was ich kann, ohne verzweifelt zu wirken."
+  },
+  {
+   "id": "social-8-B",
+   "genre": "social",
+   "scenario": 8,
+   "style": "B",
+   "variety": "de-CH",
+   "request": "Ich brauche einen LinkedIn-Post für meine Stellensuche. Schweizer Rechtschreibung, Ich-Form, selbstbewusst, aber nicht marktschreierisch, ca. 180 Wörter.\n\nHintergrund:\n- 7 Jahre bei der Velo Huber AG (Velohändler mit 4 Filialen in der Region Basel), zuletzt Leiterin Marketing mit einem 3er-Team\n- die Firma hat Ende September Konkurs angemeldet, alle 46 Mitarbeitenden haben die Stelle verloren\n- was ich kann: Social Media und Newsletter (Liste von 3'000 auf 21'000 Abonnenten aufgebaut), Google Ads mit kleinem Budget, Events (Velobörse mit 2'000 Besuchern), Zusammenarbeit mit lokalen Medien\n- Sprachen: Deutsch, Französisch und Englisch gut\n- suche: Marketing in einem KMU, 80–100 %, Raum Basel/Aargau\n- Danke an die Kolleginnen und Kollegen, die jetzt auch suchen – ich teile gern Kontakte"
+  },
+  {
+   "id": "report-1-A",
+   "genre": "report",
+   "scenario": 1,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Kannst du mir ein Protokoll von unserer Anwohnerversammlung zur Parksituation in der Uhlandstraße schreiben? Drei Beschlüsse: Antrag auf Anwohnerparken, Halteverbot an der Kita-Einfahrt beantragen, zwei Leute reden mit dem Supermarkt wegen dessen Parkplatz am Abend. Nächstes Treffen am 12. März."
+  },
+  {
+   "id": "report-1-B",
+   "genre": "report",
+   "scenario": 1,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich war Protokollführer bei unserer Anwohnerversammlung und habe nur Stichpunkte. Bitte daraus ein ordentliches Ergebnisprotokoll machen: Kopf mit Datum, Ort, Anwesenden, dann Tagesordnungspunkte, Beschlüsse, nächster Termin. Neutral und knapp.\n\nMeine Notizen:\nDo 13.2., 19 Uhr, Gemeindesaal Lutherkirche, 23 Anwohner + Hr. Demir vom Ordnungsamt (Gast)\nModeration: Fr. Albers\nProblem: Pendler und Supermarktkunden parken die Uhlandstraße zu, Müllabfuhr kam 2x nicht durch, Kita-Einfahrt oft zugeparkt\nHr. Demir: Bewohnerparken möglich, braucht Antrag + Parkraumerhebung, dauert ca. 6 Monate\nBeschluss 1: Antrag auf Bewohnerparken stellen (einstimmig), Fr. Albers formuliert ihn\nBeschluss 2: Halteverbot an der Kita-Einfahrt beim Ordnungsamt beantragen (21 dafür, 2 Enthaltungen)\nBeschluss 3: AG (Hr. Peters, Fr. Okafor) spricht mit der Marktleitung, ob der Kundenparkplatz abends für Anwohner geöffnet werden kann\nnächste Versammlung Do 12.3., 19 Uhr, gleicher Ort\nEnde 20:40"
+  },
+  {
+   "id": "report-2-A",
+   "genre": "report",
+   "scenario": 2,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich muss meinem Chef einen kurzen Bericht zu unserem dreimonatigen Test mit dem neuen Support-Tool schicken. Die Antwortzeit ist von 9 auf 4 Stunden gesunken, es gab aber zwei Probleme (Telefonanbindung und die Vorlagen). Kannst du das zusammenschreiben?"
+  },
+  {
+   "id": "report-2-B",
+   "genre": "report",
+   "scenario": 2,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Bitte einen kurzen Bericht (max. eine Seite) an meinen Vorgesetzten, Herrn Dr. Lange (Leiter Kundenservice). Sachlich, Sie-Form, am Ende eine klare Empfehlung. Wir sind ein Onlinehändler für Gartenmöbel in Bremen, das Support-Team hat 7 Leute. Absender bin ich als Teamleitung Support.\n\n- Testphase 1. Juli bis 30. September, Zendesk statt bisher Outlook-Sammelpostfach\n- durchschnittliche Erstantwortzeit: vorher 9 Std., jetzt 4 Std.\n- ca. 2.100 Tickets pro Monat, Kundenzufriedenheit (Umfrage) von 3,8 auf 4,3 von 5\n- Problem 1: Telefonanlage lässt sich nicht sauber anbinden, Anrufe müssen manuell als Ticket angelegt werden\n- Problem 2: alle Textbausteine und Vorlagen mussten neu angelegt werden, hat ca. 2 Wochen gekostet, zwei Kollegen waren anfangs sehr unzufrieden\n- Kosten: 7 Lizenzen à 55 € im Monat\n- Empfehlung: weiter nutzen, Jahresvertrag abschließen, aber vorher die Telefonanbindung klären"
+  },
+  {
+   "id": "report-3-A",
+   "genre": "report",
+   "scenario": 3,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich brauch den Jahresbericht für unseren Nachbarschaftshilfe-Verein: 46 Ehrenamtliche, rund 1.200 Stunden, drei Veranstaltungen und ein paar Sätze zu den Finanzen."
+  },
+  {
+   "id": "report-3-B",
+   "genre": "report",
+   "scenario": 3,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Für die Mitgliederversammlung im März brauche ich den Tätigkeitsbericht 2024 unseres Vereins „Nachbarn helfen Nachbarn Herne-Mitte e. V.“. Er wird vorgelesen und an alle Mitglieder verschickt. Sachlich, aber warm, wir sind ein kleiner Verein. 500–600 Wörter, Zwischenüberschriften ok.\n\nZahlen und Notizen:\n46 aktive Ehrenamtliche (Vorjahr 39), ca. 1.200 Einsatzstunden: Einkaufshilfe, Begleitung zu Arztterminen, Hilfe bei Formularen, Fahrdienst\nVeranstaltungen: Frühlingsfest im Mai (ca. 150 Gäste), Erste-Hilfe-Kurs für Ehrenamtliche im September, Adventscafé zusammen mit dem Seniorenheim\nFinanzen: Einnahmen 8.950 € (Mitgliedsbeiträge 2.100, Spenden 3.350, Zuschuss der Stadt Herne 3.500); Ausgaben 7.420 € (Fahrtkosten 3.100, Versicherung 980, Veranstaltungen 2.240, Büro/Telefon 1.100); Überschuss 1.530 €\nSorgen: viele Ehrenamtliche über 65, kaum Nachwuchs, das Auto für den Fahrdienst ist 14 Jahre alt\nDank an die Sparkasse für die Spende und an alle Helferinnen und Helfer"
+  },
+  {
+   "id": "report-4-A",
+   "genre": "report",
+   "scenario": 4,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich brauche einen kurzen Bericht für die Schulkonferenz über unsere Klassenfahrt nach Berlin: 3 Tage, 52 Schülerinnen und Schüler. Was gut lief, dass ein Schüler krank wurde, und die Kosten."
+  },
+  {
+   "id": "report-4-B",
+   "genre": "report",
+   "scenario": 4,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich war Fahrtleiterin der Berlinfahrt unserer 9. Klassen und muss für die Schulkonferenz einen Bericht abgeben. Sachlich, ca. 1–1,5 Seiten, bitte in der Wir-Form der begleitenden Lehrkräfte.\n\nEckdaten:\n- Mo 16. bis Mi 18. September, 52 Schülerinnen und Schüler der 9a und 9b, 4 Lehrkräfte, Gesamtschule in Paderborn\n- Anreise mit dem ICE, Unterkunft Jugendherberge Berlin Ostkreuz\n- Programm: Bundestag mit Kuppel und Gespräch mit unserem Wahlkreisabgeordneten, Gedenkstätte Berliner Mauer in der Bernauer Straße, Stasi-Museum, Freizeit am Alexanderplatz\n- lief gut: Pünktlichkeit, das Gespräch im Bundestag, die Schülerinnen und Schüler haben an der Gedenkstätte sehr ernsthaft mitgemacht\n- Krankheit: ein Schüler bekam am Dienstagabend hohes Fieber, ärztlicher Bereitschaftsdienst, die Eltern haben ihn am Mittwochmorgen abgeholt, alles dokumentiert\n- Kosten: 189 € pro Kind (Bahn 79 €, Unterkunft mit Halbpension 78 €, Eintritte/ÖPNV 32 €); drei Familien bekamen einen Zuschuss vom Förderverein\n- Empfehlung: Fahrt nächstes Jahr wiederholen, Bundestagsbesuch mit 6 Monaten Vorlauf anfragen"
+  },
+  {
+   "id": "report-5-A",
+   "genre": "report",
+   "scenario": 5,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich muss einen Vorfallbericht schreiben: Am Montag ist in unserer Büroküche Wasser ausgelaufen, der Boden ist hin. Was passiert ist, welcher Schaden entstanden ist und was wir jetzt ändern. Hilfst du mir?"
+  },
+  {
+   "id": "report-5-B",
+   "genre": "report",
+   "scenario": 5,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Kannst du mir aus diesen Infos einen formalen Vorfallbericht machen? Er geht an die Geschäftsführung und an die Hausverwaltung. Gliederung: Sachverhalt, Ursache, Schaden, Sofortmaßnahmen, Maßnahmen zur Vermeidung. Sachlich, ohne Schuldzuweisungen.\n\n- Montag, 7. Oktober, ca. 7:40 Uhr: Kollegin Frau Schuster findet Wasser in der Küche im 3. OG (Steuerbüro Kühn & Partner, Mainz)\n- Ursache laut Installateur: Zulaufschlauch der Spülmaschine geplatzt, lief vermutlich seit dem Wochenende\n- Schaden: Laminat in Küche und Teil des Flurs aufgequollen, ca. 18 qm; Wasserfleck an der Decke im 2. OG (Arztpraxis); Spülmaschine defekt\n- sofort: Wasser abgedreht, Hausverwaltung und Installateur angerufen, Fotos gemacht, Versicherung informiert (Schadennummer folgt)\n- Trocknungsgeräte laufen voraussichtlich 3 Wochen\n- neu: Schlauch mit Aquastop, Spülmaschine läuft nur noch tagsüber, Wassermelder unter der Spüle\nErstellt von: Markus Lenz, Büroleitung"
+  },
+  {
+   "id": "report-6-A",
+   "genre": "report",
+   "scenario": 6,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Kurzer Bericht für den Vereinsvorstand: Mitglieder von 210 auf 248 gestiegen, wir haben eine neue Jugendmannschaft und brauchen dringend mehr Trainer."
+  },
+  {
+   "id": "report-6-B",
+   "genre": "report",
+   "scenario": 6,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich bin Jugendleiter beim TSV Weilheim und brauche einen kurzen Bericht für die Vorstandssitzung nächste Woche. Max. eine Seite, Stichpunkte sind ok, wo es passt. Im Vorstand duzen wir uns.\n\n- Mitglieder: am 1.1. 210, heute 248 (+38), Zuwachs fast nur bei Kindern und Jugendlichen\n- neue Mannschaft: E-Jugend Handball (Jahrgänge 2015/16), 17 Kinder, Training freitags 16:30\n- Problem: nur 2 Trainer für die Gruppe, einer davon ist 17 und macht nächstes Jahr Abi\n- insgesamt brauchen wir mindestens 3 zusätzliche Übungsleiter\n- Vorschläge: Eltern gezielt ansprechen, C-Lizenz vom Verein bezahlen (ca. 450 € pro Person), Aufwandsentschädigung erhöhen\n- Hallenzeiten werden knapp, Gespräch mit der Stadt nötig"
+  },
+  {
+   "id": "report-7-A",
+   "genre": "report",
+   "scenario": 7,
+   "style": "A",
+   "variety": "de-AT",
+   "request": "Bitte einen kurzen Statusbericht für meine Kundin: Der Website-Relaunch fürs Hotel ist zu 70 % fertig, es gibt eine Verzögerung wegen der Fotos, neuer Go-live ist der 15. April."
+  },
+  {
+   "id": "report-7-B",
+   "genre": "report",
+   "scenario": 7,
+   "style": "B",
+   "variety": "de-AT",
+   "request": "Ich bin Webdesigner in Innsbruck und betreue den Relaunch der Website vom Hotel Alpenrose in Seefeld (Familienbetrieb, 24 Zimmer). Ich brauch einen Projektstatusbericht per Mail an die Chefin, Frau Mag. Hofer. Sie-Form, freundlich, klar und nicht zu technisch. Am Anfang bitte eine kurze Ampel-Übersicht.\n\nStand:\n- insgesamt ca. 70 % fertig\n- erledigt: Design abgenommen, Zimmerseiten angelegt, Buchungsmaske eingebunden, Texte DE/EN fertig\n- offen: Fotos, italienische Übersetzung, SEO-Feinschliff, Tests auf Handys\n- Verzögerung: Fotoshooting musste verschoben werden, zuerst war der Fotograf krank, dann Schlechtwetter; neuer Termin 18. März\n- daher neuer Go-live 15. April statt 20. März\n- Bitte an die Kundin: Bildauswahl bis 25. März freigeben\n- Mehrkosten: keine"
+  },
+  {
+   "id": "report-8-A",
+   "genre": "report",
+   "scenario": 8,
+   "style": "A",
+   "variety": "de-CH",
+   "request": "Ich hab an der Klubschule Migros einen Kochkurs für Anfänger gemacht (4 Abende) und soll einen kurzen Bericht schreiben, was wir gekocht haben und was ich gelernt habe. Kannst du mir den schreiben?"
+  },
+  {
+   "id": "report-8-B",
+   "genre": "report",
+   "scenario": 8,
+   "style": "B",
+   "variety": "de-CH",
+   "request": "Kurzer Bericht über meinen Kochkurs, bitte Schweizer Rechtschreibung, Ich-Form, ca. 300 Wörter, locker. Die Kursleiterin sammelt Rückmeldungen für die Website der Klubschule Migros St. Gallen.\n\n- Kurs «Kochen für Einsteiger», 4 Dienstagabende im Oktober, 18.30–21.30 Uhr, 10 Teilnehmende\n- Abend 1: Messerkunde, Gemüse schneiden, Minestrone\n- Abend 2: Pilzrisotto, Salatsauce selber machen\n- Abend 3: Fleisch anbraten – Pouletbrust mit Ofengemüse und Bratensauce\n- Abend 4: Älplermagronen mit Apfelmus, zum Schluss gemeinsames Essen\n- gelernt: das Messer richtig halten (endlich!), Mise en place, abschmecken statt stur nach Rezept salzen, Risotto braucht Geduld\n- Kursleiterin Brigitte Ammann, sehr geduldig\n- Fazit: ich mache den Aufbaukurs"
+  },
+  {
+   "id": "longform-1-A",
+   "genre": "longform",
+   "scenario": 1,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Schreib mir bitte einen langen Blogartikel (ca. 800 Wörter) über alles, was ich in einem Jahr Gemüseanbau auf dem Balkon gelernt habe. Südbalkon im 4. Stock in Köln, Tomaten super, Zucchini ein Reinfall."
+  },
+  {
+   "id": "longform-1-B",
+   "genre": "longform",
+   "scenario": 1,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich möchte auf meinem Blog einen ausführlichen Artikel veröffentlichen, rund 800 Wörter: „Ein Jahr Gemüse auf dem Balkon – was ich gelernt habe“. Leser sind Anfänger, also praktisch und konkret, aber mit meinen eigenen Erlebnissen. Zwischenüberschriften gern, Ich-Form.\n\nMeine Erfahrungen:\n- Südbalkon, 6 qm, 4. Stock, Köln-Ehrenfeld\n- Tomaten in 20-Liter-Kübeln: super, vor allem Cocktailtomaten; Fleischtomaten zu empfindlich für den Wind\n- Salat: im Hochsommer geschossen, besser im Frühjahr und Herbst\n- Kräuter: Basilikum ständig voller Läuse, Thymian und Rosmarin völlig unkompliziert\n- Zucchini: viel zu groß für den Balkon, Mehltau\n- Gießen: im Juli zweimal am Tag; Tropfbewässerung mit Wasserspeicher für 35 € hat uns im Urlaub gerettet\n- Erde: billige Erde vom Discounter war ein Fehler\n- Wind im 4. Stock unterschätzt, Rankhilfen festbinden\n- Nachbarn unten haben sich über tropfendes Wasser beschwert → Untersetzer\n- Ernte grob: ca. 9 kg Tomaten, Kräuter fürs ganze Jahr, Salat für ein paar Wochen\n- nächstes Jahr: Erdbeeren in Hängeampeln, keine Zucchini mehr"
+  },
+  {
+   "id": "longform-2-A",
+   "genre": "longform",
+   "scenario": 2,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich schreibe für ein Lokalmagazin ein Feature über die Geschichte der Markthalle in Hameln und die Wiedereröffnung nach der Sanierung. Gebaut 1906, 2012 geschlossen, seit Mai wieder offen. Kannst du einen langen Text, so 800 Wörter, entwerfen?"
+  },
+  {
+   "id": "longform-2-B",
+   "genre": "longform",
+   "scenario": 2,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Für unser Stadtmagazin in Hameln brauche ich ein längeres Feature (ca. 800 Wörter, Überschrift + Unterzeile) über die Markthalle. Bitte erzählend, als Einstieg eine Szene vom Eröffnungstag, dann die Geschichte, am Ende der Blick nach vorn. Nur die Fakten aus meinen Notizen verwenden.\n\nNotizen aus dem Stadtarchiv und vom Eröffnungstag:\n- 1906 eröffnet, Backstein, Stahlkonstruktion mit Glasdach, damals 64 Stände\n- in den 1920ern Mittelpunkt der Altstadt, Bauern aus dem Umland, Fischhändler aus Bremerhaven\n- 1945 Glasdach beschädigt, Notdach bis 1952\n- ab den 70ern Niedergang wegen der Supermärkte, 1998 nur noch 9 Stände, 2012 ganz geschlossen, Abriss wurde diskutiert\n- 2014 Bürgerinitiative „Rettet die Markthalle“, 6.000 Unterschriften\n- Sanierung 2021–2024, Kosten 11,8 Mio. €, davon 60 % aus der Städtebauförderung\n- Wiedereröffnung am 4. Mai: 28 Stände, u. a. eine Käserei, Gemüsehof Brandes (4. Generation, der Urgroßvater stand schon 1910 hier), eine syrische Bäckerei, eine Weinbar\n- Zitat Inge Brandes: „Mein Urgroßvater hätte die Halle nicht wiedererkannt, aber den Geruch schon.“\n- Kritik: die Standmieten sind hoch, kleine Erzeuger tun sich schwer"
+  },
+  {
+   "id": "longform-3-A",
+   "genre": "longform",
+   "scenario": 3,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich hätte gern einen ausführlichen Ratgeber, ca. 800 Wörter: Wie bereite ich mich auf meinen ersten Halbmarathon vor? Aus meiner eigenen Erfahrung – ich bin im April nach sechs Monaten Training in 2:11 ins Ziel gekommen."
+  },
+  {
+   "id": "longform-3-B",
+   "genre": "longform",
+   "scenario": 3,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Kannst du für meinen Laufblog einen langen Ratgeber schreiben, ca. 800 Wörter, Titel in Richtung „Dein erster Halbmarathon“? Ich will aus meiner Erfahrung erzählen, aber mit klaren Tipps. Leser bitte duzen.\n\nWas ich beisteuern kann:\n- ich bin 41, vorher nur ab und zu 5 km gelaufen\n- 6-Monats-Plan: erst dreimal pro Woche locker, ab Monat 3 sonntags ein langer Lauf, gesteigert bis 18 km\n- Fehler: zu schnell gesteigert → Knieprobleme im März, 2 Wochen Pause, Physio hat Krafttraining verordnet (Kniebeugen, Ausfallschritte, Hüfte), seitdem keine Probleme\n- Schuhe im Laufladen mit Laufanalyse gekauft, 140 €\n- Verpflegung: Gels unbedingt im Training testen, beim ersten Mal hatte ich Magenprobleme\n- Tapering: die letzten 10 Tage deutlich weniger\n- Renntag (Freiburg, April): zu schnell losgelaufen, bei km 17 eingebrochen\n- Ergebnis: 2:11"
+  },
+  {
+   "id": "longform-4-A",
+   "genre": "longform",
+   "scenario": 4,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Für unseren Firmenblog: ein längerer Artikel (ca. 800 Wörter) darüber, wie unser kleines Support-Team auf eine 4-Tage-Woche mit Rotation umgestellt hat, ohne Kunden zu verlieren."
+  },
+  {
+   "id": "longform-4-B",
+   "genre": "longform",
+   "scenario": 4,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Wir sind ein Software-Anbieter für Vereinsverwaltung aus Dresden, 35 Leute, davon 5 im Support. Für unseren Unternehmensblog brauche ich einen ausführlichen Erfahrungsbericht, ca. 800 Wörter, Wir-Form, ehrlich, auch mit den Problemen. Zielgruppe: andere kleine Softwarefirmen und unsere Kunden.\n\nFakten:\n- seit Januar arbeitet jede Person 4 Tage/Woche, 32 Std., bei gleichem Gehalt\n- Support trotzdem Mo–Fr 8–18 Uhr erreichbar, Rotationsplan, immer mindestens 3 Leute da\n- Vorbereitung 3 Monate: Hilfe-Center überarbeitet (von 60 auf 140 Artikel), dadurch 22 % weniger Tickets\n- nach 6 Monaten: Erstantwortzeit 3,1 h → 2,8 h, Kündigungsrate unverändert bei ca. 1,2 % im Monat, Kundenzufriedenheit 4,5 → 4,6\n- Krankheitstage im Team im Halbjahr von 31 auf 12\n- Probleme: Übergaben am Freitag holprig; einmal waren wegen Urlaub + Krankheit nur 2 Leute da, ein Kunde hat sich beschwert\n- Lösung: Übergabenotiz im Ticket ist Pflicht, Urlaubsplanung mit Puffer\n- Zitat Teamleiterin Franziska Wolf: „Weniger Tage heißt nicht weniger Sorgfalt. Eher im Gegenteil.“"
+  },
+  {
+   "id": "longform-5-A",
+   "genre": "longform",
+   "scenario": 5,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Langer Artikel, ca. 800 Wörter, bitte: Wir haben ein altes Siedlungshaus bei Magdeburg mit kleinem Budget renoviert, und ich will über die Entscheidungen schreiben, die wir dabei getroffen haben."
+  },
+  {
+   "id": "longform-5-B",
+   "genre": "longform",
+   "scenario": 5,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ich will auf unserem Blog einen langen Text (ca. 800 Wörter) über unsere Renovierung veröffentlichen. Thema: welche Entscheidungen wir getroffen haben, um im Budget zu bleiben, und welche wir bereuen. Wir-Form (wir als Paar), bodenständig, ehrlich.\n\nInfos:\n- Siedlungshaus Baujahr 1958, 110 qm, in Barleben bei Magdeburg, 2022 gekauft\n- Budget für die Renovierung: 60.000 €, am Ende 67.500 €\n- von Firmen gemacht: komplett neue Elektrik (14.000 €), neue Fenster, Heizung (Wärmepumpe mit Förderung, Eigenanteil ca. 19.000 €)\n- selbst gemacht: Tapeten runter, Dielen abgeschliffen statt neuer Boden, Innenwände gestrichen, Garten\n- gegen ein neues Bad entschieden, nur neue Armaturen und Fugen – bereuen wir nicht\n- Dach erst in 5 Jahren – Risiko, aber der Gutachter fand es vertretbar\n- bereuen: Fenster vom billigsten Anbieter, zwei schließen nicht richtig, Streit um die Gewährleistung\n- Tipps: Elektrik nie selbst machen, immer 15 % Puffer einplanen\n- 10 Monate Bauzeit, parallel die Mietwohnung weiterbezahlt, das war hart"
+  },
+  {
+   "id": "longform-6-A",
+   "genre": "longform",
+   "scenario": 6,
+   "style": "A",
+   "variety": "de-DE",
+   "request": "Ich schreibe für eine Elternzeitschrift einen längeren Text (ca. 800 Wörter): Smartphone mit 11 – was wir als Familie ausprobiert haben. Unsere Tochter hat ihres seit acht Monaten. Machst du mir einen Entwurf?"
+  },
+  {
+   "id": "longform-6-B",
+   "genre": "longform",
+   "scenario": 6,
+   "style": "B",
+   "variety": "de-DE",
+   "request": "Ein regionales Elternmagazin hat mich um einen persönlichen Erfahrungsbericht gebeten. Thema: das erste Smartphone mit 11. Ca. 800 Wörter, Ich-Form, ehrlich, nicht belehrend, gern auch mit Momenten, die schiefgingen. Schlag bitte auch eine Überschrift vor.\n\nWas wir ausprobiert haben:\n- Mila bekam zum 11. Geburtstag im März ein gebrauchtes iPhone\n- Phase 1: strenges Limit (45 Min. am Tag) über die Bildschirmzeit-Funktion → ständig Streit, sie hat eine Lücke gefunden (YouTube über den Browser in einer Schul-App)\n- Phase 2: Mediennutzungsvertrag, die Punkte haben wir mit ihr zusammen ausgehandelt\n- Ladestation im Flur, auch für unsere Handys – das war für uns Eltern das Schwierigste\n- Klassenchat: Stress mit Nachrichten um 23 Uhr, beim Elternabend wurde eine Regel für die ganze Klasse beschlossen\n- ein Kettenbrief, der ihr Angst gemacht hat – sie kam damit zu uns, da dachten wir zum ersten Mal: es funktioniert\n- jetzt nach 8 Monaten: ca. 1,5 Std. am Tag, am Wochenende flexibler, viel weniger Diskussionen\n- was ich anderen Eltern sagen würde: die eigene Handynutzung anschauen, Regeln mit dem Kind aushandeln, nicht alles technisch lösen wollen"
+  },
+  {
+   "id": "longform-7-A",
+   "genre": "longform",
+   "scenario": 7,
+   "style": "A",
+   "variety": "de-AT",
+   "request": "Ich möchte einen langen Reisebericht (ca. 800 Wörter): eine Woche mit meinem Sohn (7) mit dem Zug quer durch Österreich, von Wien bis Bregenz. Kannst du den für mich schreiben?"
+  },
+  {
+   "id": "longform-7-B",
+   "genre": "longform",
+   "scenario": 7,
+   "style": "B",
+   "variety": "de-AT",
+   "request": "Für einen Familienreiseblog brauch ich einen ausführlichen Artikel, ca. 800 Wörter, Ich-Form, erzählend, mit praktischen Infos zwischendurch. Wir waren im August eine Woche mit dem Zug unterwegs, mein Sohn Jakob ist 7.\n\nRoute und Notizen:\n- Tag 1: Wien Hbf → Graz mit dem Railjet über den Semmering, Jakob hat bei den Viadukten am Fenster geklebt\n- Tag 2: Graz, mit dem Lift auf den Schlossberg, Uhrturm\n- Tag 3: Graz → Klagenfurt, Baden im Wörthersee, Minimundus\n- Tag 4: Klagenfurt → Salzburg über die Tauernbahn; Zug 50 Minuten verspätet, Anschluss verpasst, Jakob müde und grantig\n- Tag 5: Salzburg, Festung, Wasserspiele in Hellbrunn (sein Highlight, klatschnass)\n- Tag 6: Salzburg → Innsbruck, Alpenzoo\n- Tag 7: Innsbruck → Bregenz über den Arlberg, Bodensee, Rückfahrt mit dem Nightjet nach Wien\n- ich hatte das Klimaticket, für Jakob haben wir jeweils Kinderfahrkarten gekauft\n- Tipps: Familienzone im Railjet reservieren, Jause und Hörbücher, ein Rucksack pro Person reicht\n- Fazit: würde es wieder machen, aber mit zwei Nächten pro Ort statt Hetzerei"
+  },
+  {
+   "id": "longform-8-A",
+   "genre": "longform",
+   "scenario": 8,
+   "style": "A",
+   "variety": "de-CH",
+   "request": "Für die Website vom Feuerwehrverein Burgdorf brauchen wir zum 140-Jahr-Jubiläum einen längeren Artikel über die Geschichte, ca. 800 Wörter. Gegründet wurde die Feuerwehr 1884. Kannst du einen Entwurf machen?"
+  },
+  {
+   "id": "longform-8-B",
+   "genre": "longform",
+   "scenario": 8,
+   "style": "B",
+   "variety": "de-CH",
+   "request": "Wir feiern dieses Jahr 140 Jahre Feuerwehr Burgdorf und ich soll für die Website des Feuerwehrvereins einen Jubiläumsartikel schreiben. Ca. 800 Wörter, Schweizer Rechtschreibung, gern mit Zwischentiteln, würdig, aber nicht steif. Bitte nur die Fakten aus meinen Notizen verwenden, nichts dazuerfinden.\n\nNotizen aus der Chronik:\n1884 Gründung nach einem Scheunenbrand, bei dem zwei Häuser abbrannten; 42 Mann, eine Handdruckspritze\n1911 erste Motorspritze, bezahlt mit Spenden aus der Bevölkerung\n1950er-Jahre: Bau des Feuerwehrmagazins am heutigen Standort\n1987 die ersten zwei Frauen im Korps\n2004 Zusammenschluss mit der Feuerwehr Oberburg\n2005 Hochwasser der Emme im August, grösster Einsatz der jüngeren Geschichte\n2010 Gründung der Jugendfeuerwehr (heute 22 Jugendliche)\n2015 neues Tanklöschfahrzeug\nheute: 96 Angehörige der Feuerwehr, davon 14 Frauen, ca. 180 Einsätze pro Jahr\nKommandant: Hptm Daniel Zürcher\nZitat Kommandant: «Die Technik hat sich komplett verändert. Was gleich geblieben ist: Wenn der Pager losgeht, lässt man alles liegen.»\nJubiläumsfest am 7. September beim Feuerwehrmagazin, mit Ausstellung historischer Spritzen"
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+  "about": "Plain requests for the held-out ai-general-holdout corpora: the same six genres as general-requests.json, eight new topics per language. No style instruction and no pattern list is sent with them. Written after the general entries were chosen and not used to choose any.",
+  "it": {
+    "genres": {
+      "blog": "Scrivi un post per il mio blog {t}.",
+      "email": "Scrivi un'email ai colleghi {t}.",
+      "essay": "Scrivi un breve saggio {t}.",
+      "article": "Scrivi un articolo di giornale {t}.",
+      "social": "Scrivi un post per LinkedIn {t}.",
+      "report": "Scrivi un breve rapporto {t}."
+    },
+    "topics": [
+      "sui nuovi orari della biblioteca comunale",
+      "sulla settimana lavorativa di quattro giorni",
+      "sul mercato rionale del sabato",
+      "su un gruppo di corsa per principianti",
+      "sulle nuove regole per la raccolta differenziata",
+      "sul nuovo menù della mensa scolastica",
+      "su una notte al museo",
+      "sull'imparare a cucinare da zero"
+    ]
+  },
+  "es": {
+    "genres": {
+      "blog": "Escribe una entrada para mi blog sobre {t}.",
+      "email": "Escribe un correo a mis compañeros de trabajo sobre {t}.",
+      "essay": "Escribe un ensayo breve sobre {t}.",
+      "article": "Escribe un artículo periodístico sobre {t}.",
+      "social": "Escribe una publicación para LinkedIn sobre {t}.",
+      "report": "Escribe un informe breve sobre {t}."
+    },
+    "topics": [
+      "el nuevo horario de la biblioteca municipal",
+      "la semana laboral de cuatro días",
+      "el mercadillo del sábado",
+      "un grupo de running para principiantes",
+      "las nuevas normas de reciclaje",
+      "el nuevo menú del comedor escolar",
+      "una noche en el museo",
+      "aprender a cocinar desde cero"
+    ]
+  },
+  "nl": {
+    "genres": {
+      "blog": "Schrijf een blogpost over {t}.",
+      "email": "Schrijf een e-mail aan mijn collega's over {t}.",
+      "essay": "Schrijf een kort essay over {t}.",
+      "article": "Schrijf een krantenartikel over {t}.",
+      "social": "Schrijf een LinkedIn-post over {t}.",
+      "report": "Schrijf een kort verslag over {t}."
+    },
+    "topics": [
+      "de nieuwe openingstijden van de bibliotheek",
+      "de vierdaagse werkweek",
+      "de zaterdagmarkt in de wijk",
+      "een hardloopgroep voor beginners",
+      "de nieuwe regels voor afval scheiden",
+      "het nieuwe menu in de schoolkantine",
+      "een museumnacht",
+      "leren koken vanaf nul"
+    ]
+  },
+  "de": {
+    "genres": {
+      "blog": "Schreibe einen Beitrag für meinen Blog über {t}.",
+      "email": "Schreibe eine E-Mail an meine Kollegen über {t}.",
+      "essay": "Schreibe einen kurzen Essay über {t}.",
+      "article": "Schreibe einen Zeitungsartikel über {t}.",
+      "social": "Schreibe einen LinkedIn-Beitrag über {t}.",
+      "report": "Schreibe einen kurzen Bericht über {t}."
+    },
+    "topics": [
+      "die neuen Öffnungszeiten der Stadtbibliothek",
+      "die Vier-Tage-Woche",
+      "den Samstagsmarkt im Viertel",
+      "eine Laufgruppe für Anfänger",
+      "die neuen Regeln für die Mülltrennung",
+      "den neuen Speiseplan der Schulmensa",
+      "eine Nacht im Museum",
+      "das Kochenlernen von Grund auf"
+    ]
+  }
+}

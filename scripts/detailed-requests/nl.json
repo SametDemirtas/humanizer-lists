@@ -1,0 +1,901 @@
+{
+  "language": "nl",
+  "prompts": [
+    {
+      "id": "blog-1-A",
+      "genre": "blog",
+      "scenario": 1,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Kun je een blogpost schrijven over mijn eerste halve marathon? Afgelopen zondag gelopen in 2:11, zes maanden voor getraind en in maart ben ik bijna gestopt door knieklachten. Volgende doel: 10 km onder de 50 minuten."
+    },
+    {
+      "id": "blog-1-B",
+      "genre": "blog",
+      "scenario": 1,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor mijn persoonlijke blog wil ik een stuk over mijn eerste halve marathon. Wie het leest: vooral vrienden, familie en mensen van mijn loopgroep in Amersfoort. Schrijf het in de ik-vorm, eerlijk en met een beetje zelfspot, niet te zweverig. Rond de 500 woorden.\n\nMijn aantekeningen:\n- afgelopen zondag gelopen, eindtijd 2:11\n- zes maanden getraind, drie keer per week\n- in maart pijn aan de buitenkant van mijn rechterknie, twee weken niet gelopen en echt overwogen om ermee te kappen\n- fysio (Sanne) zei: niet stoppen maar minder kilometers, twee keer per week oefeningen voor heupen en bilspieren, en de lange duurlopen echt rustig lopen\n- km 18 was afzien, mijn vriend stond bij de finish met een zak drop\n- volgende doel: 10 km onder de 50 minuten, nu zit ik rond de 54"
+    },
+    {
+      "id": "blog-2-A",
+      "genre": "blog",
+      "scenario": 2,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik wil een receptpost voor mijn foodblog over de citroencake van mijn oma, die bakte ze elk jaar met Pasen. Ik gebruik zelf minder suiker dan zij en ik wil ook wat tips over de oven erin."
+    },
+    {
+      "id": "blog-2-B",
+      "genre": "blog",
+      "scenario": 2,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Help je me met een receptpost voor mijn foodblog? Het gaat om de citroencake van mijn oma uit Deventer. Ze bakte hem elk jaar met Pasen, dan stond hij al klaar als wij binnenkwamen. Graag een korte persoonlijke inleiding (geen hele levensgeschiedenis), daarna ingrediënten en stappen, en als laatste de oventips. Geen titel, die verzin ik zelf.\n\nRecept van oma: 250 g roomboter, 250 g suiker, 250 g zelfrijzend bakmeel, 4 eieren, rasp en sap van 2 citroenen, glazuur van poedersuiker met citroensap.\nMijn aanpassing: 180 g suiker in plaats van 250, smaakt frisser en de citroen komt beter door.\nOventips: 160 graden hetelucht in plaats van 175 boven- en onderwarmte, rooster in de onderste helft, eerste 35 minuten de deur dichthouden, na 50 minuten testen met een satéprikker. Cakevorm van 26 cm."
+    },
+    {
+      "id": "blog-3-A",
+      "genre": "blog",
+      "scenario": 3,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Schrijf een stukje voor mijn reisblog: vijf dagen wandelen in de Ardennen met mijn zus, overnachten in trekkershutten, dag 3 regende het de hele dag en het mooiste moment was de mist die optrok boven de Ourthe op de laatste ochtend."
+    },
+    {
+      "id": "blog-3-B",
+      "genre": "blog",
+      "scenario": 3,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik zoek een reisblog over een wandeltocht van vijf dagen in de Ardennen die ik met mijn zus Lotte heb gemaakt. Lezers zijn vooral mensen die zelf overwegen zo'n tocht te doen, dus wat praktische info mag erin, maar het moet wel een verhaal blijven. Ongeveer 600 woorden, ik-vorm, luchtig.\n\nDit moet erin:\n- route: een stuk van de GR 57 langs de Ourthe, van Durbuy naar La Roche-en-Ardenne, zo'n 18 tot 22 km per dag\n- we sliepen in trekkershutten en één nacht in een gîte, simpel maar prima\n- dag 3: de hele dag regen, schoenen doorweekt, we hebben 's avonds alles bij de kachel van de gîte gedroogd\n- ruzie over de kaart op dag 2 (zij had gelijk)\n- mooiste moment: laatste ochtend vroeg op, de mist trok op boven de Ourthe en we zaten daar met koffie uit de thermosfles\n- tip: neem een extra paar sokken mee, echt"
+    },
+    {
+      "id": "blog-4-A",
+      "genre": "blog",
+      "scenario": 4,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Kun je een blog voor me schrijven over hoe we onze badkamer zelf hebben verbouwd? Drie weekenden werk, kostte ongeveer €2.400, en we maakten twee fouten: met het voegen en met de kit. Ook graag wat we de volgende keer anders zouden doen."
+    },
+    {
+      "id": "blog-4-B",
+      "genre": "blog",
+      "scenario": 4,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor ons klusblog wil ik een eerlijk verslag van onze badkamerverbouwing. We zijn geen professionals en dat mag je merken. Schrijf het als 'wij' (ik en mijn man Ruben), ongeveer 600 woorden, met tussenkopjes.\n\nFeiten:\n- in drie weekenden gedaan, oude tegels eruit, nieuwe tegels, inloopdouche, nieuw toilet en wastafelmeubel\n- totaal ongeveer €2.400, waarvan zo'n €1.100 tegels en materiaal, de rest sanitair en gereedschap huren\n- fout 1: voegsel te lang laten zitten voor we het afsponsden, kregen we bijna niet meer van de tegels af\n- fout 2: siliconenkit aangebracht voordat de douchebak droog genoeg was, na twee weken liet het los en moesten we alles opnieuw doen\n- wat we anders zouden doen: kleinere stukken tegelijk voegen, kit pas na 24 uur, en vooraf een tegelzaag huren in plaats van met een handsnijder klooien\n- conclusie: zou het zo weer doen, maar plan een extra weekend in"
+    },
+    {
+      "id": "blog-5-A",
+      "genre": "blog",
+      "scenario": 5,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik heb een bakkerij en wil een blogpost voor op onze website: vanaf maandag verkopen we glutenvrij brood. We hebben er acht maanden aan getest, het kost €4,50 en zaterdagochtend kun je gratis proeven."
+    },
+    {
+      "id": "blog-5-B",
+      "genre": "blog",
+      "scenario": 5,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Graag een blogpost voor de website van Bakkerij Van Dijk in Zutphen. Wij (mijn vrouw en ik) hebben de zaak sinds 2011. Onze klanten zijn vooral mensen uit de buurt, veel vaste gezichten. Toon: warm, gewoon, geen reclametaal. Maximaal 350 woorden, schrijf het als 'wij'.\n\nWat erin moet:\n- vanaf maandag verkopen we glutenvrij brood, een licht meergranen en een donker boekweitbrood\n- we hebben er acht maanden aan getest, de eerste versies waren droog of vielen uit elkaar\n- het wordt op een aparte dag en met aparte spullen gebakken, maar we zijn geen volledig glutenvrije bakkerij, dat moeten we eerlijk zeggen\n- prijs €4,50 per brood\n- zaterdagochtend van 8 tot 12 gratis proeven in de winkel\n- dank aan de klanten met coeliakie die steeds weer kwamen proeven en eerlijk zeiden wat ze ervan vonden"
+    },
+    {
+      "id": "blog-6-A",
+      "genre": "blog",
+      "scenario": 6,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Wil je een blog schrijven voor mijn opvoedblog over de eerste smartphone van onze dochter van 11? Ik wil de regels die we als gezin hebben afgesproken erin, en wat na twee maanden goed werkt en wat niet."
+    },
+    {
+      "id": "blog-6-B",
+      "genre": "blog",
+      "scenario": 6,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik schrijf een opvoedblog en wil een post over de eerste smartphone van onze dochter Fleur (11, groep 8). Lezers zijn andere ouders die hiermee worstelen. Niet belerend, gewoon delen hoe het bij ons ging. Ongeveer 500 woorden, ik-vorm.\n\nMijn notities:\n- ze kreeg hem na de zomervakantie, vooral omdat ze straks alleen naar de middelbare school fietst\n- regels samen met haar opgesteld en op een A4 op de koelkast gehangen\n- telefoon 's avonds om 20.30 uur aan de lader in de keuken\n- niet aan tafel\n- WhatsApp mag, TikTok en Instagram nog niet\n- schermtijd op schooldagen 1,5 uur, in het weekend 2 uur\n- wij kennen de code\n- na twee maanden: opladen in de keuken werkt super, slaapt beter\n- wat lastig is: de klassenapp ging 's avonds laat nog door en ze voelde zich buitengesloten als ze niet meedeed, hebben we met andere ouders besproken\n- discussie over schermtijd is er nog bijna elke dag, maar minder dan in het begin"
+    },
+    {
+      "id": "blog-7-A",
+      "genre": "blog",
+      "scenario": 7,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Schrijf een blogpost over mijn eerste jaar met een perceeltje in de samentuin in Gentbrugge. De tomaten zijn mislukt, de bonen waren top, en ik heb veel geleerd over water geven."
+    },
+    {
+      "id": "blog-7-B",
+      "genre": "blog",
+      "scenario": 7,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik heb sinds vorig voorjaar een perceeltje van 20 m² in een samentuin in Gentbrugge en wil daar een blogpost over op mijn tuinblog. Lezers zijn vooral beginners. Schrijf het als mezelf, nuchter en met wat humor, zo'n 500 woorden.\n\nWat er gebeurde:\n- tomaten: zes planten, in juli kregen ze de aardappelziekte (bruine vlekken), bijna niks geoogst. Te dicht op elkaar en geen afdakje\n- stokbonen: enorme oogst, half de straat heeft meegegeten, veel ingevroren\n- courgettes deden het ook goed, zoals iedereen voorspeld had\n- water geven: ik gaf eerst elke avond een beetje, dat bleek niet goed. Een buurman van de tuin (Marc) leerde me om minder vaak maar grondig water te geven, liefst 's morgens vroeg, en de grond af te dekken met grasmaaisel\n- volgend jaar: regenton bij mijn perceel, tomaten met meer ruimte en onder een afdakje"
+    },
+    {
+      "id": "blog-8-A",
+      "genre": "blog",
+      "scenario": 8,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Ik wil een recensie voor mijn boekenblog over Het smelt van Lize Spit, dat ik net uit heb. Wat ik goed vond en welke stukken ik te traag vond."
+    },
+    {
+      "id": "blog-8-B",
+      "genre": "blog",
+      "scenario": 8,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Voor mijn boekenblog wil ik een recensie van Het smelt van Lize Spit. Ik heb het deze week uitgelezen. Mijn lezers zijn vooral Vlamingen die veel lezen, dus je hoeft het boek niet heel uitgebreid voor te stellen. Geef geen spoilers over het einde. Rond de 450 woorden, schrijf het in de ik-vorm, niet te academisch.\n\nMijn indrukken:\n- de sfeer van het dorp (Bovenmeer) is ijzersterk, ik herkende veel van mijn eigen dorp in de Kempen\n- de stem van Eva: droog, scherp, soms bijna grappig terwijl het verhaal heel donker is\n- de spanning van dat blok ijs in de koffer, je blijft je afvragen wat ze van plan is\n- wat sleepte: het middenstuk, de wisselingen tussen 2002 en het heden voelden soms als uitstellen\n- het is een zwaar boek, ik zou het niet iedereen zomaar aanraden\n- score: 4 op 5"
+    },
+    {
+      "id": "email-1-A",
+      "genre": "email",
+      "scenario": 1,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Mail naar mijn collega's: Marian gaat na 32 jaar bij de bibliotheek met pensioen, afscheid vrijdag 14 juni om 17.00 uur in de leeszaal. We zamelen in voor een e-reader, €10 per persoon, uiterlijk woensdag bij mij inleveren."
+    },
+    {
+      "id": "email-1-B",
+      "genre": "email",
+      "scenario": 1,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik moet een mail sturen aan alle collega's van de bibliotheek (een stuk of 25 mensen) over het afscheid van Marian. Toon: hartelijk maar kort, het moet in één keer duidelijk zijn. Geef ook een onderwerpregel. Onderteken met mijn naam, Ingrid.\n\n- Marian gaat met pensioen na 32 jaar bij de bibliotheek\n- afscheid vrijdag 14 juni om 17.00 uur in de leeszaal, met een hapje en een drankje\n- Marian weet van het afscheid, maar niet van het cadeau\n- we kopen een e-reader voor haar, €10 per persoon\n- graag uiterlijk woensdag contant bij mij of via een betaalverzoek, ik stuur de link op aanvraag\n- wie iets wil zeggen of een stukje wil voorlezen, laat het me weten"
+    },
+    {
+      "id": "email-2-A",
+      "genre": "email",
+      "scenario": 2,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Kun je een mail aan onze klanten opstellen dat ons IT-bedrijf per 1 september verhuist naar Kruisweg 41 in Hoofddorp? Telefoonnummers blijven hetzelfde en je kunt achter het pand parkeren."
+    },
+    {
+      "id": "email-2-B",
+      "genre": "email",
+      "scenario": 2,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "We zijn een klein IT-bedrijf (12 man) en verhuizen. Ik wil een mail naar al onze klanten, vooral mkb'ers die we al jaren helpen. Zakelijk maar niet stijf, zeg gewoon 'u'. Maximaal 150 woorden, platte tekst want het gaat via ons mailprogramma. Geen placeholders, gebruik de gegevens hieronder.\n\n- bedrijfsnaam: Brouwer ICT\n- per 1 september nieuw adres: Kruisweg 41, 2132 NA Hoofddorp\n- telefoonnummers en e-mailadressen blijven gelijk\n- parkeren kan gratis achter het pand, ingang via de Dreef\n- de week van de verhuizing (26 tot 30 augustus) is de helpdesk gewoon bereikbaar\n- ondertekenen met: Peter Brouwer, directeur"
+    },
+    {
+      "id": "email-3-A",
+      "genre": "email",
+      "scenario": 3,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Help me een mail aan mijn verhuurder schrijven: de verwarming doet het al een week niet goed, ik heb de radiatoren al ontlucht, of hij iemand wil sturen. Ik ben thuis na 17.00 uur."
+    },
+    {
+      "id": "email-3-B",
+      "genre": "email",
+      "scenario": 3,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik wil een nette maar duidelijke mail sturen aan mijn verhuurder, meneer De Groot. Ik huur een appartement aan de Vechtstraat 12-2 in Utrecht. Het mag vriendelijk zijn, maar ik wil wel dat er snel iets gebeurt. Kort houden, geen onderwerpregel nodig.\n\nSituatie:\n- de verwarming werkt al een week niet goed, radiatoren worden maar lauw, in de slaapkamer helemaal niet\n- ik heb alle radiatoren ontlucht en de cv-ketel bijgevuld tot 1,5 bar, hielp niet\n- het is 's avonds 16 graden binnen\n- graag zo snel mogelijk een monteur\n- ik ben op werkdagen thuis na 17.00 uur, woensdag de hele dag\n- mijn nummer: 06-00000003\n- naam: Joris Bakker"
+    },
+    {
+      "id": "email-4-A",
+      "genre": "email",
+      "scenario": 4,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Mail aan de ouders van het JO12-team van mijn zoon: we hebben zondag het regionale toernooi gewonnen, 3-1 in de finale. Bedankt aan iedereen die gereden heeft, en volgende week vrijdag is er pizza-avond, de trainer betaalt de drinken."
+    },
+    {
+      "id": "email-4-B",
+      "genre": "email",
+      "scenario": 4,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik ben teammanager van JO12-2 van vv Rijnsburgse Boys en wil een mail sturen aan alle ouders. Enthousiast, mag een uitroepteken hebben, maar niet overdreven. Kort genoeg om op je telefoon te lezen. Ondertekenen met Mirjam.\n\nWat ik wil zeggen:\n- zondag het regionale toernooi in Katwijk gewonnen, finale 3-1 tegen Noordwijk\n- Daan scoorde twee keer, Jesse één keer, keeper Sem stopte een penalty\n- dank aan alle ouders die gereden hebben, zonder jullie waren we er niet gekomen\n- volgende week vrijdag pizza-avond in de kantine, 18.30 uur\n- pizza's betalen we uit de teampot, de trainer (Kees) trakteert op de drinken\n- graag even laten weten of jullie kind erbij is, voor woensdag"
+    },
+    {
+      "id": "email-5-A",
+      "genre": "email",
+      "scenario": 5,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Kun je een mail aan vrienden schrijven over een verrassingsfeest voor mijn oma die 90 wordt? Zaterdag 12 oktober bij haar thuis, iedereen een foto meenemen voor een album, en niks tegen haar zeggen!"
+    },
+    {
+      "id": "email-5-B",
+      "genre": "email",
+      "scenario": 5,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Mijn oma wordt 90 en we geven haar een verrassingsfeest. Ik wil een mail naar vrienden van de familie en een paar oude buren van haar. Toon: gezellig en informeel, maar het moet voor mensen van 70+ ook helder zijn. Rond de 150 woorden, dan stuur ik hem zelf door.\n\n- oma heet Truus, woont in Hengelo, Bornsestraat 88\n- feest op zaterdag 12 oktober, vanaf 14.30 uur, graag om 14.15 uur aanwezig, oma komt om 14.30 uur thuis van de kapper met mijn moeder\n- neem een foto mee van een moment met oma, we maken er ter plekke een album van\n- geen cadeaus nodig\n- het is een verrassing, dus echt niks tegen haar zeggen, ook niet per ongeluk aan de telefoon\n- aanmelden bij mij: Lisa, 06-00000001"
+    },
+    {
+      "id": "email-6-A",
+      "genre": "email",
+      "scenario": 6,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik moet de juf van mijn dochter mailen dat ze donderdag en vrijdag niet op school is vanwege een begrafenis in de familie. Kun je ook vragen of er huiswerk is dat ze kan inhalen?"
+    },
+    {
+      "id": "email-6-B",
+      "genre": "email",
+      "scenario": 6,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Wil je een korte mail voor me opstellen aan de mentor van mijn dochter Noa (2 havo, Stedelijk Lyceum in Enschede)? De mentor is meneer Visser. Mijn schoonvader is overleden en de begrafenis is vrijdag in Groningen. We gaan donderdag al naar de familie, dus Noa mist donderdag en vrijdag. Ik heb het verlof al via de app aangevraagd, maar wil hem ook persoonlijk laten weten waarom. Graag vragen of er toetsen of huiswerk zijn die ze moet inhalen. Formeel genoeg, maar niet stijf. Mijn naam: Karin Smit."
+    },
+    {
+      "id": "email-7-A",
+      "genre": "email",
+      "scenario": 7,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Schrijf een mailtje voor de leden van ons buurtcomité: dinsdag is het water van 9 tot 13 uur afgesloten door werken aan de leidingen in onze straat. Mensen moeten flessen vullen. En dat we volgende keer aan de stad gaan vragen om op tijd een bericht te sturen."
+    },
+    {
+      "id": "email-7-B",
+      "genre": "email",
+      "scenario": 7,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik ben secretaris van het buurtcomité Heilig Hart in Mortsel en moet een mail sturen naar onze leden (een 60-tal gezinnen). De toon mag vriendelijk zijn, maar met een kleine steek naar de communicatie. Kort, zodat ook de oudere buren het snel lezen. Ondertekenen met 'Hilde, namens het buurtcomité'.\n\nInfo:\n- dinsdag 9 tot 13 uur geen water in de Molenstraat en het begin van de Kerkstraat\n- reden: De Watergroep vervangt de leidingen\n- wij hebben het pas gisteren gehoord via een buur, er is geen brief rondgedeeld\n- tip: vul op voorhand flessen en een emmer om het toilet door te spoelen\n- wie hulp nodig heeft (bv. oudere buren), mag mij bellen: 0478 00 00 01\n- het comité zal aan de stad vragen om bij volgende werken op tijd een brief in de bus te steken"
+    },
+    {
+      "id": "email-8-A",
+      "genre": "email",
+      "scenario": 8,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Twee weken geleden heb ik gesolliciteerd als magazijncoördinator en ik heb nog niks gehoord. Kun je een korte mail schrijven dat ik nog steeds heel geïnteresseerd ben en volgende week elke dag kan komen voor een gesprek?"
+    },
+    {
+      "id": "email-8-B",
+      "genre": "email",
+      "scenario": 8,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Help me een opvolgmail te schrijven voor een sollicitatie. Ik heb twee weken geleden (op 14 oktober) mijn kandidatuur ingediend voor de job van magazijncoördinator bij Van Moer Logistics in Willebroek, via hun website. Nog geen reactie gehad. Ik wil beleefd laten weten dat ik nog altijd zeer geïnteresseerd ben, zonder opdringerig te zijn. De contactpersoon in de vacature is mevrouw Peeters van HR.\n\nOver mij: zeven jaar ervaring als teamleader in een magazijn in Puurs, ervaring met SAP en met het inplannen van ploegen.\nIk ben volgende week elke dag beschikbaar voor een gesprek, voormiddag of namiddag.\nMaximaal 120 woorden, beleefd, met 'u'. Naam: Kevin De Smet, tel. 0495 00 00 02."
+    },
+    {
+      "id": "essay-1-A",
+      "genre": "essay",
+      "scenario": 1,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik moet voor school een betoog schrijven (ik zit in 4 havo): moeten smartphones verboden worden op school? Argumenten voor en tegen en dan mijn eigen mening. Ik vind eigenlijk van niet."
+    },
+    {
+      "id": "essay-1-B",
+      "genre": "essay",
+      "scenario": 1,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik zit in 4 havo en moet voor Nederlands een betogend essay schrijven van ongeveer 600 woorden. Onderwerp: moeten smartphones op school verboden worden? Het moet een inleiding hebben, argumenten voor en tegen, een weerlegging en een conclusie met mijn eigen standpunt. Schrijf het zoals een leerling van 16 het zou schrijven, dus niet te moeilijk.\n\nMijn punten:\n- bij ons op school moeten telefoons sinds vorig jaar in een kluisje, net als op de meeste scholen in Nederland\n- voor: minder afleiding in de les, minder gedoe met filmpjes maken van anderen, in de pauze praat je meer met elkaar\n- tegen: je leert niet zelf omgaan met je telefoon, sommige lessen gebruiken we hem juist (Kahoot, roosterwijzigingen in Magister), en ouders kunnen je niet bereiken\n- mijn mening: geen totaal verbod, maar wel in de les weg, en in de pauze mag het. Leerlingen moeten leren om er zelf verstandig mee om te gaan"
+    },
+    {
+      "id": "essay-2-A",
+      "genre": "essay",
+      "scenario": 2,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik wil Verpleegkunde gaan studeren en moet een motivatie-essay schrijven. Mijn opa was lang ziek en ik doe vrijwilligerswerk in een verpleeghuis. Kun je me helpen?"
+    },
+    {
+      "id": "essay-2-B",
+      "genre": "essay",
+      "scenario": 2,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor mijn aanmelding bij de hbo-opleiding Verpleegkunde aan de Hanzehogeschool moet ik een motivatie-essay van maximaal 500 woorden schrijven. Vraag: 'Waarom wil je verpleegkundige worden?' Schrijf het in de ik-vorm, persoonlijk maar niet zielig, en niet vol clichés over 'mensen helpen'. Geen titel.\n\nMijn verhaal:\n- ik ben 18, zit nu in 6 vwo in Assen\n- mijn opa had COPD en heeft het laatste jaar thuis gewoond met thuiszorg. Ik zag hoe een wijkverpleegkundige (Annet) hem rustig maakte als hij benauwd was en hoe ze ook mijn oma hielp. Toen dacht ik voor het eerst: dit wil ik\n- sinds anderhalf jaar ben ik elke zaterdag vrijwilliger in verpleeghuis De Bijenkorf in Assen: koffie rondbrengen, spelletjes, wandelen met bewoners\n- daar leerde ik dat je soms gewoon even moet gaan zitten en luisteren\n- ik ben goed in biologie en vind de medische kant ook echt interessant, niet alleen het zorgen"
+    },
+    {
+      "id": "essay-3-A",
+      "genre": "essay",
+      "scenario": 3,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Voor mijn schrijfcursus moet ik een kort essay schrijven over hoe mijn geboorteplaats eruitzag toen ik klein was en hoe het nu is. Ik kom uit Hoogeveen. Wil je een opzetje maken?"
+    },
+    {
+      "id": "essay-3-B",
+      "genre": "essay",
+      "scenario": 3,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik volg een cursus creatief schrijven bij de bibliotheek en de opdracht is een kort persoonlijk essay (max. 700 woorden): 'Mijn stad toen en nu'. Ik ben 58 en opgegroeid in Hoogeveen. De docent wil concrete beelden en geen nostalgisch geklaag. Schrijf het in de ik-vorm, rustig van toon.\n\nMijn herinneringen en observaties:\n- in de jaren 70 speelden we bij het kanaal en in de bossen bij de Hoogeveense Vaart\n- op zaterdag naar de markt met mijn moeder, haring bij de visboer\n- de Hoofdstraat had een speelgoedwinkel, een slager en een schoenmaker, nu vooral ketens en een paar lege panden\n- de gasfabriek is weg, daar staan nu appartementen\n- nieuwe wijken zoals Erflanden, waar vroeger weilanden waren\n- wat wel hetzelfde is: de Grote Kerk, en de Tamboerijn op het Raadhuisplein\n- ik weet niet of het slechter is geworden, gewoon anders. Mijn kleinkinderen vinden het er leuk"
+    },
+    {
+      "id": "essay-4-A",
+      "genre": "essay",
+      "scenario": 4,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Schrijf een opiniestuk voor ons dorpsblad: is thuiswerken goed voor kleine dorpen? Ik denk van wel, maar er zijn ook nadelen."
+    },
+    {
+      "id": "essay-4-B",
+      "genre": "essay",
+      "scenario": 4,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik wil een opiniestuk insturen naar 'De Wierdenaar', het blad van ons dorp in Groningen (zo'n 2.000 inwoners). Stelling: thuiswerken is goed voor kleine dorpen. Ongeveer 500 woorden, met een duidelijke mening maar ook eerlijk over de nadelen. Toon: gewoon, zoals een dorpsgenoot praat, geen beleidstaal. Ik onderteken met mijn eigen naam (Henk Mulder), die hoeft er niet in.\n\nMijn argumenten:\n- sinds corona werken veel jonge gezinnen hier drie dagen thuis, je ziet overdag weer mensen op straat\n- de dorpswinkel draait beter, de bakker verkoopt meer lunches\n- jonge mensen hoeven niet meer naar de stad te verhuizen voor een baan in Groningen of Assen\n- maar: het glasvezel kwam hier pas in 2022, en sommige straten hebben nog steeds slechte ontvangst\n- en huizenprijzen stijgen door mensen uit de Randstad, waardoor jongeren uit het dorp zelf geen huis meer kunnen kopen\n- conclusie: goed voor het dorp, maar de gemeente moet zorgen voor betaalbare starterswoningen"
+    },
+    {
+      "id": "essay-5-A",
+      "genre": "essay",
+      "scenario": 5,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik moet voor school een essay schrijven over iemand die mij beïnvloed heeft. Ik wil het over mijn eerste pianolerares hebben."
+    },
+    {
+      "id": "essay-5-B",
+      "genre": "essay",
+      "scenario": 5,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor Nederlands (3 vwo) moet ik een essay schrijven van 400 tot 500 woorden met als titel 'Iemand die mij gevormd heeft'. Ik wil het hebben over mevrouw Hendriks, mijn eerste pianolerares. Schrijf het als een leerling van 15, eerlijk en persoonlijk.\n\nWat ik weet:\n- ik kreeg les van mijn 7e tot mijn 13e, bij haar thuis in Zwolle, in een kamer vol planten en een oude Bechstein-vleugel\n- ze was streng over oefenen maar lachte veel\n- toen ik op mijn 10e wilde stoppen omdat ik het saai vond, liet ze me een liedje van Coldplay leren in plaats van alleen etudes, en toen ging het weer\n- bij mijn eerste voorspeelavond had ik zo'n last van zenuwen, ze zei: 'Speel het voor mij, niet voor de zaal'\n- dat zinnetje gebruik ik nu nog bij spreekbeurten en toetsen\n- ze is vorig jaar verhuisd naar Zeeland, ik stuur haar nog af en toe een filmpje van wat ik speel"
+    },
+    {
+      "id": "essay-6-A",
+      "genre": "essay",
+      "scenario": 6,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik zit op een cursus Nederlands (NT2, niveau B1) en moet een tekst schrijven over de voordelen en nadelen van wonen in een grote stad. Kun je die voor me schrijven, niet te moeilijk?"
+    },
+    {
+      "id": "essay-6-B",
+      "genre": "essay",
+      "scenario": 6,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik leer Nederlands (ik kom uit Syrië en woon sinds 2021 in Rotterdam) en zit op een cursus op niveau B1. Huiswerk: een essay van ongeveer 300 woorden over de voor- en nadelen van wonen in een grote stad. De tekst moet passen bij mijn niveau: korte zinnen, gewone woorden, wel verbindingswoorden zoals 'bovendien', 'aan de andere kant' en 'daarom'. Ik-vorm.\n\nMijn ideeën:\n- voordelen: veel werk, goed openbaar vervoer (metro, tram), winkels van alle landen, ik kan Arabisch eten kopen, veel verschillende mensen\n- nadelen: huur is heel duur, ik betaal €980 voor een klein appartement in Rotterdam-Zuid, veel lawaai, minder contact met buren\n- in Damascus woonde ik ook in een grote stad, maar daar kende ik iedereen in mijn straat\n- mijn conclusie: ik woon graag in de stad, maar later wil ik misschien in een kleinere plaats wonen met mijn kinderen"
+    },
+    {
+      "id": "essay-7-A",
+      "genre": "essay",
+      "scenario": 7,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Kun je een reflectief essay schrijven over wat een jaar vrijwilligerswerk bij de voedselbank me geleerd heeft?"
+    },
+    {
+      "id": "essay-7-B",
+      "genre": "essay",
+      "scenario": 7,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik heb een jaar lang elke donderdag meegeholpen bij de Voedselbank in Aalst en ik moet daar een reflectieverslag over schrijven voor mijn opleiding sociaal werk (Hogeschool Gent, tweede bachelor). Vorm: reflectief essay van 700 woorden, in de ik-vorm, met wat ik verwachtte, wat ik meemaakte en wat ik geleerd heb. Geen opsomming, gewoon doorlopende tekst. Schrijf in Belgisch Nederlands.\n\nMijn notities:\n- verwachtte vooral daklozen, maar de meeste mensen waren gezinnen met werk die het einde van de maand niet halen\n- een vader die zich schaamde en elke week sorry zei, tot hij na een paar maanden zelf kwam helpen met uitdelen\n- ik leerde niet te snel te oordelen over wat mensen in hun pakket wilden of weigerden\n- samenwerken met vrijwilligers van 70+ die al twintig jaar meedraaien, heel nuchter\n- het OCMW verwijst door, de pakketten zijn gratis\n- eigen grens: in het begin nam ik verhalen mee naar huis, leren loslaten\n- wat ik meeneem naar mijn latere job: luisteren voor je oplossingen zoekt"
+    },
+    {
+      "id": "essay-8-A",
+      "genre": "essay",
+      "scenario": 8,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Voor school moet ik een tekst schrijven: is toerisme in mijn regio goed of slecht? Ik woon in Brugge."
+    },
+    {
+      "id": "essay-8-B",
+      "genre": "essay",
+      "scenario": 8,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik zit in het vijfde middelbaar (aso, Sint-Lodewijkscollege) en moet voor Nederlands een argumenterende tekst van 500 woorden schrijven over toerisme in mijn eigen streek. Ik woon in Brugge. Het moet duidelijk opgebouwd zijn: inleiding, argumenten voor, argumenten tegen, besluit met mijn mening. Schrijf het zoals een leerling van 17, in Belgisch Nederlands.\n\nMijn punten:\n- voordelen: veel jobs in horeca en winkels, mijn zus werkt in een chocoladewinkel; geld voor de stad om monumenten te onderhouden; Brugge is bekend in de hele wereld\n- nadelen: in de zomer kun je met de fiets bijna niet door de Steenstraat en over de Markt; dagjestoeristen van cruiseschepen uit Zeebrugge laten weinig geld achter; huizen in het centrum worden vakantieverhuur, Bruggelingen trekken weg\n- de stad heeft al maatregelen genomen, zoals minder touringcars in het centrum\n- mijn besluit: toerisme is nodig, maar de stad moet meer kiezen voor toeristen die blijven overnachten in plaats van dagjesmensen"
+    },
+    {
+      "id": "article-1-A",
+      "genre": "article",
+      "scenario": 1,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik wil een artikel voor de lokale krant over de open dag van onze vrijwillige brandweer op 22 september. Er zijn activiteiten voor kinderen, we bestaan 140 jaar en we zoeken nieuwe vrijwilligers."
+    },
+    {
+      "id": "article-1-B",
+      "genre": "article",
+      "scenario": 1,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik ben woordvoerder van de vrijwillige brandweer Dalfsen en wil een persbericht/artikel aanleveren bij de Dalfser Marskramer en RTV Vechtdal. Het moet als krantenartikel geschreven zijn (derde persoon, nieuws eerst), zo'n 350 woorden. Graag met een citaat van onze postcommandant.\n\nFeiten:\n- open dag zondag 22 september, 11.00 tot 16.00 uur, kazerne aan de Koestraat\n- de post bestaat dit jaar 140 jaar, opgericht in 1884\n- voor kinderen: spuiten met de brandslang, in de tankautospuit zitten, een springkussen en een kinderbrandweerdiploma\n- demonstraties: een auto openknippen en een vetbrand blussen (om 13.00 en 15.00 uur)\n- we zoeken nieuwe vrijwilligers, vooral mensen die overdag in Dalfsen werken, mannen en vrouwen\n- postcommandant: Gerrit Jansen, 24 jaar bij de brandweer\n- citaat in de geest van: 'Zonder vrijwilligers geen brandweer in Dalfsen, kom gewoon eens kijken en een bakje koffie drinken'\n- toegang gratis"
+    },
+    {
+      "id": "article-2-A",
+      "genre": "article",
+      "scenario": 2,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Schrijf een berichtje voor de huis-aan-huiskrant: er komt een nieuwe buurttuin met 20 moestuinvakken, €35 per jaar, er is een wachtlijst en zaterdag om 10.00 uur is er een open ochtend."
+    },
+    {
+      "id": "article-2-B",
+      "genre": "article",
+      "scenario": 2,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor de wijkkrant van Zwolle-Zuid wil ik een artikel over onze nieuwe buurtmoestuin. Lezers: buurtbewoners van alle leeftijden. Nieuwsstijl, niet te lang (300 woorden), een korte aantrekkelijke kop erboven.\n\nGegevens:\n- naam: Buurttuin De Wolweverij, op het voormalige schoolterrein aan de Middelweg\n- 20 vakken van 3 bij 4 meter\n- €35 per jaar per vak, inclusief water en gereedschap uit de gezamenlijke schuur\n- opgezet door een groep bewoners met steun van de gemeente Zwolle en woningcorporatie deltaWonen\n- alle 20 vakken zijn al vergeven, er is een wachtlijst, aanmelden via buurttuinwolweverij@example.nl\n- open ochtend zaterdag 10.00 uur, koffie en koek, iedereen welkom, ook zonder vak\n- initiatiefnemer Yvonne Kok: 'We wilden een plek waar buren elkaar weer tegenkomen'"
+    },
+    {
+      "id": "article-3-A",
+      "genre": "article",
+      "scenario": 3,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Voor onze bedrijfsnieuwsbrief zoek ik een stukje over de fietsleaseregeling die we hebben ingevoerd? In de eerste maand deden er al 31 collega's mee. Met een quote van HR erin."
+    },
+    {
+      "id": "article-3-B",
+      "genre": "article",
+      "scenario": 3,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor de interne nieuwsbrief van ons bedrijf (Vos Installatietechniek, ongeveer 180 medewerkers, vestigingen in Ede en Arnhem) wil ik een artikel over de nieuwe fietsleaseregeling. Lezers zijn collega's, van monteurs tot kantoor. Toon: positief en informatief, geen jubeltoon. 250 tot 300 woorden.\n\nFeiten:\n- sinds 1 maart kunnen medewerkers een fiets of e-bike leasen via Lease a Bike, via hun brutosalaris\n- in de eerste maand deden 31 collega's mee, 24 kozen een e-bike\n- je kunt ook een fiets voor woon-werkverkeer gebruiken in het weekend\n- de regeling kwam er na een idee uit de ondernemingsraad\n- quote van Femke de Wit (HR): ze is blij dat het zo snel loopt, en dat ook monteurs die dichtbij wonen meedoen\n- meer info: intranet, of bij HR\n- korte tip: maak een proefrit bij een dealer bij jou in de buurt"
+    },
+    {
+      "id": "article-4-A",
+      "genre": "article",
+      "scenario": 4,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Maak een artikeltje voor de lokale krant: ons koor zoekt tenoren en bassen. Repetitie elke woensdag om 20.00 uur in de parochiezaal, en met kerst geven we een concert."
+    },
+    {
+      "id": "article-4-B",
+      "genre": "article",
+      "scenario": 4,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik ben secretaris van het Gemengd Koor Cantate uit Oldenzaal en wil een artikel insturen naar de Oldenzaalse Courant. Ze plaatsen zulke stukjes als je het als nieuwsbericht aanlevert. Graag in de derde persoon, zo'n 250 woorden, met een citaat van onze dirigent.\n\n- koor bestaat sinds 1978, nu 34 leden, waarvan maar 4 tenoren en 5 bassen\n- we zoeken mannen die graag zingen, je hoeft geen noten te kunnen lezen\n- repetitie elke woensdag van 20.00 tot 22.00 uur in de parochiezaal van de Plechelmusbasiliek\n- kerstconcert op zondag 15 december in de basiliek, met o.a. delen uit de Messiah en Nederlandse kerstliederen\n- dirigent: Bart Lammers, citaat iets als: 'Kom drie keer meezingen voor je beslist'\n- contact: secretaris Annelies Kuipers, 06-00000004"
+    },
+    {
+      "id": "article-5-A",
+      "genre": "article",
+      "scenario": 5,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Schrijf een clubnieuwsbericht: onze damesvolleybal is gepromoveerd na een 3-2 winst. Er moet een quote van de coach in en info over de seizoenskaarten."
+    },
+    {
+      "id": "article-5-B",
+      "genre": "article",
+      "scenario": 5,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor de website van volleybalvereniging VC Sneek wil ik een nieuwsbericht over de promotie van Dames 1. Lezers zijn leden, ouders en sponsors. Enthousiast maar niet overdreven, 300 woorden, met een kop.\n\nWedstrijd en feiten:\n- zaterdag thuis tegen Lycurgus DS2, gewonnen met 3-2 (25-21, 22-25, 25-19, 23-25, 15-12)\n- daarmee kampioen in de tweede divisie, volgend seizoen in de eerste divisie\n- uitblinker: spelverdeler Jildou Hoekstra\n- sporthal De Wolf zat vol, zo'n 400 toeschouwers\n- coach Wiebe de Vries, citaat: dat het team na een slechte start in oktober nooit is opgehouden met geloven, en dat de vijfde set 'het beste volleybal van het seizoen' was\n- seizoenskaarten voor volgend seizoen: €45 voor volwassenen, €20 voor jeugd tot 16, leden gratis, te koop vanaf 1 augustus via de website en in de kantine"
+    },
+    {
+      "id": "article-6-A",
+      "genre": "article",
+      "scenario": 6,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik zoek een artikel voor de plaatselijke krant: de bakker op de Markt sluit na 54 jaar, de eigenaren gaan met pensioen. Graag ook reacties van klanten erin."
+    },
+    {
+      "id": "article-6-B",
+      "genre": "article",
+      "scenario": 6,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik schrijf als vrijwilliger voor de lokale krant van Woerden en moet een artikel maken over het sluiten van Bakkerij Verhoef op de hoek van de Markt en de Kerkstraat. Zo'n 450 woorden, krantenstijl, mensen centraal. Ik heb deze aantekeningen gemaakt bij een bezoek aan de winkel:\n\n- Bakkerij Verhoef sluit op zaterdag 28 september na 54 jaar\n- opgericht in 1970 door Jan Verhoef sr., sinds 1995 gerund door zoon Jan (64) en zijn vrouw Ria (62)\n- geen opvolger, hun kinderen wilden de zaak niet overnemen\n- Jan staat al 46 jaar om 4 uur 's nachts in de bakkerij\n- bekendste product: de Woerdense kaasstengels en het krentenbrood op zaterdag\n- Ria: 'We gaan eindelijk eens op vakantie buiten de zomer'\n- klant mevrouw Van Rijn (81): komt er al sinds de opening, 'Waar haal ik nu mijn brood?'\n- klant Stefan (38) kwam als kind al voor een gratis krentenbol\n- wat er met het pand gebeurt is nog niet bekend\n- laatste dag: koffie en gebak voor iedereen"
+    },
+    {
+      "id": "article-7-A",
+      "genre": "article",
+      "scenario": 7,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Kun je een verslag schrijven voor de schoolwebsite over de infoavond voor ouders over gsm-afspraken in het zesde leerjaar? 20 november om 19 uur in de turnzaal, er waren 80 ouders en we hebben samen afspraken gemaakt."
+    },
+    {
+      "id": "article-7-B",
+      "genre": "article",
+      "scenario": 7,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik zit in de ouderraad van basisschool De Regenboog in Kortrijk en moet een verslag maken voor de schoolwebsite over onze infoavond. Lezers: alle ouders, ook wie er niet bij was. Zakelijk maar vriendelijk, Belgisch Nederlands, ongeveer 350 woorden.\n\nWat er gebeurde:\n- woensdag 20 november, 19 uur, in de turnzaal\n- thema: gsm en sociale media in het zesde leerjaar\n- 80 ouders aanwezig, meer dan verwacht\n- spreker: Els Vandamme van Mediawijs gaf een korte uitleg over wat kinderen van 11-12 online doen\n- daarna in groepjes gepraat, en samen deze afspraken gemaakt:\n  1. gsm blijft uit en in de boekentas tijdens de schooluren (stond al in het schoolreglement)\n  2. ouders spreken samen af om geen gsm met eigen sociale media te geven voor het eerste middelbaar\n  3. de klasgroep op WhatsApp wordt na 20.30 uur stilgelegd, een ouder per klas is beheerder\n  4. in de lente volgt een tweede avond om te evalueren\n- dank aan juf Sofie en meester Dries voor de organisatie"
+    },
+    {
+      "id": "article-8-A",
+      "genre": "article",
+      "scenario": 8,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Schrijf een artikel voor de lokale krant over een startup uit Leuven die een app lanceert om gedeelde kosten tussen kotgenoten of huisgenoten te verdelen. Ze zoeken nog bètatesters."
+    },
+    {
+      "id": "article-8-B",
+      "genre": "article",
+      "scenario": 8,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik wil een artikel voor de regionale editie van de krant (Leuven) over een nieuwe app. Ik heb met de oprichters gepraat. Nieuwsstijl, 400 woorden, met een citaat en een duidelijke oproep op het einde. Belgisch Nederlands.\n\nMijn notities uit het gesprek:\n- naam app: Kotkas\n- oprichters: Lien Wouters (24) en Arne Claes (25), allebei afgestudeerd aan de KU Leuven, startten in een kot in de Naamsestraat\n- idee: frustratie over wie nog moest betalen voor wc-papier, energie en de gezamenlijke aankopen in de Colruyt\n- wat de app doet: kosten ingeven, foto van het kasticket, de app rekent uit wie wat moet, betalen via een Payconiq-link\n- gratis voor studenten, later een betalende versie voor gedeelde woningen van werkenden\n- steun van KU Leuven Research & Development en een kleine lening van PMV\n- ze zoeken 200 bètatesters, kotgenoten en huisgenoten, inschrijven via kotkas.example.be\n- citaat Lien: 'Ruzie over geld is de nummer één reden waarom koten ontploffen'\n- lancering in de App Store en Google Play gepland voor februari"
+    },
+    {
+      "id": "social-1-A",
+      "genre": "social",
+      "scenario": 1,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Maak een Instagrampost voor mijn bakkerij: vanaf maandag hebben we glutenvrij brood en zaterdag kan je komen proeven. Met hashtags graag."
+    },
+    {
+      "id": "social-1-B",
+      "genre": "social",
+      "scenario": 1,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik wil een Instagrampost voor Bakkerij Van Dijk in Zutphen (@bakkerijvandijk). Onze volgers zijn vooral klanten uit de buurt. Toon: warm, een beetje trots, niet schreeuwerig. Max. 100 woorden plus een rijtje hashtags (lokaal en over glutenvrij). Een paar emoji's mag.\n\n- vanaf maandag glutenvrij brood: licht meergranen en donker boekweit\n- acht maanden aan getest\n- €4,50 per brood\n- zaterdag van 8 tot 12 gratis proeven in de winkel\n- we zijn geen volledig glutenvrije bakkerij, wel aparte bakdag en aparte spullen, graag eerlijk vermelden voor mensen met coeliakie\n- foto: de twee broden op de toonbank"
+    },
+    {
+      "id": "social-2-A",
+      "genre": "social",
+      "scenario": 2,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik begin bij een nieuwe baan als projectmanager bij een logistiek bedrijf na 6 jaar bij mijn vorige werkgever. Kun je een LinkedIn-post schrijven waarin ik ook mijn oude team bedank?"
+    },
+    {
+      "id": "social-2-B",
+      "genre": "social",
+      "scenario": 2,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Help je me met een LinkedIn-post? Ik wil mijn nieuwe baan aankondigen en mijn oude collega's bedanken. Niet te lang (max. 150 woorden), geen hashtag-regen, maximaal drie. Schrijf het als mij, in de ik-vorm, en zonder 'Ik ben verheugd om aan te kondigen'.\n\n- na 6 jaar vertrek ik bij Bol Fulfilment (eerst als planner, later als teamleider inbound)\n- per 1 februari start ik als projectmanager bij Kuehne+Nagel in Venlo\n- daar ga ik projecten leiden rond de inrichting van nieuwe warehouses voor klanten\n- dank aan mijn team inbound in Waalwijk, vooral voor de nachtdiensten in de piek rond Sinterklaas en de humor op de werkvloer\n- dank aan mijn leidinggevende Mark, die me de kans gaf om door te groeien\n- ik heb zin in de nieuwe uitdaging"
+    },
+    {
+      "id": "social-3-A",
+      "genre": "social",
+      "scenario": 3,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Onze kat is weg, kun je een berichtje maken voor de Facebookgroep van onze wijk? Hij heet Miso, grijs met witte pootjes, voor het laatst gezien dinsdagavond bij het park."
+    },
+    {
+      "id": "social-3-B",
+      "genre": "social",
+      "scenario": 3,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik wil een oproep plaatsen in de Facebookgroep 'Wij zijn Lombok' (Utrecht) want onze kat is vermist. Kort en duidelijk, zodat mensen het delen. Met mijn telefoonnummer erin. Ik plaats er zelf twee foto's bij.\n\n- naam: Miso, kater, 3 jaar\n- grijs met vier witte pootjes en een witte vlek op zijn borst\n- gechipt, draagt geen halsband\n- voor het laatst gezien dinsdagavond rond 21.00 uur bij het Majellapark, kant van de Kanaalweg\n- hij is binnen- en buitenkat maar komt altijd voor 23.00 uur thuis, nu al twee nachten niet\n- schuw bij vreemden, niet achter hem aan rennen\n- vraag aan mensen om in schuurtjes en garages te kijken\n- bellen of appen: Eline, 06-00000002"
+    },
+    {
+      "id": "social-4-A",
+      "genre": "social",
+      "scenario": 4,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik heb een foto van ons in de berghut tijdens onze wandeltocht in Tirol. Kun je een korte grappige caption voor Instagram bedenken?"
+    },
+    {
+      "id": "social-4-B",
+      "genre": "social",
+      "scenario": 4,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Zoek een Instagram-caption voor een foto van mij en mijn vriend Thijs in de Franz-Senn-Hütte in Tirol. We zitten aan een houten tafel, natte haren, enorme borden Kaiserschmarrn voor ons. Kort (één of twee zinnen), droog grappig, mag een beetje zelfspot. Hooguit twee hashtags en één emoji. Geef me drie opties.\n\nContext voor de grap: we liepen die dag 6 uur in de regen, ik had gezegd 'het klaart vast op na de lunch', en in de hut moesten we een slaapzaal delen met 14 man."
+    },
+    {
+      "id": "social-5-A",
+      "genre": "social",
+      "scenario": 5,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Schrijf een LinkedIn-post over ons project waarmee we in twee jaar het stadsarchief hebben gedigitaliseerd, en wat we ervan geleerd hebben."
+    },
+    {
+      "id": "social-5-B",
+      "genre": "social",
+      "scenario": 5,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik ben projectleider bij de gemeente Deventer en wil een LinkedIn-post over de afronding van ons digitaliseringsproject. Doelgroep: collega's bij andere gemeenten en archieven, en mensen uit de erfgoedsector. Zakelijk maar persoonlijk, 200 tot 250 woorden, in de ik/wij-vorm. Hooguit 3 hashtags.\n\n- in twee jaar ruim 1,4 miljoen pagina's uit het stadsarchief gedigitaliseerd: bouwvergunningen 1900-1990, raadsnotulen en de bevolkingsregisters\n- team van 7 mensen plus een externe scanpartner\n- alles is nu online te doorzoeken via de website van Collectie Overijssel\n- wat we leerden:\n  1. begin met de stukken waar het meest naar gevraagd wordt (bouwvergunningen), dan zie je meteen resultaat\n  2. metadata kost meer tijd dan scannen, plan daar echt voor\n  3. betrek de studiezaalmedewerkers vanaf het begin, zij weten wat bezoekers zoeken\n- aanvragen voor bouwdossiers zijn met 60% gedaald omdat mensen het zelf vinden\n- dank aan het team, noem niemand bij naam"
+    },
+    {
+      "id": "social-6-A",
+      "genre": "social",
+      "scenario": 6,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Kun je een Facebookbericht maken voor ons koor? We zoeken tenoren en bassen, geen auditie, gewoon woensdag langskomen."
+    },
+    {
+      "id": "social-6-B",
+      "genre": "social",
+      "scenario": 6,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor de Facebookpagina van Gemengd Koor Cantate in Oldenzaal wil ik een oproep. Luchtig en uitnodigend, mag met een knipoog, want we zoeken echt mannen en het lukt maar niet. Max. 80 woorden.\n\n- we zoeken tenoren en bassen\n- geen auditie, noten lezen hoeft niet\n- kom gewoon woensdag om 20.00 uur langs in de parochiezaal van de Plechelmusbasiliek\n- we oefenen nu voor het kerstconcert op 15 december\n- koffie en een koekje in de pauze, en na afloop gaan we vaak nog even naar het café\n- vragen: stuur een berichtje naar deze pagina"
+    },
+    {
+      "id": "social-7-A",
+      "genre": "social",
+      "scenario": 7,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Maak een Instagrampost: ik heb mijn eerste halve marathon uitgelopen in 2:11! Ik wil iedereen bedanken voor de steun."
+    },
+    {
+      "id": "social-7-B",
+      "genre": "social",
+      "scenario": 7,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik heb zondag de halve marathon van Gent gelopen, mijn allereerste, en wil een Instagrampost. Mijn volgers zijn vooral vrienden en familie en wat mensen van mijn loopclub. Schrijf het als mezelf, niet te lang, blij maar niet cheesy. Een paar emoji's en drie à vier hashtags mag.\n\n- tijd: 2:11\n- zes maanden getraind, in maart bijna gestopt met knieproblemen\n- dank aan mijn kinesist Tom, mijn loopmaatjes van Atletiekclub Gentbrugge, en mijn vrouw Jolien die aan km 15 stond met een bordje\n- het laatste stuk langs de Coupure deed pijn\n- volgende doel: 10 km onder de 50 minuten"
+    },
+    {
+      "id": "social-8-A",
+      "genre": "social",
+      "scenario": 8,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Mijn bedrijf is gesloten en ik zoek een nieuwe job in marketing. Kun je een LinkedIn-post maken waarin ik laat zien wat ik te bieden heb?"
+    },
+    {
+      "id": "social-8-B",
+      "genre": "social",
+      "scenario": 8,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik wil een LinkedIn-post schrijven om te laten weten dat ik op zoek ben naar een nieuwe job. Het bedrijf waar ik werkte, een webshop in tuinmeubelen in Lokeren, is vorige maand failliet gegaan. Ik wil niet zielig overkomen, eerder positief en concreet. Maximaal 200 woorden, in Belgisch Nederlands, ik-vorm. Geen placeholders.\n\nOver mij:\n- 8 jaar marketingervaring, laatste 4 jaar als marketing manager\n- verantwoordelijk voor Google Ads en Meta-campagnes met een budget van ongeveer €40.000 per maand\n- nieuwsbrief opgebouwd van 5.000 naar 38.000 abonnees\n- een team van 3 mensen aangestuurd\n- tools: Google Analytics 4, Klaviyo, Shopify, Canva\n- tweetalig Nederlands-Frans, goed Engels\n- zoek een job in de regio Gent-Antwerpen, voltijds, B2C of B2B\n- vraag aan mensen om de post te delen of me een bericht te sturen"
+    },
+    {
+      "id": "report-1-A",
+      "genre": "report",
+      "scenario": 1,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Kun je notulen maken van een bewonersvergadering over parkeren in onze straat? Er zijn drie besluiten genomen en de volgende vergadering staat al gepland."
+    },
+    {
+      "id": "report-1-B",
+      "genre": "report",
+      "scenario": 1,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik heb de bewonersvergadering van de Vondellaan in Haarlem genotuleerd en wil er nette notulen van maken die ik naar alle bewoners kan mailen. Zakelijk, overzichtelijk, met de besluiten duidelijk apart. Gebruik deze aantekeningen:\n\ndatum: donderdag 7 maart, 19.30-21.15 uur, buurthuis De Ringvaart\naanwezig: 23 bewoners, plus Ahmed Yilmaz (wijkcoördinator gemeente Haarlem)\nvoorzitter: Joost van Leeuwen, notulist: ik (Petra Hoekstra)\n\nbesproken:\n- veel klachten over bezoekers van het station die de hele dag hier parkeren\n- busjes die op de stoep staan bij nr 40-60\n- gemeente: betaald parkeren is mogelijk als meer dan de helft van de bewoners voor stemt\n\nbesluiten:\n1. we houden een enquête onder alle bewoners over betaald parkeren met vergunning, Joost en Petra maken die, deadline 1 april\n2. Ahmed vraagt handhaving om in april extra te controleren op stoepparkeren\n3. we vragen de gemeente om twee extra fietsnietjes bij de speeltuin, zodat er minder fietsen op de stoep staan\n\nvolgende vergadering: donderdag 16 mei, 19.30 uur, zelfde plek, dan bespreken we de uitkomst van de enquête"
+    },
+    {
+      "id": "report-2-A",
+      "genre": "report",
+      "scenario": 2,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Mijn baas wil een kort verslag over de proef van drie maanden met ons nieuwe klantenservicesysteem. De reactietijd ging van 9 uur naar 4 uur, maar er waren twee problemen."
+    },
+    {
+      "id": "report-2-B",
+      "genre": "report",
+      "scenario": 2,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik moet een kort rapport (max. 1 A4) voor mijn leidinggevende schrijven over de proef met Freshdesk bij onze klantenservice. Zakelijk, to the point, zodat zij kan beslissen of we doorgaan. Met een korte conclusie en advies aan het eind.\n\nGegevens:\n- proef van 1 januari tot 31 maart, team van 6 medewerkers\n- gemiddelde eerste reactietijd van 9 uur naar 4 uur\n- klanttevredenheid (na afloop ticket) van 7,1 naar 7,8\n- probleem 1: de koppeling met ons ordersysteem (Exact) werkte in februari twee weken niet, toen moesten we orderinfo weer handmatig opzoeken\n- probleem 2: de chatfunctie kwam soms niet binnen bij wie dienst had, waardoor een paar klanten een half uur wachtten. Na een instelling aangepast in maart was het opgelost\n- kosten: €49 per medewerker per maand\n- team is positief, vooral over de standaardantwoorden\n- mijn advies: doorgaan, maar eerst met de leverancier afspraken maken over de Exact-koppeling"
+    },
+    {
+      "id": "report-3-A",
+      "genre": "report",
+      "scenario": 3,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik moet het jaarverslag van onze vrijwilligersvereniging schrijven. We hadden 46 vrijwilligers, samen 1.200 uur, drie evenementen, en ik moet ook het budget kort noemen."
+    },
+    {
+      "id": "report-3-B",
+      "genre": "report",
+      "scenario": 3,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor de algemene ledenvergadering van Stichting Samen Sterk Kampen (we helpen ouderen met boodschappen, vervoer en klusjes) moet ik het jaarverslag schrijven. Het wordt uitgeprint en ook naar de gemeente gestuurd voor de subsidie. Toon: zakelijk maar warm, ongeveer 500 woorden, met kopjes.\n\nCijfers en feiten:\n- 46 actieve vrijwilligers (vorig jaar 39), 7 nieuwe aanmeldingen via de vrijwilligersvacaturebank\n- samen ongeveer 1.200 uur ingezet\n- 312 vervoersritten naar ziekenhuis en huisarts, 180 klusjes\n- drie evenementen: de Burendag in september (110 bezoekers), een kerstlunch voor 65 ouderen in De Bovenkerk, en een bedankavond voor vrijwilligers in juni\n- budget: inkomsten €18.400 (gemeentesubsidie €12.000, Oranje Fonds €3.500, giften €2.900), uitgaven €17.650, vooral vervoerskosten en verzekering\n- zorgpunt: te weinig chauffeurs voor de ochtend\n- plan volgend jaar: een tweede bus en meer jongere vrijwilligers via de scholen"
+    },
+    {
+      "id": "report-4-A",
+      "genre": "report",
+      "scenario": 4,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Schrijf een verslag voor de schoolleiding over onze driedaagse schoolreis naar Amsterdam met 52 leerlingen. Wat goed ging, dat één leerling ziek werd, en de kosten."
+    },
+    {
+      "id": "report-4-B",
+      "genre": "report",
+      "scenario": 4,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik was reisleider van de excursie van 3 havo naar Amsterdam en moet een verslag schrijven voor de schoolleiding van het Christelijk Lyceum Gouda. Zakelijk, ongeveer 400 woorden, met kopjes: programma, wat goed ging, incidenten, kosten, aanbevelingen.\n\n- 15 tot en met 17 april, 52 leerlingen, 5 begeleiders\n- overnachting in Stayokay Amsterdam Zeeburg\n- programma: Rijksmuseum, Anne Frank Huis, rondvaart, NEMO, stadsspel in de Jordaan\n- wat goed ging: stadsspel was een succes, iedereen was steeds op tijd, geen problemen 's nachts\n- incident: een leerling kreeg op dag 2 hoge koorts, ouders gebeld, vader heeft haar 's middags opgehaald. Alles volgens protocol\n- kosten: totaal €11.960, dus €230 per leerling; begroot was €240, dus €520 over\n- aanbevelingen: volgende keer Anne Frank Huis eerder boeken, tickets waren bijna op; meer vrije tijd op dag 3"
+    },
+    {
+      "id": "report-5-A",
+      "genre": "report",
+      "scenario": 5,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Incidentrapport nodig over een waterlek in de keuken op kantoor afgelopen maandag. Kun je dat opzetten?"
+    },
+    {
+      "id": "report-5-B",
+      "genre": "report",
+      "scenario": 5,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik ben office manager bij een accountantskantoor in Breda en moet een incidentrapport schrijven voor de directie en het verzekeringsdossier. Feitelijk, chronologisch, zonder iemand de schuld te geven. Kopjes: wat er gebeurde, schade, genomen maatregelen, wat we hebben veranderd.\n\nFeiten:\n- maandag 3 juni, rond 7.45 uur ontdekt door collega Tim, die als eerste binnen was\n- oorzaak: de aansluitslang van de vaatwasser onder het aanrecht was losgeschoten\n- water stond in de keuken en was onder de wand door in de archiefruimte gelopen\n- Tim heeft de hoofdkraan dichtgedraaid en mij gebeld, ik was er om 8.15 uur\n- schade: laminaat in keuken en archief moet vervangen, onderkastje aanrecht kapot, 4 dozen met oude dossiers nat (zijn ook digitaal aanwezig)\n- loodgieter Installatiebedrijf Snoeren was er om 10.00 uur\n- archief tot vrijdag niet bruikbaar\n- verzekeraar is op dinsdag gebeld, schade-expert komt volgende week\n- wat we hebben veranderd: nieuwe slang met waterstop, waterlekmelder onder aanrecht, archiefdozen niet meer op de grond maar op stellingen, en op de checklist voor wie als laatste weggaat staat nu 'vaatwasser uit'"
+    },
+    {
+      "id": "report-6-A",
+      "genre": "report",
+      "scenario": 6,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik moet een kort verslag schrijven voor het bestuur van de sportclub: het ledental ging van 210 naar 248, we hebben een nieuw jeugdteam en we hebben meer trainers nodig."
+    },
+    {
+      "id": "report-6-B",
+      "genre": "report",
+      "scenario": 6,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor de bestuursvergadering van korfbalvereniging KV Wageningen moet ik als ledenadministrateur een kort verslag maken (max. 300 woorden). Zakelijk, met de cijfers duidelijk, en een concreet voorstel aan het eind.\n\n- ledental op 1 september: 248, vorig jaar 210\n- groei vooral bij de jeugd: 29 nieuwe jeugdleden, de meeste via de schoolkorfbaltoernooien in het voorjaar\n- daardoor nieuw team: D3 (onder 12), 9 kinderen\n- probleem: D3 heeft nu één trainer (een ouder), en ook E2 heeft geen vaste tweede trainer\n- we hebben minimaal 4 extra trainers nodig\n- voorstel: ouders van nieuwe jeugdleden actief benaderen, de KNKV-cursus 'Startende trainer' vergoeden (€85 per persoon) en A-junioren als assistent laten meedraaien met een kleine vergoeding"
+    },
+    {
+      "id": "report-7-A",
+      "genre": "report",
+      "scenario": 7,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Maak een statusrapport over de relaunch van de website van een klein hotel. We zitten op 70%, er is vertraging door de foto's en er is een nieuwe lanceerdatum."
+    },
+    {
+      "id": "report-7-B",
+      "genre": "report",
+      "scenario": 7,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik ben freelance webdesigner en moet een statusrapport sturen naar mijn klant, Hotel Ter Duinen in De Haan (16 kamers, familiebedrijf). Ze zijn niet technisch, dus helder en zonder vakjargon. Belgisch Nederlands, beleefd maar direct over de vertraging. Max. 1 pagina.\n\nStand van zaken:\n- project 70% klaar\n- klaar: nieuw ontwerp goedgekeurd, alle teksten in NL, FR en EN, boekingsmodule (Cubilis) gekoppeld en getest\n- nog te doen: foto's van kamers en ontbijtzaal plaatsen, laatste test op gsm, SEO-instellingen, overzetten van het domein\n- vertraging: de fotograaf kon door ziekte de shoot van 12 maart niet doen, nieuwe shoot op 2 april\n- oorspronkelijke lanceerdatum 1 april, nieuwe datum maandag 22 april\n- geen extra kosten voor de klant\n- wat ik van hen nodig heb: kamers 5, 8 en 12 vrijhouden op 2 april tussen 9 en 12 uur\n- naam: Jens Vermeulen"
+    },
+    {
+      "id": "report-8-A",
+      "genre": "report",
+      "scenario": 8,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Ik heb een kookcursus voor beginners gevolgd, vier avonden. Kun je een kort verslag schrijven van wat we gekookt hebben en wat ik geleerd heb?"
+    },
+    {
+      "id": "report-8-B",
+      "genre": "report",
+      "scenario": 8,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Mijn werkgever heeft een cursus betaald en ik moet een kort verslag indienen. Het gaat om de avondcursus 'Koken voor beginners' bij het CVO in Hasselt, vier dinsdagavonden in oktober. Ik-vorm, ongeveer 300 woorden, eerlijk, mag een beetje persoonlijk. Belgisch Nederlands.\n\nWat we gekookt hebben:\n- avond 1: messentechniek en een groentesoep met balletjes\n- avond 2: vol-au-vent met zelfgemaakte saus en frietjes uit de oven\n- avond 3: vis: zalm uit de oven met prei in de room\n- avond 4: dessert en brood: chocolademousse en een eenvoudig brood\n\nWat ik geleerd heb:\n- correct een ajuin snijden zonder mijn vingers in gevaar te brengen\n- een roux maken, ik deed dat nooit\n- vooraf alles klaarzetten, dat scheelt veel stress\n- ik kook nu twee keer per week vers in plaats van kant-en-klaar\n- de lesgever (Kris) was heel geduldig, groep van 12"
+    },
+    {
+      "id": "longform-1-A",
+      "genre": "longform",
+      "scenario": 1,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik wil een lang blogartikel (zo'n 800 woorden) over alles wat ik in een jaar groente kweken op mijn balkon heb geleerd."
+    },
+    {
+      "id": "longform-1-B",
+      "genre": "longform",
+      "scenario": 1,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Graag een uitgebreid blogartikel van ongeveer 800 woorden voor mijn blog over stadstuinieren. Onderwerp: wat ik geleerd heb in mijn eerste jaar groente kweken op mijn balkon in Rotterdam-Noord (6 m², op het zuidwesten, vierde verdieping). Lezers: beginners met weinig ruimte. Persoonlijk, praktisch, met tussenkopjes. Schrijf in de ik-vorm.\n\nMijn lessen en ervaringen:\n- begonnen in maart met zaaien op de vensterbank, veel te vroeg, alles werd lang en slap\n- potten: grote bakken (min. 30 liter) werken veel beter dan kleine potjes, droogden minder snel uit\n- wind op de vierde verdieping: twee tomatenplanten afgeknakt, nu windscherm van rietmat\n- wat goed lukte: cherrytomaten, pluksla, radijs, snijbiet, kruiden (vooral basilicum en peterselie)\n- wat mislukte: courgette (te weinig ruimte en bestuiving), wortels (bak niet diep genoeg)\n- water: in juli twee keer per dag, druppelsysteem met een timer van €35 was de beste aankoop\n- bladluis op de sla, opgelost met groene zeep\n- kosten eerste jaar ongeveer €180, oogst niet in geld uit te drukken maar wel elke week sla in de zomer\n- volgend jaar: later zaaien, minder soorten, meer hangbakken"
+    },
+    {
+      "id": "longform-2-A",
+      "genre": "longform",
+      "scenario": 2,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Kun je een lang artikel schrijven voor ons stadsmagazine over de geschiedenis van de markthal en de heropening na de renovatie? Ongeveer 800 woorden."
+    },
+    {
+      "id": "longform-2-B",
+      "genre": "longform",
+      "scenario": 2,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik schrijf voor 'Tiels Magazine' en heb een feature van zo'n 800 woorden nodig over de Tielse markthal (Overdekte Markt aan de Waterstraat). Lezers zijn inwoners van Tiel en omgeving. Verhalend, met een sterk begin, historie en heden door elkaar, en één of twee citaten. Kopjes mogen. Hieronder mijn researchnotities.\n\nGeschiedenis:\n- gebouwd in 1911 als overdekte groente- en vismarkt, ontwerp van stadsarchitect H. van Steenderen\n- ijzeren dakconstructie en glas, voor die tijd modern\n- in de oorlog opslagplaats voor de Duitsers, in 1945 dak beschadigd\n- jaren 60 en 70 bloeitijd: elke zaterdag 30 kramen, vooral fruit uit de Betuwe\n- vanaf de jaren 90 achteruitgang, supermarkten, in 2016 dicht wegens slechte staat\n\nRenovatie:\n- 2021-2024, kosten €6,8 miljoen, gemeente plus provincie Gelderland en een erfgoedfonds\n- dakconstructie gerestaureerd, nieuwe vloer, betere isolatie\n- heropend op zaterdag 14 september met 18 vaste kramen: kaas, vis, Betuwse fruitteler, een koffiebar, een bakker, streekproducten\n- op vrijdagavond nu een foodmarkt\n\nCitaten:\n- wethouder Marieke Bosch: 'Dit gebouw hoort bij Tiel zoals de appel bij de Betuwe'\n- fruitteler Gert van Wely (67), stond er als jongen al met zijn vader: 'Ik had niet gedacht dat ik hier nog eens zou staan'"
+    },
+    {
+      "id": "longform-3-A",
+      "genre": "longform",
+      "scenario": 3,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Schrijf een uitgebreide gids van zo'n 800 woorden: hoe bereid je je voor op je eerste halve marathon, vanuit mijn eigen ervaring."
+    },
+    {
+      "id": "longform-3-B",
+      "genre": "longform",
+      "scenario": 3,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik wil een lange gids voor mijn blog (ongeveer 800 woorden): 'Je eerste halve marathon: wat ik had willen weten'. Ik heb er zelf een gelopen in 2:11 na zes maanden training. Lezers zijn recreanten die nu 5 of 10 km lopen. Schrijf het als mezelf, met tussenkopjes en praktische tips, maar laat mijn eigen ervaring erin terugkomen. Geen medische beloftes.\n\nWat ik wil meegeven:\n- schema: 6 maanden, 3 keer per week, één lange duurloop in het weekend die langzaam opliep van 8 naar 18 km\n- 80% van je trainingen echt rustig, ik liep eerst alles te snel\n- in maart knieklachten (buitenkant knie), fysio: minder kilometers, kracht voor heupen en billen, niet meer dan 10% per week opbouwen\n- schoenen laten aanmeten bij een hardloopwinkel, ik liep op versleten schoenen\n- eten en drinken: gels uitproberen in de training, niet op de wedstrijd zelf voor het eerst\n- dag ervoor: pasta, vroeg naar bed, kleren klaarleggen\n- op de dag: start rustiger dan je denkt, ik ging te snel van start en had het zwaar na km 16\n- na afloop: een week rustig aan, wandelen\n- mijn volgende doel: 10 km onder de 50 minuten"
+    },
+    {
+      "id": "longform-4-A",
+      "genre": "longform",
+      "scenario": 4,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik zoek een lang artikel (ongeveer 800 woorden) voor onze bedrijfsblog over hoe ons kleine team is overgestapt op een supportrooster van vier dagen zonder klanten te verliezen."
+    },
+    {
+      "id": "longform-4-B",
+      "genre": "longform",
+      "scenario": 4,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Voor de blog van ons softwarebedrijf (Planbaar, roostersoftware voor kinderopvang, 14 medewerkers in Den Bosch) wil ik een uitgebreid artikel van ongeveer 800 woorden. Lezers: andere kleine SaaS-bedrijven en onze eigen klanten. Eerlijk, met cijfers, ook wat niet goed ging. Wij-vorm, met tussenkopjes.\n\nNotities:\n- supportteam van 4 mensen, iedereen werkte 5 dagen en we waren 7 tot 18 uur bereikbaar\n- veel verloop en vermoeidheid, twee mensen dachten aan stoppen\n- sinds januari: iedereen werkt 4 dagen van 9 uur (36 uur, zelfde salaris), rooster zo gemaakt dat er elke werkdag minstens 3 mensen zijn\n- bereikbaarheid ingekort naar 8 tot 17.30 uur, daarna een spoedlijn voor storingen\n- uitgebreide helpcentrum-artikelen geschreven, 40 nieuwe artikelen in november en december\n- resultaten na 6 maanden: aantal tickets 18% lager door helpcentrum, eerste reactietijd van 2,5 uur naar 2,1 uur, klanttevredenheid gelijk gebleven (8,3)\n- klantverloop: geen enkele klant opgezegd vanwege support\n- wat niet goed ging: in februari griep, toen was het krap, nu hebben we een invalregeling met twee developers\n- citaat teamlead Sarah: 'Die vrije dag is het beste wat het team in jaren is overkomen'"
+    },
+    {
+      "id": "longform-5-A",
+      "genre": "longform",
+      "scenario": 5,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik zoek iets langers, rond de 800 woorden: een artikel over het renoveren van een oud huis met een beperkt budget, en de keuzes die we daarbij hebben gemaakt."
+    },
+    {
+      "id": "longform-5-B",
+      "genre": "longform",
+      "scenario": 5,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Ik wil een lang persoonlijk artikel (rond de 800 woorden) voor een woonblog over de verbouwing van ons jaren-30 huis in Arnhem. Lezers: stellen die overwegen een opknapper te kopen. Eerlijk, praktisch, ik-vorm (namens mij en mijn vriendin Iris), met tussenkopjes.\n\nWat ik kwijt wil:\n- huis gekocht in 2022 voor €395.000, budget voor verbouwen €45.000, uiteindelijk €52.000 uitgegeven\n- eerste keuze: eerst isoleren (vloer, dak, HR++ glas) voor de mooie dingen, voelde saai, maar energierekening is gehalveerd\n- keuken: niet nieuw, bestaande kasten opnieuw gespoten en een nieuw werkblad, scheelde ca. €8.000\n- badkamer wel volledig door een vakman laten doen, leidingen waren slecht\n- zelf gedaan: slopen, schilderen, laminaat, tuin\n- fout: elektra onderschat, hele groepenkast moest vervangen, €3.200 extra\n- subsidie ISDE voor isolatie, ongeveer €4.000 terug\n- tip: houd 15% buffer, en woon er eerst een paar maanden voor je alles beslist\n- wat we nog willen: zonnepanelen, uitbouw over een paar jaar"
+    },
+    {
+      "id": "longform-6-A",
+      "genre": "longform",
+      "scenario": 6,
+      "style": "A",
+      "variety": "nl-NL",
+      "request": "Ik moet een lang stuk (zo'n 800 woorden) schrijven voor een ouderblad over smartphones en kinderen van 11: wat we als gezin geprobeerd hebben."
+    },
+    {
+      "id": "longform-6-B",
+      "genre": "longform",
+      "scenario": 6,
+      "style": "B",
+      "variety": "nl-NL",
+      "request": "Het blad van onze oudervereniging (verspreid op drie basisscholen in Leiden) vroeg me een stuk van ongeveer 800 woorden te schrijven over onze ervaringen met de eerste smartphone van onze dochter Fleur (11). Ik wil het eerlijk vertellen, met wat werkte en wat niet, zonder andere ouders de les te lezen. Ik-vorm, met een paar tussenkopjes.\n\nWat er gebeurde:\n- we twijfelden lang, groep 8 was het moment: ze fietst volgend jaar alleen naar de middelbare school en bijna de hele klas had er al een\n- regels samen met haar gemaakt en op de koelkast gehangen: telefoon om 20.30 uur aan de lader in de keuken, niet aan tafel, WhatsApp wel, TikTok en Instagram nog niet, schermtijd 1,5 uur op schooldagen, wij kennen de code\n- eerste weken: veel gedoe over schermtijd, elke dag discussie\n- grootste verrassing: de klassenapp, 's avonds laat nog honderden berichten, ze voelde zich buitengesloten als ze niet meedeed\n- toen met andere ouders afgesproken dat de klassenapp na 20.30 uur stil is, dat hielp\n- wat goed werkt: opladen in de keuken, ze slaapt beter en leest weer voor het slapen\n- wat we anders zouden doen: eerder afspraken maken met andere ouders, niet ieder voor zich\n- na twee maanden: minder ruzie, maar het blijft onderhandelen"
+    },
+    {
+      "id": "longform-7-A",
+      "genre": "longform",
+      "scenario": 7,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Schrijf een lang reisartikel van ongeveer 800 woorden over een week met de trein door België met mijn zoontje."
+    },
+    {
+      "id": "longform-7-B",
+      "genre": "longform",
+      "scenario": 7,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Ik wil een reisverhaal van zo'n 800 woorden voor een Vlaams familieblog over onze treinweek door België, ik met mijn zoon Lowie van 7. Ik woon in Leuven. Vertellend, met praktische tips verweven, Belgisch Nederlands, ik-vorm. Tussenkopjes per dag of per stad mag.\n\nOnze route en ervaringen:\n- vertrek maandag in Leuven, met een Rail Pass (10 ritten), kinderen onder 12 reizen gratis mee met een volwassene\n- dag 1-2: Gent, Gravensteen, boottochtje, slapen in een jeugdherberg\n- dag 3: Brugge en een uitstapje naar de zee, de tram van Blankenberge naar De Haan, Lowie vond de kusttram het hoogtepunt\n- dag 4: lange rit naar Namen, citadel met de kabelbaan, regen\n- dag 5: Luik, station Guillemins, Lowie wilde er niet meer weg, de trappen van de Montagne de Bueren (374 treden) beklommen\n- dag 6: terug via Brussel, Atomium, maar te druk\n- vertraging van 40 minuten in Brussel-Zuid, met een kind van 7 dat zich verveelt: tip, altijd een kaartspel meenemen\n- kosten: Rail Pass €99, overnachtingen ongeveer €420 in totaal\n- wat ik onthoud: de trein zelf was voor hem de helft van de vakantie"
+    },
+    {
+      "id": "longform-8-A",
+      "genre": "longform",
+      "scenario": 8,
+      "style": "A",
+      "variety": "nl-BE",
+      "request": "Kun je een lang artikel (rond de 800 woorden) schrijven voor de website van onze vrijwillige brandweer over 140 jaar brandweer in ons dorp?"
+    },
+    {
+      "id": "longform-8-B",
+      "genre": "longform",
+      "scenario": 8,
+      "style": "B",
+      "variety": "nl-BE",
+      "request": "Voor de website van brandweerpost Lede (zone Oost, vrijwillige korps) moet ik een jubileumartikel schrijven: 140 jaar brandweer in Lede. Ongeveer 800 woorden, verhalend, met respect voor de vroegere generaties maar zonder te plechtig te worden. Belgisch Nederlands, met tussenkopjes. Lezers: inwoners, oud-leden en hun families.\n\nMijn notities uit het archief en gesprekken:\n- opgericht in 1884 als 'pompierskorps' na een grote brand in een vlasschuur aan de Kerkstraat\n- eerste materiaal: een handpomp op een kar, getrokken door paarden van een brouwer\n- 1932: eerste motorpomp, gekocht met geld van een inzameling bij de inwoners\n- 1976: na de fusie van gemeenten nieuwe kazerne aan de Industrielaan\n- 2015: hervorming, Lede gaat op in de hulpverleningszone, maar blijft een post met vrijwilligers\n- vandaag: 38 vrijwilligers, waarvan 5 vrouwen, ongeveer 450 interventies per jaar, van branden tot wateroverlast en verkeersongevallen\n- de familie De Clercq: al vier generaties brandweerman, nu Bart De Clercq (52) als postoverste\n- citaat Bart: 'Mijn overgrootvader trok aan een pomp, ik kijk naar een tablet. Maar waarom we het doen, is hetzelfde gebleven'\n- jubileumweekend: 21 en 22 september, opendeur en een tentoonstelling met oude helmen en foto's\n- de post zoekt nieuwe vrijwilligers"
+    }
+  ]
+}

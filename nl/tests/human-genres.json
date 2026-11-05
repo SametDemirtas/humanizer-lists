@@ -1,0 +1,337 @@
+{
+  "about": "Ordinary Dutch and Flemish writing in genres the human corpora barely cover: emails, chat messages, social posts, newsletters, school essays, reports, minutes, reviews and personal notes. Drafted for this test by a language model (Claude), not written or collected from real writers. The entries were narrowed until none of these texts was flagged, so passing the test holds by design and is not a measured false-flag rate. The first group are the sentences a review found flagged by an earlier version of the list. None of these texts may be flagged with the general entries; texts marked product are checked with every entry.",
+  "texts": [
+    {
+      "genre": "business email",
+      "text": "Hoi Sanne,\n\nIn de bijlage vind je de offerte. Laat me weten als je nog vragen hebt.\n\nGroet, Mark"
+    },
+    {
+      "genre": "business email",
+      "text": "Laat het me gerust weten als u nog iets nodig heeft."
+    },
+    {
+      "genre": "personal message",
+      "text": "Ik hoop dat dit helpt bij je verhuizing!"
+    },
+    {
+      "genre": "business email",
+      "text": "Graag! Hieronder vind je de planning voor volgende week."
+    },
+    {
+      "genre": "business email",
+      "text": "Hoi allemaal,\nHier is een voorstel voor de planning van het voorjaar:"
+    },
+    {
+      "genre": "business email",
+      "text": "Hier is een eerste versie van de presentatie; opmerkingen zijn welkom."
+    },
+    {
+      "genre": "business email",
+      "text": "Als je akkoord bent, dan pas ik de tekst aan en stuur ik hem door."
+    },
+    {
+      "genre": "business email",
+      "text": "Wil je dat ik het verslag nog inkort voor de vergadering?"
+    },
+    {
+      "genre": "personal post",
+      "text": "Onze hond Max, mijn trouwe metgezel, is vorige week overleden."
+    },
+    {
+      "genre": "personal post",
+      "text": "Voetbal is voor mij meer dan alleen een spelletje."
+    },
+    {
+      "genre": "opinion",
+      "text": "Het gaat om meer dan alleen het geld."
+    },
+    {
+      "genre": "school essay",
+      "text": "In de huidige maatschappij is social media niet meer weg te denken."
+    },
+    {
+      "genre": "school essay",
+      "text": "In de hedendaagse samenleving werken steeds meer mensen thuis."
+    },
+    {
+      "genre": "report",
+      "text": "Het is belangrijk om te benadrukken dat de cijfers voorlopig zijn."
+    },
+    {
+      "genre": "review",
+      "text": "De film heeft een vleugje nostalgie en veel humor."
+    },
+    {
+      "genre": "club newsletter",
+      "text": "Het gaat niet om winnen, maar om meedoen. Dat maakt echt het verschil."
+    },
+    {
+      "genre": "school newsletter",
+      "text": "Wat een dag vol plezier! Grote dank aan alle ouders die geholpen hebben."
+    },
+    {
+      "genre": "club newsletter",
+      "text": "Speciale dank aan Piet voor de koffie. Samen maken we er een mooi feest van!"
+    },
+    {
+      "genre": "policy report",
+      "text": "Het is duidelijk dat de wachtlijsten te lang zijn. Deze uitdagingen vragen om een gezamenlijke aanpak. Preventie speelt een belangrijke rol."
+    },
+    {
+      "genre": "business email",
+      "text": "Goed nieuws: de vergadering gaat gewoon door. Het is duidelijk dat iedereen erbij wil zijn."
+    },
+    {
+      "genre": "meeting minutes",
+      "text": "Dit is een stap in de goede richting. Al met al zijn we tevreden."
+    },
+    {
+      "genre": "travel post",
+      "text": "Ontdek de schoonheid van de Veluwe op de fiets."
+    },
+    {
+      "genre": "social post",
+      "text": "Ik ben vastbesloten om dit jaar te stoppen met roken. Laat het me weten in de reacties als jullie tips hebben!"
+    },
+    {
+      "genre": "personal card",
+      "text": "Welkom in de wereld van het ouderschap, lieve Noor!"
+    },
+    {
+      "genre": "report",
+      "text": "Introductie van het project\nIn dit rapport beschrijven we de aanpak."
+    },
+    {
+      "genre": "personal card",
+      "text": "Ik heb deze kaart met jou in gedachten gemaakt."
+    },
+    {
+      "genre": "travel post",
+      "text": "Laat je betoveren door de kerstmarkt in Valkenburg."
+    },
+    {
+      "genre": "shop notice",
+      "text": "***Let op*** bestellen kan tot 15:00.",
+      "product": true
+    },
+    {
+      "genre": "personal email",
+      "text": "Lieve oma,\n\nDank je wel voor het pakketje, de sokken zijn heerlijk warm! Met school gaat het goed, alleen wiskunde blijft lastig. In de kerstvakantie kom ik een weekendje logeren, als dat uitkomt. Laat het me weten als je nog iets uit de stad nodig hebt, dan neem ik het mee.\n\nDikke kus,\nLotte"
+    },
+    {
+      "genre": "personal email",
+      "text": "Hé Jeroen,\n\nHier is de lijst met spullen voor het kamp, zoals beloofd. De tenten heb ik al geregeld, jij zou toch de gasbrander meenemen? Ik hoop dat dit helpt bij het inpakken. Zaterdag om negen uur bij de kerk, niet te laat!\n\nGr. Bas"
+    },
+    {
+      "genre": "personal email",
+      "text": "Hoi Marloes,\n\nWat fijn om weer eens iets van je te horen. Hier gaat alles goed, al is het druk met de verbouwing. De keuken is eindelijk af, alleen de vloer moet nog. Zullen we binnenkort eens koffie drinken? Ik kan volgende week dinsdag of donderdag. Laat maar weten wat jou het beste uitkomt.\n\nLiefs,\nEsther"
+    },
+    {
+      "genre": "business email",
+      "text": "Beste mevrouw De Vries,\n\nHierbij stuur ik u de getekende overeenkomst terug. De factuur volgt deze week per post. Laat me weten als u nog vragen heeft.\n\nMet vriendelijke groet,\n\nPieter Jansen\nAdministratie"
+    },
+    {
+      "genre": "business email",
+      "text": "Goedemiddag,\n\nNaar aanleiding van ons telefoongesprek van vanochtend stuur ik u hierbij het voorstel voor de nieuwe huurperiode. Hier is een eerste versie van de planning; de definitieve data hoort u volgende week van ons. Mocht u nog aanvullingen hebben, dan hoor ik het graag.\n\nMet vriendelijke groet,\nAnnemiek Bos\nVerhuur"
+    },
+    {
+      "genre": "business email",
+      "text": "Hoi team,\n\nHieronder vind je het rooster voor volgende week. Op dinsdag zijn Sander en Fatima vrij, dus de klantafspraken schuiven naar woensdag. Wil je dat ik het rooster voor de zomervakantie ook alvast maak? Dan hoor ik het graag voor vrijdag.\n\nGroeten,\nIlse"
+    },
+    {
+      "genre": "business email",
+      "text": "Beste Koen,\n\nBedankt voor je snelle reactie. Ik heb de tekst van de nieuwsbrief aangepast zoals je voorstelde en de foto's van de open dag toegevoegd. Als je akkoord bent, dan stuur ik hem morgen naar de drukker. Laat me weten als je nog iets wilt veranderen.\n\nMet vriendelijke groet,\nNadia"
+    },
+    {
+      "genre": "business email",
+      "text": "Geachte heer Peeters,\n\nIn antwoord op uw mail van 12 maart bevestig ik graag uw reservatie voor zaterdag 6 april, van 14 tot 18 uur. De zaal wordt klaargezet voor veertig personen. Het voorschot van 150 euro mag u overschrijven op het rekeningnummer onderaan deze mail. Indien u nog vragen heeft, mag u mij altijd contacteren.\n\nMet vriendelijke groeten,\nAn Claes\nZaalverhuur Sint-Jozef"
+    },
+    {
+      "genre": "business email",
+      "text": "Hallo Tim,\n\nZoals besproken stuur ik je hierbij het verslag van het overleg. Het belangrijkste punt: de levering schuift twee weken op, omdat de leverancier nog op onderdelen wacht. Ik hoop dat dit helpt voor je planning. Mocht je nog vragen hebben, bel me gerust.\n\nGroet,\nWouter"
+    },
+    {
+      "genre": "chat message",
+      "text": "Zeker! Ik ben er om acht uur. Neem jij de chips mee?"
+    },
+    {
+      "genre": "chat message",
+      "text": "Natuurlijk, geen probleem. Ik haal de kinderen wel op van school. Hier is trouwens het adres van het feestje: Lindelaan 14."
+    },
+    {
+      "genre": "chat message",
+      "text": "Hoi! Ben je morgen thuis? Dan breng ik de boor terug. Laat maar even weten 👍"
+    },
+    {
+      "genre": "chat message",
+      "text": "Sorry, ik ben te laat 🙈 de trein stond stil bij Utrecht. Zijn jullie al begonnen?"
+    },
+    {
+      "genre": "chat message",
+      "text": "Allee, ge moet da toch eens proberen! Die frieten bij Frituur Nelly zijn echt de beste van de streek. Zaterdag na de match?"
+    },
+    {
+      "genre": "social post",
+      "text": "Vandaag precies tien jaar getrouwd! ❤️ Wat begon met een blind date in een veel te druk café, is nu een huis vol kinderen, een hond en heel veel liefde. Op naar de volgende tien jaar, schat."
+    },
+    {
+      "genre": "social post",
+      "text": "Eindelijk weer eens een rondje gelopen na mijn blessure. 5 km in 31 minuten, niet snel, maar ik ben er weer. Wie loopt er zondag mee in het Vondelpark? Laat het me weten in de reacties!"
+    },
+    {
+      "genre": "social post",
+      "text": "Gisteren met de hele familie naar de Efteling geweest. Wat een dag vol plezier! De kinderen vonden de Python te eng, maar opa ging er gewoon drie keer in. Moe maar voldaan weer thuis."
+    },
+    {
+      "genre": "social post",
+      "text": "Mijn moestuin dit jaar: veel te veel courgettes, bijna geen tomaten en de slakken hebben alle sla opgegeten. Volgend jaar beter. Hebben jullie tips tegen slakken?"
+    },
+    {
+      "genre": "LinkedIn post",
+      "text": "Na zes mooie jaren bij Gemeente Zwolle begin ik op 1 maart als projectleider bij Waterschap Drents Overijsselse Delta. Ik ga mijn collega's missen, maar ik heb ook zin in de nieuwe uitdaging. Dank aan iedereen met wie ik heb samengewerkt, en speciale dank aan mijn team voor alle steun."
+    },
+    {
+      "genre": "LinkedIn post",
+      "text": "Trots op ons team! Vorige week leverden we het nieuwe planningssysteem op voor de thuiszorg in Twente. Het was niet altijd makkelijk: de koppeling met het oude systeem kostte ons twee maanden extra. Grote dank aan de wijkverpleegkundigen die eindeloos hebben getest. Het gaat niet om de techniek, maar om de mensen die er elke dag mee werken."
+    },
+    {
+      "genre": "LinkedIn post",
+      "text": "We zoeken een collega! Voor ons kantoor in Gent zoeken we een boekhouder (m/v/x) voor 32 tot 38 uur. Je werkt in een klein team en hebt contact met klanten uit de bouw en de horeca. Ken je iemand? Deel deze vacature gerust."
+    },
+    {
+      "genre": "school newsletter",
+      "text": "Beste ouders,\n\nVrijdag 14 juni is het schoolfeest. De kinderen treden op in de gymzaal vanaf 15.00 uur, daarna is er een barbecue op het plein. We zoeken nog ouders die willen helpen met opbouwen en opruimen; u kunt zich opgeven bij juf Annemarie. Grote dank aan de ouderraad, die het hele feest heeft georganiseerd.\n\nMet vriendelijke groet,\nTeam De Regenboog"
+    },
+    {
+      "genre": "club newsletter",
+      "text": "Nieuws van de tennisclub\n\nHet clubkampioenschap is weer achter de rug. Ondanks de regen op zaterdag zijn alle wedstrijden gespeeld. Bij de heren won Gert-Jan in drie sets, bij de dames was Ilona opnieuw de sterkste. Speciale dank aan de barvrijwilligers, die tot middernacht hebben doorgewerkt. Samen maken we er elk jaar weer een mooi toernooi van. Al met al een geslaagd weekend!"
+    },
+    {
+      "genre": "club newsletter",
+      "text": "Beste leden,\n\nDe jaarvergadering vindt plaats op donderdag 21 maart om 20.00 uur in de kantine. Op de agenda staan de jaarrekening, de nieuwe contributie en de verkiezing van twee bestuursleden. Wie zich kandidaat wil stellen, kan dat tot 1 maart melden bij de secretaris. Het gaat niet om veel tijd, maar wel om een club waar we allemaal plezier aan hebben.\n\nNamens het bestuur,\nJos van Leeuwen"
+    },
+    {
+      "genre": "school essay",
+      "text": "In de huidige maatschappij speelt social media een grote rol in het leven van jongeren. Bijna iedereen in mijn klas heeft Instagram of TikTok. Aan de ene kant is dat handig, want je blijft makkelijk in contact met vrienden. Aan de andere kant zijn veel jongeren er uren per dag mee bezig. Het is duidelijk dat dit gevolgen heeft voor de nachtrust. Ik vind dat scholen hier meer aandacht aan moeten besteden. Al met al denk ik dat social media niet slecht is, zolang je er bewust mee omgaat."
+    },
+    {
+      "genre": "school essay",
+      "text": "Moet de schooldag later beginnen?\n\nVeel leerlingen zijn 's ochtends moe. Onderzoek laat zien dat tieners later in slaap vallen dan volwassenen. Daarom pleiten sommige scholen voor een start om half tien. Een nadeel is dat de dag dan later eindigt, waardoor er minder tijd is voor sport en bijbaantjes. Toch denk ik dat het een stap vooruit zou zijn. Uitgeruste leerlingen halen betere cijfers. Kortom: ik ben voor een latere start."
+    },
+    {
+      "genre": "school essay",
+      "text": "Mijn mening over thuiswerken\n\nSinds corona werken veel mensen thuis. Mijn vader werkt drie dagen per week thuis en twee dagen op kantoor. Hij zegt dat hij thuis meer gedaan krijgt, maar hij mist zijn collega's wel. Het is belangrijk om te zeggen dat niet iedereen thuis kan werken. Een verpleegkundige of een buschauffeur moet gewoon naar het werk. Ik denk dat een mix van thuis en op kantoor het beste is."
+    },
+    {
+      "genre": "policy report",
+      "text": "Samenvatting\n\nIn 2023 meldden zich 1.240 inwoners bij het sociaal wijkteam, 8 procent meer dan in 2022. De gemiddelde wachttijd voor een eerste gesprek liep op van twee naar vijf weken. Het is duidelijk dat de huidige bezetting niet volstaat. Preventie speelt een belangrijke rol: wie vroeg hulp krijgt, heeft later minder zware zorg nodig. Wij stellen voor om in 2025 twee extra formatieplaatsen vrij te maken en de samenwerking met huisartsen uit te breiden. Dit heeft geleid tot een kostenraming van 180.000 euro per jaar, die in bijlage 2 is uitgewerkt."
+    },
+    {
+      "genre": "policy report",
+      "text": "Evaluatie pilot deelfietsen\n\nDe pilot liep van april tot en met september in drie wijken. In totaal werden 14.600 ritten gemaakt, vooral tussen het station en de bedrijventerreinen. Ondanks de uitdagingen bij de start, zoals vandalisme en lege accu's, zijn gebruikers overwegend positief (gemiddeld cijfer 7,4). Het college stelt voor de pilot met een jaar te verlengen en uit te breiden naar Noord. Het is nu aan de gemeenteraad om hierover een besluit te nemen."
+    },
+    {
+      "genre": "meeting minutes",
+      "text": "Notulen bewonersoverleg 12 februari\n\nAanwezig: 14 bewoners, wijkagent, mevrouw Kok (gemeente)\n\n1. Opening. De voorzitter heet iedereen welkom.\n2. Parkeren. Bewoners klagen over busjes op de stoep. De wijkagent gaat vaker controleren.\n3. Speeltuin. De gemeente plaatst in april nieuwe toestellen. Dit is een stap in de goede richting, maar de bewoners willen ook een bankje voor ouders.\n4. Rondvraag. Geen punten.\n\nVolgende vergadering: 9 april."
+    },
+    {
+      "genre": "meeting minutes",
+      "text": "Verslag teamoverleg maandag\n\nAfwezig met bericht: Ruud.\nActiepunten vorige keer: de nieuwe printer is besteld, de vakantieplanning is nog niet rond.\nBesproken: de klantenservice is in december slecht bereikbaar geweest. Het is duidelijk dat we met drie mensen te weinig zijn in de drukke weken. Linda maakt een voorstel voor inval vanuit de binnendienst.\nVolgende overleg: maandag 15 januari, 9.30 uur."
+    },
+    {
+      "genre": "review",
+      "text": "Prima hotel op loopafstand van het centrum. De kamer was klein maar schoon, het ontbijt uitgebreid met verse broodjes en goede koffie. Het personeel was vriendelijk en hielp ons aan een tafel bij een restaurant om de hoek. Enige minpunt: de airco maakte veel lawaai. Al met al een aanrader voor een weekendje Maastricht."
+    },
+    {
+      "genre": "review",
+      "text": "Een adembenemend mooi boek. De schrijfster vertelt het verhaal van drie generaties vrouwen in een Fries dorp, met een vleugje humor en veel liefde voor het landschap. Het middendeel sleept wat, maar het einde maakt alles goed. Vier sterren."
+    },
+    {
+      "genre": "review",
+      "text": "Wij hebben hier op een zondagmiddag gegeten met vier kinderen. Het personeel bleef geduldig, ook toen er een glas limonade omviel. De pannenkoeken waren groot en niet te duur. Het speelhoekje is wel klein. We komen zeker terug!"
+    },
+    {
+      "genre": "condolence card",
+      "text": "Lieve Ineke,\n\nWat verschrikkelijk dat Henk er niet meer is. Ik denk vaak terug aan de zomers op de camping, toen hij met de kinderen urenlang aan het vissen was. Hij was een warm en grappig mens. Ik wens jou en de kinderen heel veel sterkte de komende tijd. Als je wilt praten of hulp nodig hebt, ik ben er.\n\nVeel liefs,\nCorrie"
+    },
+    {
+      "genre": "condolence card",
+      "text": "Beste familie Wouters,\n\nMet verslagenheid vernamen wij het overlijden van jullie vader en opa. Wij zullen hem herinneren als een trouwe buur die altijd klaarstond met raad en daad. Veel sterkte in deze moeilijke dagen.\n\nIn gedachten bij jullie,\nMarc en Sofie"
+    },
+    {
+      "genre": "personal note",
+      "text": "Lieve Sem,\n\nGefeliciteerd met je diploma! We zijn zo trots op je. Het was niet altijd makkelijk, maar je hebt doorgezet. Geniet van de zomer en dan op naar Groningen. Dit cadeautje is voor je nieuwe kamer.\n\nDikke knuffel van papa en mama"
+    },
+    {
+      "genre": "Flemish email",
+      "text": "Dag Lien,\n\nBedankt voor de foto's van het communiefeest, ze zijn super mooi geworden! Mag ik er een paar doorsturen naar mijn schoonmoeder? Zij was er jammer genoeg niet bij. Volgende week breng ik de schotels terug die we geleend hadden.\n\nGroetjes,\nKaat"
+    },
+    {
+      "genre": "Flemish newsletter",
+      "text": "Beste ouders,\n\nOp woensdag 3 mei gaan de leerlingen van het vijfde en zesde leerjaar naar Bokrijk. We vertrekken om 8.30 uur aan de schoolpoort en zijn terug rond 16 uur. Gelieve uw kind een lunchpakket, een drankje en een regenjas mee te geven. De kostprijs van 18 euro wordt via de schoolrekening aangerekend.\n\nVriendelijke groeten,\nJuf Els en meester Dirk"
+    },
+    {
+      "genre": "Flemish social post",
+      "text": "Wat een weekend! Zaterdag de eerste overwinning van het seizoen voor onze U12, en zondag een bomvolle eetdag in de parochiezaal. Merci aan alle ouders, sponsors en vrijwilligers. Zonder jullie geen club!"
+    },
+    {
+      "genre": "product text",
+      "product": true,
+      "text": "Handgemaakte kom van steengoed, ongeveer 15 cm doorsnee. Elke kom is net iets anders, want ik draai ze zelf op de schijf in mijn atelier in Deventer. Vaatwasserbestendig, niet geschikt voor de magnetron. Verzending binnen twee werkdagen."
+    },
+    {
+      "genre": "product text",
+      "product": true,
+      "text": "Zachte sjaal van 100% merinowol, 180 x 30 cm. Kleur: oker. Met de hand wassen op 30 graden en plat laten drogen. Op voorraad, voor 17.00 uur besteld is morgen in huis."
+    },
+    {
+      "genre": "product text",
+      "product": true,
+      "text": "Tweedehands kinderfiets, 20 inch, met versnellingen. Banden zijn vorig jaar vervangen, remmen werken goed. Een paar krasjes op het frame. Ophalen in Amersfoort, niet verzenden."
+    },
+    {
+      "genre": "court ruling",
+      "text": "De rechtbank veroordeelt [gedaagde] tot betaling aan [eiser] van een bedrag van 2.350 euro, te vermeerderen met de wettelijke rente vanaf 1 maart 2022."
+    },
+    {
+      "genre": "Instagram post",
+      "text": "Zondagochtend op de Posbank 🌄 Wat een adembenemend uitzicht over de Veluwe, en dat op tien minuten van huis. Wie gaat er volgende keer mee? #veluwe #wandelen #zondag"
+    },
+    {
+      "genre": "Facebook post",
+      "text": "Gevonden in de Lindenstraat: een grijze kat met een rood bandje, heel aanhankelijk. Hij zit nu bij ons in de schuur. Wie mist hem? Deel dit bericht gerust, dan komt hij hopelijk snel weer thuis."
+    },
+    {
+      "genre": "WhatsApp group",
+      "text": "Hoi ouders van groep 6! Morgen is de gymles buiten, dus graag sportschoenen mee. En wie kan er vrijdag rijden naar de schaatsbaan? We hebben nog 2 auto's nodig. Laat het even weten in de app 🙏"
+    },
+    {
+      "genre": "blog post",
+      "text": "Mijn favoriete bananenbrood\n\nAl jaren bak ik elke zondag bananenbrood, en na veel proberen is dit mijn vaste recept. Het geheim zit in heel rijpe bananen, bijna zwart. Je hebt nodig: drie bananen, twee eieren, 200 gram bloem, een zakje bakpoeder en een snufje kaneel. Prak de bananen, roer alles door elkaar en bak het een uur op 175 graden. Laat het me weten in de reacties als je het hebt gemaakt!"
+    },
+    {
+      "genre": "LinkedIn post",
+      "text": "Vandaag ons jaarverslag gepubliceerd. Een paar cijfers: 312 nieuwe klanten, 14 nieuwe collega's en een omzetgroei van 9 procent. Maar het mooiste vind ik dat het verloop onder ons personeel is gehalveerd. Dat is geen toeval: we zijn vorig jaar gestart met een vaste mentor voor iedere nieuwe collega. Het is nu aan ons om dat vast te houden."
+    },
+    {
+      "genre": "newsletter",
+      "text": "Nieuwsbrief buurthuis De Schakel, maart\n\nOntdek ons nieuwe aanbod! Vanaf april is er elke dinsdagochtend een taalcafé en op donderdag een repaircafé. De kookclub zoekt nog twee vrijwilligers. Ondanks de uitdagingen met de verbouwing blijft het buurthuis gewoon open. Kom gerust eens langs voor een kop koffie."
+    },
+    {
+      "genre": "personal email",
+      "text": "Hoi Daan,\n\nIk heb je tekst voor de speech op de bruiloft gelezen. Hij is echt mooi, alleen het stuk over de vakantie in Spanje zou ik iets inkorten. Verder zou ik niets veranderen. Succes zaterdag, ik ben benieuwd!\n\nGroetjes,\nFemke"
+    },
+    {
+      "genre": "school essay",
+      "text": "Betoog: moeten mobiele telefoons verboden worden op school?\n\nSinds 1 januari 2024 zijn mobiele telefoons in de klas verboden. Voorstanders zeggen dat leerlingen zich beter kunnen concentreren. Tegenstanders vinden dat de telefoon juist handig is om iets op te zoeken. Volgens mij heeft het verbod geleid tot meer rust in de klas, maar in de pauze zitten de meeste leerlingen nog steeds op hun telefoon. Kortom, het verbod helpt een beetje, maar het lost niet alles op."
+    },
+    {
+      "genre": "Flemish email",
+      "text": "Dag meester Jan,\n\nOnze Lars is vandaag thuis gebleven met koorts. Hij zal morgen waarschijnlijk ook nog niet naar school komen. Mag hij de taken van deze week achteraf inhalen? Alvast bedankt en tot binnenkort.\n\nMet vriendelijke groeten,\nSarah Janssens"
+    },
+    {
+      "genre": "meeting minutes",
+      "text": "Verslag ALV Volkstuinvereniging De Groene Vinger, 9 maart\n\n1. De penningmeester licht de jaarrekening toe. Er is een klein overschot van 412 euro.\n2. De contributie gaat met 5 euro omhoog, vooral door de hogere waterkosten. Dit voorstel wordt aangenomen met 23 stemmen voor en 4 tegen.\n3. Het bestuur bedankt Gerrit, die na twaalf jaar stopt als secretaris. Een stap vooruit is dat de wachtlijst voor een tuin nu online staat.\n4. Rondvraag: graag de composthoop alleen voor tuinafval gebruiken."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "about": "Plain requests for the ai-multi-holdout corpora: seven genres times eight everyday topics per language, none used in ai-general or ai-general-holdout. No system prompt, no style instruction and no pattern list is sent with them.",
+  "it": {
+    "genres": {
+      "blog": "Scrivi un post per il mio blog {t}.",
+      "email": "Scrivi un'email ai miei amici {t}.",
+      "essay": "Scrivi un breve tema {t}.",
+      "article": "Scrivi un articolo per il giornale locale {t}.",
+      "social": "Scrivi un post per Instagram {t}.",
+      "report": "Scrivi una breve relazione {t}.",
+      "longform": "Scrivi un articolo approfondito di circa 800 parole {t}."
+    },
+    "topics": [
+      "su una nuova linea di autobus per l'aeroporto",
+      "sull'adozione di un cane dal canile",
+      "sulla festa d'estate del quartiere",
+      "sul passaggio della nostra azienda a un nuovo software di contabilità",
+      "su come dormire meglio",
+      "sulla promozione in serie D della squadra di calcio del paese",
+      "sul riparare i vestiti invece di comprarne di nuovi",
+      "su un progetto di volontari che leggono libri agli anziani"
+    ]
+  },
+  "es": {
+    "genres": {
+      "blog": "Escribe una entrada para mi blog sobre {t}.",
+      "email": "Escribe un correo a mis amigos sobre {t}.",
+      "essay": "Escribe una breve redacción sobre {t}.",
+      "article": "Escribe un artículo para el periódico local sobre {t}.",
+      "social": "Escribe una publicación de Instagram sobre {t}.",
+      "report": "Escribe un breve informe sobre {t}.",
+      "longform": "Escribe un artículo a fondo de unas 800 palabras sobre {t}."
+    },
+    "topics": [
+      "una nueva línea de autobús al aeropuerto",
+      "adoptar un perro de una protectora",
+      "la fiesta de verano del barrio",
+      "el cambio de nuestra empresa a un nuevo programa de contabilidad",
+      "cómo dormir mejor",
+      "el ascenso del equipo de fútbol del pueblo",
+      "arreglar la ropa en lugar de comprar ropa nueva",
+      "un proyecto de voluntarios que leen libros a personas mayores"
+    ]
+  },
+  "nl": {
+    "genres": {
+      "blog": "Schrijf een blogpost over {t}.",
+      "email": "Schrijf een e-mail aan mijn vrienden over {t}.",
+      "essay": "Schrijf een kort opstel over {t}.",
+      "article": "Schrijf een artikel voor de lokale krant over {t}.",
+      "social": "Schrijf een Instagrampost over {t}.",
+      "report": "Schrijf een kort verslag over {t}.",
+      "longform": "Schrijf een uitgebreid artikel van ongeveer 800 woorden over {t}."
+    },
+    "topics": [
+      "een nieuwe buslijn naar het vliegveld",
+      "een hond adopteren uit het asiel",
+      "het zomerfeest in de buurt",
+      "de overstap van ons bedrijf naar nieuwe boekhoudsoftware",
+      "beter slapen",
+      "de promotie van de voetbalclub uit ons dorp",
+      "kleren repareren in plaats van nieuwe kopen",
+      "een project waarbij vrijwilligers voorlezen aan ouderen"
+    ]
+  },
+  "de": {
+    "genres": {
+      "blog": "Schreibe einen Beitrag für meinen Blog über {t}.",
+      "email": "Schreibe eine E-Mail an meine Freunde über {t}.",
+      "essay": "Schreibe einen kurzen Aufsatz über {t}.",
+      "article": "Schreibe einen Artikel für die Lokalzeitung über {t}.",
+      "social": "Schreibe einen Instagram-Beitrag über {t}.",
+      "report": "Schreibe einen kurzen Bericht über {t}.",
+      "longform": "Schreibe einen ausführlichen Artikel mit etwa 800 Wörtern über {t}."
+    },
+    "topics": [
+      "eine neue Buslinie zum Flughafen",
+      "die Adoption eines Hundes aus dem Tierheim",
+      "das Sommerfest im Viertel",
+      "den Umstieg unserer Firma auf eine neue Buchhaltungssoftware",
+      "besseren Schlaf",
+      "den Aufstieg des Fußballvereins aus unserem Dorf",
+      "das Reparieren von Kleidung statt Neukauf",
+      "ein Projekt, bei dem Ehrenamtliche älteren Menschen vorlesen"
+    ]
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "language": "de",
+  "version": 1,
+  "foldDiacritics": false,
+  "patterns": [
+    {
+      "id": "de-markdown-bold",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}*])\\*\\*(?=[^\\s*])[^*\\n]{1,80}(?<=[^\\s*])\\*\\*(?!\\*)",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Markdown bold markers left in plain text. A chat assistant bolds labels and key phrases; in a German email, post or article the asterisks stay visible. Development counts: 63 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "**Zeitgewinn.** Kein Pendeln bedeutet mehr Zeit pro Tag.",
+      "rewrite": "Zeitgewinn: Kein Pendeln bedeutet mehr Zeit pro Tag.",
+      "falsePositives": [
+        "Die Fußnote ist mit einem Stern* markiert.",
+        "Preis: 5 * 3 Euro ergibt 15 Euro.",
+        "Zubereitung: ***Sieden*** und abkühlen lassen."
+      ]
+    },
+    {
+      "id": "de-markdown-heading",
+      "kind": "regex",
+      "match": "(?:^|\\n)\\s*#{1,6}\\s+\\p{L}",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A Markdown heading (# or ##) at the start of a line. Chat output arrives with Markdown headings; people writing a post or an email in a normal editor do not type hash signs. Development counts: 55 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "## Die Vorteile\nKein Pendeln bedeutet mehr Zeit.",
+      "rewrite": "Zuerst die Vorteile: Kein Pendeln bedeutet mehr Zeit.",
+      "falsePositives": [
+        "Wir waren die #1 im Ranking.",
+        "Unter #Homeoffice findet ihr alle Beiträge."
+      ]
+    },
+    {
+      "id": "de-platzhalter",
+      "kind": "regex",
+      "match": "\\[(?:(?:dein|deine|ihr|ihre|euer|eure)\\s+\\p{L}*(?:name|position|abteilung|funktion|unterschrift|nummer|e-mail|adresse|firma|unternehmen|stadt|datum)(?![\\p{L}\\p{N}])[^\\]\\n]{0,80}|(?:name|vorname|nachname|datum|uhrzeit|ort|adresse|stra(?:ß|ss)e|link|titel|stadt|stadtname|anzahl|zahl|betrag|telefonnummer|e-mail|firma|unternehmen|position|abteilung|funktion|optional|beispiel|kurze|kurzer|persönliche|persönlicher)(?![\\p{L}\\p{N}])[^\\]\\n]{0,80}|[^\\]\\n]{0,60}z\\.\\s?b\\.[^\\]\\n]{0,80}|\\p{L}*(?:name|datum|jahr|zeiten|uhrzeit|adresse|nummer|titel|autor|autorin|autor/in)(?:,\\s*[^\\]\\n]{1,40})?)\\]",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A square-bracket slot such as [Dein Name], [Datum] or [z. B. Sauerteigbrot] that a chat assistant leaves for the user to fill in. A finished text has the facts in it. A possessive (dein, Ihr, eure) counts only before a slot word such as Name or Position, so an editorial insertion in a quote (\"Er [ihr Sohn] war …\") is not matched. Development counts: 35 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Viele Grüße\n[Dein Name]",
+      "rewrite": "Viele Grüße\nJana",
+      "falsePositives": [
+        "Das Zitat wurde gekürzt [...] und stammt aus dem Jahr 1999.",
+        "Redaktion: hsk.redaktion [at] uni-berlin.de",
+        "Mehr dazu im Bericht [Update].",
+        "Der Vater erklärte: „Er [ihr Sohn] war immer ein ruhiger Junge.“",
+        "„Wir haben [ihre] Entscheidung respektiert“, sagte der Trainer."
+      ]
+    },
+    {
+      "id": "de-chat-anpassen",
+      "kind": "regex",
+      "match": "(?:wenn|falls)\\s+(?:du|sie)\\s(?=(?:z\\.\\s?b\\.|bzw\\.|[^.!?\\n]){0,330}?(?<![\\p{L}\\p{N}])(?:\\p{L}*(?:text|entwurf|version|fassung)|ton|tonfall|tonalität|formulierung|beschreibung|platzhalter)(?![\\p{L}\\p{N}]))(?:z\\.\\s?b\\.|bzw\\.|[^.!?\\n]){0,250}?,\\s*(?:dann\\s+)?(?:passe|formuliere|gestalte|kürze|ergänze|fülle|trage|schreibe|mache|überarbeite|kann)\\s+ich(?![\\p{L}\\p{N}])|(?:passe|formuliere|gestalte|schreibe|kürze|überarbeite)\\s+ich\\s+(?:gern|gerne)\\s+(?:den|die|das)\\s+(?:[\\p{L}-]+\\s+)?(?:\\p{L}*(?:text|entwurf|version|fassung)|ton|tonfall|tonalität|formulierung|beschreibung|platzhalter)(?![\\p{L}\\p{N}])|(?:passe|formuliere|gestalte|schreibe|kürze|überarbeite)\\s+ich\\s+(?:den|die|das)\\s+(?:[\\p{L}-]+\\s+)?(?:\\p{L}*(?:text|entwurf|version|fassung)|ton|tonfall|tonalität|formulierung|beschreibung|platzhalter)\\s+(?:[\\p{L}-]+\\s+)?(?:gern|gerne)(?![\\p{L}\\p{N}])|(?:passe|schreibe|formuliere)\\s+ich\\s+(?:den|die|das)\\s+(?:beitrag|e-mail|mail|artikel|essay|bericht|post)\\s+(?:gern|gerne)\\s+(?:noch\\s+)?(?:genauer|konkreter|konkret|persönlicher)(?![\\p{L}\\p{N}])|soll\\s+ich\\s+(?:den|die|das)\\s+(?:[\\p{L}-]+\\s+)?(?:\\p{L}*(?:text|entwurf|version|fassung)|ton|tonfall|tonalität|formulierung|beschreibung|platzhalter)(?![\\p{L}\\p{N}])[^.!?\\n]{0,80}?(?:formeller|förmlicher|lockerer|persönlicher|sachlicher|kürzer|anpassen|ändern|umschreiben|überarbeiten|gestalten)(?![\\p{L}\\p{N}])|(?<![\\p{L}\\p{N}])(?:ton|tonfall|tonalität)\\s*\\(\\s*(?:z\\.\\s?b\\.\\s*|eher\\s+)?(?:formell|förmlich|locker|persönlich|sachlich|humorvoll)\\p{L}*\\s*(?:/|oder|,)",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "The assistant offers to rework the text it just wrote: another tone, a different version, the details filled in. The offer names the text itself (Text, Entwurf, Version, Fassung, Ton, Formulierung, Beschreibung, Platzhalter); an offer to do something else (\"Wenn du willst, mache ich morgen den Einkauf\") is not matched. It is addressed to the person who asked for the text and should never reach the reader. Development counts: 36 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Wir treffen uns am Samstag im Stadtpark.\n\nWenn du möchtest, passe ich den Ton gern an.",
+      "rewrite": "Wir treffen uns am Samstag im Stadtpark.",
+      "falsePositives": [
+        "Wenn du mir die Unterlagen schickst, schaue ich sie mir am Montag an.",
+        "Ich passe die Hose morgen beim Schneider an.",
+        "Der Ton im Team ist locker, aber respektvoll.",
+        "Wenn du willst, mache ich morgen den Einkauf.",
+        "Wenn Sie möchten, erstelle ich Ihnen gerne ein individuelles Angebot.",
+        "Wenn du mir die Adresse schickst, kann ich das Paket morgen losschicken.",
+        "Soll ich die Präsentation für Montag noch kürzer machen?",
+        "Wenn du magst, schreibe ich dir das Rezept gerne auf.",
+        "Den Rest passe ich heute Abend noch an."
+      ]
+    },
+    {
+      "id": "de-chat-klammern",
+      "kind": "regex",
+      "match": "(?:platzhalter(?:n)?\\s+(?:in|mit|ersetzen|ausfüllen|aus|für|ein|stehen)(?![\\p{L}\\p{N}])|die\\s+platzhalter|eckige(?:n)?\\s+klammern[^.!?\\n]{0,80}?(?:ersetz|ausfüll|ergänz|anpass|einsetz|einfüg|austausch)\\p{L}*)",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "The assistant explains the placeholders it left in the text and asks for them to be filled in. A person writing their own text fills in the facts instead of describing the gaps. Square brackets alone (\"Ergänzungen der Redaktion stehen in eckigen Klammern\") are not matched. Development counts: 9 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Viele Grüße\nJana\n\nDie Platzhalter in eckigen Klammern kannst du mit den echten Angaben ersetzen.",
+      "rewrite": "Viele Grüße\nJana",
+      "falsePositives": [
+        "Das Wasm-Objekt dient derzeit nur als Platzhalter.",
+        "Die Zahlen in Klammern geben das Vorjahr an.",
+        "Ergänzungen der Redaktion stehen in eckigen Klammern."
+      ]
+    },
+    {
+      "id": "de-chat-fiktiv",
+      "kind": "regex",
+      "match": "hinweis\\s*:\\s*\\*?\\s*[^.!?\\n]{0,120}?(?<![\\p{L}\\p{N}])(?:artikel|text|bericht|beitrag|entwurf|zitate?)(?![\\p{L}\\p{N}])[^.!?\\n]{0,80}?(?:frei\\s+erfunden|fiktiv|erfunden)",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A note that the text, or the quotes in it, are invented. The assistant writes a sample article and adds the disclaimer; a reporter or writer would not publish it. The note has to name the text or its quotes, so an editorial note on changed names or a shop note on example pictures is not matched. Development counts: 7 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Die Bäckerei hat am Montag eröffnet.\n\n*Hinweis: Dieser Artikel ist frei erfunden; Namen, Orte und Zitate sind fiktiv.*",
+      "rewrite": "Die Bäckerei hat am Montag eröffnet.",
+      "falsePositives": [
+        "Alle Personen und Handlungen in diesem Roman sind frei erfunden.",
+        "Hinweis: Der Parkplatz ist am Sonntag gesperrt.",
+        "Hinweis: Alle Namen wurden von der Redaktion geändert und sind frei erfunden.",
+        "Hinweis: Die Abbildung ist beispielhaft, Zubehör nicht im Lieferumfang."
+      ]
+    },
+    {
+      "id": "de-chat-hier-ist",
+      "kind": "regex",
+      "match": "(?:(?:^|\\n)\\s*(?:\\*\\*)?(?:(?:gerne|gern|klar|natürlich|sehr\\s+gerne|selbstverständlich)\\s*[!,.]\\s*)?hier\\s+(?:ist|kommt|findest\\s+du)\\s+(?:ein|eine|dein|deine)\\s+(?:[\\p{L}-]+\\s+){0,2}?(?:\\p{L}*(?:entwurf|text|version|fassung|vorlage)|formulierung|beschreibung)(?![\\p{L}\\p{N}])|(?:^|\\n)\\s*(?:\\*\\*)?entwurf\\s*:)",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "The opening of a chat reply that hands over a draft (\"Hier ist ein Entwurf für deinen Beitrag:\", \"Entwurf: LinkedIn-Beitrag\") pasted together with the text it introduces. It has to call the text a draft, text, version or template; \"hier ist mein Vorschlag für die Tagesordnung\" or a reply that starts with \"Gerne,\" is not matched. Development counts: 6 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Hier ist ein Entwurf für deinen Beitrag:\n\nAm Dienstag besuchte die Klasse 6b das Stadtmuseum.",
+      "rewrite": "Am Dienstag besuchte die Klasse 6b das Stadtmuseum.",
+      "falsePositives": [
+        "Hier ist ein Foto vom Fest am Samstag.",
+        "Gerne kommen wir auch am Sonntag vorbei.",
+        "Der Entwurf des Gesetzes liegt seit Mai vor.",
+        "Hallo Tom,\n\nGerne, ich komme am Samstag vorbei.",
+        "Hallo Frau Weber,\n\nhier ist mein Vorschlag für die Tagesordnung.",
+        "Hier ist ein kurzer Bericht über unser Sommerfest:",
+        "Hallo zusammen,\n\nhier ist mein Entwurf für die Einladung zur Weihnachtsfeier."
+      ]
+    },
+    {
+      "id": "de-chat-residue",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:als\\s+(?:ein\\s+)?(?:ki-)?sprachmodell|als\\s+ki-assistent(?:in)?|als\\s+künstliche\\s+intelligenz\\s+(?:kann|habe|bin)\\s+ich)(?![\\p{L}\\p{N}])",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "reasoning",
+      "domain": "general",
+      "why": "The assistant speaks about itself as a language model. No person writes this about themselves. It is kept as a clear chat leftover. Development counts: none of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Als KI-Sprachmodell habe ich keine persönlichen Erfahrungen mit Bäckereien. Die Bäckerei liegt in der Lindenstraße.",
+      "rewrite": "Die Bäckerei liegt in der Lindenstraße.",
+      "falsePositives": [
+        "Der Forscher arbeitet an einem Sprachmodell für medizinische Texte.",
+        "Als künstliche Intelligenz bezeichnet man Systeme, die lernen."
+      ]
+    },
+    {
+      "id": "de-betreff-zeile",
+      "kind": "regex",
+      "match": "(?:^|\\n)\\s*(?:\\*\\*)?betreff\\s*(?:\\*\\*)?\\s*:",
+      "category": "structure",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A \"Betreff:\" line at the start of a line inside the text. The assistant puts the subject line into the email draft; a person writing an email types the subject into the subject field. Formal letters have a Betreff line too, so it counts only with another sign. Development counts: 16 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Betreff: Einladung zu unserem Buchclub\n\nHallo zusammen,",
+      "rewrite": "Hallo zusammen,",
+      "falsePositives": [
+        "Bitte geben Sie im Betreff die Rechnungsnummer an.",
+        "Der Betreff der Mail war leer."
+      ]
+    },
+    {
+      "id": "de-anfuehrung-gemischt",
+      "kind": "regex",
+      "match": "„[^“”\"„\\n]{1,200}\"",
+      "category": "punctuation",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A German low opening quote („) closed with a straight English quote (\"). German typography closes with “; the mixed pair comes from the model writing the opening mark itself and the closing one as plain ASCII. Development counts: 9 of 96 machine texts; 18 of 2,000 web pages, 3 of 814 news pages and 2 of 370 shop pages.",
+      "example": "Ich verstand kaum mehr als „ciao\" und „grazie\".",
+      "rewrite": "Ich verstand kaum mehr als „ciao“ und „grazie“.",
+      "falsePositives": [
+        "Ich verstand kaum mehr als „ciao“ und „grazie“.",
+        "Er sagte \"ciao\" und ging."
+      ]
+    },
+    {
+      "id": "de-kommentare-aufruf",
+      "kind": "regex",
+      "match": "(?:(?<![\\p{L}\\p{N}])(?:(?:schreib|schreibt|schreibe|schreiben\\s+sie|teilt|teile|teilen\\s+sie)\\s+(?:[\\p{L}]+\\s+){0,4}?(?:in\\s+die\\s+kommentare|in\\s+den\\s+kommentaren)|(?:freue\\s+mich|freuen\\s+uns|(?:bin|sind)\\s+(?:sehr\\s+|schon\\s+|echt\\s+)?gespannt)\\s+auf\\s+(?:eure|deine|ihre)\\s+(?:[\\p{L}]+\\s+){0,2}?in\\s+den\\s+kommentaren|kommentare(?:n)?\\s*!?\\s*👇|wie\\s+sieht\\s+es\\s+bei\\s+(?:euch|dir|ihnen)\\s+aus\\s*\\?)(?![\\p{L}\\p{N}])|(?:^|[.!?:]\\s+|\\n\\s*)(?:👉\\s*)?(?:\\*\\*)?und\\s+ihr\\s*\\?)",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A closing hand-over to the readers: a call to share experiences \"in den Kommentaren\", or a question passed back (\"Und ihr?\", \"Wie sieht es bei euch aus?\"). The assistant ends most blog and social posts this way; bloggers and people in a group chat do it too, so it counts only with another sign, and the call and the question count once together. Development counts: 23 of 96 machine texts; 1 of 2,000 web pages; none of 814 news pages or 370 shop pages.",
+      "example": "Ich lerne seit März Italienisch. Welche Sprache reizt dich? Schreib es mir in die Kommentare!",
+      "rewrite": "Ich lerne seit März Italienisch.",
+      "falsePositives": [
+        "Die Kommentare unter dem Artikel waren gesperrt.",
+        "Schreib mir eine Nachricht, wenn du ankommst.",
+        "Wir fahren morgen, und ihr kommt am Sonntag nach.",
+        "Wie sieht es mit dem Wetter aus?",
+        "Mir geht es gut. Und du?"
+      ]
+    },
+    {
+      "id": "de-mein-fazit",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])mein\\s+fazit(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A closing section announced as \"Mein Fazit\". Assistants end blog and social posts with it; people use it too, mostly in reviews and product tests, so it counts only with another sign. Development counts: 11 of 96 machine texts; 1 of 2,000 web pages and 1 of 814 news pages; none of 370 shop pages.",
+      "example": "Mein Fazit: Die neuen Radwege sind ein echter Gewinn.",
+      "rewrite": "Die neuen Radwege sind ein echter Gewinn.",
+      "falsePositives": [
+        "Das Fazit der Studie fällt gemischt aus.",
+        "Meine Fahrt dauerte zwanzig Minuten."
+      ]
+    },
+    {
+      "id": "de-gute-nachricht",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])die\\s+gute\\s+nachricht\\s*:",
+      "category": "cliche-opener",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A staged reveal: \"Die gute Nachricht:\" followed by the point. It builds suspense the content does not need. Development counts: 3 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Die gute Nachricht: Oft reichen schon kleine Änderungen im Alltag.",
+      "rewrite": "Oft reichen kleine Änderungen im Alltag.",
+      "falsePositives": [
+        "Die gute Nachricht kam am Freitag per Post.",
+        "Das war eine gute Nachricht für alle."
+      ]
+    },
+    {
+      "id": "de-wer-in-den-letzten",
+      "kind": "regex",
+      "match": "(?:^|[.!?:]\\s+|\\n\\s*)wer\\s+in\\s+den\\s+letzten\\s+(?:monaten|wochen|jahren|tagen)(?![\\p{L}\\p{N}])",
+      "category": "cliche-opener",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "An opening that addresses whoever has recently noticed something (\"Wer in den letzten Monaten durch die Stadt gefahren ist, hat es bemerkt\"). Assistants use it to start essays and posts. Development counts: 5 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Wer in den letzten Monaten durch die Stadt gefahren ist, hat die neuen Radwege vielleicht bemerkt.",
+      "rewrite": "In den letzten Monaten sind in der Stadt neue Radwege entstanden.",
+      "falsePositives": [
+        "In den letzten Monaten wurde viel gebaut.",
+        "Wer zuletzt kam, musste stehen."
+      ]
+    },
+    {
+      "id": "de-was-mir-geholfen-hat",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])was\\s+mir\\s+(?:dabei\\s+)?(?:am\\s+meisten\\s+)?geholfen\\s+hat(?![\\p{L}\\p{N}])",
+      "category": "cliche-opener",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A label that introduces a list of tips as personal experience (\"Was mir geholfen hat:\"), a fixture of assistant-written LinkedIn posts. Development counts: 3 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Was mir geholfen hat: feste Lernzeiten und ein Tandempartner.",
+      "rewrite": "Mir haben feste Lernzeiten und ein Tandempartner geholfen.",
+      "falsePositives": [
+        "Mir hat geholfen, dass der Kurs abends war.",
+        "Was hat dir geholfen?"
+      ]
+    },
+    {
+      "id": "de-eigentlicher-gewinn",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:der|den)\\s+(?:eigentliche|wahre)n?\\s+gewinn|(?:ist|liegt)\\s+(?:vielleicht\\s+)?(?:genau\\s+)?(?:das\\s+)?der\\s+grö(?:ß|ss)te\\s+gewinn)(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "An essay ending that names \"der eigentliche Gewinn\" or \"der größte Gewinn\" of an experience, a moral the text did not need. Development counts: 5 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Und vielleicht ist genau das der größte Gewinn: die Erfahrung, dass gemeinsames Anpacken etwas bewirkt.",
+      "rewrite": "Gemeinsames Anpacken bewirkt etwas.",
+      "falsePositives": [
+        "Der größte Gewinn der Firmengeschichte wurde 2019 erzielt.",
+        "Der Gewinn ging an eine Familie aus Kassel."
+      ]
+    },
+    {
+      "id": "de-vielleicht-genau-das",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])vielleicht\\s+ist\\s+(?:es\\s+)?genau\\s+das(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A reflective closing turn (\"Vielleicht ist es genau das, was …\") that wraps up an essay with a vague summary. Development counts: 3 of 96 machine texts; 1 of 2,000 web pages; none of 814 news pages or 370 shop pages.",
+      "example": "Die Bäckerin kennt viele Kunden beim Namen. Vielleicht ist es genau das, was diese Eröffnung so besonders macht.",
+      "rewrite": "Die Bäckerin kennt viele Kunden beim Namen.",
+      "falsePositives": [
+        "Vielleicht ist das Paket morgen da.",
+        "Genau das habe ich gestern gesagt."
+      ]
+    },
+    {
+      "id": "de-stueck-abstrakt",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])ein\\s+(?:echtes\\s+|kleines\\s+|großes\\s+|grosses\\s+|wichtiges\\s+)?stück\\s+(?:lebensqualität|handwerk|persönliche[rn]?)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "An abstract noun dressed up as a piece of something (\"ein Stück Lebensqualität\", \"ein Stück Handwerk\"), a vague way to praise what a concrete detail would show. Only the nouns the models used are listed; \"ein Stück Heimat\" or \"ein Stück Normalität\" are ordinary in human writing. Development counts: 6 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Weniger Lärm, bessere Luft: Radwege sind ein Stück Lebensqualität.",
+      "rewrite": "Radwege bringen weniger Lärm und bessere Luft.",
+      "falsePositives": [
+        "Ich nehme ein Stück Kuchen.",
+        "Ein Stück weiter vorne ist die Haltestelle.",
+        "Für viele ist der Verein ein Stück Heimat."
+      ]
+    },
+    {
+      "id": "de-muede-aber-zufrieden",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])müde,?\\s+aber\\s+(?:zufrieden|glücklich|stolz|erfüllt)(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "The stock ending of an outing or a volunteer day: everyone was \"müde, aber zufrieden\". People write it in newsletters and posts as well, so it counts only with another sign. Development counts: 4 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Nach acht Stunden im Park waren wir müde, aber zufrieden.",
+      "rewrite": "Nach acht Stunden im Park waren wir müde.",
+      "falsePositives": [
+        "Ich war müde und bin früh ins Bett gegangen.",
+        "Zufrieden, aber nicht begeistert, verließ er das Spiel."
+      ]
+    },
+    {
+      "id": "de-vorteile-auf-der-hand",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])die\\s+vorteile\\s+liegen\\s+(?:also\\s+)?auf\\s+der\\s+hand(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A stock transition (\"Die Vorteile liegen auf der Hand\") before a list of advantages. Development counts: 3 of 96 machine texts; 1 of 2,000 web pages; none of 814 news pages or 370 shop pages.",
+      "example": "Die Vorteile liegen auf der Hand: Wer nicht pendelt, gewinnt Zeit.",
+      "rewrite": "Wer nicht pendelt, gewinnt Zeit.",
+      "falsePositives": [
+        "Er hatte die Lösung schon auf der Hand.",
+        "Die Vorteile der Methode sind umstritten."
+      ]
+    },
+    {
+      "id": "de-zusammenfassend",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:zusammenfassend|abschlie(?:ß|ss)end|alles\\s+in\\s+allem)\\s+lässt\\s+sich\\s+(?:sagen|festhalten|feststellen)(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A summary formula (\"Zusammenfassend lässt sich sagen\", Swiss \"Abschliessend lässt sich sagen\") that announces a conclusion instead of stating it. It is taught in school, so it counts only with another sign. Development counts: 1 of 96 machine texts; none of 2,000 web pages, 814 news pages or 370 shop pages.",
+      "example": "Zusammenfassend lässt sich sagen: Das Homeoffice bietet Freiheit, verlangt aber Disziplin.",
+      "rewrite": "Das Homeoffice bietet Freiheit, verlangt aber Disziplin.",
+      "falsePositives": [
+        "Zusammenfassend schrieb er drei Sätze.",
+        "Es lässt sich sagen, dass es regnet."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1293 @@
+{
+  "language": "it",
+  "version": 1,
+  "foldDiacritics": false,
+  "patterns": [
+    {
+      "id": "it-chat-ecco-descrizione",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])ecco\\s+(?:una|la|il|un)\\s+(?:possibile\\s+|breve\\s+|nuova\\s+)?(?:(?:descrizione|titolo)\\s+(?:per\\s+(?:il\\s+tuo|la\\s+tua|i\\s+tuoi|le\\s+tue))|(?:descrizione|proposta|bozza|versione|titolo)\\s+(?:accattivante|ottimizzat[ao]|seo|che\\s+puoi\\s+(?:adattare|personalizzare|modificare|usare|copiare|incollare|pubblicare)))(?![\\p{L}\\p{N}])",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Chatbot wrapper that introduces its own answer (\"Ecco una descrizione accattivante per…\", \"Ecco una bozza che puoi personalizzare\"); it was never meant to be pasted into the text. A draft sent to a colleague (\"ecco la bozza per il tuo intervento\") is not matched.",
+      "example": "Ecco una descrizione accattivante per la tua tazza con il gatto arancione.",
+      "rewrite": "Tazza in ceramica bianca con un gatto arancione che dorme su una pila di libri.",
+      "falsePositives": [
+        "Ecco la descrizione delle taglie: S, M, L e XL.",
+        "Ecco il titolo del libro che cercavi.",
+        "Ciao Luca, ecco la bozza per il tuo intervento di lunedì."
+      ]
+    },
+    {
+      "id": "it-chat-certo-ecco",
+      "kind": "regex",
+      "match": "(?:^|\\n)\\s*(?:certo|certamente|perfetto|volentieri|assolutamente)[!,.]\\s+(?:ecco|ti\\s+propongo|qui\\s+(?:sotto\\s+)?trovi|di\\s+seguito\\s+trovi)\\s+(?:\\p{L}+\\s+){0,2}?(?:(?:una?|la|il|le|i|gli)\\s+|l'|un')?(?:possibile\\s+|breve\\s+|nuova\\s+|prima\\s+)?(?:testo|testi|descrizione|descrizioni|bozza|versione|versioni|post|articolo|titolo|titoli|tag)(?![\\p{L}\\p{N}])(?!\\s+(?:del|della|dello|dei|delle|degli|dell'))",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "reasoning",
+      "domain": "general",
+      "why": "A reply opener (\"Certo! Ecco la descrizione…\") from a chat answer, pasted at the top of the text. Only openers that introduce a text, a description, a draft or a version are matched; \"Certo! Ecco il link\" is an ordinary reply.",
+      "example": "Certo! Ecco titolo e descrizione per la tua felpa Dolomiti.",
+      "rewrite": "Felpa con cappuccio grigia con le Dolomiti stampate sul petto.",
+      "falsePositives": [
+        "Certo che si può lavare in lavatrice, a 30 gradi.",
+        "Ecco perché la stampiamo solo su ordinazione.",
+        "Certo! Ecco il link della riunione.",
+        "Perfetto, ecco i documenti che mi avevi chiesto."
+      ]
+    },
+    {
+      "id": "it-segnaposto-parentesi",
+      "kind": "regex",
+      "match": "(?<!«[^»\\n]{0,300})(?<!“[^”\\n]{0,300})\\[(?!\\s*(?:(?:il|lo|la|i|gli|le|un|una|uno|al|alla|allo|ai|alle|agli|del|della|dello|dei|delle|degli|nel|nella)\\s+|l'|un'|all'|dell'|nell')(?!(?:tuo|tua|tuoi|tue|vostro|vostra|vostri|vostre)(?![\\p{L}\\p{N}])))[^\\]\\n\"=;{}()]{0,25}(?<!\\p{L})(?:nome|inserisci|inserire|tuo|tua|negozio|brand|marca|prezzo|data|città|colore|misura)(?!\\p{L})[^\\]\\n\"=;{}()]{0,25}\\]",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Template slot such as \"[nome del negozio]\" that the generator expected someone to fill in. Editorial brackets in quoted speech («[Il sindaco] non ci ha ascoltato») and brackets that open with an article (\"[la città]\") are left out, since news writers use them to clarify a quote.",
+      "example": "Grazie per aver scelto [nome del negozio]!",
+      "rewrite": "Grazie per aver scelto Bottega Lilla.",
+      "falsePositives": [
+        "Disponibile in tre misure (S, M, L).",
+        "Vedi la foto [1] per il retro.",
+        "«[Il sindaco] non ci ha mai ascoltato», ha detto la portavoce.",
+        "Ha detto che [la città] merita più attenzione."
+      ]
+    },
+    {
+      "id": "it-markdown-grassetto",
+      "kind": "regex",
+      "match": "(?<!\\*)\\*\\*\\p{L}[^*\\n]{0,80}\\*\\*(?!\\*)",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Markdown bold copied from a chat window. Email clients, shop editors and most forms show the asterisks as they are.",
+      "example": "**Perché la amerai:** stampa nitida e colori che durano.",
+      "rewrite": "La stampa è nitida e i colori reggono i lavaggi.",
+      "falsePositives": [
+        "***IMPORTANTE*** leggere prima di ordinare.",
+        "Spedizione gratuita* (*sopra i 50 euro)."
+      ]
+    },
+    {
+      "id": "it-markdown-titoletto",
+      "kind": "regex",
+      "match": "(?:^|\\n)#{1,4}[ \\t]+\\p{L}",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Markdown heading (\"## Caratteristiche\") pasted from a chat answer.",
+      "example": "## Caratteristiche principali\n- Ceramica bianca, 330 ml",
+      "rewrite": "Caratteristiche: ceramica bianca, 330 ml.",
+      "falsePositives": [
+        "#1 tra le tazze più vendute del negozio.",
+        "Seguici con #bottegalilla."
+      ]
+    },
+    {
+      "id": "it-eleva-il-tuo",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:elev(?:a|are|erà|ano)\\s+(?:il\\s+tuo|la\\s+tua|i\\s+tuoi|le\\s+tue|il\\s+vostro|la\\s+vostra|ogni|qualsiasi)\\s+(?:stile|look|outfit|arredamento|casa|routine|esperienza|moment[oi]|spazio|ambiente|giornat[ae]|colazion[ei]|caffè|guardaroba|tavola|scrivania\\s+di\\s+lavoro))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "high",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Calque of English \"elevate your…\". In Italian \"elevare\" means to raise physically or formally; as a style verb it reads translated.",
+      "example": "Eleva il tuo arredamento con questa stampa minimalista.",
+      "rewrite": "Stampa minimalista in bianco e nero, formato A3, da appendere in studio o in camera.",
+      "falsePositives": [
+        "Il supporto eleva il tuo monitor di 10 centimetri.",
+        "Si eleva sopra il paese la torre campanaria."
+      ]
+    },
+    {
+      "id": "it-al-livello-successivo",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:porta|portare|porterà|portano|porti)\\s+(?:il\\s+tuo|la\\s+tua|i\\s+tuoi|le\\s+tue|il\\s+vostro|la\\s+vostra|i\\s+vostri|le\\s+vostre)\\s+[^.!?\\n]{1,40}?\\s+(?:al\\s+livello\\s+successivo|al\\s+prossimo\\s+livello|a\\s+un\\s+(?:altro|nuovo)\\s+livello)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "reasoning",
+      "domain": "general",
+      "why": "Calque of \"take your X to the next level\", addressed to the reader (\"porta il tuo…\"). \"Porta la cucina a un altro livello\" said of someone else is ordinary Italian and is not matched. No machine text here used it, so it counts only with a second sign.",
+      "example": "Porta le tue colazioni al livello successivo con questa tazza XXL.",
+      "rewrite": "Tazza da 500 ml: ci sta il cappuccino e anche il latte con i cereali.",
+      "falsePositives": [
+        "Il gioco passa al livello successivo dopo tre vite.",
+        "Porta la borsa a tracolla o a mano.",
+        "Questo chef porta la cucina emiliana a un altro livello."
+      ]
+    },
+    {
+      "id": "it-perche-lo-amerai",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:perché\\s+(?:lo|la|li|le)\\s+amerai)(?![\\p{L}\\p{N}])",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Calque of the English section label \"Why you'll love it\".",
+      "example": "Perché la amerai: è leggera, capiente e va in lavatrice.",
+      "rewrite": "È leggera, capiente e si lava in lavatrice a 30 gradi.",
+      "falsePositives": [
+        "Non so perché la amo così tanto, ma è la mia tazza preferita."
+      ]
+    },
+    {
+      "id": "it-di-addio-e-benvenuto",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:d[iì]'?\\s+addio\\s+[^.!?\\n]{1,50}?\\s+e\\s+(?:dai\\s+il\\s+)?(?:benvenuto|ciao))(?![\\p{L}\\p{N}])",
+      "category": "cliche-opener",
+      "precision": "high",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Calque of \"say goodbye to X and hello to Y\".",
+      "example": "Dì addio alle buste di plastica e dai il benvenuto alla tua nuova shopper preferita!",
+      "rewrite": "Shopper in cotone pesante, 38 x 42 cm: ci stanno la spesa della settimana e una bottiglia.",
+      "falsePositives": [
+        "Ha detto addio al vecchio negozio e ha aperto online.",
+        "Biglietto di addio per la collega che va in pensione."
+      ]
+    },
+    {
+      "id": "it-scopri-la-magia",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:scopri\\s+(?:la\\s+magia|il\\s+fascino|il\\s+mondo|l'eleganza|la\\s+bellezza|il\\s+piacere|l'emozione|l'incanto))(?![\\p{L}\\p{N}])",
+      "category": "cliche-opener",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Stock invitation that names a feeling instead of the item. Plain \"Scopri la collezione\" is normal shop navigation and is not matched.",
+      "example": "Scopri la magia di ogni mattina con la nostra tazza Gatto e Luna!",
+      "rewrite": "Tazza nera con un gatto e una luna dorata, 330 ml.",
+      "falsePositives": [
+        "Scopri tutta la collezione nel nostro negozio.",
+        "Scopri le taglie nella tabella qui sotto."
+      ]
+    },
+    {
+      "id": "it-lasciati-conquistare",
+      "kind": "regex",
+      "match": "(?<!(?:sono|siamo|siete|si|ci|vi|essersi|essere|averli|li|le)\\s)(?<![\\p{L}\\p{N}])(?:lasciati\\s+(?:conquistare|incantare|sedurre|trasportare|avvolgere|ispirare|guidare|coccolare|stupire|catturare|tentare|affascinare))(?![\\p{L}\\p{N}])",
+      "category": "cliche-opener",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Old advertising imperative that models reuse heavily. Human shop copy from before 2022 uses it too, so it only counts together with other tells.",
+      "example": "Lasciati conquistare dal fascino senza tempo dell'Italia.",
+      "rewrite": "Mappa dell'Italia del 1890, ristampata su carta opaca 50 x 70.",
+      "falsePositives": [
+        "Si sono lasciati conquistare dal panorama e sono rimasti fino a sera.",
+        "I fiori lasciati asciugare al sole durano di più."
+      ]
+    },
+    {
+      "id": "it-che-tu-sia-o",
+      "kind": "regex",
+      "match": "(?<!sia\\s)(?<![\\p{L}\\p{N}])(?:che\\s+tu\\s+(?:sia|stia|debba|voglia|abbia|cerchi|ami|preferisca))(?![\\p{L}\\p{N}])[^.!?\\n]{1,80}?\\so(?![\\p{L}\\p{N}])",
+      "category": "cliche-opener",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Mirrors the English opener \"Whether you're X or Y\". Grammatical Italian, but models open with it far more often than people do.",
+      "example": "Che tu sia un amante dei gatti o semplicemente un appassionato di design, questa tazza fa per te.",
+      "rewrite": "Tazza nera da 330 ml con un gatto che dorme sul bordo.",
+      "falsePositives": [
+        "Spero che tu sia soddisfatto della consegna.",
+        "Voglio che tu stia comodo: per questo la felpa è morbida."
+      ]
+    },
+    {
+      "id": "it-immagina-apertura",
+      "kind": "regex",
+      "match": "(?:^|[.!?…]\\s+|\\n\\s*)immagina(?:te)?(?=\\s+(?:di|una?|il|la|lo|le|i|gli|questo|questa)(?![\\p{L}\\p{N}])|[:,])",
+      "category": "cliche-opener",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Scene-setting opener (\"Immagina una serata d'inverno…\") that delays what the text is about.",
+      "example": "Immagina una serata d'inverno, un buon libro e una tazza di tè fumante…",
+      "rewrite": "Plaid in pile 130 x 170 con una stampa di libri e tazze di tè.",
+      "falsePositives": [
+        "Non immagina quanto sia leggera finché non la prova.",
+        "Come puoi immaginare, la consegna richiede qualche giorno."
+      ]
+    },
+    {
+      "id": "it-in-un-mondo-dove",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])in\\s+un(?:\\s+mondo\\s+(?:in\\s+cui|dove|sempre\\s+più)|'epoca\\s+(?:in\\s+cui|come\\s+questa|come\\s+la\\s+nostra|dominata|segnata|di)|\\s+momento\\s+storico\\s+(?:in\\s+cui|come\\s+questo)|\\s+contesto\\s+in\\s+cui|\\s+tempo\\s+in\\s+cui)(?![\\p{L}\\p{N}])",
+      "category": "cliche-opener",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Grand framing (\"In un mondo dove…\", \"in un'epoca in cui…\", \"in un momento storico in cui…\") that starts from the state of the world instead of the subject. Machine-written news uses it far more than human news.",
+      "example": "In un'epoca in cui tutto corre, il club del libro ci obbliga a rallentare.",
+      "rewrite": "Il club del libro si riunisce una volta al mese, il giovedì sera.",
+      "falsePositives": [
+        "Viviamo in un mondo piccolo: le spedizioni arrivano in tre giorni.",
+        "All'epoca in cui fu costruita, la torre era la più alta della città.",
+        "Era un momento difficile per tutti."
+      ]
+    },
+    {
+      "id": "it-cosa-aspetti",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:cosa|che)\\s+(?:aspetti|stai\\s+aspettando|aspettate))(?![\\p{L}\\p{N}])\\s*\\?",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Push closer. Old human promo cliché as well, so it needs company.",
+      "example": "Cosa aspetti? Dai un tocco di personalità alla tua agenda!",
+      "rewrite": "(End on the last concrete detail, e.g. the size of the sticker sheet.)",
+      "falsePositives": [
+        "Non sai cosa aspettarti? Nella scatola ci sono due tazze e un cucchiaino."
+      ]
+    },
+    {
+      "id": "it-ordina-ora",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:ordina|acquista|compra|prenota)(?:l[oaie])?\\s+(?:ora|subito|adesso|oggi\\s+stesso))(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Generic call to action at the end. Fine once on a shop page, a tell when stacked with other closers.",
+      "example": "Ordina ora e aggiungi un tocco di ironia al tuo guardaroba!",
+      "rewrite": "Disponibile dalla S alla XXL; la tabella misure è nelle foto.",
+      "falsePositives": [
+        "Ordina entro le 12 per la spedizione in giornata."
+      ]
+    },
+    {
+      "id": "it-aggiungilo-al-carrello",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:aggiungil[oaie]\\s+(?:subito\\s+|ora\\s+|anche\\s+tu\\s+)?al\\s+carrello)(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Imperative to the buyer that copies the button label; models close listings with it.",
+      "example": "Aggiungila al carrello e porta un po' di calma nella tua routine!",
+      "rewrite": "(Cut it; the button is already there.)",
+      "falsePositives": [
+        "Per il set, aggiungi al carrello sia la taglia adulto sia quella bambino."
+      ]
+    },
+    {
+      "id": "it-rendi-speciale",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:rendi\\s+(?:[^.!?\\n]{1,40}?\\s)?(?:ancora\\s+più\\s+)?(?:special[ei]|indimenticabil[ei]|unic[oaie]))(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Promise of a better moment with no detail behind it.",
+      "example": "Rendi il tuo Natale ancora più speciale!",
+      "rewrite": "Federa 40 x 40 con un bassotto in maglione rosso; imbottitura inclusa.",
+      "falsePositives": [
+        "Se lo rendi entro 14 giorni ti rimborsiamo."
+      ]
+    },
+    {
+      "id": "it-ricordo-per-sempre",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:ricordo|regalo|pensiero|dono)\\s+(?:che\\s+durerà|da\\s+(?:custodire|conservare))\\s+per\\s+sempre)(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Sentimental send-off that repeats the point instead of ending on a fact.",
+      "example": "Un ricordo che durerà per sempre.",
+      "rewrite": "Stampa su carta cotone 300 g, che non ingiallisce.",
+      "falsePositives": [
+        "Conserva lo scontrino per la garanzia."
+      ]
+    },
+    {
+      "id": "it-sempre-con-te",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:porta(?:l[oaie]|re)?\\s+[^.!?\\n]{0,30}?sempre\\s+con\\s+te|ovunque\\s+tu\\s+(?:vada|sia)))(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Porta X sempre con te / ovunque tu vada\": an empty closing line. Rare in human shop copy, common in model output.",
+      "example": "Porta il mare della Sardegna sempre con te!",
+      "rewrite": "Adesivo in vinile 8 cm, resiste alla lavastoviglie: va bene sulla borraccia.",
+      "falsePositives": [
+        "Tienilo sempre in frigo dopo l'apertura."
+      ]
+    },
+    {
+      "id": "it-strappare-un-sorriso",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:strapper[àa]|strappare|strappa|regalerà|regala(?:re)?)\\s+(?:più\\s+di\\s+|sempre\\s+)?(?:un|il)\\s+sorriso)(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Stock emotional pay-off for gift items.",
+      "example": "Una tazza che ti strapperà un sorriso ogni mattina.",
+      "rewrite": "Sulla tazza c'è scritto \"Lunedì, di nuovo tu\", in corsivo nero.",
+      "falsePositives": [
+        "Ha un sorriso enorme il gatto disegnato sul davanti."
+      ]
+    },
+    {
+      "id": "it-piccolo-gesto",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:un\\s+piccolo\\s+gesto(?:\\s+(?:che|per)|[,.]?\\s+un\\s+grande))(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "\"Un piccolo gesto, un grande…\" closer.",
+      "example": "Un piccolo gesto che lascerà un grande ricordo.",
+      "rewrite": "(Cut; end on the last detail about the item.)",
+      "falsePositives": [
+        "Basta un piccolo gesto del polso per aprire il tappo."
+      ]
+    },
+    {
+      "id": "it-concediti",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:concediti|coccolati|regalati)\\s+(?:un|una|il|la|qualche)\\s+(?:moment[oi]|attim[oi]|pausa|coccola|comfort|po'|serata))(?![\\p{L}\\p{N}])",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Self-care imperative used as a closer.",
+      "example": "Concediti il comfort che meriti!",
+      "rewrite": "Pile da 280 g/m², pesa poco e scalda molto.",
+      "falsePositives": [
+        "Regalati la versione grande se bevi molto tè.",
+        "Concediti tempo per scegliere la taglia giusta."
+      ]
+    },
+    {
+      "id": "it-che-meriti",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:il|la|lo|l'|i|le|gli)\\s*[^.!?\\n]{1,25}?\\s+che\\s+(?:meriti|merita|meritano|meritate))(?![\\p{L}\\p{N}])(?=\\s*[.!,]|\\s*$)",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Calque of \"the X you deserve\".",
+      "example": "Dai al tuo telefono il look che merita!",
+      "rewrite": "Cover rigida con tramonto arancione, bordi rialzati sulla fotocamera.",
+      "falsePositives": [
+        "Il gatto che merita una menzione è Romeo, il nostro modello."
+      ]
+    },
+    {
+      "id": "it-un-tocco-di",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:un|il)\\s+tocco\\s+(?:di|in\\s+più))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Un tocco di eleganza/magia/allegria\": the most frequent filler in Claude listings (17 of 200), against 15 of 792 human shop pages. Common enough in human shop copy to count only with a second sign.",
+      "example": "Aggiunge un tocco di magia a qualsiasi ambiente.",
+      "rewrite": "Il gatto è stampato in oro su fondo nero.",
+      "falsePositives": [
+        "Al primo tocco lo schermo si accende.",
+        "Basta toccarlo per sentire quanto è morbido."
+      ]
+    },
+    {
+      "id": "it-un-pizzico-di",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:un\\s+pizzico\\s+di\\s+(?:magia|poesia|ironia|allegria|follia|colore|originalità|eleganza|fantasia|dolcezza|stile))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Same move as \"un tocco di\", with an abstract noun. Cooking quantities (\"un pizzico di sale\") are not matched.",
+      "example": "Uno stile pulito, ma senza rinunciare a un pizzico di poesia.",
+      "rewrite": "Linee nere sottili su carta bianca, senza colori.",
+      "falsePositives": [
+        "Aggiungi un pizzico di sale e mescola."
+      ]
+    },
+    {
+      "id": "it-senza-tempo",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:fascino|eleganza|stile|design|classic[oaie]|bellezza|icona|capo|pezzo|accessorio|look|charme|motivo|grafica|disegno|stampa|opera)\\s+senza\\s+tempo|intramontabil[ei])(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Fascino senza tempo\": vague praise. Human furniture and fashion copy uses it too (about 1% of pages), so density only.",
+      "example": "Un'icona senza tempo dello stile italiano!",
+      "rewrite": "Poster della Vespa 125 del 1953 su fondo azzurro, 50 x 70.",
+      "falsePositives": [
+        "Siamo rimasti senza tempo per la spedizione di oggi: parte domani."
+      ]
+    },
+    {
+      "id": "it-compagno-ideale",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:il|la|un|una|tu[oa])\\s+(?:tu[oa]\\s+)?(?:compagn[oa]|alleat[oa])\\s+(?:ideale|perfett[oa]|inseparabile|di\\s+fiducia))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "The product as \"your ideal companion\": personification that models use for every object.",
+      "example": "Questa borsa sarà la tua compagna inseparabile.",
+      "rewrite": "Borsa in tela da 10 litri con una tasca interna per le chiavi.",
+      "falsePositives": [
+        "La mia compagna di stanza l'ha disegnata per me."
+      ]
+    },
+    {
+      "id": "it-trasforma-in",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:trasforma\\s+(?:il\\s+tuo|la\\s+tua|i\\s+tuoi|le\\s+tue|ogni|qualsiasi)\\s+[^.!?\\n]{1,40}?\\s+in)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Trasforma ogni sorso / la tua parete in…\": transformation promise with no fact.",
+      "example": "Trasforma le tue pareti in una finestra sul passato!",
+      "rewrite": "Riproduzione di una mappa del 1890, colori seppia.",
+      "falsePositives": [
+        "L'adattatore trasforma la presa tedesca in italiana."
+      ]
+    },
+    {
+      "id": "it-unisce-in-un-unico",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:unisce|combina|coniuga|racchiude|unendo|combinando)\\s+(?:perfettamente\\s+|alla\\s+perfezione\\s+)?[^.!?\\n]{1,30}?\\s+e\\s+[^.!?\\n]{1,30}?\\s+in\\s+(?:un\\s+(?:unico|solo)|una\\s+(?:sola|unica)))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "\"Unisce stile e comfort in un unico capo\": two abstract nouns fused into one formula.",
+      "example": "La nostra t-shirt unisce comfort e stile in un unico capo.",
+      "rewrite": "T-shirt in cotone pettinato 180 g, taglio dritto.",
+      "falsePositives": [
+        "Il kit combina tre colori e due misure diverse."
+      ]
+    },
+    {
+      "id": "it-stile-e-comfort",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:stile|eleganza|design)\\s+e\\s+(?:comfort|praticità|funzionalità|protezione)|(?:comfort|praticità|funzionalità|protezione)\\s+e\\s+(?:stile|eleganza|design))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Abstract pair (\"stile e comfort\", \"eleganza e protezione\") that fits any product.",
+      "example": "Proteggi il tuo telefono con stile: eleganza e protezione in un solo accessorio.",
+      "rewrite": "Cover in TPU con bordi rialzati e fiori ad acquerello.",
+      "falsePositives": [
+        "Lo stile è scandinavo e il comfort dipende dal cuscino che scegli."
+      ]
+    },
+    {
+      "id": "it-esprimi-la-tua-personalita",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:esprimi\\s+(?:la\\s+tua|il\\s+tuo)\\s+(?:personalità|stile|creatività|unicità|essenza|passione|lato)|che\\s+parla\\s+di\\s+te)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Self-expression promise attached to an ordinary object or service.",
+      "example": "Esprimi la tua personalità con un accessorio che parla di te!",
+      "rewrite": "Cover trasparente con il tuo nome in corsivo e due cuoricini.",
+      "falsePositives": [
+        "Esprimi un desiderio e soffia sulle candeline."
+      ]
+    },
+    {
+      "id": "it-abbraccio-avvolgente",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:un|in\\s+un|come\\s+un)\\s+abbraccio\\s+(?:caldo|avvolgente|morbido|di\\s+(?:morbidezza|dolcezza|calore|comfort)))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "The blanket or cushion described as \"un abbraccio caldo e avvolgente\": metaphor instead of fabric facts.",
+      "example": "Ti avvolge in un abbraccio caldo e accogliente.",
+      "rewrite": "Sherpa doppio strato, 150 x 200, lavabile a 30 gradi.",
+      "falsePositives": [
+        "Un abbraccio a tutti i clienti che ci hanno scritto!"
+      ]
+    },
+    {
+      "id": "it-rituale-quotidiano",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:piccolo\\s+)?rituale\\s+(?:quotidiano|del\\s+mattino|di\\s+ogni\\s+giorno)|un\\s+sorso\\s+alla\\s+volta|ogni\\s+sorso)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Coffee and tea items dressed up as a \"daily ritual\" or \"every sip\".",
+      "example": "Trova la tua pace interiore, un sorso alla volta.",
+      "rewrite": "Tazza da 350 ml con la scritta \"Namasté a casa\".",
+      "falsePositives": [
+        "Il tè si beve a piccoli sorsi, non bollente."
+      ]
+    },
+    {
+      "id": "it-piccolo-capolavoro",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:piccolo\\s+capolavoro|(?:un'|una\\s+vera\\s+)opera\\s+d'arte)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "An ordinary object or result called a masterpiece.",
+      "example": "Trasforma il tuo smartphone in un piccolo capolavoro.",
+      "rewrite": "Cover con il motivo delle maioliche di Vietri, blu e bianco.",
+      "falsePositives": [
+        "Riproduce un'opera di Klimt del 1907."
+      ]
+    },
+    {
+      "id": "it-fa-la-differenza",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:dettagl(?:io|i)|gest(?:o|i))\\s+che\\s+fa(?:nno)?\\s+la\\s+differenza|fa(?:nno|rà)?\\s+(?:davvero\\s+)?la\\s+differenza[.!])(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Un dettaglio che fa la differenza\": closing slogan with nothing specific.",
+      "example": "Un piccolo dettaglio che fa la differenza!",
+      "rewrite": "Il bordo è rialzato di 1 mm sulla fotocamera.",
+      "falsePositives": [
+        "La differenza di prezzo tra le due misure è di 3 euro."
+      ]
+    },
+    {
+      "id": "it-stile-di-vita",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:è|é|e'|sono)\\s+uno\\s+stile\\s+di\\s+vita)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "\"Non è solo una stampa, è uno stile di vita\": inflated significance.",
+      "example": "Non è solo una stampa, è uno stile di vita.",
+      "rewrite": "Stampa line art di una tazzina di espresso, 30 x 40.",
+      "falsePositives": [
+        "Uno stile di vita più lento è il tema della collezione."
+      ]
+    },
+    {
+      "id": "it-iniziare-la-giornata",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:iniziare|inizia|iniziate|cominciare|comincia)\\s+(?:la\\s+giornata|ogni\\s+mattina|la\\s+mattina)\\s+(?:con|nel\\s+modo|col\\s+piede))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Inizia la giornata con il piede giusto\": stock line for mugs and t-shirts.",
+      "example": "Inizia la giornata con il piede giusto!",
+      "rewrite": "Maglietta con una moka disegnata e la scritta \"Prima il caffè\".",
+      "falsePositives": [
+        "La spedizione inizia la mattina dopo il pagamento."
+      ]
+    },
+    {
+      "id": "it-chiunque-ami",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:per\\s+|a\\s+)?chiunque\\s+(?:ami|apprezzi|voglia|desideri|abbia\\s+bisogno|sogni|viva))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Mirrors English \"anyone who loves…\". Italian more often says \"per chi ama\".",
+      "example": "Un regalo pratico per chiunque ami le montagne.",
+      "rewrite": "Pesa 280 g e sta nello zaino.",
+      "falsePositives": [
+        "Chiunque abbia ordinato prima del 10 riceve il pacco entro Natale."
+      ]
+    },
+    {
+      "id": "it-regalo-perfetto",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:il|un|(?:è|é|e')\\s+il)\\s+regalo\\s+(?:perfetto|ideale)|idea\\s+regalo\\s+(?:perfetta|ideale|originale|unica|speciale)|(?:il|un)\\s+pensiero\\s+(?:perfetto|speciale|originale|significativo))(?![\\p{L}\\p{N}])",
+      "category": "vague-praise",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Il regalo perfetto\", \"idea regalo originale\": in 48 of 200 Claude listings and 9 of 792 human shop pages. Gift copy needs it sometimes, so it counts only with a second sign.",
+      "example": "Il regalo perfetto per tutti gli amanti dei gatti!",
+      "rewrite": "Sul fronte c'è un gatto rosso che dorme, sul retro il suo nome.",
+      "falsePositives": [
+        "Confezione regalo disponibile a 2 euro.",
+        "Il regalo arriva con un biglietto scritto a mano."
+      ]
+    },
+    {
+      "id": "it-per-chi-ama",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:per\\s+(?:chi\\s+ama|(?:tutti\\s+|tutte\\s+)?(?:gli|i|le)\\s+amanti\\s+(?:del|della|dei|delle|degli|dello|dell')|tutti\\s+coloro\\s+che\\s+amano))(?![\\p{L}\\p{N}])",
+      "category": "vague-praise",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Audience formula (\"per chi ama…\", \"per gli amanti dei…\"): in 76 of 200 Claude listings and 6 of 792 human shop pages; a gift seller may still use it once.",
+      "example": "Perfetta per chi ama i gatti, i libri e le mattine lente.",
+      "rewrite": "Il gatto dorme su tre libri impilati; il disegno gira tutto intorno alla tazza.",
+      "falsePositives": [
+        "Chi ama il tè verde può scegliere la versione con filtro.",
+        "Per tutti i dettagli guarda le foto."
+      ]
+    },
+    {
+      "id": "it-fatto-con-amore",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:realizzat|creat|pensat|progettat|confezionat|disegnat|prodott|preparat)[oaie]\\s+con\\s+(?:cura|amore|passione|attenzione|il\\s+cuore))(?![\\p{L}\\p{N}])",
+      "category": "vague-praise",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Realizzato con cura e amore\": a claim the reader cannot check. Small makers say it honestly, so it counts only with a second sign.",
+      "example": "Ogni sticker è stato realizzato con cura per aggiungere dolcezza alle tue pagine.",
+      "rewrite": "Foglio A6 con 12 sticker, carta opaca, taglio a filo.",
+      "falsePositives": [
+        "Maneggiare con cura: è ceramica."
+      ]
+    },
+    {
+      "id": "it-grandi-e-piccini",
+      "kind": "phrase",
+      "match": "grandi e piccini",
+      "category": "vague-praise",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Set phrase for \"everyone\"; models add it to children's and gift items by default.",
+      "example": "Divertente e originale, è adatta a grandi e piccini.",
+      "rewrite": "Taglie bambino dai 2 ai 12 anni e adulto dalla S alla XXL.",
+      "falsePositives": [
+        "Grandi e piccole taglie sono indicate nella tabella."
+      ]
+    },
+    {
+      "id": "it-non-passa-inosservato",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:non\\s+)?(?:passa|passerà|passano|passeranno|passare)\\s+inosservat[oaie]|(?:attirerà|catturerà)\\s+(?:l'attenzione|gli\\s+sguardi)|farà\\s+girare\\s+la\\s+testa)(?![\\p{L}\\p{N}])",
+      "category": "vague-praise",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Promise of attention (\"non passa inosservato\", \"attirerà gli sguardi\").",
+      "example": "Esprimi il tuo spirito ribelle con un dettaglio che non passa inosservato.",
+      "rewrite": "Adesivo nero opaco 10 cm, per caschi e serbatoi.",
+      "falsePositives": [
+        "Il pacco è passato in dogana senza ritardi."
+      ]
+    },
+    {
+      "id": "it-vivaci-e-duraturi",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:vivac[ei]|brillant[ei]|nitid[aoie])\\s+e\\s+duratur[aoie])(?![\\p{L}\\p{N}])",
+      "category": "vague-praise",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Stock quality pair (\"colori vivaci e duraturi\") used in place of saying how the thing is made or how long it lasts.",
+      "example": "Stampa su entrambi i lati, colori vivaci e duraturi.",
+      "rewrite": "Stampa a sublimazione su entrambi i lati, adatta alla lavastoviglie.",
+      "falsePositives": [
+        "I colori sono vivaci; il nero tende al grigio scuro."
+      ]
+    },
+    {
+      "id": "it-ancora-piu-speciale",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:ancora\\s+più\\s+(?:special[ei]|magic[oaie]|accogliente|indimenticabil[ei]|unic[oaie]))(?![\\p{L}\\p{N}])",
+      "category": "vague-praise",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Intensified vague praise.",
+      "example": "Il plaid che rende ogni momento di lettura ancora più speciale.",
+      "rewrite": "Plaid 130 x 170 con libri e tazze di tè stampati.",
+      "falsePositives": [
+        "La versione grande è ancora più capiente: 500 ml."
+      ]
+    },
+    {
+      "id": "it-non-e-solo-x-e",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:non\\s+(?:è|é|e')\\s+(?:solo|soltanto|semplicemente|solamente)\\s+(?:un|una|uno|un')\\s*[^.!?\\n,;:]{1,30}[,:;]\\s*(?:è|é|e'|ma\\s+(?:è|anche|un|una|uno|un')))(?![\\p{L}\\p{N}])",
+      "category": "false-contrast",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Contrast with a reading nobody suggested (\"Non è solo una tazza, è…\"). Plain \"non solo… ma anche\" is normal Italian and is not matched.",
+      "example": "Non è solo una tazza: è un piccolo rituale quotidiano.",
+      "rewrite": "Tazza da 330 ml con un gatto nero e una luna dorata.",
+      "falsePositives": [
+        "Non solo la tazza ma anche il piattino va in lavastoviglie.",
+        "Non è solo questione di prezzo."
+      ]
+    },
+    {
+      "id": "it-piu-di-un-semplice",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:non\\s+(?:è|é|e'|era|sarà|sono)\\s+(?:più\\s+)?(?:un|una|uno|un')\\s*semplice|(?:si\\s+tratta|non\\s+si\\s+tratta)\\s+(?:solo\\s+|soltanto\\s+)?di\\s+(?:un|una|uno|un')\\s*semplice|(?:va\\s+)?(?:ben\\s+)?oltre\\s+(?:il|la|lo|l')\\s*semplice|(?:molto\\s+)?più\\s+(?:di|che)\\s+(?:un|una|uno|un')\\s*semplic[ei])(?![\\p{L}\\p{N}])",
+      "category": "false-contrast",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Contrast with a reading nobody proposed: \"non è un semplice X\", \"più di una semplice X\", \"va oltre il semplice X\". The text denies a modest description so it can inflate the subject. Common in machine-written news (DeSegMa-IT) and in Claude listings, rare in human prose.",
+      "example": "Questa stampa è molto più di una semplice decorazione.",
+      "rewrite": "Stampa su carta opaca 200 g con la mappa della Sicilia del 1890.",
+      "falsePositives": [
+        "Più semplice di così non si può: si appende con due chiodini.",
+        "È un semplice errore di battitura.",
+        "Basta un semplice cacciavite per montarlo."
+      ]
+    },
+    {
+      "id": "it-scorte-limitate",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:affrettati|affrettatevi|scorte\\s+limitate|disponibilità\\s+limitata|pezzi\\s+limitati|ultimi\\s+pezzi|(?:fino|sino)\\s+(?:a|ad)\\s+esaurimento\\s+scorte|solo\\s+per\\s+poco\\s+tempo|non\\s+aspettare\\s+l'ultimo\\s+minuto)(?![\\p{L}\\p{N}])",
+      "category": "urgency",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Invented scarcity (\"affrettati, scorte limitate\") that pushes the reader to act now.",
+      "example": "Affrettati, le scorte sono limitate!",
+      "rewrite": "Stampato su ordinazione: parte in 3–5 giorni lavorativi.",
+      "falsePositives": [
+        "Le scorte di carta arrivano ogni lunedì."
+      ]
+    },
+    {
+      "id": "it-non-lasciartelo-sfuggire",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:non\\s+(?:lasciartel[aoie]|fartel[aoie]|lasciatevel[aoie]|fatevel[aoie])\\s+(?:sfuggire|scappare)|non\\s+perdere\\s+l'occasione)(?![\\p{L}\\p{N}])",
+      "category": "urgency",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Fear-of-missing-out closer.",
+      "example": "Perfetta come idea regalo. Non lasciartela sfuggire!",
+      "rewrite": "(Cut; end on the size or care details.)",
+      "falsePositives": [
+        "Non perdere lo scontrino: serve per il reso."
+      ]
+    },
+    {
+      "id": "it-e-importante-sottolineare",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:(?:è|é|e')\\s+importante|vale\\s+la\\s+pena(?:\\s+di)?|(?:è|é|e')\\s+opportuno|occorre)\\s+(?:notare|sottolineare|ricordare|evidenziare|precisare))(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Announces a point instead of making it.",
+      "example": "È importante sottolineare che la tazza è adatta al microonde.",
+      "rewrite": "La tazza va nel microonde.",
+      "falsePositives": [
+        "Ricordati di indicare il nome da stampare nelle note.",
+        "È importante lavarla a mano i primi giorni.",
+        "È bene ricordare che la consegna è il 12."
+      ]
+    },
+    {
+      "id": "it-in-conclusione",
+      "kind": "regex",
+      "match": "(?:^|[.!?…]\\s+|\\n\\s*)in\\s+conclusione(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"In conclusione\" at the start of a sentence announces a summary and then repeats what was said. In 49 of 2,000 machine-written news articles against 1 of 2,000 human ones and 4 of 1,436 web pages. School essays are taught to close this way, so it counts only with a second sign. \"In sintesi\", \"in definitiva\" and \"per concludere\" are left out because they separate human from machine news much less well.",
+      "example": "In conclusione, il lavoro da remoto funziona se è organizzato bene.",
+      "rewrite": "(Cut the summary.)",
+      "falsePositives": [
+        "Spedizione in sintesi: 3 giorni in Italia, 7 in Europa.",
+        "In sintesi, il guasto è risolto.",
+        "Per concludere, ringrazio tutti."
+      ]
+    },
+    {
+      "id": "it-registro-misto",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:il\\s+tuo|la\\s+tua|i\\s+tuoi|le\\s+tue|scegli|ordina|aggiungi|scopri)(?![\\p{L}\\p{N}])[\\s\\S]{0,800}?(?<![\\p{L}\\p{N}])(?:non\\s+esiti|la\\s+ringraziamo|le\\s+(?:ricordiamo|consigliamo|offriamo|garantiamo)|se\\s+lei\\s+(?:cerca|desidera|vuole)|il\\s+suo\\s+ordine|la\\s+sua\\s+(?:scelta|ordinazione))(?![\\p{L}\\p{N}])",
+      "category": "structure",
+      "precision": "medium",
+      "evidence": "reasoning",
+      "domain": "general",
+      "why": "Switches from \"tu\" to formal \"Lei\" in one text. Generators mix registers; a shop owner keeps one. Only forms that address the buyer count, not \"la sua casa\", which usually means someone else's house.",
+      "example": "Scegli il tuo modello preferito. Se Lei cerca un regalo per un collega, questa è la scelta giusta.",
+      "rewrite": "Scegli il modello che preferisci. Se cerchi un regalo per un collega, c'è anche la versione termica.",
+      "falsePositives": [
+        "Lei è la nostra illustratrice: il tuo ritratto lo disegna lei.",
+        "Scegli il tuo poster: Marta ha dipinto la sua casa al mare."
+      ]
+    },
+    {
+      "id": "it-etichette-titolo-descrizione",
+      "kind": "regex",
+      "match": "(?:^|\\n)\\s*(?:\\*\\*)?(?:titolo|descrizione(?:\\s+del\\s+prodotto)?|tag|parole\\s+chiave)(?:\\*\\*)?\\s*:",
+      "category": "structure",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Field labels (\"Titolo:\", \"Descrizione:\", \"Tag:\") copied from a generator answer into the description.",
+      "example": "Titolo: Tazza Gatto Arancione\nDescrizione: Una tazza pensata per chi ama i gatti.",
+      "rewrite": "Una tazza per chi ha un gatto arancione e lo vuole vedere anche a colazione.",
+      "falsePositives": [
+        "Nel titolo trovi la misura: 330 ml."
+      ]
+    },
+    {
+      "id": "it-perche-sceglierlo",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:perché\\s+sceglier(?:lo|la|li|le|ci|e))(?![\\p{L}\\p{N}])\\s*\\?",
+      "category": "structure",
+      "precision": "medium",
+      "evidence": "imitation",
+      "domain": "general",
+      "why": "Sales-page header turned into a question before a list of benefits.",
+      "example": "Perché sceglierli?\n✔️ Design unico e originale",
+      "rewrite": "Fogli A6 in vinile opaco, resistenti all'acqua.",
+      "falsePositives": [
+        "Ci chiedete spesso perché scegliere il vinile opaco: si graffia meno."
+      ]
+    },
+    {
+      "id": "it-mai-stato-cosi",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:non\\s+(?:è|é|e')\\s+mai\\s+stato\\s+così\\s+(?:facile|semplice|bello|comodo|divertente))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Calque of \"has never been easier\". One pre-2022 human shop page uses it (a localised print shop), so not high.",
+      "example": "Sopravvivere al lunedì non è mai stato così facile!",
+      "rewrite": "Tazza termica in acciaio, tiene caldo il caffè per circa 6 ore.",
+      "falsePositives": [
+        "Non è mai stato lavato a più di 30 gradi."
+      ]
+    },
+    {
+      "id": "it-lineetta-em-dash",
+      "kind": "regex",
+      "match": "—",
+      "category": "punctuation",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "product",
+      "why": "Em dash as a general connector. Italian typography allows the lineetta, and human news uses it more than machine news (116 against 49 of 2,000 DeSegMa-IT articles), but small-shop copy almost never does (1 of 792 pages).",
+      "example": "Il nuovo poster — stampato su carta di qualità museale — porta eleganza in ogni stanza.",
+      "rewrite": "Il poster è stampato su carta opaca da 200 g.",
+      "falsePositives": [
+        "Tazza 330 ml – stampa fronte e retro.",
+        "Taglie S-XL, spedizione 3-5 giorni."
+      ]
+    },
+    {
+      "id": "it-caporali",
+      "kind": "regex",
+      "match": "«[^»\\n]{1,80}»",
+      "category": "punctuation",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "product",
+      "why": "Caporali («…») around the printed slogan. Correct Italian typography, but uncommon in small-shop copy (8 of 792 pages) and frequent in Claude listings (46 of 200).",
+      "example": "Felpa «Sono una persona mattiniera (bugia)» – Felpa Divertente Unisex",
+      "rewrite": "Felpa unisex con la scritta \"Sono una persona mattiniera (bugia)\"",
+      "falsePositives": [
+        "Felpa con la scritta \"Ciao bella\" in corsivo."
+      ]
+    },
+    {
+      "id": "it-chat-offerta-tono",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:posso\\s+(?:anche\\s+)?(?:adattar|personalizzar|riscriver|accorciar|allungar|ottimizzar|rielaborar|riformular|render)(?:e|lo|la|li|le|ne)|vuoi\\s+che\\s+(?:lo|la|li|le|ne)\\s+(?:adatti|riscriva|accorci|allunghi|personalizzi|renda))[^\\n]{0,80}?(?<![\\p{L}\\p{N}])(?:tono|registro)(?![\\p{L}\\p{N}])|(?:posso\\s+(?:anche\\s+)?(?:adattar|personalizzar|riscriver|accorciar|allungar|ottimizzar|rielaborar|riformular|render)(?:e|lo|la|li|le|ne)|vuoi\\s+che\\s+(?:lo|la|li|le|ne)\\s+(?:adatti|riscriva|accorci|allunghi|personalizzi|renda))[^\\n]{0,80}?(?<![\\p{L}\\p{N}])(?:dettagli|dati|informazioni|nomi|numeri)\\s+(?:reali|concreti)(?![\\p{L}\\p{N}])|(?:posso\\s+(?:anche\\s+)?(?:adattar|personalizzar|riscriver|accorciar|allungar|ottimizzar|rielaborar|riformular|render)(?:e|lo|la|li|le|ne)|vuoi\\s+che\\s+(?:lo|la|li|le|ne)\\s+(?:adatti|riscriva|accorci|allunghi|personalizzi|renda))[^\\n]{0,60}?(?<![\\p{L}\\p{N}])più\\s+(?:formale|informale|breve|sintetic[oa]|discorsiv[oa]|tecnic[oa]|ironic[oa]|istituzionale|colloquiale|personale|legger[oa]|giornalistic[oa])[,\\s]+(?:o\\s+|oppure\\s+)?più\\s+\\p{L}+|(?:tono|registro)\\s+più\\s+\\p{L}+\\s+o\\s+più(?![\\p{L}\\p{N}])|spero\\s+che\\s+(?:questa\\s+(?:descrizione|versione)|questo\\s+testo)\\s+ti\\s+piaccia(?![\\p{L}\\p{N}]))|(?:^|\\n)[ \\t]*(?:-{3,}|\\*{3,}|_{3,})[ \\t]*\\n\\s*[*_]*(?:\\p{Extended_Pictographic}\\uFE0F?\\s*)?(?:se\\s+vuoi[,\\s]+posso|vuoi\\s+che\\s+(?:lo|la|li|le|ne)\\s+\\p{L}+|se\\s+mi\\s+(?:dai|dici|fornisci|indichi|passi|mandi|scrivi|racconti))(?![\\p{L}\\p{N}])",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Chat assistant's offer to rework the text it just wrote: another tone or register, a menu of versions (\"più formale o più informale\"), the real details it left out, or an offer set off below a rule line. It speaks to the person who asked for the text, not to the reader. Offers that do not name the text's tone, versions or missing details are left out, because people make them every day (\"Se vuoi, posso preparare io la torta\").",
+      "example": "Il club si riunisce il primo martedì del mese. Se vuoi, posso adattarlo a un tono più formale o più informale.",
+      "rewrite": "Il club si riunisce il primo martedì del mese.",
+      "falsePositives": [
+        "Se vuoi, posso passarti a prendere alle otto.",
+        "Il tono più formale della lettera non è piaciuto a tutti.",
+        "Posso adattarmi a qualsiasi orario.",
+        "Spero che il pacco arrivi prima di Natale.",
+        "Ciao Marco, ti allego il file. Spero ti sia utile!",
+        "Se ti serve, posso preparare una bozza del contratto entro venerdì.",
+        "Se ti serve, posso anche accorciare il testo prima di mandarlo al direttore."
+      ]
+    },
+    {
+      "id": "it-chat-chiede-dettagli",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])se\\s+mi\\s+(?:dai|dici|fornisci|indichi|passi|mandi|scrivi|racconti|comunichi)(?![\\p{L}\\p{N}])(?:[^\\n]{0,40}?(?<![\\p{L}\\p{N}])(?:dettagli|dati|informazioni|nomi|numeri)\\s+(?:reali|concreti)(?![\\p{L}\\p{N}])|[^\\n]{0,250}?(?<![\\p{L}\\p{N}])(?:(?:posso|potrò|lo|la|li|le)\\s+(?:anche\\s+)?(?:adattar|personalizzar|riscriver|completar|perfezionar|render)\\p{L}*|(?:adatto|personalizzo|riscrivo|completo|perfeziono|sistemo))[^\\n]{0,60}?(?<![\\p{L}\\p{N}])(?:testo|post|articolo|saggio|e-?mail|rapporto|tono|bozza|versione|campi|parentesi|più\\s+(?:precis[oa]|personale|formale|informale|vicin[oa]|concret[oa]))(?![\\p{L}\\p{N}]))",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Chat assistant asks the requester for facts it did not have so it can redo the text (\"Se mi dai qualche dettaglio, posso rendere il post più preciso\"). Left in place, it shows that the names, dates and details were never filled in. Only requests tied to rewriting the text or to its missing real details are matched: \"Se mi fornisci il codice fiscale, procedo\" is ordinary email.",
+      "example": "Se mi dai qualche dettaglio in più sul quartiere, posso rendere il post più preciso.",
+      "rewrite": "La panetteria ha aperto lunedì in via Roma.",
+      "falsePositives": [
+        "Se mi dici la data, prenoto il ristorante.",
+        "Se mi dai il tuo numero, ti chiamo domani.",
+        "Se mi fornisci il codice fiscale, procedo con l'iscrizione.",
+        "Se mi fornisci le date di consegna, ricalcolo il cronoprogramma e te lo rimando entro domani."
+      ]
+    },
+    {
+      "id": "it-chat-segnaposto-nota",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:(?:i|dei|ai|gli)\\s+segnaposto\\s+(?:tra|fra|in)\\s+parentesi|(?:tra|fra)\\s+parentesi\\s+quadre|(?:sostituisci|sostituire|sostituendo|completa|completare)\\s+(?:i|le)\\s+(?:campi|parti|voci|dati)\\s+(?:tra|fra|in)\\s+parentesi)(?![\\p{L}\\p{N}])",
+      "category": "structure",
+      "precision": "high",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Chat assistant explains the placeholders it left in square brackets. A person writing their own text fills in the facts instead of describing the gaps.",
+      "example": "Ho inserito dei segnaposto tra parentesi quadre che puoi sostituire con i dettagli reali.",
+      "rewrite": "La gita al museo è il 12 marzo, con partenza alle 8 dal cortile della scuola.",
+      "falsePositives": [
+        "Il segnaposto con il nome dell'ospite va sul piatto.",
+        "Le note sono tra parentesi tonde."
+      ]
+    },
+    {
+      "id": "it-ecco-bozza",
+      "kind": "regex",
+      "match": "(?:^|\\n\\s*)ecco\\s+(?:una|un)\\s+(?:bozza|possibile\\s+(?:testo|versione|bozza|post|articolo|email|e-mail))(?![\\p{L}\\p{N}])",
+      "category": "structure",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Chat assistant's line introducing the draft that follows. \"Ecco un esempio\" and similar lines are ordinary prose, so only the draft wording is matched, and it counts only with a second sign.",
+      "example": "Ecco una bozza che puoi adattare:",
+      "rewrite": "Cari colleghi, la riunione di lunedì è spostata a martedì alle 10.",
+      "falsePositives": [
+        "Ecco un esempio pratico.",
+        "Ecco una proposta di legge che divide il parlamento."
+      ]
+    },
+    {
+      "id": "it-cta-commenti",
+      "kind": "regex",
+      "match": "(?:(?<![\\p{L}\\p{N}])(?:raccontamelo|scrivimelo|fammelo\\s+sapere|dimmelo|raccontatemelo|scrivetemelo|fatemelo\\s+sapere|ditemelo|condividi(?:lo|la)?|condividete(?:lo|la)?|racconta(?:ci)?|raccontate(?:ci)?|scrivi(?:lo)?|scrivete(?:lo)?)\\s+(?:pure\\s+)?(?:qui\\s+sotto\\s+)?nei\\s+commenti(?![\\p{L}\\p{N}]))|(?:^|[.!?…]\\s+|\\n\\s*)[*_]*(?:\\p{Extended_Pictographic}\\uFE0F?\\s*)?e\\s+(?:tu|voi)(?:,\\s*(?!\\s)(?!(?:come\\s+(?:stai|state|va)|tutto\\s+bene|che\\s+(?:mi\\s+)?(?:racconti|raccontate|fai|fate)|novità)(?![\\p{L}\\p{N}]))[^?\\n]{3,120}\\?|\\?\\s+[^?\\n.!]{3,120}\\?)",
+      "category": "cliche-closer",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Stock closer that turns to the reader: a question introduced by \"E tu, …?\" or \"E voi? …?\", or a request to answer in the comments. Models end blog and social posts this way. The two forms are one entry because they come together, so a post that has both counts once. A bare \"E tu?\" or \"E tu, come stai?\" in a letter is not matched. It fired on 1 of 4,228 development human texts (a shop page), but blog and social posts are thin in the human corpora, so it counts only with a second sign.",
+      "example": "E tu, quale lingua stai imparando? Raccontamelo nei commenti.",
+      "rewrite": "Io sto imparando il tedesco, con due lezioni a settimana.",
+      "falsePositives": [
+        "Nei commenti qualcuno ha segnalato un errore nella mappa.",
+        "Ho letto tutti i commenti e risponderò domani.",
+        "E tu cosa hai risposto a Luca?",
+        "Io sto bene. E tu?",
+        "E tu, come stai? Il lavoro nuovo?"
+      ]
+    },
+    {
+      "id": "it-non-si-tratta-solo-ma",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])non\\s+si\\s+tratta\\s+(?:solo\\s+|soltanto\\s+|semplicemente\\s+|solamente\\s+)?di\\s+[^.!?\\n]{1,80}?,?\\s+ma\\s+(?:di|anche|del|della|dello|dei|delle|degli)(?![\\p{L}\\p{N}])",
+      "category": "false-contrast",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Not-X-but-Y contrast (\"Non si tratta di… ma di…\"): it names a narrow reading nobody proposed and then widens it. Frequent in machine-written news (DeSegMa-IT) and rare in human prose, where it does occur, so it counts only with a second sign.",
+      "example": "Non si tratta solo di spostarsi in bici, ma di ripensare la città.",
+      "rewrite": "Le piste ciclabili cambiano anche il modo in cui si usano le strade.",
+      "falsePositives": [
+        "Non si tratta di un errore.",
+        "Si tratta solo di un ritardo, ma il treno arriverà.",
+        "Non si tratta di un problema grave."
+      ]
+    },
+    {
+      "id": "it-diciamolo",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:diciamolo|diciamocelo|ammettiamolo|(?:la\\s+verità|la\\s+realtà)\\s+(?:è|é|e')\\s+che)(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Conversational aside (\"diciamolo\", \"diciamocelo\") or hinge (\"la verità è che…\", \"la realtà è che…\") that fakes a confiding tone and promises a revelation before an opinion. In 139 of 2,000 machine-written news articles against 8 of 2,000 human ones and none of 1,436 web pages. Aside and hinge are one entry because opinion writers use them together, so a column with both counts once.",
+      "example": "Il nuovo stadio è, diciamolo, un progetto ambizioso.",
+      "rewrite": "Il nuovo stadio costerà 80 milioni e sarà pronto nel 2027.",
+      "falsePositives": [
+        "Diciamo che arrivo verso le otto.",
+        "Lo diciamo da anni: serve un parcheggio.",
+        "Ha detto la verità al giudice.",
+        "La realtà virtuale è il tema della mostra."
+      ]
+    },
+    {
+      "id": "it-non-si-puo-negare",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:non\\s+si\\s+può\\s+(?:negare|ignorare)|(?:è|é|e')\\s+innegabile\\s+che)(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Hedge that concedes a point nobody disputed (\"Non si può negare che…\") before making it. Frequent in machine-written news, rare in human prose.",
+      "example": "Non si può negare che il progetto abbia diviso la città.",
+      "rewrite": "Il progetto ha diviso la città: 40 favorevoli e 38 contrari in consiglio.",
+      "falsePositives": [
+        "Non si può negoziare il prezzo.",
+        "Nessuno nega che la strada sia stretta."
+      ]
+    },
+    {
+      "id": "it-solleva-interrogativi",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])sollev(?:a|ano|ando|ato)\\s+(?:seri\\s+|importanti\\s+|numerosi\\s+|molti\\s+)?(?:interrogativi|dubbi|domande|questioni)(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Solleva interrogativi / dubbi\": commentary that announces doubts instead of naming them. A news-writing habit of models; human news uses it far less.",
+      "example": "La decisione solleva interrogativi sul futuro della squadra.",
+      "rewrite": "La squadra non ha ancora un allenatore per la prossima stagione.",
+      "falsePositives": [
+        "Ha sollevato il divano da solo.",
+        "Gli interrogativi della verifica erano dieci."
+      ]
+    },
+    {
+      "id": "it-a-detta-di-molti",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])a\\s+detta\\s+di\\s+(?:molti|tanti|alcuni)(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Vague attribution (\"a detta di molti\") that cites nobody. It fired in machine-written news and in no development human text.",
+      "example": "Il concerto è stato, a detta di molti, il migliore della stagione.",
+      "rewrite": "Il concerto ha venduto 4.000 biglietti, il doppio dell'anno scorso.",
+      "falsePositives": [
+        "A detta del sindaco, i lavori finiranno a maggio.",
+        "Molti hanno detto che il concerto era bello."
+      ]
+    },
+    {
+      "id": "it-come-spesso-accade",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])come\\s+spesso\\s+(?:accade|succede)(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Come spesso accade\": a knowing aside that presents a general rule without evidence. Much more frequent in machine-written news than in human text.",
+      "example": "Come spesso accade, la verità sta nel mezzo.",
+      "rewrite": "I due testimoni hanno dato versioni diverse.",
+      "falsePositives": [
+        "Accade spesso che il treno arrivi tardi.",
+        "Come accade ogni anno, la fiera apre a marzo."
+      ]
+    },
+    {
+      "id": "it-non-mancano-pero",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])non\\s+mancan[oa]\\s*,?\\s*(?:però|tuttavia|naturalmente)(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Non mancano, tuttavia, le criticità\": the stock turn of a balanced essay, moving from pros to cons without saying which cons until later. Claude essays and articles use it; people write \"non mancano\" too, but rarely with this hinge.",
+      "example": "Non mancano, tuttavia, le critiche dei commercianti.",
+      "rewrite": "I commercianti di via Roma si lamentano dei parcheggi persi.",
+      "falsePositives": [
+        "Non mancano i posti a sedere.",
+        "Non manca niente, tuttavia controlla la lista."
+      ]
+    },
+    {
+      "id": "it-senso-di-comunita",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])senso\\s+di\\s+(?:comunità|appartenenza)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Senso di comunità / di appartenenza\": abstract social benefit added to any topic, from remote work to a park clean-up. In 5 of 96 Claude texts across topics and 24 of 2,000 machine news articles, against 2 of 3,436 human texts.",
+      "example": "Il club rafforza il senso di appartenenza tra i colleghi.",
+      "rewrite": "Al club vengono una dozzina di colleghi di tre uffici diversi.",
+      "falsePositives": [
+        "Ha un grande senso dell'umorismo.",
+        "La comunità montana ha approvato il bilancio."
+      ]
+    },
+    {
+      "id": "it-non-significa-ma",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])non\\s+significa\\s+[^.!?\\n]{1,50}?(?:,\\s*ma|[.:]\\s*significa)(?![\\p{L}\\p{N}])",
+      "category": "false-contrast",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"X non significa Y, ma Z\" / \"Non significa Y. Significa Z.\": corrects a reading nobody proposed, the same move as \"non è solo… ma\".",
+      "example": "Risparmiare energia non significa rinunciare al comfort, ma usare meglio le risorse.",
+      "rewrite": "Con 19 gradi in casa si sta bene e la bolletta scende.",
+      "falsePositives": [
+        "Non significa niente.",
+        "Cosa significa questa parola?"
+      ]
+    },
+    {
+      "id": "it-buona-notizia",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])la\\s+buona\\s+notizia\\s+(?:è|é|e')\\s+che(?![\\p{L}\\p{N}])",
+      "category": "filler",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"La buona notizia è che…\": a blog-style hinge that sets up reassurance. In 3 of 96 development Claude texts and in none of the development human corpora (792 shop pages, 1,436 web pages, 2,000 news articles).",
+      "example": "La buona notizia è che non servono grandi investimenti.",
+      "rewrite": "Guarnizioni e paraspifferi costano pochi euro.",
+      "falsePositives": [
+        "Ha dato la buona notizia ai genitori.",
+        "Le notizie buone arrivano tardi."
+      ]
+    },
+    {
+      "id": "it-mai-troppo-tardi",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])non\\s+(?:è|é|e')\\s+mai\\s+troppo\\s+tardi(?![\\p{L}\\p{N}])",
+      "category": "cliche-opener",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Non è mai troppo tardi\": a stock encouragement used as a title or opener. In 5 of 96 Claude texts, against 1 of 3,436 human texts.",
+      "example": "Non è mai troppo tardi per imparare una lingua.",
+      "rewrite": "Ho iniziato il tedesco a 42 anni, con venti minuti al giorno.",
+      "falsePositives": [
+        "È troppo tardi per prenotare.",
+        "Non è mai arrivato in ritardo."
+      ]
+    },
+    {
+      "id": "it-passo-concreto",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:un\\s+)?(?:passo|modo|gesto|segnale|contributo|impegno)\\s+concret[oa]\\s+(?:verso|per|in)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Un passo concreto verso…\", \"un modo concreto per…\": the word \"concreto\" claims substance the sentence does not show.",
+      "example": "Le nuove piste sono un passo concreto verso una città più sostenibile.",
+      "rewrite": "Le nuove piste aggiungono 12 chilometri alla rete ciclabile.",
+      "falsePositives": [
+        "Il passo successivo è firmare il contratto.",
+        "Abbiamo fatto un esempio concreto."
+      ]
+    },
+    {
+      "id": "it-domanda-secca",
+      "kind": "regex",
+      "match": "(?:^|[.!?…]\\s+|\\n\\s*)(?:la\\s+)?(?:prima\\s+impressione|risposta|il\\s+risultato|la\\s+verità)\\s*\\?",
+      "category": "rhetorical-question",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "A one-phrase question answered by the next sentence (\"Il risultato? …\", \"La prima impressione? …\"), a staged reveal from blog and social writing. In 10 of 2,000 machine-written news articles and 3 of 96 development Claude texts, against 3 of 4,228 development human texts. \"Il motivo?\" and \"Il segreto?\" are left out: human news uses them more often than machine news.",
+      "example": "Il risultato? Tre chili in meno in un mese.",
+      "rewrite": "In un mese ho perso tre chili.",
+      "falsePositives": [
+        "Qual è il segreto della ricetta?",
+        "Ho sbagliato la risposta.",
+        "Il segreto? La pazienza."
+      ]
+    },
+    {
+      "id": "it-triade-piu",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])più\\s+\\p{L}+[aeio],\\s+(?:più\\s+)?\\p{L}+[aeio]\\s+e\\s+(?:più\\s+)?\\p{L}+[aeio](?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "Triplet of comparatives (\"più sicura, più sana e più vivibile\"): rhythm in place of a fact. Machine-written news uses it no more than human news (13 of 2,000 articles each). It is listed for Claude texts, where it is in 5 of 96 development texts against 8 of 1,436 web pages, and counts only with a second sign.",
+      "example": "Una città più pulita, più sana e più vivibile per tutti.",
+      "rewrite": "In via Roma passano 3.000 auto al giorno in meno.",
+      "falsePositives": [
+        "È più alta di me.",
+        "Arriva più tardi, verso le nove."
+      ]
+    },
+    {
+      "id": "it-senza-rinunciare",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])senza\\s+rinunciare\\s+(?:a|al|alla|allo|ai|alle|agli)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Senza rinunciare a…\": promises that nothing is lost (\"senza rinunciare al comfort\"). Claude uses it across topics. Human shop pages use it too (9 of 792), so it counts only with a second sign.",
+      "example": "Si può risparmiare senza rinunciare al comfort.",
+      "rewrite": "A 19 gradi si sta bene e si spende meno.",
+      "falsePositives": [
+        "Ha rinunciato al viaggio.",
+        "Senza di te non parto."
+      ]
+    },
+    {
+      "id": "it-occasione-per",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])(?:un'(?:ottima\\s+|importante\\s+|preziosa\\s+)?opportunità\\s+per|rappresent(?:a|ano|ava|erà|eranno)\\s+(?:una\\s+sfida|un\\s+passo|una\\s+svolta))(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Un'opportunità per…\", \"rappresenta una sfida / un passo / una svolta\": frames an event as an opportunity instead of saying what happens. In 29 of 2,000 machine-written news articles against 2 of 2,000 human ones. \"Un'occasione per\" is left out: it is everyday Italian in letters and newsletters (\"la gita è stata un'occasione per conoscerci\").",
+      "example": "Il nuovo parco rappresenta un passo verso una città più verde.",
+      "rewrite": "Il nuovo parco ha 4.000 metri quadri di prato e 120 alberi.",
+      "falsePositives": [
+        "Ho comprato la bici d'occasione.",
+        "In occasione della festa il negozio chiude.",
+        "La gita è stata un'occasione per conoscerci meglio."
+      ]
+    },
+    {
+      "id": "it-porta-con-se",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])port(?:a|ano|ava)\\s+con\\s+sé\\s+(?:qualcosa|un|una|il|la)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Porta con sé qualcosa / un valore\": abstract carry-over that lends weight to an event or object. It fired in Claude texts and machine news, and in no development human text.",
+      "example": "Ogni libro porta con sé una conversazione nuova.",
+      "rewrite": "Dopo ogni libro discutiamo per un paio d'ore.",
+      "falsePositives": [
+        "Porta con te l'ombrello.",
+        "Porta la sedia in cucina."
+      ]
+    },
+    {
+      "id": "it-modo-diverso-di",
+      "kind": "regex",
+      "match": "(?<![\\p{L}\\p{N}])un\\s+modo\\s+(?:diverso|nuovo)\\s+di\\s+(?:vedere|guardare|vivere|pensare|abitare)(?![\\p{L}\\p{N}])",
+      "category": "hype",
+      "precision": "medium",
+      "evidence": "corpus",
+      "domain": "general",
+      "why": "\"Un modo diverso / nuovo di vedere il mondo\": an abstract benefit with nothing behind it. It fired in Claude texts on several topics and in no development human text.",
+      "example": "Imparare una lingua apre a un modo diverso di vedere il mondo.",
+      "rewrite": "In tedesco ho letto per la prima volta Kafka in originale.",
+      "falsePositives": [
+        "Ha un modo diverso di cucinare il ragù.",
+        "Prova un modo nuovo per arrivare in centro."
+      ]
+    }
+  ]
+}

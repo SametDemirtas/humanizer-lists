@@ -1,0 +1,83 @@
+{
+  "about": "Plain requests for the ai-general corpora: six genres times eight everyday topics per language. No style instruction and no pattern list is sent with them.",
+  "it": {
+    "genres": {
+      "blog": "Scrivi un post per il mio blog {t}.",
+      "email": "Scrivi un'email ai colleghi {t}.",
+      "essay": "Scrivi un breve saggio {t}.",
+      "article": "Scrivi un articolo di giornale {t}.",
+      "social": "Scrivi un post per LinkedIn {t}.",
+      "report": "Scrivi un breve rapporto {t}."
+    },
+    "topics": [
+      "sul lavoro da remoto",
+      "sulle nuove piste ciclabili in città",
+      "sull'imparare una lingua da adulti",
+      "sull'apertura di una nuova panetteria nel quartiere",
+      "su come risparmiare energia in casa",
+      "su una gita scolastica al museo",
+      "sul nostro club del libro",
+      "su una giornata di pulizia del parco con i volontari"
+    ]
+  },
+  "es": {
+    "genres": {
+      "blog": "Escribe una entrada para mi blog sobre {t}.",
+      "email": "Escribe un correo a mis compañeros de trabajo sobre {t}.",
+      "essay": "Escribe un ensayo breve sobre {t}.",
+      "article": "Escribe un artículo periodístico sobre {t}.",
+      "social": "Escribe una publicación para LinkedIn sobre {t}.",
+      "report": "Escribe un informe breve sobre {t}."
+    },
+    "topics": [
+      "el teletrabajo",
+      "los nuevos carriles bici de la ciudad",
+      "aprender un idioma de adulto",
+      "la apertura de una panadería nueva en el barrio",
+      "cómo ahorrar energía en casa",
+      "una excursión escolar al museo",
+      "nuestro club de lectura",
+      "una jornada de limpieza del parque con voluntarios"
+    ]
+  },
+  "nl": {
+    "genres": {
+      "blog": "Schrijf een blogpost over {t}.",
+      "email": "Schrijf een e-mail aan mijn collega's over {t}.",
+      "essay": "Schrijf een kort essay over {t}.",
+      "article": "Schrijf een krantenartikel over {t}.",
+      "social": "Schrijf een LinkedIn-post over {t}.",
+      "report": "Schrijf een kort verslag over {t}."
+    },
+    "topics": [
+      "thuiswerken",
+      "de nieuwe fietspaden in de stad",
+      "als volwassene een taal leren",
+      "de opening van een nieuwe bakkerij in de buurt",
+      "energie besparen in huis",
+      "een schoolreisje naar het museum",
+      "onze leesclub",
+      "een opruimdag in het park met vrijwilligers"
+    ]
+  },
+  "de": {
+    "genres": {
+      "blog": "Schreibe einen Beitrag für meinen Blog über {t}.",
+      "email": "Schreibe eine E-Mail an meine Kollegen über {t}.",
+      "essay": "Schreibe einen kurzen Essay über {t}.",
+      "article": "Schreibe einen Zeitungsartikel über {t}.",
+      "social": "Schreibe einen LinkedIn-Beitrag über {t}.",
+      "report": "Schreibe einen kurzen Bericht über {t}."
+    },
+    "topics": [
+      "das Arbeiten im Homeoffice",
+      "die neuen Radwege in der Stadt",
+      "das Erlernen einer Fremdsprache als Erwachsener",
+      "die Eröffnung einer neuen Bäckerei im Viertel",
+      "das Energiesparen zu Hause",
+      "einen Schulausflug ins Museum",
+      "unseren Buchclub",
+      "einen Aufräumtag im Park mit Freiwilligen"
+    ]
+  }
+}

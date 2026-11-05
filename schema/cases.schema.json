@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Humanizer list test cases",
+  "description": "Extra checks on top of each entry's example, rewrite and falsePositives.",
+  "type": "object",
+  "required": ["language", "cases"],
+  "additionalProperties": false,
+  "properties": {
+    "language": { "type": "string", "pattern": "^[a-z]{2,3}$" },
+    "cases": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/case" }
+    }
+  },
+  "$defs": {
+    "ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z]{2,3}(?:-[a-z0-9]+)+$" }
+    },
+    "case": {
+      "type": "object",
+      "required": ["text"],
+      "anyOf": [{ "required": ["hits"] }, { "required": ["misses"] }],
+      "additionalProperties": false,
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "hits": {
+          "description": "Entries that must match the text.",
+          "$ref": "#/$defs/ids"
+        },
+        "misses": {
+          "description": "Entries that must not match the text, or \"all\" when no entry may match.",
+          "anyOf": [{ "const": "all" }, { "$ref": "#/$defs/ids" }]
+        }
+      }
+    }
+  }
+}

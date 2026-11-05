@@ -1,0 +1,89 @@
+nl: 86 patterns (14 high, 72 medium), diacritics folded
+flag rule: one high hit, or medium hits from two or more entries that do not read the same words
+flagged: with all 86 entries (product copy); flagged general: with the 83 general entries only (any prose); flagged wording: with the general entries outside the structure category (no Markdown, labels, slots or chat leftovers)
+
+corpus                 side   domain   role                           texts  any high  any medium  flagged  flagged general  flagged wording
+human-mc4-wide         human  product  development                     2805      0.0%        2.5%     0.1%             0.0%         0.0% (0)
+human-mc4-reviewed     human  product  development                      269      0.0%        0.7%     0.0%             0.0%         0.0% (0)
+human-mc4-heldout      human  product  held-out                         790      0.0%        3.7%     0.0%             0.0%         0.0% (0)
+human-mc4-web          human  general  development                     2000      0.1%        8.8%     0.8%             0.3%         0.3% (7)
+human-mc4-web-holdout  human  general  held-out                        1000      0.1%        8.0%     0.7%             0.3%         0.3% (3)
+human-mc4-news         human  general  development                      599      0.2%        4.3%     0.5%             0.0%         0.0% (0)
+ai-imitation           ai     product  sanity-check                     120     16.7%       65.0%    40.0%            36.7%       33.3% (40)
+ai-gpt4-ultrachat      ai     product  development                        8     37.5%       50.0%    37.5%            37.5%        37.5% (3)
+ai-clin33              ai     general  out-of-domain                    650      0.0%       28.0%     9.4%             7.7%        7.7% (50)
+ai-general             ai     general  development                       96     99.0%       46.9%   100.0%           100.0%       22.9% (22)
+ai-general-holdout     ai     general  held-out (read during review)     96    100.0%       33.3%   100.0%           100.0%         3.1% (3)
+ai-multi-holdout       ai     general  held-out                         254     97.2%       39.4%    97.6%            97.6%         3.5% (9)
+ai-detailed-holdout    ai     general  held-out                         448     93.1%       21.7%    93.3%            93.1%         1.3% (6)
+
+machine corpora by genre
+corpus               genre     texts  flagged  flagged general  flagged wording
+ai-clin33            News        200    27.0%            24.0%       24.0% (48)
+ai-clin33            Poetry       50     2.0%             0.0%         0.0% (0)
+ai-clin33            Reviews     200     3.0%             1.0%         1.0% (2)
+ai-clin33            Twitter     200     0.0%             0.0%         0.0% (0)
+ai-general           blog         16   100.0%           100.0%        37.5% (6)
+ai-general           email        16   100.0%           100.0%         0.0% (0)
+ai-general           essay        16   100.0%           100.0%        18.8% (3)
+ai-general           article      16   100.0%           100.0%        12.5% (2)
+ai-general           social       16   100.0%           100.0%       68.8% (11)
+ai-general           report       16   100.0%           100.0%         0.0% (0)
+ai-general-holdout   blog         16   100.0%           100.0%        12.5% (2)
+ai-general-holdout   email        16   100.0%           100.0%         0.0% (0)
+ai-general-holdout   essay        16   100.0%           100.0%         0.0% (0)
+ai-general-holdout   article      16   100.0%           100.0%         0.0% (0)
+ai-general-holdout   social       16   100.0%           100.0%         6.3% (1)
+ai-general-holdout   report       16   100.0%           100.0%         0.0% (0)
+ai-multi-holdout     blog         37   100.0%           100.0%        16.2% (6)
+ai-multi-holdout     email        37   100.0%           100.0%         0.0% (0)
+ai-multi-holdout     essay        37    94.6%            94.6%         0.0% (0)
+ai-multi-holdout     article      37   100.0%           100.0%         0.0% (0)
+ai-multi-holdout     social       37    97.3%            97.3%         2.7% (1)
+ai-multi-holdout     report       37    91.9%            91.9%         0.0% (0)
+ai-multi-holdout     longform     32   100.0%           100.0%         6.3% (2)
+ai-detailed-holdout  blog         64   100.0%           100.0%         3.1% (2)
+ai-detailed-holdout  email        64    85.9%            85.9%         0.0% (0)
+ai-detailed-holdout  essay        64    93.8%            92.2%         4.7% (3)
+ai-detailed-holdout  article      64   100.0%           100.0%         0.0% (0)
+ai-detailed-holdout  social       64    73.4%            73.4%         0.0% (0)
+ai-detailed-holdout  report       64   100.0%           100.0%         0.0% (0)
+ai-detailed-holdout  longform     64   100.0%           100.0%         1.6% (1)
+
+machine corpora by generator
+corpus               generator      texts  flagged  flagged general  flagged wording
+ai-general           claude-haiku      48   100.0%           100.0%       29.2% (14)
+ai-general           claude-sonnet     48   100.0%           100.0%        16.7% (8)
+ai-general-holdout   claude-haiku      48   100.0%           100.0%         6.3% (3)
+ai-general-holdout   claude-sonnet     48   100.0%           100.0%         0.0% (0)
+ai-multi-holdout     gpt54mini         24    79.2%            79.2%         4.2% (1)
+ai-multi-holdout     gpt55              6   100.0%           100.0%         0.0% (0)
+ai-multi-holdout     haiku55           56   100.0%           100.0%         1.8% (1)
+ai-multi-holdout     opus55            56   100.0%           100.0%         3.6% (2)
+ai-multi-holdout     sonnet45          56    98.2%            98.2%         7.1% (4)
+ai-multi-holdout     sonnet55          56   100.0%           100.0%         1.8% (1)
+ai-detailed-holdout  haiku55          112    89.3%            89.3%         0.0% (0)
+ai-detailed-holdout  opus55           112    92.9%            92.9%         0.9% (1)
+ai-detailed-holdout  sonnet45         112    95.5%            94.6%         3.6% (4)
+ai-detailed-holdout  sonnet55         112    95.5%            95.5%         0.9% (1)
+
+machine corpora by request style (A short, B careful)
+corpus               style  texts  flagged  flagged general  flagged wording
+ai-detailed-holdout  A        224    99.6%            99.6%         2.2% (5)
+ai-detailed-holdout  B        224    87.1%            86.6%         0.4% (1)
+
+texts with at least one hit, by category
+category             human-mc4-wide  human-mc4-reviewed  human-mc4-heldout  human-mc4-web  human-mc4-web-holdout  human-mc4-news  ai-imitation  ai-gpt4-ultrachat  ai-clin33  ai-general  ai-general-holdout  ai-multi-holdout  ai-detailed-holdout
+cliche-opener                  0.0%                0.0%               0.1%           0.8%                   1.0%            0.2%         14.2%              37.5%       0.3%       21.9%                4.2%              2.8%                 1.6%
+cliche-closer                  0.0%                0.0%               0.0%           0.1%                   0.0%            0.0%          5.0%               0.0%       2.0%       12.5%                7.3%              8.3%                 3.3%
+false-contrast                 0.1%                0.0%               0.1%           0.1%                   0.1%            0.0%          5.0%               0.0%       0.6%        9.4%                5.2%              4.7%                 1.6%
+rhetorical-question            0.0%                0.0%               0.1%           0.0%                   0.0%            0.0%          2.5%               0.0%       0.0%        0.0%                0.0%              0.0%                 0.0%
+hype                           0.5%                0.0%               0.3%           1.8%                   1.5%            0.3%         44.2%              25.0%       6.8%       12.5%                3.1%              2.8%                 1.3%
+vague-praise                   0.0%                0.0%               0.3%           0.4%                   0.1%            0.0%         14.2%              12.5%       0.0%        7.3%                3.1%              2.8%                 0.0%
+urgency                        0.1%                0.0%               0.0%           0.1%                   0.1%            0.0%          6.7%               0.0%       0.2%        0.0%                0.0%              0.4%                 0.0%
+filler                         0.8%                0.4%               1.1%           2.4%                   3.0%            1.8%          5.8%               0.0%      21.1%       11.5%                8.3%              6.7%                 4.5%
+structure                      0.0%                0.0%               0.0%           0.0%                   0.0%            0.0%          5.8%              37.5%       0.0%       99.0%              100.0%             98.0%                93.1%
+punctuation                    1.0%                0.4%               1.6%           3.6%                   2.7%            2.3%          0.8%              37.5%       3.2%       10.4%               10.4%             15.4%                11.6%
+
+entries above their bar on product copy (high 0.1%, medium 1% of texts), each corpus named; held-out corpora are reported here but never decide evidence or domain
+nl-serial-comma (product, medium): 1.4% of human-mc4-heldout (held out)

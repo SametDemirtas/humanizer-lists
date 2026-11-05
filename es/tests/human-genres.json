@@ -1,0 +1,303 @@
+{
+  "about": "Ordinary Spanish writing in genres the human corpora barely cover: personal and business email from Spain and Latin America, chat messages, social posts, newsletters, school essays, academic abstracts, tickets, minutes, reviews, travel writing and sports talk. Drafted for this test by a language model (Claude), not written or collected from real writers. The entries were narrowed until none of these texts was flagged, so passing the test holds by design and is not a measured false-flag rate. They include the sentences a review found flagged. None may be flagged with the general entries; texts marked product are checked with every entry.",
+  "texts": [
+    {
+      "genre": "personal email",
+      "text": "Hola Marta, espero que estés bien. Yo aquí liado con la mudanza. ¿Y tú, qué tal?"
+    },
+    {
+      "genre": "personal email",
+      "text": "Querida tía Pilar:\n\nMuchas gracias por el paquete, llegó ayer y los niños se lanzaron a por el turrón antes de que pudiera esconderlo. Aquí seguimos con frío y lluvia, pero bien. Mamá dice que en Semana Santa bajamos a veros, ya te confirmo fechas.\n\nUn beso muy fuerte,\nLucía"
+    },
+    {
+      "genre": "personal email",
+      "text": "Hola Edu:\n\nTe escribo rápido porque estoy en el tren. Lo del sábado sigue en pie, ¿no? Si me pasas la dirección exacta del restaurante, lo miro en el mapa y te digo a qué hora llego. Dile a Carmen que le llevo el libro que me prestó.\n\nAbrazos"
+    },
+    {
+      "genre": "personal email",
+      "text": "Lo siento por tu pérdida. Un abrazo para ti y tus seres queridos."
+    },
+    {
+      "genre": "business email (Spain)",
+      "text": "Hola a todos, espero que estéis bien. Quería compartir con vosotros el calendario de vacaciones."
+    },
+    {
+      "genre": "business email (Spain)",
+      "text": "Buenos días, te dejo la versión final del informe."
+    },
+    {
+      "genre": "business email (Spain)",
+      "text": "Hola Laura:\n\nTe adjunto el presupuesto revisado con los cambios que comentamos el martes. He quitado la partida de transporte y he ajustado las horas de montaje. Si te parece bien, lo paso a firma esta semana.\n\nUn saludo,\nJavier Ortega\nDepartamento de Compras"
+    },
+    {
+      "genre": "business email (Spain)",
+      "text": "Estimados compañeros:\n\nOs recuerdo que el viernes 14 cerramos la oficina a las 15:00 por la cena de Navidad. Quien no haya confirmado asistencia, que me escriba hoy, por favor, que el restaurante necesita el número exacto.\n\nGracias y un saludo,\nMarisa"
+    },
+    {
+      "genre": "business email (Latin America)",
+      "text": "Hola Juan, te comparto la propuesta para la reunión del jueves."
+    },
+    {
+      "genre": "business email (Latin America)",
+      "text": "Estimada Lic. Ramírez:\n\nLe comparto el cronograma actualizado del proyecto y la minuta de la reunión de ayer. Quedo atento a sus comentarios para cerrar la versión definitiva antes del viernes.\n\nSaludos cordiales,\nIng. Martín Salazar\nCoordinación de Obras"
+    },
+    {
+      "genre": "business email (Latin America)",
+      "text": "Buenas tardes, Andrés:\n\nTe comparto los datos que me pediste para el alta del proveedor: razón social, RFC y cuenta bancaria van en el PDF adjunto. Si me indicas a quién debo mandar la factura, la envío hoy mismo.\n\nQuedo atenta.\nSaludos,\nPaola"
+    },
+    {
+      "genre": "business email (Latin America)",
+      "text": "Hola Fede, ¿cómo andás? Te paso el link de la planilla con los turnos de diciembre. Fijate si te sirve el horario del 23, si no lo cambiamos. Cualquier cosa avisame.\nAbrazo,\nCami"
+    },
+    {
+      "genre": "business email (Latin America)",
+      "text": "Buenos días, equipo:\n\nEspero que se encuentren muy bien. Les comparto la agenda de la capacitación del martes y el enlace de Zoom. Por favor confirmen su asistencia antes del lunes.\n\nQuedo atenta a cualquier duda.\n\nSaludos cordiales,\nMaría Fernanda Ruiz\nRecursos Humanos"
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "¡Genial! Nos vemos el sábado en la plaza."
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "¡Perfecto! Te espero a las cinco."
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "Claro. Mañana te lo llevo."
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "Si quieres, puedo hacer la reserva para el viernes."
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "¿Quieres que te lo prepare para mañana?"
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "Si me indicas tu dirección, te lo envío mañana."
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "Si me pasas más datos del proveedor, lo reviso hoy."
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "Si te parece, preparo una propuesta y te la mando el lunes."
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "Si quieres, te puedo preparar el informe para mañana."
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "Dile hola a tu madre de mi parte, que hace mucho que no la veo."
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "Vale, perfecto 👍 Llego en diez minutos, estoy aparcando. ¿Pido yo las cañas o esperáis?"
+    },
+    {
+      "genre": "WhatsApp message",
+      "text": "Oye, ¿sí vas a ir a la posada del viernes? Yo llevo los tamales y Pepe dijo que lleva el ponche. Avísame para apartarte lugar en el coche."
+    },
+    {
+      "genre": "Instagram post",
+      "text": "¿Y tú, qué libro estás leyendo este verano? Cuéntamelo en los comentarios 👇"
+    },
+    {
+      "genre": "Instagram post",
+      "text": "✨ Nueva colección ✨\n✅ Envío gratis\n✅ Hecho a mano"
+    },
+    {
+      "genre": "Instagram post",
+      "text": "Hoy hace un año que abrimos la librería 📚 Gracias a todos los que habéis pasado a por un libro, a por un café o simplemente a charlar un rato. Este sábado lo celebramos con cuentacuentos a las 12 y descuentos en toda la tienda. ¡Os esperamos!"
+    },
+    {
+      "genre": "Facebook post",
+      "text": "Se ha perdido un gato atigrado por la zona de la calle Alfareros, responde al nombre de Lola. Lleva collar rojo. Si alguien lo ve, por favor que me escriba por privado. ¡Gracias, vecinos!"
+    },
+    {
+      "genre": "LinkedIn post",
+      "text": "Me alegra compartir que empiezo nuevo trabajo. ¿Y ustedes, cómo empezaron el año?"
+    },
+    {
+      "genre": "LinkedIn post",
+      "text": "No es solo un trabajo: es mi vocación."
+    },
+    {
+      "genre": "LinkedIn post",
+      "text": "Después de seis años en el departamento de operaciones, el lunes empiezo una nueva etapa como responsable de datos en una pyme de Valladolid. Me llevo muchos aprendizajes y, sobre todo, a muy buenos compañeros. Gracias a todos los que me habéis acompañado en este camino. Seguimos en contacto."
+    },
+    {
+      "genre": "LinkedIn post",
+      "text": "Estamos contratando 🚀 Buscamos desarrollador/a backend con experiencia en Python y PostgreSQL para nuestro equipo en Bogotá. Modalidad híbrida, dos días en oficina. Si te interesa o conoces a alguien, escríbeme por mensaje directo o comparte esta publicación."
+    },
+    {
+      "genre": "school newsletter",
+      "text": "Queridas familias:\n\nEl próximo viernes 22 de marzo celebraremos la fiesta de primavera en el patio del colegio. Habrá actuaciones de todos los cursos a partir de las 16:30 y la AMPA montará un puesto de bocadillos y bebidas. Os pedimos que los alumnos traigan ropa cómoda y una gorra. Si alguna familia puede ayudar a montar las mesas a partir de las 15:00, que se lo diga a la tutora.\n\nUn saludo,\nEl equipo directivo"
+    },
+    {
+      "genre": "school newsletter",
+      "text": "La semana pasada los alumnos de 4.º visitaron el Museo de Ciencias Naturales. Vieron el esqueleto de la ballena, hicieron un taller sobre fósiles y comieron en el parque de al lado. Al volver, muchos venían diciendo que querían ser paleontólogos. Gracias a las familias que acompañasteis al grupo."
+    },
+    {
+      "genre": "school newsletter",
+      "text": "No esperes más para inscribirte: el curso empieza el lunes. Y marca la diferencia."
+    },
+    {
+      "genre": "neighbourhood newsletter",
+      "text": "Boletín de la Asociación de Vecinos de San Blas, octubre\n\nEl ayuntamiento ha confirmado que las obras de la plaza empezarán en enero y durarán unos cinco meses. Mientras tanto, el mercadillo de los domingos se trasladará a la calle Amposta. La próxima asamblea es el jueves 17 a las 19:00 en el local de la asociación. Recordad que la cuota anual sigue siendo de 15 euros."
+    },
+    {
+      "genre": "school essay",
+      "text": "En la actualidad, las redes sociales forman parte de la vida de casi todos los jóvenes. Por un lado, nos permiten estar en contacto con amigos que viven lejos y enterarnos de lo que pasa en el mundo. Por otro lado, pasamos demasiadas horas mirando el móvil y a veces nos comparamos con vidas que no son reales. En mi opinión, el problema no son las redes, sino el uso que hacemos de ellas. Para concluir, creo que en los colegios deberían enseñarnos a usarlas mejor."
+    },
+    {
+      "genre": "school essay",
+      "text": "En un mundo cada vez más globalizado, aprender idiomas es muy importante. Yo empecé con el inglés a los seis años y ahora estudio francés en el instituto. Gracias a los idiomas he podido hacer un intercambio en Lyon y conocer a gente de otros países. Aunque a veces cuesta, merece la pena el esfuerzo."
+    },
+    {
+      "genre": "school essay",
+      "text": "Esto no significa que no te quiera, sino que necesito tiempo. La clave está en hablarlo."
+    },
+    {
+      "genre": "academic abstract",
+      "text": "Palabras clave: migración, empleo, políticas públicas.\n\nResumen: Este trabajo analiza..."
+    },
+    {
+      "genre": "academic abstract",
+      "text": "Resumen\n\nEste artículo analiza la evolución del empleo femenino en el sector agrario de Andalucía entre 2008 y 2020 a partir de los microdatos de la Encuesta de Población Activa. Los resultados muestran un descenso de la ocupación en las explotaciones familiares y un aumento del trabajo temporal asalariado, sobre todo en la campaña de los frutos rojos. Se discuten las implicaciones para las políticas de igualdad en el medio rural.\n\nPalabras clave: empleo femenino, agricultura, temporalidad, Andalucía."
+    },
+    {
+      "genre": "academic abstract",
+      "text": "El objetivo de esta investigación fue evaluar el efecto de un programa de tutorías entre pares sobre el rendimiento académico de estudiantes de primer año de Ingeniería en una universidad pública de Lima. Se trabajó con un diseño cuasiexperimental con 120 participantes. Los estudiantes del grupo experimental aprobaron en mayor proporción el curso de Cálculo I (68 % frente a 51 %).\nPalabras clave: tutoría entre pares, rendimiento académico, educación superior."
+    },
+    {
+      "genre": "ticket or form",
+      "text": "Título: Fuga de agua en el baño\nDescripción: Desde el lunes gotea la tubería del lavabo."
+    },
+    {
+      "genre": "ticket or form",
+      "text": "Título: Error al exportar facturas a PDF\nDescripción: Al pulsar «Exportar» en el módulo de facturación aparece el mensaje «Error 500» y no se descarga nada. Pasa desde la actualización del jueves, con Chrome y con Firefox.\nPrioridad: alta\nPasos para reproducir: entrar en Facturación > Emitidas, seleccionar cualquier factura y pulsar Exportar."
+    },
+    {
+      "genre": "ticket or form",
+      "text": "Asunto: Farola apagada\nUbicación: calle Río Tajo, 14\nDescripción: La farola de delante del portal lleva apagada desde el 2 de noviembre y por la noche la acera queda totalmente a oscuras."
+    },
+    {
+      "genre": "minutes",
+      "text": "Acta de la reunión del 12 de febrero\n\nAsistentes: Ana, Rubén, Teresa y Luis. Excusa su ausencia Marta.\n1. Se aprueba el acta anterior.\n2. Teresa informa de que el proveedor de limpieza sube un 4 % la tarifa; se acuerda pedir otros dos presupuestos.\n3. Ruegos y preguntas: Luis pide que se revise la iluminación del garaje.\nSe levanta la sesión a las 20:15."
+    },
+    {
+      "genre": "short report",
+      "text": "Informe de la visita técnica\n\nEl 3 de mayo se revisó la cubierta del pabellón municipal. Se detectaron tres puntos con filtraciones junto a los lucernarios y varias tejas sueltas en la cara norte. Se recomienda sustituir el sellado de los lucernarios antes del otoño. El coste estimado de la reparación es de 6.800 euros, IVA incluido."
+    },
+    {
+      "genre": "short report",
+      "text": "El informe no significa que el proyecto fracase, sino que hay que ajustar plazos. La clave está en la planificación."
+    },
+    {
+      "genre": "short report",
+      "text": "Queremos reducir costes sin sacrificar la calidad del servicio."
+    },
+    {
+      "genre": "short report",
+      "text": "Ya sea que trabajes en casa o en la oficina, la ergonomía importa."
+    },
+    {
+      "genre": "review",
+      "text": "La foto capta la esencia de la ciudad al amanecer."
+    },
+    {
+      "genre": "review",
+      "text": "Fuimos a cenar el sábado y salimos encantados. Las croquetas de jamón, de las mejores que he probado, y el arroz con bogavante estaba en su punto. El servicio fue rápido aunque el local estaba lleno. Solo un pero: la música estaba demasiado alta. Volveremos."
+    },
+    {
+      "genre": "review",
+      "text": "Lo compré para el despacho y cumple. La silla es cómoda, se monta en veinte minutos y el respaldo aguanta bien. Le pongo cuatro estrellas porque los reposabrazos bailan un poco."
+    },
+    {
+      "genre": "review",
+      "text": "Una novela que se lee de un tirón. La autora consigue que te importen los personajes desde la primera página, aunque el final me pareció algo precipitado. Muy recomendable para el verano."
+    },
+    {
+      "genre": "travel writing",
+      "text": "Si te gusta bucear, puedes sumergirte en las aguas de Cabo de Palos."
+    },
+    {
+      "genre": "travel writing",
+      "text": "Adéntrate en el bosque de Irati por el sendero de las cascadas."
+    },
+    {
+      "genre": "travel writing",
+      "text": "Decidí emprender un viaje por Sudamérica cuando terminé la carrera."
+    },
+    {
+      "genre": "travel writing",
+      "text": "Llegamos a Cuzco de madrugada, con el mal de altura a cuestas. El primer día no hicimos casi nada: mate de coca, paseo corto por San Blas y a dormir pronto. Al tercer día ya subimos a Sacsayhuamán sin problema. Si vais, no reservéis Machu Picchu para el segundo día; dejad tiempo para aclimataros."
+    },
+    {
+      "genre": "sports talk",
+      "text": "Para mí, este equipo es más que un simple club."
+    },
+    {
+      "genre": "sports talk",
+      "text": "No es solo un club, es un sentimiento."
+    },
+    {
+      "genre": "sports talk",
+      "text": "El equipo lleva tres partidos sin perder y pasa al siguiente nivel."
+    },
+    {
+      "genre": "sports talk",
+      "text": "¿Has visto alguna vez un fan tan pesado en tu vida?"
+    },
+    {
+      "genre": "sports talk",
+      "text": "No busques más excusas y ponte a entrenar."
+    },
+    {
+      "genre": "sports talk",
+      "text": "La clave está en la constancia. Y eso marca la diferencia."
+    },
+    {
+      "genre": "sports talk",
+      "text": "Qué partidazo el de ayer. El Betis aguantó el empate con uno menos casi media hora y el portero sacó dos manos increíbles al final. Si el domingo ganamos en Vigo, nos metemos en puestos europeos."
+    },
+    {
+      "genre": "Facebook post",
+      "text": "Gracias a todos los que vinisteis el sábado a la boda. Fue un día lleno de momentos inolvidables y no podemos estar más felices. En cuanto nos pase las fotos el fotógrafo, las subimos aquí."
+    },
+    {
+      "genre": "neighbourhood newsletter",
+      "text": "La fiesta del barrio volvió a ser un espacio de encuentro para vecinos de todas las edades. Hubo paella para 300 personas, concierto de la banda municipal y juegos para los niños en la plaza. Gracias a los voluntarios que lo hicieron posible."
+    },
+    {
+      "genre": "LinkedIn post",
+      "text": "Hoy cumplo cinco años en la empresa. Ha sido un camino lleno de aprendizajes y de buenos momentos con un equipo increíble. Gracias a mis líderes por la confianza y a mis compañeros por el día a día. ¡Vamos por más!"
+    },
+    {
+      "genre": "blog post",
+      "text": "Se nos estropeó la lavadora en pleno agosto. La buena noticia es que el arreglo no fue caro: el técnico cambió la placa en media hora y nos cobró 90 euros. Eso sí, nos recomendó no volver a meter tanta ropa de golpe."
+    },
+    {
+      "genre": "school essay",
+      "text": "El deporte no solo mejora la salud, sino que también nos enseña a trabajar en equipo. En mi caso, jugar al baloncesto desde pequeño me ha ayudado a ser más disciplinado y a hacer amigos. Por eso creo que el colegio debería dedicarle más horas."
+    },
+    {
+      "genre": "shop message",
+      "text": "Si haces tu pedido hoy, llega el jueves."
+    },
+    {
+      "genre": "product text",
+      "text": "Taza de cerámica de 350 ml pintada a mano en nuestro taller de Talavera. Cada pieza sale un poco distinta. Apta para lavavajillas, pero no para microondas por el filo dorado.",
+      "product": true
+    },
+    {
+      "genre": "product text",
+      "text": "Remera de algodón peinado con estampa de un mate y la frase «Primero el mate». Talles del S al XXL. Hacemos envíos a todo el país por correo.",
+      "product": true
+    }
+  ]
+}

@@ -1,0 +1,789 @@
+{
+ "language": "it",
+ "prompts": [
+  {
+   "id": "blog-1-A",
+   "genre": "blog",
+   "scenario": 1,
+   "style": "A",
+   "request": "Mi scrivi un post per il mio blog personale? Domenica scorsa ho corso la mia prima mezza maratona in 2:11, dopo sei mesi di allenamento. A marzo per un dolore al ginocchio stavo quasi per mollare, poi il fisioterapista mi ha rimesso in sesto. Prossimo obiettivo: 10 km sotto i 50 minuti."
+  },
+  {
+   "id": "blog-1-B",
+   "genre": "blog",
+   "scenario": 1,
+   "style": "B",
+   "request": "Ho un piccolo blog personale dove racconto un po' di tutto, lo leggono soprattutto amici e qualche runner della zona. Vorrei un post sulla mia prima mezza maratona, quella di Bergamo di domenica scorsa. Tono personale e sincero, niente frasi da motivatore. Più o meno 500-600 parole, in prima persona come se l'avessi scritto io.\n\nI miei appunti:\n- tempo finale 2:11, speravo di stare sotto le 2:15\n- sei mesi di preparazione, 3-4 uscite a settimana\n- a marzo dolore al ginocchio destro, due settimane ferma, ero convinta di dover rinunciare\n- il fisioterapista (Davide) mi ha fatto rinforzare quadricipiti e glutei, mi ha detto di non aumentare i km più del 10% a settimana e di cambiare scarpe\n- al km 18 crisi nera, poi ho visto mia sorella a bordo strada con un cartello\n- prossimo obiettivo: 10 km sotto i 50 minuti entro la primavera"
+  },
+  {
+   "id": "blog-2-A",
+   "genre": "blog",
+   "scenario": 2,
+   "style": "A",
+   "request": "Ciao! Mi serve un post per il mio blog di cucina con la ricetta della torta al limone di mia nonna, quella che faceva sempre a Pasqua. Io però ho ridotto lo zucchero rispetto alla sua versione. Aggiungi anche qualche consiglio sul forno."
+  },
+  {
+   "id": "blog-2-B",
+   "genre": "blog",
+   "scenario": 2,
+   "style": "B",
+   "request": "Sto preparando un post per il mio blog di ricette (mi seguono soprattutto persone che fanno dolci in casa, niente pasticceri). Questa volta pubblico la torta al limone di nonna Iolanda. Ti incollo gli appunti, trasformali in un post completo: breve introduzione con il ricordo, ingredienti, procedimento e consigli finali. Non fare un'introduzione lunghissima, la gente vuole arrivare alla ricetta.\n\nappunti:\nnonna la faceva ogni Pasqua a Sorrento, con i limoni del suo giardino\ningredienti: 300 g farina 00, 3 uova, 200 g zucchero (lei ne metteva 250, io l'ho ridotto), 100 ml olio di semi, 120 ml latte, scorza e succo di 2 limoni, 1 bustina di lievito\nglassa con zucchero a velo e succo di limone\ntortiera da 24 cm\nforno statico a 175° per 40 min, NON ventilato sennò si secca sopra\nprova stecchino sempre\nil mio forno scalda di più a destra, a metà cottura giro la tortiera"
+  },
+  {
+   "id": "blog-3-A",
+   "genre": "blog",
+   "scenario": 3,
+   "style": "A",
+   "request": "Scrivimi un post per il blog di viaggi: cinque giorni di trekking nelle Dolomiti con mia sorella, dormendo nei rifugi. Il terzo giorno ha piovuto dalla mattina alla sera. Il momento più bello è stata l'alba vista dal rifugio Lagazuoi."
+  },
+  {
+   "id": "blog-3-B",
+   "genre": "blog",
+   "scenario": 3,
+   "style": "B",
+   "request": "Vorrei un articolo per il mio blog di viaggi sul trekking che ho fatto a fine luglio con mia sorella Giulia nelle Dolomiti. Chi mi legge ama la montagna ma non è per forza esperto, quindi metti anche qualche informazione pratica. Tono rilassato, un po' ironico, circa 700 parole. Scrivilo in prima persona e senza titolo, quello lo metto io.\n\nDati:\n- 5 giorni, un pezzo dell'Alta Via 1, partenza dal Lago di Braies\n- notti nei rifugi Biella, Fanes, Lagazuoi e Nuvolau, mezza pensione sui 60-70 euro a testa\n- giorno 3: pioggia dalla mattina alla sera, arrivate fradice al Lagazuoi, scarponi messi ad asciugare vicino alla stufa\n- momento più bello: l'alba dal Lagazuoi la mattina dopo, con le nuvole sotto di noi\n- consiglio: prenotare i rifugi con mesi di anticipo, a luglio è tutto pieno"
+  },
+  {
+   "id": "blog-4-A",
+   "genre": "blog",
+   "scenario": 4,
+   "style": "A",
+   "request": "Abbiamo rifatto il bagno da soli in tre weekend e abbiamo speso circa 2.400 euro. Puoi scrivere un post per il nostro blog di fai-da-te? Racconta anche i due errori che abbiamo fatto, con le fughe e con il silicone, e cosa faremmo diversamente."
+  },
+  {
+   "id": "blog-4-B",
+   "genre": "blog",
+   "scenario": 4,
+   "style": "B",
+   "request": "Io e mio marito abbiamo un blog di fai-da-te dove raccontiamo la ristrutturazione della nostra casa a Treviso. Mi serve il post sul bagno. Pubblico: gente che vuole fare da sé ma non è del mestiere. Tono pratico e onesto, con un po' di autoironia, massimo 800 parole. Niente segnaposto tipo [nome], usa solo i dati che ti do.\n\nNote:\n- tre weekend di lavoro (più qualche sera durante la settimana)\n- spesa totale circa 2.400 euro: piastrelle 900, sanitari 750, rubinetteria 380, il resto tra colla, stucco, silicone e attrezzi\n- errore 1: fughe pulite troppo tardi e male, è rimasto un alone grigio su metà delle piastrelle, abbiamo dovuto comprare un detergente acido\n- errore 2: silicone del piatto doccia messo senza nastro di carta, venuto tutto storto, rifatto due volte\n- cosa faremmo diversamente: noleggiare una tagliapiastrelle elettrica invece di quella manuale, e chiamare un idraulico per gli scarichi"
+  },
+  {
+   "id": "blog-5-A",
+   "genre": "blog",
+   "scenario": 5,
+   "style": "A",
+   "request": "Ho un panificio e da lunedì iniziamo a fare il pane senza glutine. Mi scrivi un post per il blog del negozio? Ci abbiamo messo 8 mesi di prove, costa 4,50 € e sabato mattina facciamo un assaggio gratuito."
+  },
+  {
+   "id": "blog-5-B",
+   "genre": "blog",
+   "scenario": 5,
+   "style": "B",
+   "request": "Sono la titolare del Panificio Rinaldi di Modena e sul nostro sito abbiamo un piccolo blog. Vorrei un post per annunciare il pane senza glutine. Mi piacerebbe che si capisse quanto lavoro c'è dietro, ma senza esagerare. I clienti sono del quartiere, tanti ci conoscono da anni. 300-400 parole, tono caldo ma non sdolcinato, prima persona plurale.\n\nCosa dire:\n- da lunedì pane senza glutine tutti i giorni\n- 8 mesi di prove con farine diverse, la prima pagnotta sembrava un mattone\n- impasto in un laboratorio separato con attrezzi dedicati\n- prezzo 4,50 € la pagnotta da 400 g\n- sabato mattina dalle 8 alle 12 assaggio gratuito in negozio"
+  },
+  {
+   "id": "blog-6-A",
+   "genre": "blog",
+   "scenario": 6,
+   "style": "A",
+   "request": "Post per il mio blog sulla genitorialità: nostra figlia di 11 anni ha appena avuto il primo smartphone. Racconta le regole che abbiamo deciso in famiglia e cosa ha funzionato dopo due mesi."
+  },
+  {
+   "id": "blog-6-B",
+   "genre": "blog",
+   "scenario": 6,
+   "style": "B",
+   "request": "Ho un blog dove scrivo di famiglia e figli e mi servirebbe una mano con un post. Argomento: il primo smartphone di nostra figlia Sofia, 11 anni, prima media. Lo leggono soprattutto altri genitori. Vorrei un tono sincero, non da esperta, senza giudicare chi fa scelte diverse. Circa 600 parole.\n\nLe regole che abbiamo deciso tutti insieme:\n1. di notte il telefono dorme in cucina\n2. niente telefono a tavola, e vale anche per noi genitori\n3. solo WhatsApp per ora, niente TikTok e Instagram fino ai 13 anni\n4. un'ora al giorno nei giorni di scuola, un po' di più nel weekend\n5. la password la conosciamo anche noi\n\nDopo due mesi: la regola della cucina funziona benissimo, quella dell'ora al giorno molto meno (discussioni quasi ogni sera), il problema più grosso è stato il gruppo WhatsApp della classe, e a tavola sgarravamo più noi di lei."
+  },
+  {
+   "id": "blog-7-A",
+   "genre": "blog",
+   "scenario": 7,
+   "style": "A",
+   "request": "Puoi scrivere un post sul mio primo anno con un orto nell'orto comunitario del quartiere? I pomodori sono andati malissimo, i fagioli benissimo, e ho imparato parecchio su come si annaffia."
+  },
+  {
+   "id": "blog-7-B",
+   "genre": "blog",
+   "scenario": 7,
+   "style": "B",
+   "request": "Da un anno ho un appezzamento negli orti comunali del quartiere Savena, a Bologna, e ne parlo in un piccolo blog di giardinaggio. Scrivimi il post di bilancio del primo anno. Chi legge è principiante come me. Tono colloquiale, un po' autoironico, sulle 500 parole, senza elenchi puntati: deve sembrare un racconto.\n\nAppunti:\n- pomodori: piantati troppo fitti, peronospora a luglio, avrò raccolto 3 kg in tutto\n- fagioli borlotti e cornetti: raccolto enorme, li ho regalati a mezzo condominio\n- annaffiatura: all'inizio davo poca acqua tutti i giorni, sbagliato; meglio tanta e di rado, la mattina presto, alla base della pianta e non sulle foglie\n- la pacciamatura con la paglia mi ha salvato ad agosto\n- quasi tutti i consigli me li ha dati il signor Franco, quello dell'orto accanto"
+  },
+  {
+   "id": "blog-8-A",
+   "genre": "blog",
+   "scenario": 8,
+   "style": "A",
+   "request": "Ho appena finito La storia di Elsa Morante, vorrei una recensione per il mio blog di libri: cosa mi è piaciuto e cosa invece mi è sembrato lento."
+  },
+  {
+   "id": "blog-8-B",
+   "genre": "blog",
+   "scenario": 8,
+   "style": "B",
+   "request": "Per il mio blog di letture mi serve una recensione de \"La storia\" di Elsa Morante, finito ieri sera dopo quasi un mese. Chi mi segue legge tanto, quindi non serve riassumere tutta la trama. 500-600 parole, in prima persona, niente voti o stelline, e niente spoiler sul finale.\n\nCosa ne penso:\n- Useppe è uno dei personaggi più belli che abbia mai letto\n- le parti storiche all'inizio di ogni capitolo mi hanno aiutata a capire il contesto\n- Ida mi ha fatto una tenerezza enorme\n- la parte con Davide Segre e i suoi lunghissimi discorsi all'osteria per me è troppo lunga, l'ho trascinata per giorni\n- il finale mi ha distrutta"
+  },
+  {
+   "id": "email-1-A",
+   "genre": "email",
+   "scenario": 1,
+   "style": "A",
+   "request": "Scrivi una mail ai colleghi della biblioteca: venerdì 14 giugno alle 17 facciamo la festa di saluto per Marta, che va in pensione dopo 32 anni, in sala lettura. Raccogliamo 10 euro a testa per regalarle un e-reader, da dare a me entro mercoledì."
+  },
+  {
+   "id": "email-1-B",
+   "genre": "email",
+   "scenario": 1,
+   "style": "B",
+   "request": "Mi aiuti a scrivere una mail per i colleghi? Lavoro alla biblioteca comunale di Cremona e Marta Bellini va in pensione dopo 32 anni. Siamo una ventina, ci diamo tutti del tu. Tono affettuoso ma pratico, breve, deve leggersi in trenta secondi. Dammi anche l'oggetto.\n\nDeve contenere:\n- festa di saluto venerdì 14 giugno alle 17:00 in sala lettura\n- regalo: un e-reader, quota 10 euro a testa\n- i soldi vanno dati a me (Chiara) entro mercoledì 12\n- Marta sa della festa ma non del regalo, quindi la mail non va girata a lei"
+  },
+  {
+   "id": "email-2-A",
+   "genre": "email",
+   "scenario": 2,
+   "style": "A",
+   "request": "Dal 1° settembre la nostra azienda si trasferisce in una nuova sede e devo avvisare i clienti con una mail. Ah, i numeri di telefono restano gli stessi e c'è parcheggio dietro l'edificio."
+  },
+  {
+   "id": "email-2-B",
+   "genre": "email",
+   "scenario": 2,
+   "style": "B",
+   "request": "Siamo una piccola società di assistenza informatica a Padova, 12 persone, e devo avvisare i clienti del trasloco. Mail formale ma non burocratica, massimo 150 parole, pronta da inviare, firmata Luca Ferraro, amministratore. Niente segnaposto.\n\nDati:\n- nuova sede dal 1° settembre: Via San Marco 41, 35129 Padova\n- la sede di Via Venezia 12 chiude il 29 agosto\n- numeri di telefono e indirizzi email invariati\n- parcheggio gratuito per i clienti dietro l'edificio, ingresso da Via Pellizzo\n- l'assistenza da remoto resta attiva anche nei giorni del trasloco"
+  },
+  {
+   "id": "email-3-A",
+   "genre": "email",
+   "scenario": 3,
+   "style": "A",
+   "request": "Devo scrivere al padrone di casa che il riscaldamento non funziona bene da una settimana. Ho già sfiatato i termosifoni. Chiedigli di mandare qualcuno, io sono a casa dopo le 17."
+  },
+  {
+   "id": "email-3-B",
+   "genre": "email",
+   "scenario": 3,
+   "style": "B",
+   "request": "Puoi scrivermi una mail per il proprietario del mio appartamento, il signor Gallo? Ci diamo del lei, il rapporto è cordiale ma lui tende a rimandare, quindi vorrei un tono gentile ma fermo. Breve.\n\nSituazione:\n- da una settimana i termosifoni sono tiepidi solo in alto, in camera quasi freddi\n- ho già sfiatato tutti i radiatori, la pressione della caldaia è a 1,2\n- in casa ci sono 16 gradi\n- chiedo che mandi un tecnico il prima possibile\n- sono a casa tutti i giorni dopo le 17, il sabato tutto il giorno\n- appartamento in Via Lombardia 8, Monza, interno 5\nFirma: Elena Colombo"
+  },
+  {
+   "id": "email-4-A",
+   "genre": "email",
+   "scenario": 4,
+   "style": "A",
+   "request": "Mail per i genitori della squadra under 12 di mio figlio: domenica abbiamo vinto il torneo regionale, 3-1 in finale. Ringrazia chi ha accompagnato i ragazzi in macchina e avvisa che venerdì prossimo c'è la serata pizza, le bibite le offre il mister."
+  },
+  {
+   "id": "email-4-B",
+   "genre": "email",
+   "scenario": 4,
+   "style": "B",
+   "request": "appunti veloci, fammi una mail decente da mandare ai genitori della squadra (io sono il dirigente accompagnatore):\n\nunder 12 campioni del torneo regionale domenica a Forlì!!\nfinale 3-1 contro il Riccione, gol di Tommaso (2) ed Elia\ngrazie ai genitori che hanno fatto da autisti, 6 macchine, partenza alle 7 di mattina\nserata pizza venerdì prossimo alle 19:30 alla pizzeria Da Gino, pizza a carico delle famiglie (10 € a bambino), bibite offerte dal mister Andrea\nconfermare entro mercoledì nel gruppo\n\ntono allegro ma non troppo lunga, va bene anche qualche emoji. firma Stefano"
+  },
+  {
+   "id": "email-5-A",
+   "genre": "email",
+   "scenario": 5,
+   "style": "A",
+   "request": "Scrivi una mail agli amici: mia nonna compie 90 anni e sabato 12 ottobre le facciamo una festa a sorpresa a casa sua. Ognuno porti una foto per l'album. E che nessuno glielo dica!"
+  },
+  {
+   "id": "email-5-B",
+   "genre": "email",
+   "scenario": 5,
+   "style": "B",
+   "request": "Vorrei mandare un messaggio ad amici e cugini per la festa a sorpresa di nonna Rosa, che compie 90 anni. Lo mando per mail e lo copio anche su WhatsApp, quindi testo semplice. Tono affettuoso e un po' scherzoso.\n\nInfo:\n- sabato 12 ottobre, a casa sua, Via Taranto 23 a Lecce\n- arrivare alle 15:30 precise, lei torna dalla messa verso le 16 con zia Anna che la tiene occupata\n- ognuno porta una foto stampata con la nonna, facciamo un album da regalarle\n- i dolci li fa mia mamma, chi vuole porta da bere\n- segreto assoluto, lei non deve sapere niente\n- conferme a me entro domenica 6\nFirma: Federica"
+  },
+  {
+   "id": "email-6-A",
+   "genre": "email",
+   "scenario": 6,
+   "style": "A",
+   "request": "Come scrivo alla professoressa di mia figlia che giovedì e venerdì sarà assente per un funerale in famiglia? Vorrei anche chiederle quali compiti deve fare."
+  },
+  {
+   "id": "email-6-B",
+   "genre": "email",
+   "scenario": 6,
+   "style": "B",
+   "request": "Devo scrivere alla professoressa Mancini, coordinatrice della 2ª B della scuola media di mia figlia Alice. Alice sarà assente giovedì e venerdì perché andiamo a Potenza per il funerale del nonno paterno. Vorrei chiedere quali compiti e argomenti deve recuperare e se è possibile spostare l'interrogazione di storia che aveva venerdì. Tono formale e cortese, breve, senza aggiungere dettagli personali. Firma: Valeria Russo, mamma di Alice Ferri."
+  },
+  {
+   "id": "email-7-A",
+   "genre": "email",
+   "scenario": 7,
+   "style": "A",
+   "request": "Mail per i soci dell'associazione di quartiere: martedì manca l'acqua dalle 9 alle 13 per dei lavori alle tubature nella nostra via. Consiglia di riempire delle bottiglie e scrivi che la prossima volta chiederemo al Comune di avvisare per tempo."
+  },
+  {
+   "id": "email-7-B",
+   "genre": "email",
+   "scenario": 7,
+   "style": "B",
+   "request": "Sono la segretaria dell'associazione di quartiere \"Vivere San Donato\" di Bologna e devo avvisare i soci. Mail breve, tono informativo e calmo, la giro anche nel gruppo WhatsApp quindi niente formattazioni strane.\n\nDettagli:\n- martedì dalle 9:00 alle 13:00 niente acqua in Via del Pilastro, dal civico 2 al 40\n- lavori di sostituzione della tubatura principale\n- riempire bottiglie e pentole la sera prima\n- quando torna l'acqua può uscire torbida per qualche minuto, lasciarla scorrere\n- l'avviso è arrivato solo ieri con un foglio attaccato al portone: come associazione scriveremo al Comune per chiedere che la prossima volta si avvisi con almeno una settimana di anticipo\nFirma: Paola Neri, segreteria"
+  },
+  {
+   "id": "email-8-A",
+   "genre": "email",
+   "scenario": 8,
+   "style": "A",
+   "request": "Due settimane fa ho mandato la candidatura per il posto di coordinatore di magazzino e non ho più saputo niente. Scrivimi una mail di follow-up: sono ancora molto interessato e la prossima settimana posso fare il colloquio qualsiasi giorno."
+  },
+  {
+   "id": "email-8-B",
+   "genre": "email",
+   "scenario": 8,
+   "style": "B",
+   "request": "Mi serve una mail di sollecito per una candidatura, scritta come se fossi io (Marco De Santis). Tono professionale ma non insistente, massimo 120 parole, con oggetto.\n\nDati:\n- due settimane fa ho inviato il CV per la posizione di coordinatore di magazzino alla TrasPadana Logistica di Piacenza, annuncio trovato su InfoJobs\n- nessuna risposta finora\n- voglio ribadire che sono ancora molto interessato\n- in una riga ricordare l'esperienza: 7 anni come capoturno di magazzino, squadra di 10 persone, uso quotidiano di SAP\n- disponibile per un colloquio qualsiasi giorno della prossima settimana, anche in presenza"
+  },
+  {
+   "id": "essay-1-A",
+   "genre": "essay",
+   "scenario": 1,
+   "style": "A",
+   "request": "Mi fai un tema su questo argomento: è giusto vietare gli smartphone a scuola? Pro e contro e alla fine la mia opinione. Ho 16 anni, faccio la terza superiore."
+  },
+  {
+   "id": "essay-1-B",
+   "genre": "essay",
+   "scenario": 1,
+   "style": "B",
+   "request": "Per italiano la prof ci ha dato un testo argomentativo: \"Smartphone a scuola: vietarli o insegnare a usarli?\". Faccio la terza al liceo scientifico. Deve essere di 600-700 parole, con introduzione, argomenti a favore del divieto, argomenti contro e la mia posizione. Usa un linguaggio da studente di 16 anni, non da professore.\n\nLa mia opinione: sono contrario al divieto totale, ma d'accordo a tenerli spenti durante le lezioni.\nIdee che ho: concentrazione in classe, cyberbullismo, il ministero ha già vietato il cellulare in classe; però lo usiamo per il registro elettronico e per fare ricerche in laboratorio, e i genitori vogliono poterci contattare in caso di emergenza."
+  },
+  {
+   "id": "essay-2-A",
+   "genre": "essay",
+   "scenario": 2,
+   "style": "A",
+   "request": "Devo scrivere la lettera motivazionale per entrare a Infermieristica. Voglio parlare della malattia di mio nonno e del volontariato che faccio in una RSA. Me la scrivi?"
+  },
+  {
+   "id": "essay-2-B",
+   "genre": "essay",
+   "scenario": 2,
+   "style": "B",
+   "request": "Sto preparando la domanda per il corso di laurea in Infermieristica all'Università di Torino e mi chiedono un breve testo motivazionale (massimo 4.000 caratteri). Aiutami a scriverlo in prima persona. Tono serio e sincero, non melodrammatico.\n\nCosa voglio raccontare:\n- mio nonno Giuseppe ha avuto un ictus quando avevo 15 anni e per due anni l'abbiamo assistito in casa\n- l'infermiera dell'assistenza domiciliare che veniva tre volte a settimana: calma, spiegava tutto anche a noi, mi ha colpita molto\n- dall'anno scorso faccio volontariato il sabato in una RSA di Moncalieri: animazione, aiuto durante i pasti, tanto ascolto\n- ho capito che mi piace stare vicino alle persone fragili, ma ho visto anche quanta fatica c'è\n- sono al quinto anno del liceo delle scienze umane"
+  },
+  {
+   "id": "essay-3-A",
+   "genre": "essay",
+   "scenario": 3,
+   "style": "A",
+   "request": "Per il corso di scrittura devo fare un breve testo su com'era il mio paese quando ero bambino e com'è adesso. Sono cresciuto a Montepulciano negli anni Novanta."
+  },
+  {
+   "id": "essay-3-B",
+   "genre": "essay",
+   "scenario": 3,
+   "style": "B",
+   "request": "Frequento un corso di scrittura alla biblioteca comunale e il compito della settimana è un testo breve (massimo 700 parole) dal titolo \"Il mio paese allora e oggi\". Io sono cresciuto a Montepulciano, in Toscana, negli anni Novanta. Prima persona, stile asciutto, niente titolo. Non lo voglio solo nostalgico: devono esserci tutte e due le facce.\n\nRicordi sparsi:\nallora: la bottega di alimentari della Gina in piazza, si giocava a pallone davanti al Duomo, le cantine erano dei contadini, d'estate pochi turisti\noggi: la bottega è diventata un negozio di souvenir, enoteche dappertutto, pullman di turisti, tanti giovani se ne sono andati, d'inverno il centro è vuoto; però c'è più lavoro e le case sono state sistemate"
+  },
+  {
+   "id": "essay-4-A",
+   "genre": "essay",
+   "scenario": 4,
+   "style": "A",
+   "request": "Mi scrivi un articolo d'opinione per il giornalino della Pro Loco? Il tema è: lo smart working fa bene ai piccoli paesi?"
+  },
+  {
+   "id": "essay-4-B",
+   "genre": "essay",
+   "scenario": 4,
+   "style": "B",
+   "request": "La redazione del periodico della Pro Loco di Gavirate (provincia di Varese) mi ha chiesto un pezzo d'opinione di circa 600 parole sul tema \"Il lavoro da remoto può salvare i piccoli paesi?\". Io lavoro da casa da tre anni per un'azienda di Milano. Tono ragionato, non da comizio; lo leggono persone di tutte le età.\n\nLa mia posizione: sì, ma solo se ci sono i servizi.\nPunti:\n- alcune famiglie giovani sono tornate in paese, il bar della piazza ha riaperto\n- la fibra non arriva in tutte le frazioni\n- mancano posti all'asilo nido e i treni per Varese sono pochi\n- rischio di diventare un paese dormitorio, dove la gente lavora in casa ma non partecipa alla vita del paese"
+  },
+  {
+   "id": "essay-5-A",
+   "genre": "essay",
+   "scenario": 5,
+   "style": "A",
+   "request": "Tema su una persona che mi ha influenzato, vorrei parlare della mia prima insegnante di pianoforte. Mi dai una mano?"
+  },
+  {
+   "id": "essay-5-B",
+   "genre": "essay",
+   "scenario": 5,
+   "style": "B",
+   "request": "Tema per la scuola, seconda superiore: \"Una persona che ha segnato la tua crescita\". Voglio scrivere della mia prima insegnante di pianoforte, la signora Elvira Conti. Circa 500 parole, scritto come lo scriverebbe un ragazzo di 15 anni, frasi semplici.\n\nQuello che ricordo:\n- ho iniziato a 7 anni nel suo salotto a Salerno, pianoforte verticale con una ciotola di caramelle sopra\n- era severissima sulla posizione delle mani ma non alzava mai la voce\n- a 11 anni volevo smettere e lei per un mese mi ha fatto suonare solo pezzi scelti da me\n- mi ha insegnato che sbagliare mentre si prova va bene\n- ha smesso di insegnare due anni fa, ogni tanto le porto le sfogliatelle"
+  },
+  {
+   "id": "essay-6-A",
+   "genre": "essay",
+   "scenario": 6,
+   "style": "A",
+   "request": "Sto facendo il corso di italiano al CPIA e devo scrivere un testo sui vantaggi e gli svantaggi di vivere in una grande città. Il mio livello è B1, puoi aiutarmi?"
+  },
+  {
+   "id": "essay-6-B",
+   "genre": "essay",
+   "scenario": 6,
+   "style": "B",
+   "request": "Frequento il corso serale di italiano per stranieri al CPIA di Milano, livello B1. L'insegnante ci ha chiesto un testo di circa 300 parole: \"Vivere in una grande città: vantaggi e svantaggi\". Per favore usa frasi non troppo complicate e parole che posso capire, perché poi lo devo leggere in classe.\n\nLe mie idee:\n- vengo da un paese piccolo vicino a Fier, in Albania, e abito a Milano da quattro anni\n- vantaggi: più lavoro, metropolitana e tram, tanti corsi gratuiti come questo, persone di tutto il mondo\n- svantaggi: affitto molto caro (pago 650 euro per un bilocale in periferia), traffico, aria inquinata, i vicini non si salutano\n- alla fine preferisco la città, ma d'estate mi manca il silenzio del mio paese"
+  },
+  {
+   "id": "essay-7-A",
+   "genre": "essay",
+   "scenario": 7,
+   "style": "A",
+   "request": "Devo scrivere un saggio riflessivo su cosa mi ha insegnato un anno di volontariato al banco alimentare. Me lo prepari?"
+  },
+  {
+   "id": "essay-7-B",
+   "genre": "essay",
+   "scenario": 7,
+   "style": "B",
+   "request": "Mi serve un testo riflessivo di 600-800 parole per il corso di formazione dei volontari della Caritas: ognuno deve raccontare cosa ha imparato. Io da un anno, ogni giovedì pomeriggio, faccio volontariato al banco alimentare di Rovigo. In prima persona, onesto, senza moralismi.\n\nSpunti:\n- all'inizio pensavo di \"aiutare i poveri\", poi ho capito che molte famiglie sono come la mia, magari con un lavoro precario o un divorzio alle spalle\n- la signora che ogni settimana si scusava di essere lì\n- ho imparato a non fare domande inutili e a rispettare la vergogna delle persone\n- la fatica fisica: scaricare i bancali, smistare le date di scadenza\n- seguiamo circa 120 famiglie al mese\n- mi ha cambiato il modo in cui faccio la spesa e butto il cibo"
+  },
+  {
+   "id": "essay-8-A",
+   "genre": "essay",
+   "scenario": 8,
+   "style": "A",
+   "request": "Tema per scuola: il turismo nella mia regione, è un bene o un male? Abito in Salento."
+  },
+  {
+   "id": "essay-8-B",
+   "genre": "essay",
+   "scenario": 8,
+   "style": "B",
+   "request": "Per il tema di italiano (quarta, istituto tecnico per il turismo di Lecce) devo rispondere alla domanda \"Il turismo nella tua regione: risorsa o problema?\". Circa 600 parole, con introduzione, sviluppo e conclusione. Io penso che sia soprattutto una risorsa, però va gestito meglio.\n\nIdee:\n- in Salento il turismo dà lavoro a tantissimi giovani, anche mio fratello d'estate fa il cameriere a Gallipoli\n- masserie e borghi recuperati, prodotti locali venduti di più\n- però d'agosto le spiagge sono piene, traffico, rumore, prezzi delle case alle stelle per via degli affitti brevi\n- lavoro solo stagionale, d'inverno tanti paesi si svuotano\n- proposta: destagionalizzare, puntare su cultura ed entroterra"
+  },
+  {
+   "id": "article-1-A",
+   "genre": "article",
+   "scenario": 1,
+   "style": "A",
+   "request": "Scrivimi un articolo per il giornale locale: il 22 settembre i vigili del fuoco volontari fanno la giornata a porte aperte con attività per bambini. Quest'anno il corpo compie 140 anni e cercano nuovi volontari."
+  },
+  {
+   "id": "article-1-B",
+   "genre": "article",
+   "scenario": 1,
+   "style": "B",
+   "request": "Mi serve un articolo per il settimanale locale della Val di Non. Riguarda il Corpo dei Vigili del Fuoco Volontari di Cles. Taglio giornalistico, terza persona, 350-400 parole, con titolo e occhiello.\n\nInformazioni:\n- domenica 22 settembre, giornata a porte aperte in caserma, dalle 10 alle 17\n- per i bambini: prova del getto con la lancia, salita sull'autoscala, percorso a ostacoli col casco\n- alle 11 dimostrazione di soccorso stradale\n- il corpo è stato fondato nel 1884, quest'anno sono 140 anni\n- oggi conta 38 volontari, cercano nuove persone, servono almeno 18 anni, la formazione è gratuita\n- citazione del comandante Mauro Pedrotti: \"Ogni anno usciamo più di 200 volte. Senza ricambio tra dieci anni saremo in difficoltà.\"\n- pranzo con polenta e lucanica curato dalla Pro Loco"
+  },
+  {
+   "id": "article-2-A",
+   "genre": "article",
+   "scenario": 2,
+   "style": "A",
+   "request": "Mi scrivi un pezzo per il giornale locale? Apre un orto comunitario con 20 lotti a 35 euro l'anno. C'è già una lista d'attesa e sabato alle 10 c'è l'open day."
+  },
+  {
+   "id": "article-2-B",
+   "genre": "article",
+   "scenario": 2,
+   "style": "B",
+   "request": "Ho bisogno di un articolo di cronaca locale per \"La Voce di Lodi\" (lo mandiamo come comunicato, poi lo sistemano loro). 300 parole circa, tono informativo, con titolo.\n\nDati:\n- nuovo orto comunitario in Via Cavallotti, sul terreno dell'ex vivaio comunale\n- 20 lotti da 25 m² ciascuno\n- costo 35 euro l'anno, acqua e attrezzi comuni compresi\n- gestito dall'associazione Lodi in Verde in convenzione con il Comune\n- ci sono già 31 domande, quindi lista d'attesa: priorità a residenti e scuole\n- open day sabato alle 10:00 con visita e laboratorio di semina per bambini\n- citazione della presidente Silvia Bassi: \"Vogliamo che sia un posto dove ci si incontra, non solo dove si coltiva.\""
+  },
+  {
+   "id": "article-3-A",
+   "genre": "article",
+   "scenario": 3,
+   "style": "A",
+   "request": "Devo scrivere un articolo per la newsletter aziendale: abbiamo introdotto il leasing delle biciclette per i dipendenti e nel primo mese hanno aderito 31 colleghi. Metti anche una citazione delle risorse umane."
+  },
+  {
+   "id": "article-3-B",
+   "genre": "article",
+   "scenario": 3,
+   "style": "B",
+   "request": "Mi serve un articolo per la newsletter interna di Termotecnica Veneta (circa 180 dipendenti tra Vicenza e Schio). Tono leggero ma informativo, 250-300 parole, con un titolo simpatico.\n\nInfo:\n- da aprile c'è il leasing di biciclette per i dipendenti: bici normali o elettriche, rata trattenuta in busta paga per 36 mesi\n- l'azienda paga l'assicurazione e la manutenzione annuale\n- nel primo mese hanno aderito 31 colleghi, 22 hanno scelto la e-bike\n- installata una nuova rastrelliera coperta vicino all'ingresso B\n- citazione di Francesca Zanon, responsabile HR: \"Non pensavamo a un'adesione così veloce. Qualcuno ha già lasciato la seconda auto a casa.\"\n- per informazioni scrivere a hr@example.it entro il 30 giugno"
+  },
+  {
+   "id": "article-4-A",
+   "genre": "article",
+   "scenario": 4,
+   "style": "A",
+   "request": "Mi serve un articolo per il giornale del paese: il coro cerca tenori e bassi. Le prove sono il mercoledì alle 20 nel salone parrocchiale e a Natale c'è il concerto."
+  },
+  {
+   "id": "article-4-B",
+   "genre": "article",
+   "scenario": 4,
+   "style": "B",
+   "request": "Il nostro coro, la Corale Santa Cecilia di Feltre, cerca voci maschili e vorrei mandare un articolo al quindicinale locale. Circa 300 parole, tono cordiale, con titolo. Scritto in terza persona, come un pezzo di cronaca.\n\nAppunti:\ncoro misto, 28 coristi, ma solo 4 tenori e 3 bassi\nnon serve saper leggere la musica, non c'è audizione\nprove ogni mercoledì alle 20:00 nel salone parrocchiale di San Giacomo\nrepertorio: polifonia sacra, canti popolari veneti e di montagna\nconcerto di Natale il 21 dicembre in duomo\ndirettrice: maestra Laura De Bortoli, dice \"Chi canta sotto la doccia ha già fatto il primo passo\"\ncontatto: 340 0000001"
+  },
+  {
+   "id": "article-5-A",
+   "genre": "article",
+   "scenario": 5,
+   "style": "A",
+   "request": "Scrivi una notizia per il sito della società: la squadra di pallavolo femminile è stata promossa dopo una vittoria al tie-break, 3-2. Metti una frase dell'allenatore e le info sugli abbonamenti."
+  },
+  {
+   "id": "article-5-B",
+   "genre": "article",
+   "scenario": 5,
+   "style": "B",
+   "request": "Mi occupo della comunicazione della Pallavolo Città di Fano. Mi serve un articolo per il sito e la pagina della società sulla promozione della squadra femminile. 300-350 parole, tono entusiasta ma da notizia sportiva, con titolo.\n\nDati:\n- promozione dalla Serie C alla Serie B2\n- partita decisiva sabato sera al PalaAllende contro l'Ancona: 3-2 (25-21, 22-25, 23-25, 25-19, 15-12)\n- miglior realizzatrice Martina Fabbri, 24 punti\n- quasi 600 persone sugli spalti\n- coach Roberto Luzi: \"Sotto 1-2 nessuna ha abbassato la testa. Questa promozione è di tutto il gruppo e dei tifosi.\"\n- abbonamenti per la prossima stagione in vendita dal 1° settembre: 60 euro intero, 35 ridotto under 18 e over 65, in segreteria o online"
+  },
+  {
+   "id": "article-6-A",
+   "genre": "article",
+   "scenario": 6,
+   "style": "A",
+   "request": "Mi scrivi un articolo per il giornale locale? Il forno in piazza chiude dopo 54 anni perché i titolari vanno in pensione. Vorrei anche qualche reazione dei clienti."
+  },
+  {
+   "id": "article-6-B",
+   "genre": "article",
+   "scenario": 6,
+   "style": "B",
+   "request": "Collaboro con il giornale online del mio paese, Castel San Pietro Terme, e devo scrivere un pezzo sulla chiusura del Forno Gualandi in Piazza XX Settembre. Taglio umano, 450 parole circa, titolo e sottotitolo.\n\nQuello che ho raccolto:\n- aperto nel 1970 da Pietro Gualandi, oggi lo gestiscono il figlio Gianni (67 anni) e la moglie Loredana\n- ultimo giorno di apertura sabato 30 novembre\n- motivo: pensione, i figli fanno altri lavori, nessuno ha voluto rilevarlo finora\n- Gianni: \"Mi alzo alle tre da quando avevo sedici anni. Mi mancherà, ma la schiena ha deciso per me.\"\n- cliente Anna, 82 anni: \"Ci compravo il pane già quando ero sposina.\"\n- un ragazzo, Matteo, 19 anni: \"La pizza al taglio dopo scuola era un rito.\"\n- in molti hanno lasciato bigliettini sulla vetrina"
+  },
+  {
+   "id": "article-7-A",
+   "genre": "article",
+   "scenario": 7,
+   "style": "A",
+   "request": "Puoi buttare giù un breve articolo per il sito della scuola sulla serata con i genitori del 20 novembre sulle regole per lo smartphone in prima media. Sono venuti 80 genitori. Metti anche le regole che sono state concordate."
+  },
+  {
+   "id": "article-7-B",
+   "genre": "article",
+   "scenario": 7,
+   "style": "B",
+   "request": "Sono la referente per la comunicazione dell'Istituto Comprensivo \"Rita Levi-Montalcini\" di Pordenone. Devo pubblicare sul sito della scuola un resoconto della serata con i genitori. Tono istituzionale ma leggibile, 300 parole circa, senza nomi di alunni.\n\nAppunti:\n- mercoledì 20 novembre, ore 19:00, palestra della scuola media\n- circa 80 genitori delle classi prime\n- intervento della psicologa dello sportello d'ascolto, dott.ssa Marta Toffolo\n- regole condivise come \"patto\" tra famiglie: niente smartphone prima della seconda media per chi ancora non ce l'ha, dove possibile; per chi ce l'ha, niente telefono in camera la notte; nessun social prima dei 13 anni; nel gruppo WhatsApp di classe niente messaggi dopo le 21\n- il cellulare a scuola resta spento nello zaino, come da regolamento\n- a febbraio un secondo incontro per fare il punto"
+  },
+  {
+   "id": "article-8-A",
+   "genre": "article",
+   "scenario": 8,
+   "style": "A",
+   "request": "Scrivimi un articolo per il giornale locale: una startup del nostro paese ha lanciato un'app per dividere le spese tra coinquilini e cerca beta tester."
+  },
+  {
+   "id": "article-8-B",
+   "genre": "article",
+   "scenario": 8,
+   "style": "B",
+   "request": "Mi serve un articolo per il \"Corriere di Rovereto\" (pagina economia locale) su una startup nata qui. Circa 350 parole, tono giornalistico, titolo incluso. Niente toni da pubblicità.\n\nInfo:\n- la startup si chiama Spartiamo, fondata da tre ex compagni dell'ITT Marconi: Nicola Bertolini, Sara Vicentini e Ahmed Benali, tutti tra i 24 e i 27 anni\n- l'app serve a dividere affitto, bollette e spesa tra coinquilini, con promemoria automatici e saldo del mese\n- nata dall'esperienza di Sara in una casa con 5 coinquilini a Trento durante l'università\n- sede nell'incubatore di Progetto Manifattura\n- cercano 200 beta tester, gratis, ci si iscrive dal sito spartiamo.example.it fino al 15 marzo\n- citazione di Nicola: \"Le liti per la bolletta del gas rovinano più amicizie delle ex.\""
+  },
+  {
+   "id": "social-1-A",
+   "genre": "social",
+   "scenario": 1,
+   "style": "A",
+   "request": "Fammi un post Instagram per il mio panificio: da lunedì pane senza glutine, sabato mattina assaggio gratis. Metti anche gli hashtag."
+  },
+  {
+   "id": "social-1-B",
+   "genre": "social",
+   "scenario": 1,
+   "style": "B",
+   "request": "Post Instagram per il Panificio Rinaldi (Modena). Annunciamo il pane senza glutine. Tono allegro ma non da pubblicità televisiva, testo corto, 2-3 emoji al massimo e una decina di hashtag in fondo, anche locali.\n\nInfo:\n- da lunedì pane senza glutine tutti i giorni\n- 8 mesi di prove\n- 4,50 € la pagnotta da 400 g\n- sabato mattina dalle 8 alle 12 assaggio gratuito in negozio\n- impasto in laboratorio separato"
+  },
+  {
+   "id": "social-2-A",
+   "genre": "social",
+   "scenario": 2,
+   "style": "A",
+   "request": "Cambio lavoro e vorrei scriverlo su LinkedIn: inizio come project manager in un'azienda di logistica, dopo 6 anni nella mia azienda precedente. Vorrei ringraziare il mio team."
+  },
+  {
+   "id": "social-2-B",
+   "genre": "social",
+   "scenario": 2,
+   "style": "B",
+   "request": "Vorrei pubblicare su LinkedIn che cambio lavoro. Scrivilo come se fossi io, Giorgia Marchetti. Tono professionale ma caldo, niente frasi fatte, massimo 150 parole, al massimo un paio di hashtag.\n\nDettagli:\n- dopo 6 anni in Ceramiche Emiliane (ufficio acquisti, poi coordinamento fornitori) lascio l'azienda\n- da lunedì sono project manager in Fercam, sede di Bologna, seguirò progetti di logistica per clienti del settore alimentare\n- ringraziamento al mio team, in particolare a Carlo e Ilaria, e al mio responsabile Paolo che mi ha dato fiducia quando ero alle prime armi\n- emozionata e un po' agitata"
+  },
+  {
+   "id": "social-3-A",
+   "genre": "social",
+   "scenario": 3,
+   "style": "A",
+   "request": "Post per il gruppo Facebook del quartiere: abbiamo perso il gatto, si chiama Miso, è grigio con le zampe bianche. L'ultima volta l'abbiamo visto martedì sera vicino al parco."
+  },
+  {
+   "id": "social-3-B",
+   "genre": "social",
+   "scenario": 3,
+   "style": "B",
+   "request": "Mi aiuti a scrivere un post per il gruppo Facebook \"Sei di Borgo Trento se...\" a Verona? Abbiamo perso il gatto. Testo chiaro e breve, che si legga bene dal telefono, con i dati importanti ben visibili.\n\nDati:\n- si chiama Miso, maschio, 3 anni, castrato\n- grigio con le zampe bianche e una macchiolina bianca sul naso\n- ha il microchip ma non il collare\n- visto l'ultima volta martedì sera verso le 21 vicino al Parco delle Colombare, lato Via Mameli\n- è molto pauroso, potrebbe essersi nascosto in qualche garage o cantina\n- chi lo vede mi chiami o mi scriva: Laura 347 0000002\n- grazie a tutti, anche solo per la condivisione"
+  },
+  {
+   "id": "social-4-A",
+   "genre": "social",
+   "scenario": 4,
+   "style": "A",
+   "request": "Mi serve una didascalia per Instagram per una foto al rifugio durante il trekking. Corta e divertente."
+  },
+  {
+   "id": "social-4-B",
+   "genre": "social",
+   "scenario": 4,
+   "style": "B",
+   "request": "Devo pubblicare su Instagram una foto mia e di mia sorella Giulia davanti al rifugio Lagazuoi, con gli scarponi appesi ad asciugare vicino alla stufa dopo un giorno intero di pioggia sull'Alta Via 1. Dammi 4 o 5 proposte di didascalia diverse: corte (massimo due righe), spiritose, al massimo un'emoji ciascuna. Niente hashtag, li metto io."
+  },
+  {
+   "id": "social-5-A",
+   "genre": "social",
+   "scenario": 5,
+   "style": "A",
+   "request": "Vorrei un post LinkedIn: il nostro team ha appena finito un progetto di due anni per digitalizzare l'archivio comunale. Racconta anche cosa abbiamo imparato."
+  },
+  {
+   "id": "social-5-B",
+   "genre": "social",
+   "scenario": 5,
+   "style": "B",
+   "request": "Mi scrivi un post per LinkedIn? Sono Andrea Pellegrini, responsabile dei sistemi informativi del Comune di Pesaro. Abbiamo chiuso il progetto di digitalizzazione dell'archivio storico. Tono professionale, concreto, niente autocelebrazione; 200 parole circa.\n\nAppunti:\n- progetto durato 2 anni, finanziato in parte con fondi PNRR\n- digitalizzati circa 180.000 documenti, delibere dal 1860 al 1990, mappe catastali\n- team di 6 persone più una cooperativa esterna per la scansione\n- cosa abbiamo imparato: 1) i metadati contano più delle scansioni, 2) coinvolgere subito gli archivisti, non alla fine, 3) prevedere il doppio del tempo per i documenti danneggiati\n- ora il portale è consultabile da tutti online\n- grazie in particolare alla dott.ssa Bruna Ricci, archivista"
+  },
+  {
+   "id": "social-6-A",
+   "genre": "social",
+   "scenario": 6,
+   "style": "A",
+   "request": "Fai un post Facebook per il nostro coro: cerchiamo tenori e bassi, non c'è nessuna audizione, venite mercoledì."
+  },
+  {
+   "id": "social-6-B",
+   "genre": "social",
+   "scenario": 6,
+   "style": "B",
+   "request": "Post per la pagina Facebook della Corale Santa Cecilia di Feltre. Cerchiamo voci maschili. Tono simpatico e accogliente, breve, con qualche emoji. Deve far venire voglia di provare anche a chi non ha mai cantato.\n\nInfo:\n- cerchiamo tenori e bassi\n- nessuna audizione, non serve leggere la musica\n- prove ogni mercoledì alle 20:00 nel salone parrocchiale di San Giacomo\n- concerto di Natale il 21 dicembre in duomo\n- per info 340 0000001 oppure venite direttamente mercoledì"
+  },
+  {
+   "id": "social-7-A",
+   "genre": "social",
+   "scenario": 7,
+   "style": "A",
+   "request": "Mi scrivi un post Instagram? Ho finito la mia prima mezza maratona in 2:11, voglio ringraziare tutti per il sostegno."
+  },
+  {
+   "id": "social-7-B",
+   "genre": "social",
+   "scenario": 7,
+   "style": "B",
+   "request": "Post Instagram per la mia prima mezza maratona (Bergamo, domenica). Foto all'arrivo con la medaglia. Tono emozionato ma non troppo sdolcinato, 80-100 parole, qualche emoji va bene, 4-5 hashtag alla fine.\n\nCose da dire:\n- 2:11, il mio obiettivo era sotto le 2:15\n- sei mesi fa non riuscivo a correre 5 km di fila\n- a marzo l'infortunio al ginocchio, grazie al mio fisio Davide\n- grazie a mia sorella che era al km 18 con il cartello\n- grazie a quelli del gruppo di corsa del martedì\n- prossimo obiettivo: 10 km sotto i 50 minuti"
+  },
+  {
+   "id": "social-8-A",
+   "genre": "social",
+   "scenario": 8,
+   "style": "A",
+   "request": "La mia azienda ha chiuso e cerco un nuovo lavoro nel marketing. Riesci a scrivermi un post LinkedIn che faccia capire cosa so fare?"
+  },
+  {
+   "id": "social-8-B",
+   "genre": "social",
+   "scenario": 8,
+   "style": "B",
+   "request": "Mi aiuti a scrivere un post LinkedIn per far sapere che cerco lavoro? Sono Simona Ferrara, 34 anni, Napoli. Scrivilo in prima persona, tono diretto e positivo, senza piangersi addosso e senza esagerare con le parole inglesi. Massimo 200 parole.\n\nNote:\n- per 8 anni ho lavorato nel marketing di Calzaturificio Partenope, che ha chiuso a settembre\n- ultimi 4 anni come responsabile marketing, team di 3 persone\n- cosa so fare: gestione social e campagne Meta Ads, newsletter, cataloghi, fiere (Micam Milano), budget fino a 150.000 euro l'anno\n- risultato di cui vado fiera: e-commerce aperto nel 2021, arrivato al 18% del fatturato\n- cerco ruoli di marketing manager o digital marketing, a Napoli o da remoto\n- chiedo a chi legge di condividere o segnalarmi opportunità"
+  },
+  {
+   "id": "report-1-A",
+   "genre": "report",
+   "scenario": 1,
+   "style": "A",
+   "request": "Mi scrivi il verbale della riunione dei residenti sul problema dei parcheggi nella nostra via? Abbiamo preso tre decisioni e fissato la data della prossima riunione."
+  },
+  {
+   "id": "report-1-B",
+   "genre": "report",
+   "scenario": 1,
+   "style": "B",
+   "request": "Devo preparare il verbale della riunione dei residenti di Via Garibaldi (Cuneo) e non sono pratico. Fammelo in forma ordinata e sobria, pronto da stampare e lasciare nella bacheca del condominio.\n\nAppunti:\nriunione giovedì 7 marzo ore 20:30, sala riunioni della parrocchia\npresenti 23 residenti, presiede il sig. Bruno Giraudo, verbalizza Luca Bertola\nproblema: auto di non residenti parcheggiate tutto il giorno (vicino alla stazione), residenti non trovano posto la sera\ndecisione 1: chiedere al Comune la sosta riservata ai residenti con permesso dalle 19 alle 8 (raccolta firme, 41 firme finora)\ndecisione 2: segnalare ai vigili le auto parcheggiate sui passi carrai, con foto, senza discussioni dirette\ndecisione 3: sentire il parroco per usare il cortile dell'oratorio la domenica mattina\nprossima riunione giovedì 11 aprile stessa ora e stesso posto"
+  },
+  {
+   "id": "report-2-A",
+   "genre": "report",
+   "scenario": 2,
+   "style": "A",
+   "request": "Fammi un breve report per il mio capo sui risultati dei tre mesi di prova del nuovo strumento per l'assistenza clienti. Il tempo di risposta è passato da 9 a 4 ore, ma ci sono stati due problemi."
+  },
+  {
+   "id": "report-2-B",
+   "genre": "report",
+   "scenario": 2,
+   "style": "B",
+   "request": "Devo mandare al mio responsabile, il dott. Gatti, un report sintetico sulla prova del nuovo software di ticketing per l'assistenza clienti. Una pagina al massimo, tono professionale, con una raccomandazione finale chiara. Lui legge di fretta, quindi metti i numeri in evidenza.\n\nDati:\n- prova di 3 mesi (gennaio-marzo) con tutto il team di assistenza, 7 persone\n- tempo medio di prima risposta: da 9 ore a 4 ore\n- ticket chiusi al primo contatto: dal 41% al 55%\n- costo: 39 euro al mese per utente\n- problema 1: l'integrazione con il nostro gestionale non sincronizza gli ordini in tempo reale, ritardo di circa un'ora\n- problema 2: le risposte automatiche nelle prime due settimane hanno mandato messaggi sbagliati a una ventina di clienti, poi corretto\n- la mia proposta: confermarlo per un anno, a patto che il fornitore risolva la sincronizzazione entro giugno"
+  },
+  {
+   "id": "report-3-A",
+   "genre": "report",
+   "scenario": 3,
+   "style": "A",
+   "request": "Mi serve la relazione annuale delle attività della nostra associazione di volontariato: 46 volontari, 1.200 ore, tre eventi e il bilancio."
+  },
+  {
+   "id": "report-3-B",
+   "genre": "report",
+   "scenario": 3,
+   "style": "B",
+   "request": "Sono il presidente dell'associazione \"Insieme per Senigallia\" (assistenza ad anziani soli: spesa, accompagnamenti, compagnia). Devo presentare la relazione delle attività del 2024 all'assemblea dei soci e allegarla al rendiconto. Tono sobrio, chiaro, con brevi sezioni. Circa una pagina e mezza.\n\nDati:\n- 46 volontari attivi (11 nuovi quest'anno)\n- circa 1.200 ore di servizio, 64 anziani seguiti\n- 310 accompagnamenti a visite mediche\n- eventi: pranzo di Natale con 90 persone; festa d'estate al parco della Cesanella; corso base di smartphone per anziani (4 incontri)\n- entrate 18.400 euro (5 per mille 6.200, contributo Comune 5.000, donazioni 4.700, quote soci 2.500)\n- uscite 16.900 euro (rimborsi carburante 7.800, assicurazione volontari 2.100, eventi 4.300, sede e utenze 2.700)\n- avanzo 1.500 euro, da usare per un secondo mezzo\n- obiettivo 2025: più volontari giovani"
+  },
+  {
+   "id": "report-4-A",
+   "genre": "report",
+   "scenario": 4,
+   "style": "A",
+   "request": "Mi scrivi una relazione per il consiglio d'istituto sulla gita a Roma? Tre giorni, 52 studenti. Cosa è andato bene, un'alunna che si è sentita male e i costi."
+  },
+  {
+   "id": "report-4-B",
+   "genre": "report",
+   "scenario": 4,
+   "style": "B",
+   "request": "Sono il docente accompagnatore capogruppo e devo presentare al consiglio d'istituto la relazione sulla visita d'istruzione a Roma delle classi terze della scuola media \"Dante Alighieri\" di Arezzo. Tono formale, chiaro, circa una pagina.\n\nDati:\n- dal 15 al 17 aprile, 52 alunni (classi 3ª A, B, C), 5 docenti accompagnatori\n- viaggio in pullman, hotel a Roma zona Termini\n- programma: Colosseo e Fori, Musei Vaticani, Senato con visita guidata, Trastevere\n- cose andate bene: comportamento degli studenti, guida del Senato molto apprezzata, orari rispettati\n- il secondo giorno un'alunna ha avuto febbre alta, accompagnata da una docente al pronto soccorso, niente di grave; i genitori sono venuti a prenderla la sera stessa\n- costo a studente 285 euro (pullman 95, hotel 2 notti mezza pensione 150, ingressi e guide 40)\n- 3 alunni hanno avuto il contributo della scuola\n- suggerimento: per la prossima volta prevedere una giornata meno piena"
+  },
+  {
+   "id": "report-5-A",
+   "genre": "report",
+   "scenario": 5,
+   "style": "A",
+   "request": "Devo fare un rapporto su una perdita d'acqua nella cucina dell'ufficio di lunedì: cosa è successo, i danni e cosa abbiamo cambiato."
+  },
+  {
+   "id": "report-5-B",
+   "genre": "report",
+   "scenario": 5,
+   "style": "B",
+   "request": "Mi serve un rapporto d'incidente da mandare alla direzione e all'assicurazione. Siamo uno studio di commercialisti a Brescia. Tono neutro e fattuale, sezioni brevi (descrizione, danni, interventi, misure prese), niente commenti.\n\nFatti:\n- lunedì mattina alle 8:15 la collega Giulia Ferri ha trovato acqua sul pavimento della cucina e del corridoio\n- causa: rottura del tubo flessibile di alimentazione della lavastoviglie, probabilmente durante il weekend\n- chiusa la valvola generale alle 8:20, chiamato l'idraulico (arrivato alle 9:30)\n- danni: parquet del corridoio gonfio per circa 6 m², mobile sotto il lavello da sostituire, acqua filtrata nel negozio al piano di sotto (macchia sul soffitto)\n- nessun danno a documenti o computer\n- preventivo parquet 1.350 euro, mobile 420 euro\n- misure prese: sostituiti i flessibili con tubi con valvola antiallagamento, installato sensore di allagamento sotto il lavello, la lavastoviglie non si lascia più accesa uscendo la sera"
+  },
+  {
+   "id": "report-6-A",
+   "genre": "report",
+   "scenario": 6,
+   "style": "A",
+   "request": "Report breve per il direttivo della società sportiva, per favore. I soci sono passati da 210 a 248, abbiamo una nuova squadra giovanile e servono più allenatori."
+  },
+  {
+   "id": "report-6-B",
+   "genre": "report",
+   "scenario": 6,
+   "style": "B",
+   "request": "Devo presentare al consiglio direttivo dell'ASD Tennis Club Valsesia un breve report sull'andamento dei soci, una pagina al massimo. Tono pratico, voglio che si arrivi a una decisione sul tema allenatori.\n\nDati:\n- soci da 210 (settembre scorso) a 248 (oggi), +18%\n- crescita soprattutto tra i ragazzi 8-14 anni, grazie alle giornate di prova nelle scuole\n- nuova squadra giovanile under 14 iscritta al campionato regionale\n- allenatori: 2 maestri e 1 istruttore, fanno già 52 ore a settimana in tre\n- lista d'attesa per i corsi del sabato: 17 bambini\n- proposta: pagare il corso istruttore FITP a due soci giovani (circa 700 euro a testa) e assumere un istruttore per 10 ore a settimana da gennaio"
+  },
+  {
+   "id": "report-7-A",
+   "genre": "report",
+   "scenario": 7,
+   "style": "A",
+   "request": "Fammi un report sullo stato del progetto: rifacimento del sito di un piccolo hotel, siamo al 70%, siamo in ritardo per colpa delle foto e c'è una nuova data di lancio."
+  },
+  {
+   "id": "report-7-B",
+   "genre": "report",
+   "scenario": 7,
+   "style": "B",
+   "request": "Devo mandare un aggiornamento al cliente, la titolare dell'Hotel Villa Ortensia sul Lago d'Orta, sig.ra Cristina Ravelli. Sono la project manager della piccola agenzia web che segue il nuovo sito. Tono professionale ma cordiale, mezza pagina, chiaro sui prossimi passi e su cosa ci serve da lei.\n\nSituazione:\n- avanzamento complessivo circa 70%\n- fatto: grafica approvata, struttura delle pagine, testi in italiano e inglese, sistema di prenotazione collegato\n- da fare: foto definitive, testi in tedesco, test su mobile, collegamento a Google Business\n- ritardo: il fotografo doveva scattare a fine aprile, rimandato due volte per il maltempo, ora fissato per il 14 maggio\n- vecchia data di lancio 10 maggio, nuova data 3 giugno\n- ci servono da lei entro il 20 maggio: conferma delle tariffe estive e i testi delle offerte"
+  },
+  {
+   "id": "report-8-A",
+   "genre": "report",
+   "scenario": 8,
+   "style": "A",
+   "request": "Devo scrivere una breve relazione sul corso di cucina per principianti che ho fatto, quattro serate: cosa abbiamo cucinato e cosa ho imparato."
+  },
+  {
+   "id": "report-8-B",
+   "genre": "report",
+   "scenario": 8,
+   "style": "B",
+   "request": "Ho fatto un corso base di cucina di quattro serate all'Università Popolare di Cagliari e per avere l'attestato devo consegnare una breve relazione personale (una pagina, in prima persona). Tono semplice, onesto.\n\nAppunti:\n- 1ª sera: coltelli e tagli, soffritto, minestrone\n- 2ª sera: pasta fresca, culurgiones con la chef (lei è ogliastrina), sugo di pomodoro\n- 3ª sera: pesce, orata al forno e calamari in padella\n- 4ª sera: dolci, seadas e una crostata\n- ho imparato: tenere il coltello nel modo giusto, preparare tutto prima di accendere il fuoco, assaggiare mentre si cucina, salare l'acqua al punto giusto\n- difficile: la chiusura dei culurgiones, i miei sembravano ravioli schiacciati\n- da quando l'ho finito cucino almeno tre sere a settimana invece di ordinare"
+  },
+  {
+   "id": "longform-1-A",
+   "genre": "longform",
+   "scenario": 1,
+   "style": "A",
+   "request": "Vorrei un articolo lungo per il blog, sulle 800 parole, su tutto quello che ho imparato in un anno di orto sul balcone."
+  },
+  {
+   "id": "longform-1-B",
+   "genre": "longform",
+   "scenario": 1,
+   "style": "B",
+   "request": "Mi scrivi un articolo lungo (circa 800 parole) per il mio blog? Tema: un anno di orto sul balcone. Abito al quarto piano a Torino, balcone esposto a sud-ovest, 6 m². Lettori: gente in città che vuole provarci. Tono pratico e personale, in prima persona, con dei sottotitoli.\n\nCosa ho imparato:\n- vasi: più grandi di quanto pensi, i pomodori in vasi da 10 litri hanno sofferto, meglio da 20 in su\n- terriccio buono fa la differenza, aggiungere compost\n- cose andate bene: basilico, rucola, peperoncini, fragole in vaso sospeso, insalata da taglio in primavera\n- cose andate male: zucchine (oidio e troppo poco spazio), carote (vaso troppo basso)\n- acqua: d'estate due volte al giorno, poi ho messo un impianto a goccia con timer da 35 euro, svolta\n- vento al quarto piano: piante legate ai tutori\n- condominio: attenzione all'acqua che cola sul balcone di sotto, discussione con la vicina\n- spesa totale circa 180 euro nel primo anno"
+  },
+  {
+   "id": "longform-2-A",
+   "genre": "longform",
+   "scenario": 2,
+   "style": "A",
+   "request": "Mi serve un articolo lungo per la rivista del paese sulla storia del mercato coperto e sulla sua riapertura dopo i lavori di restauro. Più o meno 800 parole."
+  },
+  {
+   "id": "longform-2-B",
+   "genre": "longform",
+   "scenario": 2,
+   "style": "B",
+   "request": "Scrivo per il trimestrale \"Lugo Notizie\" e mi hanno chiesto un pezzo di circa 800 parole sul Mercato Coperto di Lugo, che riapre dopo il restauro. Tono da articolo di approfondimento: un po' storia, un po' cronaca, con qualche voce delle persone. Titolo e sottotitolo.\n\nMateriale:\n- costruito nel 1928, struttura in ferro e vetro, progetto dell'ufficio tecnico comunale\n- negli anni '50-'60 fino a 40 banchi, si veniva dalle campagne il mercoledì\n- dagli anni '90 calo dei banchi per l'arrivo dei supermercati, chiuso nel 2019 per problemi alla copertura\n- restauro durato tre anni, costato 2,8 milioni di euro (in parte fondi regionali)\n- riapre sabato 5 ottobre con 14 banchi (frutta e verdura, pesce, formaggi, pasta fresca, un forno) e un piccolo bar\n- al piano superiore spazio per corsi di cucina ed eventi\n- voce: Ermes Baldini, 79 anni, fruttivendolo dal 1962, ha di nuovo il banco: \"Ci torno per i miei nipoti, che non l'hanno mai visto pieno.\"\n- voce: la sindaca che parla di \"piazza coperta\" per la città"
+  },
+  {
+   "id": "longform-3-A",
+   "genre": "longform",
+   "scenario": 3,
+   "style": "A",
+   "request": "Scrivimi una guida lunga, sulle 800 parole, su come prepararsi alla prima mezza maratona, basata sulla mia esperienza."
+  },
+  {
+   "id": "longform-3-B",
+   "genre": "longform",
+   "scenario": 3,
+   "style": "B",
+   "request": "Vorrei una guida lunga, circa 800 parole, per il mio blog: \"Come mi sono preparata alla prima mezza maratona (e cosa rifarei)\". La scrivo per chi parte da zero come me. Prima persona, tono pratico e incoraggiante ma realistico. Usa sottotitoli. Non sono un'allenatrice, quindi niente tabelle da esperta: deve essere la mia esperienza.\n\nCose da metterci:\n- sei mesi di preparazione, partendo da 5 km\n- 3-4 uscite a settimana: un lungo la domenica, un'uscita con ripetute, le altre lente\n- il lungo più lungo che ho fatto: 18 km, tre settimane prima\n- l'infortunio al ginocchio a marzo: aumentato i km troppo in fretta; il fisioterapista mi ha fatto fare esercizi di forza e mi ha dato la regola del 10% a settimana\n- scarpe: cambiate dopo 600 km, provate in negozio specializzato\n- alimentazione: provare i gel in allenamento, mai il giorno della gara per la prima volta\n- gara: partita troppo veloce, crisi al km 18, chiusa in 2:11\n- consiglio finale: dormire bene la settimana prima, non solo la notte prima"
+  },
+  {
+   "id": "longform-4-A",
+   "genre": "longform",
+   "scenario": 4,
+   "style": "A",
+   "request": "Mi scrivi un articolo lungo per il blog aziendale su come il nostro piccolo team di assistenza è passato a una turnazione su 4 giorni senza perdere clienti? Circa 800 parole."
+  },
+  {
+   "id": "longform-4-B",
+   "genre": "longform",
+   "scenario": 4,
+   "style": "B",
+   "request": "Lavoro in Gestionali Adriatici, software house di Pescara con 25 persone (gestionali per studi medici). Vorrei un articolo di circa 800 parole per il nostro blog aziendale su come il team di assistenza (5 persone) è passato alla settimana di 4 giorni con turni a rotazione. Lettori: clienti e altre piccole aziende curiose. Tono concreto, onesto anche sulle difficoltà. Con sottotitoli.\n\nAppunti:\n- prima: tutti dal lunedì al venerdì, 9-18, picchi di stress il lunedì\n- ora: ognuno lavora 4 giorni da 9 ore, con un giorno libero a rotazione; il servizio resta aperto 5 giorni\n- prova di 6 mesi iniziata a febbraio\n- risultati: tempo medio di risposta rimasto sotto le 3 ore; soddisfazione clienti da 4,3 a 4,5 su 5; nessun cliente perso per il servizio; assenze per malattia dimezzate\n- difficoltà: le prime settimane passaggi di consegne fatti male, ticket persi tra un turno e l'altro; risolto con una nota di passaggio scritta a fine giornata\n- un cliente si lamentava di non trovare sempre la stessa persona, ora abbiamo un referente principale per i clienti più grandi\n- citazione di Chiara, del team: \"Il mercoledì libero mi ha restituito la vita, ma il giovedì devo leggere tutto quello che è successo.\""
+  },
+  {
+   "id": "longform-5-A",
+   "genre": "longform",
+   "scenario": 5,
+   "style": "A",
+   "request": "Avrei bisogno di un articolo lungo, circa 800 parole, sulla ristrutturazione di una casa vecchia con un budget limitato: le scelte che abbiamo fatto."
+  },
+  {
+   "id": "longform-5-B",
+   "genre": "longform",
+   "scenario": 5,
+   "style": "B",
+   "request": "Io e mio compagno abbiamo comprato una casa degli anni '50 a Fidenza e l'abbiamo ristrutturata spendendo poco. Vorrei un articolo lungo (circa 800 parole) per il nostro blog che racconti le decisioni prese, con sottotitoli. Tono onesto, un po' autoironico, pratico per chi sta pensando di fare lo stesso.\n\nLe nostre scelte:\n- casa pagata 118.000 euro, budget per i lavori 45.000, alla fine spesi 52.000\n- priorità a impianti e infissi: impianto elettrico rifatto, caldaia a condensazione, finestre nuove (usato il bonus)\n- pavimenti originali in graniglia tenuti e fatti levigare invece di rifarli\n- cucina comprata usata da un annuncio online, 1.500 euro, adattata\n- bagno rifatto da soli in tre weekend (circa 2.400 euro)\n- tetto: solo ripassato, rifacimento rimandato tra qualche anno\n- errori: preventivo dell'elettricista non scritto in dettaglio, extra di 3.000 euro; sottovalutati i tempi, siamo entrati con due stanze ancora da finire\n- cosa rifaremmo: chiedere tre preventivi sempre, tenere un 15% di margine"
+  },
+  {
+   "id": "longform-6-A",
+   "genre": "longform",
+   "scenario": 6,
+   "style": "A",
+   "request": "Vorrei un articolo lungo per una rivista per genitori su smartphone e ragazzi di 11 anni, cosa abbiamo provato noi in famiglia. Più o meno 800 parole."
+  },
+  {
+   "id": "longform-6-B",
+   "genre": "longform",
+   "scenario": 6,
+   "style": "B",
+   "request": "Una rivista per genitori della mia zona (distribuita negli asili e nelle scuole di Verona) mi ha chiesto un articolo di circa 800 parole sulla nostra esperienza con il primo smartphone di nostra figlia Sofia, 11 anni. Tono sincero, non da esperta, senza giudicare nessuno. Prima persona, con qualche sottotitolo.\n\nMateriale:\n- abbiamo resistito fino alla prima media, poi quasi tutta la classe ce l'aveva\n- patto scritto e firmato da tutti: telefono in cucina di notte, niente a tavola (anche per noi), solo WhatsApp, niente TikTok e Instagram fino a 13 anni, un'ora al giorno nei giorni di scuola, password condivisa\n- cosa ha funzionato: la notte in cucina, la password, parlarne a cena\n- cosa non ha funzionato: il limite di un'ora (discussioni continue), poi l'abbiamo trasformato in \"dopo i compiti e fino alle 20\"\n- il gruppo WhatsApp della classe: messaggi alle 23, un episodio di esclusione di una compagna; ne abbiamo parlato con le maestre e con altri genitori\n- noi genitori siamo stati il cattivo esempio più grande\n- alla serata a scuola, con 80 genitori, abbiamo scoperto di non essere i soli"
+  },
+  {
+   "id": "longform-7-A",
+   "genre": "longform",
+   "scenario": 7,
+   "style": "A",
+   "request": "Scrivimi un articolo di viaggio lungo, sulle 800 parole: una settimana in treno attraverso l'Italia con un bambino."
+  },
+  {
+   "id": "longform-7-B",
+   "genre": "longform",
+   "scenario": 7,
+   "style": "B",
+   "request": "Vorrei un articolo di viaggio di circa 800 parole per il mio blog: una settimana in treno da Milano a Palermo con mio figlio Leo, 7 anni, ad agosto. Lettori: genitori che vogliono viaggiare senza macchina. Tono vivace e pratico, in prima persona, con tappe come sottotitoli.\n\nItinerario e note:\n- Milano > Firenze (Frecciarossa, 1h55): Leo incantato dalla velocità sul display; a Firenze gelato e Ponte Vecchio, troppa folla\n- Firenze > Roma: due notti, Colosseo all'alba per evitare il caldo, Leo voleva solo vedere i gatti di Largo Argentina\n- Roma > Napoli: pizza, Museo Archeologico, lui impazzito per i mosaici con gli animali\n- Napoli > Palermo: Intercity notte con il traghettamento del treno sullo Stretto, momento più bello del viaggio\n- Palermo: mercato di Ballarò, arancine, mare a Mondello\n- costi: treni circa 320 euro in due con offerte prenotate a maggio; i bambini sotto i 15 anni pagano meno con l'offerta famiglia\n- consigli: zaino leggero, un gioco da tavolo piccolo, scaricare film prima, prenotare i posti vicino al finestrino\n- difficoltà: un ritardo di due ore a Salerno, caldo nelle stazioni"
+  },
+  {
+   "id": "longform-8-A",
+   "genre": "longform",
+   "scenario": 8,
+   "style": "A",
+   "request": "Il nostro corpo dei vigili del fuoco volontari compie 140 anni: ci scrivi un articolo lungo per il sito? Circa 800 parole."
+  },
+  {
+   "id": "longform-8-B",
+   "genre": "longform",
+   "scenario": 8,
+   "style": "B",
+   "request": "Sono il segretario del Corpo dei Vigili del Fuoco Volontari di Cles e per il sito vorrei un articolo di circa 800 parole sui nostri 140 anni. Tono rispettoso ma non pomposo, che possa leggere volentieri anche un ragazzo che pensa di entrare. Con sottotitoli per epoche.\n\nMateriale:\n- fondato nel 1884 dopo un incendio che distrusse quattro case in centro; 22 uomini, una pompa a mano trainata da cavalli\n- primi del '900: la prima sirena e la caserma vicino alla chiesa\n- 1955: prima autobotte, comprata anche con una colletta tra le famiglie\n- alluvione del 1966: settimane di interventi in valle\n- anni '90: prime donne nel corpo (oggi sono 6)\n- oggi: 38 volontari, oltre 200 interventi all'anno tra incendi, incidenti stradali, alberi caduti, soccorsi in montagna con il soccorso alpino\n- gli allievi: gruppo giovani 10-17 anni, 14 ragazzi\n- il comandante Mauro Pedrotti: \"Qui nessuno è pagato, ma nessuno è solo.\"\n- festa dei 140 anni con la giornata a porte aperte il 22 settembre\n- appello finale: cerchiamo nuovi volontari, dai 18 anni, formazione gratuita"
+  }
+ ]
+}

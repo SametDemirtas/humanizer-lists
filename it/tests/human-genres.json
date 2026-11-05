@@ -1,0 +1,254 @@
+{
+  "about": "Ordinary Italian writing in genres the human corpora barely cover: personal and business email, WhatsApp messages, social and LinkedIn posts, school and parish newsletters, school essays, opinion pieces, minutes and reports, reviews, news with editorial brackets, and a small seller's product text. Drafted for this test by a language model (Claude), not written or collected from real writers. The entries were narrowed until none of these texts was flagged, so passing the test holds by design and is not a measured false-flag rate. Not one of them may be flagged with the general entries; product texts are checked with all entries. They include the sentences a review found flagged in 0.3.0.",
+  "texts": [
+    {
+      "genre": "personal email",
+      "text": "Cara zia,\nscusa se ti rispondo solo ora ma e' stato un mese pieno. Il trasloco e' finito, finalmente! La casa nuova e' piccola ma luminosa e la bambina ha già scelto la sua cameretta. Quando vieni a trovarci? Ti aspettiamo, magari per Pasqua.\nUn abbraccio forte,\nGiulia"
+    },
+    {
+      "genre": "personal email",
+      "text": "Ciao Fede,\nti scrivo perché non riesco a trovare il tuo numero nuovo. Volevo dirti che sabato facciamo una grigliata da noi, niente di che, qualche amico e un po' di musica. Se ti va porta pure la tua ragazza. Fammi sapere entro giovedì così mi regolo con la carne.\nCiao!\nAndrea"
+    },
+    {
+      "genre": "personal email",
+      "text": "Caro Paolo,\ngrazie per le foto del matrimonio, sono bellissime. Mia madre si è commossa a vederle. Non è mai troppo tardi per rimettersi in contatto, quindi la prossima volta che passi da Torino chiamami e andiamo a cena. E tu, come stai? Il lavoro nuovo?\nUn saluto\nRoberto"
+    },
+    {
+      "genre": "personal email",
+      "text": "Ciao Marco, come stai? Allora, ti scrivo per la cena di sabato. Io sto bene. E tu?"
+    },
+    {
+      "genre": "business email",
+      "text": "Ciao Marco, ti allego il file. Spero ti sia utile!"
+    },
+    {
+      "genre": "business email",
+      "text": "Se ti serve, posso preparare una bozza del contratto entro venerdì."
+    },
+    {
+      "genre": "business email",
+      "text": "Se mi fornisci il codice fiscale, procedo con l'iscrizione."
+    },
+    {
+      "genre": "business email",
+      "text": "Perfetto, ecco i documenti che mi avevi chiesto."
+    },
+    {
+      "genre": "business email",
+      "text": "Ciao Luca, ecco la bozza per il tuo intervento di lunedì."
+    },
+    {
+      "genre": "business email",
+      "text": "Gentile dott.ssa Ferri,\nin allegato le invio il preventivo aggiornato per la fornitura di cancelleria, come concordato nella telefonata di ieri. Rispetto alla versione precedente abbiamo tolto le cartelline colorate e aggiunto i raccoglitori ad anelli.\nResto a disposizione per qualsiasi chiarimento.\nCordiali saluti\nMarco Bellini\nUfficio commerciale"
+    },
+    {
+      "genre": "business email",
+      "text": "Buongiorno a tutti,\nvi ricordo che venerdì 14 l'ufficio resterà chiuso per la disinfestazione. Chi ha bisogno di documenti dall'archivio è pregato di ritirarli entro giovedì sera. E' importante sottolineare che nessuno potrà entrare nell'edificio fino a lunedì mattina.\nGrazie per la collaborazione,\nLaura Gatti\nAmministrazione"
+    },
+    {
+      "genre": "business email",
+      "text": "Ciao Simone,\nti allego la bozza del verbale di ieri. Ho cercato di riportare tutto, ma se manca qualcosa dimmelo pure e lo aggiungo. Se ti serve, posso anche accorciare il testo prima di mandarlo al direttore.\nA presto\nElena"
+    },
+    {
+      "genre": "business email",
+      "text": "Spett.le Ditta Rossi Impianti,\ncon la presente segnaliamo che la caldaia installata il 3 ottobre presso il nostro condominio di via Garibaldi 12 presenta di nuovo una perdita. Vi chiediamo di intervenire al più presto. Restiamo in attesa di un vostro riscontro.\nDistinti saluti\nL'amministratore, geom. Carlo Neri"
+    },
+    {
+      "genre": "business email",
+      "text": "Buongiorno Stefano,\nho dato un'occhiata alla proposta: il piano di lavoro mi sembra chiaro, solo i tempi della fase due sono stretti. Se mi fornisci le date di consegna dei fornitori, ricalcolo il cronoprogramma e te lo rimando entro domani. Ti allego intanto le mie note.\nCordiali saluti,\nPaola"
+    },
+    {
+      "genre": "whatsapp",
+      "text": "Se vuoi, posso preparare io la torta per sabato."
+    },
+    {
+      "genre": "whatsapp",
+      "text": "Certo! Ecco il link della riunione."
+    },
+    {
+      "genre": "whatsapp",
+      "text": "Raga stasera ci sto ma arrivo tardi, tipo 21.30. Tenetemi un posto 🙏"
+    },
+    {
+      "genre": "whatsapp",
+      "text": "Ok perfetto! Allora ci vediamo domani alle 8 davanti a scuola. Porta tu il pallone che io non ce l'ho più 😂"
+    },
+    {
+      "genre": "whatsapp",
+      "text": "Ciao Giulia, tutto bene? Ti volevo chiedere se domani puoi tenere tu Leo un'oretta, ho il dentista alle 17. Se non riesci tranquilla, chiedo a mia sorella"
+    },
+    {
+      "genre": "whatsapp",
+      "text": "Certo! Ecco l'indirizzo: via Roma 5, terzo piano, citofono Bianchi."
+    },
+    {
+      "genre": "social post",
+      "text": "E voi? Raccontatemelo nei commenti!"
+    },
+    {
+      "genre": "social post",
+      "text": "Sole. Mare. Relax. E tu, dove sei stato in vacanza?"
+    },
+    {
+      "genre": "social post",
+      "text": "Che giornata ragazzi! ☀️ Grazie a tutti quelli che sono passati al mercatino, non ci aspettavamo così tanta gente. E voi, cosa avete comprato? 😄 #mercatino #domenica #bologna"
+    },
+    {
+      "genre": "social post",
+      "text": "Festa di fine estate al circolo!\n📍 Parco della Resistenza\n🕖 dalle 18 alle 24\n🍕 pizza, musica dal vivo e giochi per bambini\nVi aspettiamo numerosi! #festa #estate #circolo"
+    },
+    {
+      "genre": "social post",
+      "text": "Finalmente in ferie!!! Dieci giorni di mare, libri e zero sveglie. Non vedo l'ora 🌊📚"
+    },
+    {
+      "genre": "social post",
+      "text": "Oggi il nostro piccolo Tommaso compie 3 anni 🎂 Sembra ieri che lo portavamo a casa dall'ospedale. Buon compleanno amore nostro ❤️"
+    },
+    {
+      "genre": "social post",
+      "text": "Ma possibile che in questo paese non si riesca a fare una strada senza buche? Via Mazzini e' un colabrodo da due anni. Diciamocelo, al Comune non interessa niente. Chi abita in zona sa di cosa parlo."
+    },
+    {
+      "genre": "linkedin post",
+      "text": "Dopo sei anni in Barilla, da lunedì inizio una nuova avventura in Mutti come responsabile qualità. Ringrazio tutti i colleghi con cui ho lavorato in questi anni: mi avete insegnato tantissimo. Non vedo l'ora di cominciare!"
+    },
+    {
+      "genre": "linkedin post",
+      "text": "Ieri ho tenuto il mio primo intervento al convegno di Rimini sulla logistica del freddo. Ero emozionatissimo, ma è andata bene e ho ricevuto domande molto interessanti. Grazie a Confcommercio per l'invito e a tutti quelli che sono venuti ad ascoltare. Le slide sono disponibili, scrivetemi in privato se vi interessano."
+    },
+    {
+      "genre": "linkedin post",
+      "text": "Siamo alla ricerca di un/una magazziniere per la nostra sede di Verona. Requisiti: patentino del muletto, esperienza di almeno due anni. Contratto a tempo indeterminato. Inviate il cv a lavoro@esempio.it. Condividete pure, grazie!"
+    },
+    {
+      "genre": "linkedin post",
+      "text": "Oggi il nostro team ha completato la migrazione del gestionale dopo otto mesi di lavoro. Non è stato semplice: ci sono state notti in bianco e qualche momento di sconforto. Ma ce l'abbiamo fatta. Grazie a Luca, Sara e Davide per la pazienza. E voi, avete mai affrontato una migrazione così lunga?"
+    },
+    {
+      "genre": "school newsletter",
+      "text": "Cari genitori,\nvi ricordiamo che mercoledì 20 marzo le classi quarte andranno in gita a Ravenna. Il pullman partirà alle 7.30 dal piazzale della scuola, il rientro è previsto per le 18. I bambini devono portare il pranzo al sacco e una borraccia. Il costo di 25 euro va versato entro venerdì alle rappresentanti di classe.\nGrazie per la collaborazione.\nLe maestre"
+    },
+    {
+      "genre": "parish newsletter",
+      "text": "Notiziario parrocchiale - Ottobre\nDomenica scorsa abbiamo festeggiato la festa del patrono con la processione e il pranzo comunitario in oratorio. È stata una bella occasione per stare insieme e rafforzare il senso di comunità. Un grazie di cuore ai volontari della cucina e al coro. Da novembre riprende il catechismo: le iscrizioni si raccolgono in segreteria il martedì e il giovedì dalle 17 alle 19."
+    },
+    {
+      "genre": "school newsletter",
+      "text": "Il comitato genitori ringrazia tutte le famiglie che hanno partecipato alla castagnata. Abbiamo raccolto 840 euro che serviranno per comprare libri nuovi per la biblioteca della scuola. Grazie anche al panificio Bassi per le torte! Il prossimo appuntamento è il mercatino di Natale, sabato 14 dicembre."
+    },
+    {
+      "genre": "school newsletter",
+      "text": "Grazie! La gita è stata un'occasione per conoscerci meglio. Il segreto? La pazienza."
+    },
+    {
+      "genre": "school newsletter",
+      "text": "È bene ricordare che la consegna è il 12. Inoltre servono due copie. Infine, firmate il modulo."
+    },
+    {
+      "genre": "school essay",
+      "text": "Inoltre, la scuola deve educare al rispetto. Infine, anche la famiglia ha un ruolo. In conclusione, il bullismo si combatte insieme."
+    },
+    {
+      "genre": "school essay",
+      "text": "Tema: Il rapporto tra giovani e social network\n\nAl giorno d'oggi quasi tutti i ragazzi della mia età hanno un profilo su Instagram o TikTok. I social hanno molti lati positivi: ci permettono di restare in contatto con gli amici e di conoscere persone nuove. Inoltre si possono trovare informazioni utili e scoprire nuove passioni.\nPerò ci sono anche dei rischi. Molti ragazzi passano troppe ore davanti al telefono e si isolano. Inoltre c'è il problema del cyberbullismo, che può fare molto male. Infine non bisogna dimenticare che quello che pubblichiamo resta in rete per sempre.\nIn conclusione, secondo me i social non sono né buoni né cattivi: dipende da come li usiamo. È importante imparare a usarli con la testa."
+    },
+    {
+      "genre": "school essay",
+      "text": "Tema: Descrivi una persona importante per te\n\nLa persona più importante per me è mia nonna Rosa. Ha ottant'anni ma è ancora piena di energia: ogni mattina va al mercato e la domenica cucina per tutta la famiglia. Quando ero piccolo mi raccontava le storie del suo paese in Calabria e io la ascoltavo per ore. Da lei ho imparato che non è mai troppo tardi per imparare qualcosa di nuovo: a settantacinque anni si è iscritta a un corso di computer! Per concludere, posso dire che senza di lei la mia vita sarebbe molto diversa."
+    },
+    {
+      "genre": "school essay",
+      "text": "Tema: L'ambiente\n\nIl problema dell'inquinamento riguarda tutti noi. Ogni giorno nelle città circolano migliaia di automobili che producono gas nocivi. Inoltre molte persone non fanno la raccolta differenziata. Secondo me bisognerebbe usare di più la bicicletta e i mezzi pubblici. Anche nella mia scuola abbiamo fatto un progetto sul riciclo ed e' stato molto interessante. In conclusione, se ognuno fa la sua parte possiamo rendere il mondo un posto migliore."
+    },
+    {
+      "genre": "opinion piece",
+      "text": "Oggi più che mai serve unità. La verità è che nessuno ci aveva pensato."
+    },
+    {
+      "genre": "opinion piece",
+      "text": "Diciamocelo: questo governo non funziona. La verità è che non c'è una strategia."
+    },
+    {
+      "genre": "opinion piece",
+      "text": "Il nuovo piano del traffico è un pasticcio. Si chiude il centro senza aver potenziato gli autobus, e chi lavora in periferia si trova a fare il doppio della strada. Non si può negare che lo smog sia un problema, ma le soluzioni calate dall'alto non funzionano. Servirebbe ascoltare i commercianti e i pendolari prima di decidere."
+    },
+    {
+      "genre": "opinion piece",
+      "text": "Lettera al direttore. Sono un'insegnante di scuola primaria da trent'anni e vorrei dire la mia sul voto in condotta. Il problema non è il voto, ma il fatto che le famiglie sono sempre meno presenti. La verità è che noi insegnanti siamo lasciati soli. Ringrazio per lo spazio.\nMaria Teresa Colombo, Cremona"
+    },
+    {
+      "genre": "meeting minutes",
+      "text": "Verbale della riunione del 12 febbraio\nPresenti: Bianchi, Conti, Esposito, Moretti. Assente giustificato: Ricci.\n1. Bilancio: il tesoriere illustra il rendiconto 2023, che chiude con un avanzo di 1.250 euro. Approvato all'unanimità.\n2. Festa sociale: si decide di organizzarla il 25 maggio presso il campo sportivo. Moretti si occupa delle autorizzazioni.\n3. Varie ed eventuali: nessuna.\nLa seduta è tolta alle 22.40."
+    },
+    {
+      "genre": "report",
+      "text": "Relazione sull'intervento del 4 marzo\nAlle ore 9.15 la squadra è intervenuta presso lo stabilimento per una perdita d'acqua dal soffitto del magazzino. È stato individuato un tubo rotto all'altezza del giunto. Il tubo è stato sostituito e l'impianto è stato rimesso in funzione alle 11.30. Si consiglia di controllare anche le tubature del piano superiore. In sintesi, il guasto è risolto ma l'impianto è vecchio e andrebbe rivisto."
+    },
+    {
+      "genre": "review",
+      "text": "Questo chef porta la cucina emiliana a un altro livello."
+    },
+    {
+      "genre": "review",
+      "text": "Siamo stati a cena qui sabato sera. Locale piccolo ma accogliente, personale gentilissimo. I tortelli di zucca erano spettacolari, la tagliata un po' troppo cotta. Prezzi nella media. Ci torneremo sicuramente!"
+    },
+    {
+      "genre": "review",
+      "text": "Ho comprato questo aspirapolvere a gennaio e dopo due mesi la batteria dura già la metà. Il servizio clienti non risponde alle mail. Sconsigliato."
+    },
+    {
+      "genre": "review",
+      "text": "Un romanzo che si legge tutto d'un fiato. L'autrice racconta la storia di tre sorelle nella Napoli del dopoguerra con una scrittura asciutta e precisa. Più che un romanzo storico, è un ritratto di famiglia. Forse il finale è un po' affrettato, ma vale la pena leggerlo."
+    },
+    {
+      "genre": "journalism",
+      "text": "«[Il sindaco] non ci ha mai ascoltato», ha detto la portavoce."
+    },
+    {
+      "genre": "journalism",
+      "text": "Ha detto che [la città] merita più attenzione."
+    },
+    {
+      "genre": "journalism",
+      "text": "«Il [nome] non lo ricordo», ha ammesso il testimone."
+    },
+    {
+      "genre": "journalism",
+      "text": "«Non ci aspettavamo una risposta così», ha detto il presidente dell'associazione. «Abbiamo chiesto [al Comune] un incontro già a gennaio e nessuno si è fatto vivo». Secondo i dati diffusi ieri, le famiglie in lista d'attesa sono 312."
+    },
+    {
+      "genre": "journalism",
+      "text": "Il sindaco ha spiegato che «la data [della riapertura, ndr] verrà comunicata la prossima settimana», ma i residenti chiedono tempi certi."
+    },
+    {
+      "genre": "journalism",
+      "text": "Nella lettera, il ministro scrive che «il [nostro] impegno resta immutato» e annuncia nuovi fondi per la ricostruzione."
+    },
+    {
+      "genre": "product text",
+      "text": "Se vuoi, posso personalizzarla con il tuo nome.",
+      "product": true
+    },
+    {
+      "genre": "product text",
+      "text": "Tazza in ceramica dipinta a mano, capacità 300 ml. Ogni pezzo è unico e può avere piccole differenze rispetto alla foto. Lavabile in lavastoviglie ma consiglio il lavaggio a mano per far durare di più i colori. Spedizione in 2-3 giorni lavorativi.",
+      "product": true
+    },
+    {
+      "genre": "product text",
+      "text": "Orecchini in argento 925 con perle di fiume. Lunghezza 3 cm. Li realizzo io nel mio laboratorio a Lecce, uno per uno. Arrivano in una scatolina di cartone riciclato, pronti da regalare. Per altre misure scrivetemi pure!",
+      "product": true
+    },
+    {
+      "genre": "product text",
+      "text": "Sapone naturale all'olio d'oliva e lavanda, 100 g. Preparato con cura nel nostro piccolo laboratorio, senza conservanti né coloranti. Adatto anche alle pelli sensibili. Conservare in luogo asciutto.",
+      "product": true
+    },
+    {
+      "genre": "product text",
+      "text": "Borsa in cotone con stampa fatta a mano. Misure 38x42 cm, manici lunghi. Lavare a 30 gradi al rovescio. Se vuoi un colore diverso o una scritta personalizzata, scrivimi prima di ordinare e ne parliamo.",
+      "product": true
+    }
+  ]
+}

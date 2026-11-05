@@ -1,0 +1,22 @@
+id,category,precision,human-mc4-web (n=2000),human-mc4-web-holdout (n=1000),human-mc4-news (n=814),human-mc4-shop (n=370),human-mc4-shop-holdout (n=367),ai-general (n=96),ai-general-holdout (n=96),ai-multi-holdout (n=254),ai-detailed-holdout (n=448)
+de-markdown-bold,structure,high,0,0,0,0,0,63,79,179,358
+de-markdown-heading,structure,high,0,0,0,0,0,55,56,167,247
+de-platzhalter,structure,high,0,0,0,0,0,35,40,88,149
+de-chat-anpassen,structure,high,0,0,0,0,0,36,25,40,81
+de-chat-klammern,structure,high,0,0,0,0,0,9,14,12,30
+de-chat-fiktiv,structure,high,0,0,0,0,0,7,2,6,0
+de-chat-hier-ist,structure,high,0,0,0,0,0,6,4,6,12
+de-chat-residue,structure,high,0,0,0,0,0,0,0,0,0
+de-betreff-zeile,structure,medium,0,0,0,0,0,16,16,38,75
+de-anfuehrung-gemischt,punctuation,medium,18,6,3,2,2,9,9,25,43
+de-kommentare-aufruf,cliche-closer,medium,1,0,0,0,0,23,18,35,16
+de-mein-fazit,cliche-closer,medium,1,0,1,0,0,11,8,7,35
+de-gute-nachricht,cliche-opener,medium,0,0,0,0,0,3,1,8,2
+de-wer-in-den-letzten,cliche-opener,medium,0,0,0,0,0,5,0,0,0
+de-was-mir-geholfen-hat,cliche-opener,medium,0,0,0,0,0,3,0,1,2
+de-eigentlicher-gewinn,cliche-closer,medium,0,0,0,0,0,5,2,0,1
+de-vielleicht-genau-das,cliche-closer,medium,1,0,0,0,0,3,1,0,2
+de-stueck-abstrakt,hype,medium,0,0,0,0,0,6,0,2,0
+de-muede-aber-zufrieden,cliche-closer,medium,0,0,0,0,0,4,0,0,0
+de-vorteile-auf-der-hand,filler,medium,1,0,0,0,0,3,0,0,1
+de-zusammenfassend,filler,medium,0,0,0,0,0,1,0,3,5

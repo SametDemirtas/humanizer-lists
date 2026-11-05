@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Humanizer list",
+  "description": "Phrases and habits that mark product copy as written by a language model, for one language. Matching rules are in src/matcher.mjs.",
+  "type": "object",
+  "required": [
+    "language",
+    "version",
+    "patterns"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "language": {
+      "description": "ISO 639-1 code of the language, also the folder name and the prefix of every id.",
+      "type": "string",
+      "pattern": "^[a-z]{2,3}$"
+    },
+    "version": {
+      "description": "Format version.",
+      "const": 1
+    },
+    "foldDiacritics": {
+      "description": "Whether diacritics are dropped before matching (the tilde of ñ is always kept). Defaults to true. Set to false for a language whose accents tell words apart.",
+      "type": "boolean"
+    },
+    "patterns": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/pattern"
+      }
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pattern": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "match",
+        "category",
+        "precision",
+        "evidence",
+        "domain",
+        "why",
+        "example",
+        "rewrite",
+        "falsePositives"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "Unique id: the language code, a hyphen, then kebab-case words.",
+          "type": "string",
+          "pattern": "^[a-z]{2,3}(?:-[a-z0-9]+)+$"
+        },
+        "kind": {
+          "description": "word: one whole word. phrase: whole words, any whitespace between them, … for a short gap. regex: JavaScript regular expression compiled with the flags giu.",
+          "enum": [
+            "word",
+            "phrase",
+            "regex"
+          ]
+        },
+        "match": {
+          "description": "May not start or end with … (a gap needs words on both sides).",
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!\\s*…)[\\s\\S]*(?<!…\\s*)$"
+        },
+        "category": {
+          "enum": [
+            "cliche-opener",
+            "cliche-closer",
+            "false-contrast",
+            "rhetorical-question",
+            "hype",
+            "vague-praise",
+            "urgency",
+            "filler",
+            "structure",
+            "punctuation"
+          ]
+        },
+        "precision": {
+          "description": "high: one hit flags a text. medium: counts only with a medium hit from another entry.",
+          "enum": [
+            "high",
+            "medium"
+          ]
+        },
+        "evidence": {
+          "description": "What backs the entry. corpus: it fired in independent machine text (model answers or a shared-task corpus). imitation: only in the imitation set written with the list in view. reasoning: in no machine corpus; kept because the form is a clear chat leftover or calque and never fired on human copy.",
+          "enum": [
+            "corpus",
+            "imitation",
+            "reasoning"
+          ]
+        },
+        "domain": {
+          "description": "Where the entry is precise. general: within its level's bar on every general human corpus (web pages and news or similar), so it may run on any prose. product: within the bar only on product copy; run it on titles and product descriptions only.",
+          "enum": [
+            "general",
+            "product"
+          ]
+        },
+        "why": {
+          "description": "Why this reads as machine-written, in English.",
+          "$ref": "#/$defs/text"
+        },
+        "example": {
+          "description": "A sentence the entry must match.",
+          "$ref": "#/$defs/text"
+        },
+        "rewrite": {
+          "description": "The same content as a person would write it. The entry must not match it.",
+          "$ref": "#/$defs/text"
+        },
+        "falsePositives": {
+          "description": "Ordinary sentences close to the pattern that it must not match.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        }
+      }
+    }
+  }
+}

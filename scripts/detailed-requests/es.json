@@ -1,0 +1,901 @@
+{
+  "language": "es",
+  "prompts": [
+    {
+      "id": "blog-1-A",
+      "genre": "blog",
+      "scenario": 1,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Hazme una entrada para mi blog personal: el domingo terminé mi primera media maratón en 2:11 después de seis meses entrenando. En marzo casi lo dejo por un dolor de rodilla y ahora mi siguiente meta es bajar de 50 minutos en un 10K."
+    },
+    {
+      "id": "blog-1-B",
+      "genre": "blog",
+      "scenario": 1,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Tengo un blog personal que leen sobre todo amigos y gente de mi club de running de Getafe. Quiero publicar una entrada sobre mi primera media maratón. Te paso mis notas:\n\n- el domingo pasado, Media Maratón de Getafe, tiempo 2:11\n- seis meses de entrenamiento, empecé en mayo sin poder correr ni 5 km seguidos\n- en marzo me empezó a doler la rodilla derecha y estuve a punto de dejarlo\n- mi fisio, Lucía, me dijo que no parara del todo: bajar kilómetros, hacer fuerza de glúteo y cuádriceps dos veces por semana y cambiar las zapatillas, que tenían más de 900 km\n- los últimos 3 km fueron horribles pero no paré a andar\n- próximo objetivo: un 10K por debajo de 50 minutos antes del verano\n\nEscríbela en primera persona, tono cercano y con algo de humor, unas 600 palabras. Sin título, que ya lo pongo yo."
+    },
+    {
+      "id": "blog-2-A",
+      "genre": "blog",
+      "scenario": 2,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Quiero subir a mi blog de cocina la receta del bizcocho de limón de mi abuela, el que hacía todas las Semanas Santas. Yo le pongo menos azúcar que ella. ¿Me escribes el post con algún consejo sobre el horno?"
+    },
+    {
+      "id": "blog-2-B",
+      "genre": "blog",
+      "scenario": 2,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Necesito un post para mi blog de recetas. Es el bizcocho de limón de mi abuela Carmen, que lo hacía cada Semana Santa en su casa de Zamora y nos lo comíamos en la merienda del Jueves Santo. Mis apuntes:\n\ningredientes: 3 huevos, 200 g de harina, 1 sobre de levadura química, 1 yogur natural, 100 ml de aceite de oliva suave, ralladura de 2 limones y el zumo de uno\nazúcar: ella ponía 250 g, yo pongo 180 g y no se nota la diferencia, queda menos empalagoso\nhorno: precalentado a 180 °C, arriba y abajo, unos 40 minutos; no abrir la puerta antes de los 30 o se baja\nmi horno calienta de más, así que lo pongo a 170; que la gente pruebe con un palillo\n\nQuiero una introducción corta y personal, luego ingredientes y pasos, y al final un apartado de trucos para el horno. Tono cálido, nada recargado."
+    },
+    {
+      "id": "blog-3-A",
+      "genre": "blog",
+      "scenario": 3,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "¿Me ayudas con una entrada para mi blog de viajes? Hicimos cinco días de ruta por los Picos de Europa mi hermana y yo, durmiendo en refugios, y el tercer día nos cayó una tromba de agua. Lo mejor fue el amanecer frente al Naranjo de Bulnes."
+    },
+    {
+      "id": "blog-3-B",
+      "genre": "blog",
+      "scenario": 3,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Escribo un blog de viajes y montaña y quiero contar la travesía de cinco días que hice por los Picos de Europa con mi hermana Irene en julio. Lo quiero como crónica día a día, unas 900 palabras, en primera persona, y al final unos consejos prácticos.\n\nNotas:\ndía 1: Poncebos – Bulnes – refugio de Urriellu, subida durísima con las mochilas\ndía 2: amanecer delante del Naranjo de Bulnes desde el refugio, lo mejor de todo el viaje; bajada hacia el Jou de los Cabrones\ndía 3: lluvia desde las 10 de la mañana, niebla, llegamos empapadas a Vega de Ario y secamos las botas junto a la estufa\ndía 4: hacia los Lagos de Covadonga, tiempo mejorando\ndía 5: vuelta, bocadillo en Covadonga y bus a Cangas de Onís\nconsejos: reservar los refugios con semanas de antelación, llevar chubasquero de verdad y calcetines de repuesto en bolsa estanca"
+    },
+    {
+      "id": "blog-4-A",
+      "genre": "blog",
+      "scenario": 4,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Escribe un post para nuestro blog de bricolaje: reformamos el baño nosotros mismos en tres fines de semana, nos salió por unos 2.400 € y la liamos con la lechada y con la silicona. Cuenta también qué haríamos distinto."
+    },
+    {
+      "id": "blog-4-B",
+      "genre": "blog",
+      "scenario": 4,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Mi pareja y yo tenemos un blog de bricolaje y reformas caseras y queremos contar la reforma del baño de nuestro piso en Zaragoza. Lo hicimos todo nosotros en tres fines de semana.\n\nLo que hicimos: quitar la bañera y poner plato de ducha con mampara, alicatar la pared de la ducha, cambiar el mueble del lavabo.\nCoste aproximado 2.400 €: azulejos 900, plato y mampara 700, mueble y grifería 450, materiales y herramientas 350.\nFallos: 1) la lechada se nos secó antes de limpiar y quedó un velo blanco en los azulejos que nos costó una tarde entera quitar; 2) pusimos la silicona sin cinta de carrocero, quedó ondulada y tuvimos que arrancarla y repetirla.\nQué haríamos distinto: limpiar la lechada por zonas pequeñas, usar cinta para la silicona, y pedir a un fontanero que moviera la toma del desagüe en vez de pelearnos nosotros con ella.\n\nUnas 700 palabras, tono práctico y cercano, que se note que lo escribimos nosotros. Puedes usar subtítulos."
+    },
+    {
+      "id": "blog-5-A",
+      "genre": "blog",
+      "scenario": 5,
+      "style": "A",
+      "variety": "es-MX",
+      "request": "Tengo una panadería y a partir del lunes vamos a vender pan sin gluten. Nos tomó 8 meses de pruebas, cuesta $85 y el sábado en la mañana hay degustación gratis. ¿Me escribes una entrada para el blog de la panadería?"
+    },
+    {
+      "id": "blog-5-B",
+      "genre": "blog",
+      "scenario": 5,
+      "style": "B",
+      "variety": "es-MX",
+      "request": "Soy dueña de una panadería de barrio en Querétaro y quiero publicar en nuestro blog el anuncio del pan sin gluten. Los datos:\n\n- empezamos a venderlo este lunes\n- es un pan de caja hecho con harina de arroz y sorgo\n- nos tardamos 8 meses en dar con la receta, hubo muchas pruebas fallidas (panes que quedaban como ladrillo, otros que se desmoronaban)\n- lo horneamos temprano y aparte, en charolas que solo usamos para eso\n- precio: $85 la pieza\n- degustación gratis este sábado de 9 a 12\n- la idea salió porque varios clientes con celiaquía nos lo pedían desde hace años\n\nQuiero que suene como yo hablando con mis clientes, cálido y sin exagerar. Unas 400 palabras."
+    },
+    {
+      "id": "blog-6-A",
+      "genre": "blog",
+      "scenario": 6,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Escribime una entrada para mi blog de crianza: a nuestra hija de 11 le compramos su primer celular y armamos unas reglas en familia. Pasaron dos meses y algunas funcionaron y otras no."
+    },
+    {
+      "id": "blog-6-B",
+      "genre": "blog",
+      "scenario": 6,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Tengo un blog sobre crianza y quiero escribir sobre el primer celular de mi hija Lola, que tiene 11 años. Vivimos en Rosario. Te paso lo que anoté:\n\nreglas que acordamos los tres (ella también opinó):\n- nada de celu en la mesa\n- a las 21:30 se carga en la cocina, no duerme con él\n- sin redes sociales hasta los 13, solo WhatsApp con el grupo del cole y la familia\n- nosotros sabemos la contraseña\n- máximo 1 hora por día de juegos y videos\n\ndespués de dos meses:\n- lo de cargarlo en la cocina funcionó perfecto, ni lo discute\n- lo de la mesa también\n- la hora diaria fue un desastre, peleábamos todos los días por los minutos; lo cambiamos por horarios fijos (después de la tarea y hasta la cena) y ahí mejoró\n- el grupo de WhatsApp del cole a veces es un quilombo, tuvimos que hablar de cómo tratar a los demás\n\nQuiero un texto honesto, sin dar cátedra, de unas 700 palabras. Tono de mamá contándole a otras familias."
+    },
+    {
+      "id": "blog-7-A",
+      "genre": "blog",
+      "scenario": 7,
+      "style": "A",
+      "variety": "es-CO",
+      "request": "Quiero hacer un post para mi blog de jardinería sobre mi primer año con una parcela en la huerta comunitaria. Los tomates fueron un fracaso, los fríjoles una maravilla, y aprendí mucho sobre el riego."
+    },
+    {
+      "id": "blog-7-B",
+      "genre": "blog",
+      "scenario": 7,
+      "style": "B",
+      "variety": "es-CO",
+      "request": "Tengo un blog pequeño de jardinería y quiero hacer un balance de mi primer año en la huerta comunitaria del barrio, en Envigado. Estas son mis notas, organízalas como mejor te parezca:\n\n- parcela de 2 x 3 metros, me la asignaron en febrero\n- tomates: fracaso total, se rajaron y les dio gota; creo que fue por regar a cualquier hora y mojando las hojas\n- fríjol cargamanto: produjo muchísimo, regalé a media cuadra\n- también sembré cilantro y lechuga, más o menos bien\n- lo que aprendí del riego: regar temprano en la mañana, al pie de la planta, profundo y menos seguido; poner hojas secas encima de la tierra para que no se seque tan rápido\n- la gente de la huerta me ayudó mucho, sobre todo don Hernando, que lleva 15 años sembrando ahí\n\nUnas 600 palabras, primera persona, tono tranquilo. Que sirva para alguien que esté empezando."
+    },
+    {
+      "id": "blog-8-A",
+      "genre": "blog",
+      "scenario": 8,
+      "style": "A",
+      "variety": "es-MX",
+      "request": "Quiero subir a mi blog de libros una reseña de Como agua para chocolate, de Laura Esquivel, que acabo de terminar. Me encantó lo de las recetas en cada capítulo, pero la parte de Tita en casa del doctor Brown se me hizo lenta."
+    },
+    {
+      "id": "blog-8-B",
+      "genre": "blog",
+      "scenario": 8,
+      "style": "B",
+      "variety": "es-MX",
+      "request": "Llevo un blog de reseñas de libros y acabo de terminar Como agua para chocolate de Laura Esquivel. ¿Me ayudas a escribir la reseña? Lo que pienso:\n\n- me gustó mucho la estructura de un capítulo por mes con una receta al inicio\n- Tita como personaje me pareció entrañable, y Mamá Elena es de las villanas más odiosas que he leído\n- el realismo mágico en la cocina (las lágrimas en el pastel de boda, las codornices en pétalos de rosa) me pareció lo mejor\n- la parte en la que Tita se va con el doctor Brown a Eagle Pass se me hizo lenta, sentí que la historia se detenía\n- Pedro me pareció un personaje bastante flojo\n- calificación: 4 de 5\n\nUnas 600 palabras, en primera persona, sin destripar el final. Sin resumen largo de la trama, mejor centrarse en lo que me pareció."
+    },
+    {
+      "id": "email-1-A",
+      "genre": "email",
+      "scenario": 1,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Hazme un correo para los compañeros de la biblioteca municipal: Marta se jubila tras 32 años y le hacemos una despedida el viernes 14 de junio a las 17:00 en la sala de lectura. Ponemos 10 € cada uno para regalarle un libro electrónico; que me lo den antes del miércoles."
+    },
+    {
+      "id": "email-1-B",
+      "genre": "email",
+      "scenario": 1,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Tengo que mandar un correo a todo el personal de la Biblioteca Municipal de Alcorcón. Marta Iglesias se jubila después de 32 años con nosotros y le organizamos una despedida.\n\nDatos:\n- viernes 14 de junio a las 17:00, en la sala de lectura (cerramos la sala a esa hora)\n- habrá algo de picar y bebida\n- regalo: un libro electrónico, ponemos 10 € cada uno\n- el dinero me lo dais a mí, en mano o por Bizum, como muy tarde el miércoles\n- si alguien quiere escribirle unas palabras, habrá una tarjeta en el mostrador de préstamo\n\nTono cercano, tuteando, que somos todos compañeros. Texto plano para Outlook, sin corchetes ni huecos para rellenar. Firma: Elena."
+    },
+    {
+      "id": "email-2-A",
+      "genre": "email",
+      "scenario": 2,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Hay que avisar a los clientes por correo de que la empresa cambia de oficina a partir del 1 de septiembre. Los teléfonos siguen siendo los mismos y hay aparcamiento detrás del edificio. ¿Me lo redactas?"
+    },
+    {
+      "id": "email-2-B",
+      "genre": "email",
+      "scenario": 2,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Somos una empresa pequeña de informática en Valladolid (Datalia Soluciones, 12 personas) y tenemos que avisar a los clientes del cambio de oficina. Información:\n\n- a partir del 1 de septiembre estamos en Avenida de Burgos 52, 2.ª planta\n- la oficina antigua era la de calle Santiago 14\n- los teléfonos y correos no cambian\n- hay aparcamiento gratuito para clientes detrás del edificio, entrando por la calle lateral\n- el servicio de soporte no se interrumpe durante la mudanza\n\nFormal pero no acartonado, tratando de usted. Breve, que se lea en un minuto. Incluye una propuesta de asunto."
+    },
+    {
+      "id": "email-3-A",
+      "genre": "email",
+      "scenario": 3,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Escríbeme un mensaje para mi casero: la calefacción del piso lleva una semana sin funcionar bien, ya he purgado los radiadores y necesito que mande a alguien. Estoy en casa a partir de las 17:00."
+    },
+    {
+      "id": "email-3-B",
+      "genre": "email",
+      "scenario": 3,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Vivo de alquiler en Burgos y la calefacción del piso no va bien desde hace una semana. Quiero mandarle un correo al casero (Sr. Alonso) que sea educado pero que deje claro que urge. Lo que pasa:\n\n- los radiadores se quedan templados, el del dormitorio casi frío\n- el sábado purgué todos los radiadores y no cambió nada\n- la presión de la caldera marca 0,8, no sé si es poco\n- estamos a 5 grados por la noche y en casa no pasamos de 16\n\nQuiero pedirle que mande a un técnico lo antes posible. Estoy en casa todos los días a partir de las 17:00. Que no sea muy largo y que no suene a queja agresiva. Firmo como Pablo."
+    },
+    {
+      "id": "email-4-A",
+      "genre": "email",
+      "scenario": 4,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Soy el delegado del equipo alevín de mi hijo y quiero mandar un correo a los padres: ganamos el torneo regional el domingo, 3-1 en la final. Dar las gracias a los que llevasteis a los niños y avisar de que el viernes que viene hay cena de pizza y las bebidas las paga el entrenador."
+    },
+    {
+      "id": "email-4-B",
+      "genre": "email",
+      "scenario": 4,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Necesito un correo para los padres y madres del alevín del CD Talavera Sur (sub-12). Soy el delegado, me llamo Javier.\n\nLo que tiene que contar:\n- el domingo ganamos el torneo regional en Toledo, 3-1 en la final contra el Illescas\n- gracias a todas las familias que se turnaron para llevar a los críos en coche, sin eso no habríamos ido\n- para celebrarlo: cena de pizza el viernes que viene a las 20:00 en la pizzería Da Nino, la de la plaza\n- las bebidas las paga Rubén, el entrenador; la pizza cada familia la suya\n- que me confirmen cuántos van antes del miércoles para reservar\n\nTono alegre e informal, tratando de vosotros. Nada demasiado largo, que muchos lo leen en el móvil."
+    },
+    {
+      "id": "email-5-A",
+      "genre": "email",
+      "scenario": 5,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Necesito un mail para mis amigos: mi abuela cumple 90 y le hacemos una fiesta sorpresa el sábado 12 de octubre en su casa. Que cada uno traiga una foto para un álbum y que nadie le diga nada."
+    },
+    {
+      "id": "email-5-B",
+      "genre": "email",
+      "scenario": 5,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Armame un mail para mandarle a mis amigos invitándolos al cumple sorpresa de mi abuela Nélida, que cumple 90. Datos:\n\nsábado 12 de octubre, en su casa de Banfield\nla fiesta arranca a las 18, pero hay que llegar 17:30 porque mi tía la saca a pasear y vuelve a las 18\nno estacionar en la puerta, que se da cuenta\ncada uno trae una foto impresa (con ella, o de algún momento juntos) con un mensajito atrás, vamos a armar un álbum\nNO le digan nada, ni por WhatsApp ni nada, que ella lee todo\n\nTono de amigos, con un poco de humor. Corto."
+    },
+    {
+      "id": "email-6-A",
+      "genre": "email",
+      "scenario": 6,
+      "style": "A",
+      "variety": "es-CO",
+      "request": "¿Me ayudas a escribirle un correo a la profesora de mi hija? Va a faltar al colegio jueves y viernes porque tenemos un funeral familiar, y quiero preguntarle qué tareas debe ponerse al día."
+    },
+    {
+      "id": "email-6-B",
+      "genre": "email",
+      "scenario": 6,
+      "style": "B",
+      "variety": "es-CO",
+      "request": "Necesito escribirle a la directora de grupo de mi hija Valentina, que está en cuarto de primaria en un colegio de Bogotá. La profesora se llama Adriana Rojas.\n\n- Valentina no va a ir el jueves ni el viernes\n- es por el funeral de su tío abuelo en Bucaramanga, viajamos el miércoles en la noche\n- quiero preguntarle qué temas van a ver y si hay tareas o evaluaciones que deba presentar después\n- volvemos el domingo y ella estaría en clase el lunes\n\nRespetuoso, tratando de usted, corto. Ella es muy formal, así que mejor no muy coloquial. Firma: Catalina Ruiz, mamá de Valentina."
+    },
+    {
+      "id": "email-7-A",
+      "genre": "email",
+      "scenario": 7,
+      "style": "A",
+      "variety": "es-MX",
+      "request": "Ayúdame con un correo para los vecinos de la asociación: el martes van a cortar el agua de 9 a 13 h por obras en la tubería de nuestra calle. Que llenen botellas y cubetas, y que la asociación va a pedir al municipio que la próxima vez avise con más tiempo."
+    },
+    {
+      "id": "email-7-B",
+      "genre": "email",
+      "scenario": 7,
+      "style": "B",
+      "variety": "es-MX",
+      "request": "Soy secretaria de la asociación de vecinos de la colonia Chapalita, en Zapopan, y tengo que mandar un correo a los socios. Notas:\n\n- martes de 9:00 a 13:00 no habrá agua en la calle Guadalupe ni en las cuadras de alrededor\n- es por la reparación de una tubería que se rompió, nos avisaron apenas ayer\n- recomendar que llenen garrafones, botellas y cubetas desde el lunes en la noche\n- si alguien tiene a una persona mayor o enferma en casa y necesita ayuda, que nos avise\n- la mesa directiva va a mandar un escrito al Ayuntamiento de Zapopan para pedir que la próxima vez avisen por lo menos con una semana\n\nTono claro y amable, que se entienda rápido. Firma: Mesa Directiva."
+    },
+    {
+      "id": "email-8-A",
+      "genre": "email",
+      "scenario": 8,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Hace dos semanas me postulé para coordinador de depósito y todavía no tuve respuesta. Escribime un mail de seguimiento diciendo que sigo muy interesado y que puedo ir a una entrevista cualquier día de la semana que viene."
+    },
+    {
+      "id": "email-8-B",
+      "genre": "email",
+      "scenario": 8,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Quiero mandar un mail de seguimiento por una búsqueda laboral. Contexto:\n\n- puesto: coordinador de depósito en Logística del Sur S.A., en Avellaneda\n- me postulé hace dos semanas por Bumeran\n- la búsqueda la lleva Carolina Méndez de RR.HH., tengo su mail\n- tengo 5 años como encargado de turno en un depósito de consumo masivo, manejo de WMS y equipos de 15 personas\n- sigo muy interesado\n- puedo ir a una entrevista cualquier día de la semana que viene, a cualquier hora\n\nFormal pero no rígido, menos de 150 palabras, sin espacios para completar. Me llamo Martín Ferreyra."
+    },
+    {
+      "id": "essay-1-A",
+      "genre": "essay",
+      "scenario": 1,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Tengo que hacer una redacción para Lengua sobre si deberían prohibirse los móviles en los institutos. Argumentos a favor y en contra y mi opinión al final: que se prohíban en clase pero no en el recreo."
+    },
+    {
+      "id": "essay-1-B",
+      "genre": "essay",
+      "scenario": 1,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Estoy en 1.º de Bachillerato en un instituto de Murcia y la profe de Lengua nos ha mandado una redacción argumentativa: \"¿Deberían prohibirse los móviles en los centros educativos?\". Tiene que tener introducción, argumentos a favor, argumentos en contra y conclusión con mi opinión. Unas 500 palabras.\n\nMis ideas:\n- a favor de prohibir: distracción en clase, ciberacoso, la gente no habla en el recreo\n- en contra: se usan para buscar información, para avisar a los padres, y prohibir no enseña a usarlos bien\n- mi opinión: que no se usen en clase salvo si el profe lo pide, pero que en el recreo se puedan tener\n\nQue suene a alguien de 16 años, no a un catedrático."
+    },
+    {
+      "id": "essay-2-A",
+      "genre": "essay",
+      "scenario": 2,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Necesito una carta de motivación para entrar en Enfermería. Lo quiero estudiar por la enfermedad de mi abuelo y porque llevo un año y medio de voluntaria en una residencia."
+    },
+    {
+      "id": "essay-2-B",
+      "genre": "essay",
+      "scenario": 2,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Estoy preparando la solicitud para el grado en Enfermería y me piden un texto de motivación de máximo 600 palabras explicando por qué quiero estudiar la carrera.\n\nLo que quiero contar:\n- mi abuelo Antonio tuvo cáncer de pulmón en 2022 y pasó sus últimos meses en paliativos del Hospital de Cruces\n- me fijé mucho en las enfermeras: cómo le hablaban, cómo nos explicaban las cosas a la familia\n- desde entonces hago voluntariado los sábados en una residencia de mayores de Barakaldo, ya va para año y medio\n- allí acompaño en comidas, paseos, juegos de memoria\n- me gusta la biología, tengo buena nota en 2.º de Bachillerato\n- sé que es un trabajo duro, con turnos, y quiero dejar claro que lo sé\n\nSincero, sin dramatizar, en primera persona."
+    },
+    {
+      "id": "essay-3-A",
+      "genre": "essay",
+      "scenario": 3,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Para el taller de escritura tengo que hacer un ensayo corto sobre cómo era mi pueblo cuando era pequeña y cómo es ahora. Soy de Medina de Rioseco, en Valladolid. ¿Me lo escribes?"
+    },
+    {
+      "id": "essay-3-B",
+      "genre": "essay",
+      "scenario": 3,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Voy a un taller de escritura para adultos y el ejercicio de esta semana es un ensayo breve (unas 700 palabras) comparando el lugar donde crecimos con cómo es hoy. Yo me crie en Medina de Rioseco en los años 80.\n\nRecuerdos que quiero usar:\n- la calle Mayor con soportales llena de tiendas pequeñas: la mercería, la ferretería, la tienda de ultramarinos de la señora Pilar\n- jugar en el Canal de Castilla en verano\n- el cine, que cerró a mediados de los 90\n- todo el mundo se conocía, los domingos la plaza estaba llena\n\nAhora:\n- muchas casas cerradas o en venta\n- han abierto un supermercado grande a la entrada y casi todas las tiendas pequeñas han cerrado\n- vienen turistas los fines de semana a ver la Semana Santa y las iglesias\n- casi no quedan niños de mi edad de entonces viviendo allí\n\nPrimera persona, nostálgico pero sin ponerse lacrimógeno."
+    },
+    {
+      "id": "essay-4-A",
+      "genre": "essay",
+      "scenario": 4,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Escríbeme un artículo de opinión para la revista de la comarca sobre si el teletrabajo es bueno para los pueblos pequeños."
+    },
+    {
+      "id": "essay-4-B",
+      "genre": "essay",
+      "scenario": 4,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "La revista comarcal del Bierzo me ha pedido un texto de opinión para su próximo número sobre el teletrabajo y los pueblos. Unas 700 palabras. Mi postura es que sí es bueno, pero con condiciones.\n\nIdeas:\n- en mi pueblo (unos 400 habitantes) han llegado tres familias en dos años que trabajan desde casa\n- gracias a eso la escuela ha podido mantener dos aulas\n- el bar y la tienda tienen más clientela entre semana\n- pero hace falta fibra de verdad; hay pueblos al lado donde la conexión no da para una videollamada\n- el ayuntamiento debería habilitar un espacio de coworking, por ejemplo en las antiguas escuelas\n- riesgos: suben los alquileres y algunos recién llegados no se integran, viven como si siguieran en la ciudad\n\nTono de vecino que opina, claro y directo. Con un título."
+    },
+    {
+      "id": "essay-5-A",
+      "genre": "essay",
+      "scenario": 5,
+      "style": "A",
+      "variety": "es-CO",
+      "request": "Tengo que escribir un ensayo para el colegio sobre una persona que me haya influido, y quiero hacerlo sobre mi primera profesora de piano."
+    },
+    {
+      "id": "essay-5-B",
+      "genre": "essay",
+      "scenario": 5,
+      "style": "B",
+      "variety": "es-CO",
+      "request": "Estoy en grado once en un colegio de Cali y para la clase de español nos pusieron un ensayo de unas 600 palabras sobre una persona que haya influido en nuestra vida. Lo quiero hacer sobre mi primera profesora de piano. Datos:\n\n- se llama Gloria, empecé con ella a los 7 años\n- las clases eran en su casa en el barrio San Fernando, tenía un piano vertical viejo y un metrónomo de madera\n- era muy exigente con la postura y con practicar despacio\n- cuando me frustraba me decía que lo difícil se vuelve fácil si uno lo hace lento muchas veces\n- a los 12 años toqué en su recital de fin de año y casi me paralizo del miedo\n- ya no estudio con ella, pero lo de la paciencia y la constancia lo uso para todo, hasta para matemáticas\n\nQue suene a estudiante de 16 años, sincero."
+    },
+    {
+      "id": "essay-6-A",
+      "genre": "essay",
+      "scenario": 6,
+      "style": "A",
+      "variety": "es-MX",
+      "request": "Soy de Brasil y estoy en un curso de español para adultos en Guadalajara. Necesito un ensayo sobre las ventajas y desventajas de vivir en una ciudad grande, con frases sencillas porque mi nivel es B1."
+    },
+    {
+      "id": "essay-6-B",
+      "genre": "essay",
+      "scenario": 6,
+      "style": "B",
+      "variety": "es-MX",
+      "request": "Estoy aprendiendo español en un curso para adultos aquí en Guadalajara (soy brasileño, nivel B1) y la maestra nos pidió un ensayo de unas 350 palabras: \"Ventajas y desventajas de vivir en una ciudad grande\".\n\nLo que quiero decir, pensando en la Ciudad de México donde viví un año:\nventajas: más oportunidades de trabajo, mucha oferta cultural (museos, conciertos), transporte público como el metro, comida de todo el mundo\ndesventajas: el tráfico, la contaminación, rentas muy caras, a veces te sientes solo aunque haya mucha gente\nconclusión: me gusta para unos años, pero prefiero una ciudad mediana como Guadalajara\n\nLenguaje sencillo, frases no muy largas, con conectores tipo \"por un lado\", \"sin embargo\". Tiene que parecer que lo escribió un estudiante de B1."
+    },
+    {
+      "id": "essay-7-A",
+      "genre": "essay",
+      "scenario": 7,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Necesito un ensayo reflexivo sobre lo que me dejó un año de voluntariado en el banco de alimentos."
+    },
+    {
+      "id": "essay-7-B",
+      "genre": "essay",
+      "scenario": 7,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Para un taller de escritura tengo que hacer un ensayo reflexivo, de unas 700 palabras, sobre una experiencia que me haya cambiado. Elegí mi año de voluntaria en el Banco de Alimentos de Córdoba. Te paso lo que anoté:\n\n- iba todos los sábados a la mañana, de marzo a marzo\n- casi siempre clasificaba donaciones: revisar fechas, separar por tipo, armar cajas para comedores\n- me sorprendió cuánta comida en buen estado se tira en supermercados\n- una vez vino a buscar cajas una señora de un comedor de barrio Müller que da de comer a 120 chicos, y me dijo que sin nosotros cerraban\n- me di cuenta de que yo tenía una idea medio prejuiciosa de quién pasa hambre\n- aprendí que la ayuda es mucho más logística y paciencia que épica\n- me hice amiga de gente que nunca habría conocido\n\nPrimera persona, reflexivo, nada de moraleja al final."
+    },
+    {
+      "id": "essay-8-A",
+      "genre": "essay",
+      "scenario": 8,
+      "style": "A",
+      "variety": "es-CO",
+      "request": "Ensayo para el colegio: el turismo en mi región, ¿es bueno o malo? Vivo en Santa Marta."
+    },
+    {
+      "id": "essay-8-B",
+      "genre": "essay",
+      "scenario": 8,
+      "style": "B",
+      "variety": "es-CO",
+      "request": "Me dejaron un ensayo argumentativo para sociales, de 500 a 600 palabras, con el tema \"El turismo en mi región: ¿beneficio o problema?\". Vivo en Santa Marta y estoy en décimo.\n\nIdeas que tengo:\n- lo bueno: da trabajo (hoteles, restaurantes, guías, lancheros en Taganga), llegan inversiones, la ciudad se conoce en el mundo\n- lo malo: basura en las playas, el agua en los barrios ya es escasa y en temporada alta es peor, los arriendos subieron mucho por los apartamentos para turistas\n- el Parque Tayrona se cierra algunas temporadas para que la naturaleza descanse y por pedido de los pueblos indígenas, y me parece bien\n- Minca se llenó de hostales en pocos años\n- mi posición: el turismo es bueno si se controla y si la plata se queda en la gente de aquí\n\nEstructura de introducción, desarrollo y conclusión."
+    },
+    {
+      "id": "article-1-A",
+      "genre": "article",
+      "scenario": 1,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Me piden una noticia para el periódico local: los bomberos voluntarios hacen una jornada de puertas abiertas el 22 de septiembre con actividades para niños, porque cumplen 140 años. Además buscan voluntarios nuevos."
+    },
+    {
+      "id": "article-1-B",
+      "genre": "article",
+      "scenario": 1,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Colaboro con el semanario local de Valdemorillo y tengo que escribir una noticia sobre los bomberos voluntarios. Unas 350 palabras, estilo periodístico, con titular y entradilla.\n\nDatos:\n- la Agrupación de Bomberos Voluntarios se fundó en 1884, este año cumple 140 años\n- jornada de puertas abiertas el domingo 22 de septiembre, de 10:00 a 14:00, en el parque de bomberos de la calle de la Fuente\n- actividades para niños: subirse al camión, manejar una manguera pequeña, hinchable y pintacaras\n- a las 12:00, simulacro de rescate en un coche\n- buscan nuevos voluntarios: mayores de 18 años, con carné B, dispuestos a hacer unos seis meses de formación\n- el jefe de la agrupación, Andrés Molina, dice que hoy son 19 y que necesitarían por lo menos 30 para cubrir bien los turnos\n- quien quiera apuntarse puede hacerlo en la misma jornada o en el ayuntamiento"
+    },
+    {
+      "id": "article-2-A",
+      "genre": "article",
+      "scenario": 2,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Necesito un artículo para el periódico del pueblo: abre un huerto comunitario con 20 parcelas a 35 euros al año. Ya hay lista de espera y el sábado a las 10:00 hay jornada de puertas abiertas."
+    },
+    {
+      "id": "article-2-B",
+      "genre": "article",
+      "scenario": 2,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Tengo que escribir para el Diario de León una pieza corta sobre los nuevos huertos comunitarios del barrio de La Chantría. Información que me han pasado:\n\n- 20 parcelas de unos 30 m² cada una, en un solar municipal que llevaba años vacío\n- cuota: 35 € al año, incluye agua y caseta de herramientas compartida\n- se adjudicaron por sorteo y ya hay 27 personas en lista de espera\n- jornada de puertas abiertas este sábado a las 10:00, con un taller de compostaje\n- la concejala de Medio Ambiente, Rosa Lafuente, me dijo que la idea es que, si funciona, se abra una segunda fase en otro barrio el año que viene\n- entre los adjudicatarios hay jubilados, familias con niños y una asociación de personas con discapacidad\n\nTono informativo, unas 400 palabras, con titular."
+    },
+    {
+      "id": "article-3-A",
+      "genre": "article",
+      "scenario": 3,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Escribe una pieza para el boletín interno de la empresa: hemos lanzado el renting de bicis para empleados y 31 compañeros se han apuntado el primer mes. Mete una cita de Recursos Humanos."
+    },
+    {
+      "id": "article-3-B",
+      "genre": "article",
+      "scenario": 3,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Llevo el boletín interno de nuestra empresa (unas 180 personas, oficinas en Sevilla) y este mes quiero una pieza sobre el nuevo programa de renting de bicicletas. Datos:\n\n- se lanzó el 1 de marzo\n- la bici se paga con cargo a la nómina dentro de la retribución flexible, contrato a 36 meses\n- incluye seguro y mantenimiento anual\n- se puede elegir bici normal o eléctrica\n- 31 compañeros se han apuntado el primer mes, la mayoría eléctricas\n- se han instalado 20 plazas más de aparcamiento para bicis en el garaje\n- cita de Inés Baena, directora de Personas, más o menos esta idea: no esperaban tanta respuesta tan rápido y ya están mirando ampliar el aparcamiento otra vez\n\nTono cercano, para compañeros, unas 300 palabras. Al final, a quién preguntar si alguien quiere apuntarse (el equipo de Personas)."
+    },
+    {
+      "id": "article-4-A",
+      "genre": "article",
+      "scenario": 4,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "¿Me escribes una nota para el periódico local? El coro del pueblo busca tenores y bajos. Ensayan los miércoles a las 20:00 en el salón parroquial y están preparando el concierto de Navidad."
+    },
+    {
+      "id": "article-4-B",
+      "genre": "article",
+      "scenario": 4,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Formo parte de la Coral Santa Cecilia de Llodio y nos han dejado un hueco en el periódico local para un llamamiento. Necesitamos voces masculinas. Te paso los datos:\n\n- somos 28 cantores, pero solo 5 hombres\n- buscamos tenores y bajos, no hace falta saber solfeo ni haber cantado antes\n- ensayos todos los miércoles a las 20:00 en el salón parroquial de San Pedro\n- el director, Íñigo Larrea, dice que en un par de meses cualquiera puede seguir el repertorio\n- concierto de Navidad el 20 de diciembre en la iglesia de San Pedro, con villancicos tradicionales y alguna pieza en euskera\n- para apuntarse basta con presentarse un miércoles\n\nUnas 300 palabras, tono animado pero informativo, con titular."
+    },
+    {
+      "id": "article-5-A",
+      "genre": "article",
+      "scenario": 5,
+      "style": "A",
+      "variety": "es-MX",
+      "request": "Escribe la nota para la página del club: el equipo femenil de voleibol subió de división tras ganar 3-2. Pon una frase del entrenador y la info de los abonos de temporada."
+    },
+    {
+      "id": "article-5-B",
+      "genre": "article",
+      "scenario": 5,
+      "style": "B",
+      "variety": "es-MX",
+      "request": "Llevo las redes y la página web del Club Atlético Cholula y necesito la nota del ascenso del equipo femenil de voleibol. Datos:\n\n- el sábado ganaron 3-2 a Lobas de Tehuacán en la final y suben a primera división estatal\n- parciales: 25-21, 22-25, 25-23, 19-25, 15-12\n- la capitana, Daniela Ortega, hizo el punto final con un bloqueo\n- el entrenador, Ricardo Salinas, dijo algo así: que el equipo nunca bajó los brazos en toda la temporada y que este ascenso es de las jugadoras y de la afición\n- abonos para la próxima temporada: $650 por los 8 partidos de local, a la venta desde el lunes en la oficina del club, de 4 a 8 de la tarde\n\nUnas 300 palabras, con titular y tono de noticia deportiva."
+    },
+    {
+      "id": "article-6-A",
+      "genre": "article",
+      "scenario": 6,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Cierra la panadería de la plaza después de 54 años porque los dueños se jubilan. Me pidieron una nota para el diario del pueblo y quiero incluir lo que dicen los clientes."
+    },
+    {
+      "id": "article-6-B",
+      "genre": "article",
+      "scenario": 6,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Escribo para un diario local de Chivilcoy y me pidieron una nota sobre el cierre de la Panadería San Martín, la de la plaza. Te paso lo que junté:\n\n- abrió en 1970, la fundó el papá de Héctor Bianchi\n- Héctor y Norma, su esposa, la atienden desde hace más de 40 años\n- cierran el 30 de noviembre porque se jubilan y los hijos no quieren seguir\n- lo más famoso: las medialunas de manteca y el pan dulce en diciembre\n- Héctor: \"Me levanté a las 4 de la mañana toda la vida, ahora quiero ver cómo es dormir\"\n- una clienta, Susana, 78 años: \"Acá compré el pan desde que me casé\"\n- un chico de 20 que va todos los días antes de la facu: que no sabe dónde va a comprar facturas ahora\n- todavía no se sabe qué va a haber en el local\n\nHacé una nota de color, unas 450 palabras, con título y bajada."
+    },
+    {
+      "id": "article-7-A",
+      "genre": "article",
+      "scenario": 7,
+      "style": "A",
+      "variety": "es-CO",
+      "request": "Necesito un texto para la página web del colegio sobre la reunión de padres del 20 de noviembre sobre las reglas del celular para sexto. Fueron 80 papás y quedamos de acuerdo en unas reglas."
+    },
+    {
+      "id": "article-7-B",
+      "genre": "article",
+      "scenario": 7,
+      "style": "B",
+      "variety": "es-CO",
+      "request": "Soy coordinadora de convivencia en un colegio de Bogotá y tengo que publicar en la página web una nota sobre la reunión de padres de grado sexto. Datos:\n\n- fue el 20 de noviembre a las 7 p. m. en el coliseo\n- asistieron unos 80 padres y madres\n- abrió la reunión la psicóloga del colegio, Marcela Vargas, con una charla sobre sueño, redes y ansiedad a esa edad\n- reglas acordadas:\n  1. los estudiantes de sexto no usan celular durante la jornada; si lo traen, queda apagado en el locker\n  2. las familias se comprometen a no abrir cuentas en redes sociales antes de los 13 años\n  3. en la noche el celular se carga fuera de la habitación\n  4. se crea un grupo de padres para coordinar y apoyarse\n- se volverá a revisar en una reunión en abril\n\nTono institucional pero cercano, unas 350 palabras."
+    },
+    {
+      "id": "article-8-A",
+      "genre": "article",
+      "scenario": 8,
+      "style": "A",
+      "variety": "es-MX",
+      "request": "Escríbeme una nota para el periódico local: unos chavos de aquí de Mérida lanzaron una app para dividir gastos entre roomies y están buscando beta testers."
+    },
+    {
+      "id": "article-8-B",
+      "genre": "article",
+      "scenario": 8,
+      "style": "B",
+      "variety": "es-MX",
+      "request": "Colaboro con un periódico local de Mérida y quiero escribir sobre una startup de aquí. Notas de la entrevista:\n\n- la app se llama Mitad\n- la hicieron Ana Pech y Diego Cámara, ex compañeros de la UADY, los dos de 26 años\n- se les ocurrió porque en su departamento siempre había pleitos por la luz, el internet y el súper\n- la app registra los gastos compartidos, calcula quién le debe a quién y manda recordatorios\n- por ahora es gratis y está en Android y iPhone\n- buscan 200 beta testers, de preferencia gente que comparta depa o casa; se inscriben en la página de la app\n- Diego: \"Queremos que nadie tenga que volver a hacer cuentas en una servilleta\"\n\nNota de unas 400 palabras, estilo periodístico, con titular."
+    },
+    {
+      "id": "social-1-A",
+      "genre": "social",
+      "scenario": 1,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Hazme un post de Instagram para mi panadería: desde el lunes tenemos pan sin gluten y el sábado por la mañana hacemos degustación. Con hashtags."
+    },
+    {
+      "id": "social-1-B",
+      "genre": "social",
+      "scenario": 1,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Necesito el texto para un post de Instagram de mi panadería, Horno Abril, en Logroño. Datos:\n\n- desde este lunes vendemos pan sin gluten\n- llevamos 8 meses de pruebas hasta dar con la receta\n- precio: 4,50 € la pieza\n- degustación gratis el sábado de 10:00 a 13:00\n- lo hacemos en un obrador separado para que no haya contaminación\n\nTono cercano y alegre, algún emoji pero sin pasarse. Máximo 150 palabras y entre 8 y 10 hashtags al final."
+    },
+    {
+      "id": "social-2-A",
+      "genre": "social",
+      "scenario": 2,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Post de LinkedIn: empiezo como project manager en una empresa de logística después de 6 años en mi anterior empresa, y quiero dar las gracias a mi equipo."
+    },
+    {
+      "id": "social-2-B",
+      "genre": "social",
+      "scenario": 2,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Quiero publicar en LinkedIn que cambio de trabajo. Datos:\n\n- me voy de Grupo Arteche Ingeniería, en Bilbao, después de 6 años, los últimos dos como coordinadora de operaciones\n- empiezo el lunes como project manager en Transportes Ochoa, empresa de logística\n- quiero dar las gracias a mi equipo de operaciones (Leire, Asier y Nerea) y a mi jefe, Jon, que me dio la oportunidad de liderar proyectos\n- me da pena irme pero tengo muchas ganas del reto\n\nProfesional pero cercano, nada de frases de manual. Entre 120 y 180 palabras. Escríbelo como si fuera yo."
+    },
+    {
+      "id": "social-3-A",
+      "genre": "social",
+      "scenario": 3,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Ayúdame con un mensaje para el grupo de Facebook del barrio: se nos ha perdido el gato, se llama Miso, es gris con las patas blancas y lo vimos por última vez el martes por la noche cerca del parque."
+    },
+    {
+      "id": "social-3-B",
+      "genre": "social",
+      "scenario": 3,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Se ha escapado nuestro gato y quiero publicarlo en el grupo de Facebook \"Vecinos de Delicias\" (Valladolid). Datos:\n\n- se llama Miso, es gris con las cuatro patas blancas, 3 años\n- lleva collar rojo con cascabel, está castrado y tiene chip\n- lo vimos por última vez el martes por la noche cerca del parque de la calle Hornija\n- es muy asustadizo, seguramente esté escondido en algún garaje o bajo un coche\n- que no intenten cogerlo, que me escriban por privado o me llamen y voy yo\n\nTexto claro y corto, que se lea rápido. Plano, sin negritas porque Facebook no las pone."
+    },
+    {
+      "id": "social-4-A",
+      "genre": "social",
+      "scenario": 4,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Necesito un pie de foto para Instagram: es una foto en el refugio de montaña de nuestra ruta por los Picos. Corto y con gracia."
+    },
+    {
+      "id": "social-4-B",
+      "genre": "social",
+      "scenario": 4,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Voy a subir a Instagram una foto de mi hermana y yo en el refugio de Vega de Ario, en los Picos de Europa. Fue el tercer día de la travesía, nos cayó la del pulpo y en la foto salimos con el pelo chorreando y las botas secándose al lado de la estufa, pero muertas de risa.\n\nDame 4 o 5 opciones de pie de foto, cortas (una o dos líneas), con humor. Como mucho un emoji en cada una."
+    },
+    {
+      "id": "social-5-A",
+      "genre": "social",
+      "scenario": 5,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Armame un post de LinkedIn: con mi equipo terminamos un proyecto de dos años para digitalizar el archivo de la ciudad. Quiero contar qué aprendimos."
+    },
+    {
+      "id": "social-5-B",
+      "genre": "social",
+      "scenario": 5,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Quiero publicar en LinkedIn el cierre de un proyecto. Soy coordinadora de un equipo de 6 personas en la Municipalidad de Bahía Blanca. Notas:\n\n- dos años de trabajo para digitalizar el Archivo Histórico Municipal\n- unas 400.000 páginas, expedientes desde 1880 hasta 1990\n- ya se puede consultar online desde la web del archivo\n- aprendizajes: el OCR con letra manuscrita antigua falla muchísimo y hubo que transcribir a mano bastante; definir los metadatos al principio y no a la mitad; trabajar codo a codo con las archivistas, que sabían cosas que no estaban en ningún lado\n- agradecer a Pablo, Romina, Ezequiel, Sofía y Matías\n\nUnas 200 palabras, tono profesional sin solemnidad. En primera persona."
+    },
+    {
+      "id": "social-6-A",
+      "genre": "social",
+      "scenario": 6,
+      "style": "A",
+      "variety": "es-CO",
+      "request": "Post para el Facebook del coro: buscamos tenores y bajos, no hay audición, que vengan el miércoles al ensayo."
+    },
+    {
+      "id": "social-6-B",
+      "genre": "social",
+      "scenario": 6,
+      "style": "B",
+      "variety": "es-CO",
+      "request": "Manejo la página de Facebook del coro Cantares de Pereira y quiero publicar una convocatoria. Datos:\n\n- buscamos tenores y bajos\n- no hay audición y no hace falta leer partitura\n- ensayamos los miércoles a las 7 p. m. en el salón comunal de Álamos\n- estamos preparando el concierto de Navidad\n- somos un coro aficionado, de todas las edades, el ambiente es muy bueno\n\nCorto, animado, que invite a llegar este miércoles sin pena. Puede llevar un par de emojis."
+    },
+    {
+      "id": "social-7-A",
+      "genre": "social",
+      "scenario": 7,
+      "style": "A",
+      "variety": "es-MX",
+      "request": "Post para Instagram: terminé mi primer medio maratón en 2:11. Quiero agradecerles a todos los que me apoyaron."
+    },
+    {
+      "id": "social-7-B",
+      "genre": "social",
+      "scenario": 7,
+      "style": "B",
+      "variety": "es-MX",
+      "request": "Ayúdame con el texto para Instagram. El domingo corrí mi primer medio maratón, el de Guadalajara, y lo terminé en 2:11. Quiero agradecer:\n\n- a mi entrenador, Toño, del club Corredores de los Colomos\n- a mi novia, Fer, que me aguantó seis meses de despertarme a las 5\n- a mis papás, que fueron a verme al kilómetro 18\n- a todos los que me mandaron mensajes\n\nTambién contar que hace un año no corría ni 3 km. Tono emocionado pero sin cursilería, máximo 120 palabras y 4 o 5 hashtags."
+    },
+    {
+      "id": "social-8-A",
+      "genre": "social",
+      "scenario": 8,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Escribime un post de LinkedIn: la empresa donde trabajaba cerró y estoy buscando trabajo en marketing. Quiero contar qué puedo ofrecer."
+    },
+    {
+      "id": "social-8-B",
+      "genre": "social",
+      "scenario": 8,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Necesito un post de LinkedIn para contar que estoy buscando trabajo. Contexto:\n\n- trabajé 7 años en marketing en Distribuidora Sierras, una empresa de alimentos de Córdoba, que cerró el mes pasado\n- empecé como asistente y terminé como responsable de marketing digital\n- manejo redes, campañas en Meta Ads y Google Ads, email marketing, HubSpot\n- manejé un presupuesto anual de publicidad y un equipo de 2 personas\n- logros: duplicamos las ventas online en 2 años\n- busco algo remoto o en Córdoba\n- quiero que quede claro qué puedo aportar, no que dé lástima\n\nUnas 150 palabras, en primera persona, tono seguro pero humilde."
+    },
+    {
+      "id": "report-1-A",
+      "genre": "report",
+      "scenario": 1,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Hazme el acta de la reunión de vecinos sobre el aparcamiento en nuestra calle. Acordamos pedir al Ayuntamiento zona de residentes, pedir que pinten la línea amarilla frente al vado del número 12 y crear un grupo de tres vecinos para redactar la petición. La próxima reunión es el 15 de enero."
+    },
+    {
+      "id": "report-1-B",
+      "genre": "report",
+      "scenario": 1,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Soy la secretaria de la comunidad de vecinos y tengo que redactar el acta de la reunión de ayer. Mis apuntes, tal cual los tomé:\n\nreunión 7 nov, 19:00, local de la asociación, c/ Pintor Sorolla, Castellón\n23 vecinos, preside Manuel Ferrer\ntema: no hay sitio para aparcar, coches de fuera que dejan el coche todo el día por la estación\nse habla de que el vado del 12 lo bloquean casi a diario\nacuerdos:\n1 pedir al Ayto zona de aparcamiento para residentes (votación: 20 sí, 3 abstenciones)\n2 pedir que pinten línea amarilla delante del vado del nº 12\n3 grupo de trabajo: Manuel, Amparo y Vicente redactan el escrito antes de fin de mes\npróxima reunión 15 enero 19:00 mismo sitio\nse levanta la sesión 20:15\n\nPásalo a acta formal, con el formato habitual."
+    },
+    {
+      "id": "report-2-A",
+      "genre": "report",
+      "scenario": 2,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Necesito un informe corto para mi jefa con los resultados de los tres meses de prueba de la nueva herramienta de atención al cliente: el tiempo de respuesta bajó de 9 a 4 horas, pero hubo dos problemas, la integración con el ERP y respuestas duplicadas a algunos clientes."
+    },
+    {
+      "id": "report-2-B",
+      "genre": "report",
+      "scenario": 2,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Tengo que mandarle a mi jefa (directora de operaciones) un informe de una página sobre la prueba de la nueva plataforma de tickets en el equipo de atención al cliente. Datos:\n\n- periodo: 1 de junio a 31 de agosto, 6 agentes\n- 4.300 tickets gestionados\n- tiempo medio de primera respuesta: de 9 h a 4 h\n- satisfacción del cliente: de 4,1 a 4,4 sobre 5\n- problema 1: la integración con el ERP falló dos semanas en julio y hubo que consultar los pedidos a mano\n- problema 2: por una regla mal configurada, unos 60 clientes recibieron respuestas duplicadas; ya está corregido\n- mi recomendación: seguir con la herramienta y pedir al proveedor un compromiso por escrito sobre la integración antes de firmar el contrato anual\n\nFormal, directo, con apartados. Nada de relleno."
+    },
+    {
+      "id": "report-3-A",
+      "genre": "report",
+      "scenario": 3,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "¿Me redactas la memoria anual de nuestra asociación de voluntariado? Este año hemos sido 46 voluntarios, hicimos 1.200 horas, organizamos tres eventos y manejamos un presupuesto de 8.500 €."
+    },
+    {
+      "id": "report-3-B",
+      "genre": "report",
+      "scenario": 3,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Tengo que preparar la memoria anual de la Asociación Manos Amigas de Cuenca para presentarla en la asamblea de socios. Datos:\n\nvoluntarios: 46 (12 nuevos este año)\nhoras de voluntariado: unas 1.200\nactividades fijas: acompañamiento a personas mayores solas y apoyo escolar dos tardes por semana\neventos:\n- recogida de alimentos en marzo, 2,3 toneladas\n- mercadillo solidario en junio\n- carrera popular en octubre, 410 inscritos\ningresos 8.500 €: subvención del ayuntamiento 5.000, cuotas 1.300, donaciones 2.200\ngastos 8.100 €: seguros 1.100, material 2.400, eventos 3.200, transporte 1.400\nsaldo positivo de 400 €\nobjetivos para el año que viene: llegar a 60 voluntarios y abrir un segundo grupo de apoyo escolar\n\nFormato de memoria, formal, con apartados."
+    },
+    {
+      "id": "report-4-A",
+      "genre": "report",
+      "scenario": 4,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Necesito un informe para el consejo escolar sobre el viaje a Madrid de 2.º de ESO: tres días, 52 alumnos. Qué salió bien, que un alumno se puso enfermo y los costes."
+    },
+    {
+      "id": "report-4-B",
+      "genre": "report",
+      "scenario": 4,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Soy la profesora que coordinó el viaje de estudios de 2.º de ESO a Madrid y tengo que presentar un informe al consejo escolar. Somos un instituto de Jaén. Notas:\n\n- fechas: del 8 al 10 de abril\n- 52 alumnos y 4 profesores, autobús y albergue juvenil\n- visitamos el Museo del Prado, el Congreso, el Retiro y el Museo Reina Sofía; una tarde libre controlada por el centro\n- lo mejor: la visita al Congreso, muy bien guiada; los alumnos se portaron muy bien en general\n- incidencia: el segundo día un alumno tuvo gastroenteritis, lo llevamos a urgencias del Hospital Gregorio Marañón, una profesora se quedó con él y sus padres fueron a recogerlo esa noche; se recuperó sin problema\n- coste por alumno: 245 € (total 12.740 €), que incluía transporte, alojamiento con pensión completa y entradas\n- propuesta: para el año que viene, contratar seguro con asistencia médica incluida\n\nInforme formal, con apartados, máximo dos páginas."
+    },
+    {
+      "id": "report-5-A",
+      "genre": "report",
+      "scenario": 5,
+      "style": "A",
+      "variety": "es-CO",
+      "request": "El lunes hubo una fuga de agua en la cocina de la oficina porque se soltó la manguera del filtro de agua. Me toca hacer el reporte del incidente: qué pasó, qué se dañó y qué cambiamos."
+    },
+    {
+      "id": "report-5-B",
+      "genre": "report",
+      "scenario": 5,
+      "style": "B",
+      "variety": "es-CO",
+      "request": "Tengo que hacer el reporte de incidente para la gerencia. Te paso lo que tengo:\n\n- oficina en Chapinero, Bogotá, piso 4\n- lunes 7:40 a. m.: la señora de servicios generales encontró el piso de la cocina inundado\n- causa: se soltó la manguera del filtro de agua que está debajo del lavaplatos; probablemente goteaba desde el domingo\n- se cerró el registro general y se secó con trapeadoras y un ventilador\n- daños: unos 12 m² de piso laminado levantado en la cocina y el pasillo, el mueble bajo del lavaplatos hinchado; la nevera y los computadores no se afectaron\n- costo estimado de la reparación: $3.800.000\n- la oficina de abajo (piso 3) reportó una mancha pequeña en el techo\n- cambios: válvula de cierre individual para el filtro, sensor de agua con alarma en el celular del administrador, revisión trimestral de las conexiones de la cocina\n\nFormato de reporte formal, claro y con apartados."
+    },
+    {
+      "id": "report-6-A",
+      "genre": "report",
+      "scenario": 6,
+      "style": "A",
+      "variety": "es-MX",
+      "request": "Hazme un informe corto para la mesa directiva del club: pasamos de 210 a 248 socios, abrimos un equipo juvenil y nos hacen falta más entrenadores."
+    },
+    {
+      "id": "report-6-B",
+      "genre": "report",
+      "scenario": 6,
+      "style": "B",
+      "variety": "es-MX",
+      "request": "Soy vocal del Club Deportivo Valle Alto, en Monterrey, y tengo que entregar un informe breve a la mesa directiva para la junta del jueves. Datos:\n\n- socios: de 210 a 248 en el último año (la mayoría familias con hijos)\n- abrimos un equipo de futbol juvenil sub-15 en agosto, con 22 jugadores\n- tenemos 6 entrenadores y necesitaríamos al menos 9; ahora hay entrenadores con tres grupos y ya están cansados\n- propuesta: pagar el curso de certificación a 3 papás o exjugadores que ya se ofrecieron (unos $4,500 por persona) a cambio de un año de compromiso con el club\n- también proponemos subir la cuota de inscripción del juvenil $100 al mes para cubrirlo\n\nUna página máximo, formal y directo."
+    },
+    {
+      "id": "report-7-A",
+      "genre": "report",
+      "scenario": 7,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Necesito un informe de avance del rediseño de la web de un hotel chico: vamos por el 70%, nos atrasamos por las fotos y la nueva fecha de lanzamiento es el 15 de marzo."
+    },
+    {
+      "id": "report-7-B",
+      "genre": "report",
+      "scenario": 7,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Soy diseñadora freelance y le tengo que mandar al dueño de un hotel boutique de Salta (Casa Güemes, 12 habitaciones) un informe de estado del proyecto de la nueva web. Lo que hay:\n\nhecho:\n- diseño aprobado\n- motor de reservas integrado y probado\n- textos en español e inglés cargados\n- versión mobile lista\n\npendiente:\n- fotos de las habitaciones y del patio: la sesión estaba para el 10 de febrero y el fotógrafo la pasó dos veces por lluvia\n- carga de fotos y ajustes finales\n- pruebas con reservas reales\n\navance general: 70%\nnueva fecha de lanzamiento: 15 de marzo (la original era el 20 de febrero)\nle quiero pedir que confirme que el patio esté libre para la sesión de fotos del 26 de febrero\n\nProfesional pero cálido, que no suene a excusa. Lo mando por mail."
+    },
+    {
+      "id": "report-8-A",
+      "genre": "report",
+      "scenario": 8,
+      "style": "A",
+      "variety": "es-CO",
+      "request": "Escríbeme un informe corto sobre el curso de cocina para principiantes de cuatro noches que acabo de hacer: qué cocinamos y qué aprendí."
+    },
+    {
+      "id": "report-8-B",
+      "genre": "report",
+      "scenario": 8,
+      "style": "B",
+      "variety": "es-CO",
+      "request": "Hice un curso de cocina para principiantes en el SENA, cuatro noches de 6 a 9, y nos piden un informe corto de lo que hicimos para recibir el certificado. Notas:\n\nnoche 1: manejo de cuchillos y cortes básicos, hicimos hogao\nnoche 2: arroz con coco y patacones\nnoche 3: ajiaco santafereño completo\nnoche 4: postre de natas y cierre con una comida entre todos\nlo que aprendí: tener todo picado y medido antes de prender el fogón, probar la sal al final, que un cuchillo afilado es más seguro que uno sin filo\nlo que más me costó: los tiempos del arroz con coco, se me pegó la primera vez\nla profesora se llamaba Luz Marina\n\nUna página, en primera persona, formal pero sencillo."
+    },
+    {
+      "id": "longform-1-A",
+      "genre": "longform",
+      "scenario": 1,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Quiero un artículo largo para mi blog, de unas 800 palabras, sobre todo lo que he aprendido en un año cultivando hortalizas en el balcón."
+    },
+    {
+      "id": "longform-1-B",
+      "genre": "longform",
+      "scenario": 1,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Tengo un blog sobre vida en la ciudad y quiero escribir un artículo largo (unas 800 palabras) sobre mi primer año de huerto en el balcón. Mis notas:\n\n- piso en Valencia, balcón de 4 m² orientado al sur\n- empecé en marzo con 8 macetas y una mesa de cultivo\n- planté tomates cherry, lechugas, pimientos de Padrón, fresas y aromáticas (albahaca, perejil, romero)\n- lo que funcionó: tomates cherry a montones, albahaca, pimientos\n- lo que no: las lechugas se me espigaron con el calor de junio, las fresas casi no dieron nada\n- en agosto me fui una semana y se me secó medio balcón; después monté un riego por goteo con temporizador que me costó unos 25 €\n- pulgón en los pimientos, lo controlé con jabón potásico\n- el sustrato barato fue un error, se compactaba\n- lo mejor: comer ensaladas con cosas que he cultivado yo, y los vecinos de enfrente preguntándome por los tomates\n\nTono personal y práctico, con subtítulos. Que sirva a alguien que quiera empezar."
+    },
+    {
+      "id": "longform-2-A",
+      "genre": "longform",
+      "scenario": 2,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Necesito un reportaje largo, de unas 800 palabras, para la revista del pueblo sobre la historia del mercado de abastos y su reapertura tras la reforma. Se inauguró en 1928, cerró en 2021 por obras y ahora reabre con 24 puestos."
+    },
+    {
+      "id": "longform-2-B",
+      "genre": "longform",
+      "scenario": 2,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Me ha encargado la revista municipal de Villanueva de la Serena un reportaje de unas 800 palabras sobre el mercado de abastos, que vuelve a abrir después de la reforma. Te paso la documentación que he reunido:\n\n- se inauguró en 1928, edificio de hierro y ladrillo con cubierta de cristal\n- en los años 50 y 60 llegó a tener más de 40 puestos y era el centro del pueblo los días de mercado\n- en la Guerra Civil se usó como almacén\n- desde los 90 fue perdiendo puestos por los supermercados; en 2019 quedaban 9\n- cerró en 2021 para una reforma integral: se recuperó la estructura de hierro original, se cambió la cubierta y se añadió climatización\n- reabre el 15 de noviembre con 24 puestos: fruta, carne, pescado, pan, queso, dos de comida para tomar allí y uno de productos ecológicos\n- Francisca Gallardo, que tiene la frutería desde 1987: \"Yo aquí he visto crecer a medio pueblo\"\n- el alcalde dice que quieren que vuelva a ser punto de encuentro, con actividades los sábados\n\nEstilo de reportaje de revista, con algo de ambiente, titular y subtítulos."
+    },
+    {
+      "id": "longform-3-A",
+      "genre": "longform",
+      "scenario": 3,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Escríbeme una guía larga, de unas 800 palabras, sobre cómo preparar tu primera media maratón, contándolo desde mi experiencia: seis meses de entreno, una lesión de rodilla por el camino y 2:11 en meta."
+    },
+    {
+      "id": "longform-3-B",
+      "genre": "longform",
+      "scenario": 3,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Quiero publicar una guía larga (unas 800 palabras) para gente que se plantea su primera media maratón, mezclando consejos con mi propia experiencia. Mis notas:\n\n- empecé desde casi cero: en mayo no aguantaba 5 km seguidos\n- seis meses de preparación, 3 días por semana y luego 4\n- tirada larga los domingos, subiendo poco a poco hasta 18 km\n- en marzo, dolor de rodilla; la fisio me dijo que bajara volumen sin parar del todo, y que hiciera fuerza de glúteo y cuádriceps dos veces por semana; también cambiar zapatillas (tenían más de 900 km)\n- la mayoría de mis entrenos eran lentos, a ritmo de poder hablar, y me costó aceptarlo\n- probé los geles en entrenos antes de la carrera, uno me sentó fatal\n- el día de la carrera salí demasiado rápido y lo pagué en el km 18\n- terminé en 2:11 en la Media Maratón de Getafe\n\nQue tenga estructura de guía con subtítulos, pero en primera persona y con un tono cercano."
+    },
+    {
+      "id": "longform-4-A",
+      "genre": "longform",
+      "scenario": 4,
+      "style": "A",
+      "variety": "es-ES",
+      "request": "Necesito un artículo largo para el blog de la empresa sobre cómo nuestro equipo de soporte pasó a una rotación de semanas de 4 días sin perder clientes. Unas 800 palabras."
+    },
+    {
+      "id": "longform-4-B",
+      "genre": "longform",
+      "scenario": 4,
+      "style": "B",
+      "variety": "es-ES",
+      "request": "Trabajo en una empresa de software de gestión para clínicas dentales, en Granada, y quiero escribir para nuestro blog un artículo de unas 800 palabras sobre cómo organizamos el soporte en semanas de 4 días. Notas:\n\n- equipo de soporte: 7 personas\n- desde febrero cada persona trabaja 4 días, pero el soporte sigue abierto de lunes a viernes de 8 a 20; montamos turnos rotativos para que siempre haya al menos 4 personas\n- antes de empezar: documentamos las 50 consultas más frecuentes y creamos respuestas guardadas\n- cada caso abierto tiene que quedar con una nota de traspaso al final del día\n- los clientes no notaron el cambio: la tasa de bajas se mantuvo en 1,8% mensual\n- primera respuesta: pasó de 2 h a 2 h 30 de media, algo que aceptamos\n- satisfacción: 4,6 sobre 5, igual que antes\n- las bajas por enfermedad del equipo bajaron a la mitad\n- lo que nos costó: los lunes se acumulan tickets y tuvimos que reforzar ese día; también la sensación de culpa al principio por \"no estar\"\n\nTono honesto, con datos, sin vender humo. Que lo pueda leer otra empresa que se lo esté planteando."
+    },
+    {
+      "id": "longform-5-A",
+      "genre": "longform",
+      "scenario": 5,
+      "style": "A",
+      "variety": "es-CO",
+      "request": "Escribe un artículo largo sobre cómo remodelamos una casa vieja en Teusaquillo con poco presupuesto y las decisiones que tomamos. Unas 800 palabras."
+    },
+    {
+      "id": "longform-5-B",
+      "genre": "longform",
+      "scenario": 5,
+      "style": "B",
+      "variety": "es-CO",
+      "request": "Con mi esposo compramos una casa de 1948 en Teusaquillo, Bogotá, y la remodelamos con muy poca plata. Quiero un artículo de unas 800 palabras para publicar en un blog de arquitectura y vivienda, contando las decisiones que tomamos. Notas:\n\n- presupuesto total: $95 millones, más o menos lo que nos sobró después de comprar\n- lo primero que hicimos: instalación eléctrica y tubería nuevas, porque las viejas eran un peligro; ahí se fue casi la mitad del presupuesto\n- decidimos mantener los pisos de madera originales y pulirlos en vez de cambiarlos\n- la cocina la hicimos con muebles prefabricados y mesón de cuarzo barato; los baños, sencillos\n- tumbamos un muro entre la sala y el comedor, pero dejamos la chimenea\n- las ventanas de madera las restauramos en lugar de cambiarlas por aluminio, y la humedad del muro del patio nos dio dolores de cabeza\n- tuvimos un maestro de obra de confianza, don Efraín, y nosotros pintamos todo\n- lo que dejamos para después: el segundo piso y el jardín\n- tardamos 7 meses viviendo donde mis suegros\n\nTono de historia personal pero con consejos útiles. Con subtítulos."
+    },
+    {
+      "id": "longform-6-A",
+      "genre": "longform",
+      "scenario": 6,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Necesito una nota larga, unas 800 palabras, para una revista de crianza sobre los celulares y los chicos de 11 años, contando lo que fuimos probando en casa."
+    },
+    {
+      "id": "longform-6-B",
+      "genre": "longform",
+      "scenario": 6,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Me pidieron una nota de unas 800 palabras para una revista de crianza sobre el primer celular. Quiero contar nuestra experiencia con nuestro hijo Tomás, que tiene 11 y vive con nosotros en Mendoza. Notas:\n\n- se lo dimos en marzo, cuando empezó a volver solo del colegio\n- primero probamos con control parental muy estricto: él encontraba la forma de saltearlo y era una guerra\n- después hicimos un \"contrato familiar\" escrito, firmado por los tres, con reglas: el celu duerme en el living, nada de celu en la mesa, sin redes hasta los 13, sólo WhatsApp\n- lo que más funcionó: que nosotros también dejemos el celu en el living a la noche, si no no teníamos autoridad\n- lo que no funcionó: los límites de minutos por día\n- un problema en el grupo de WhatsApp del grado, con burlas a un compañero; lo hablamos con él y con la maestra\n- lo que aprendimos: hablar mucho más que controlar, y revisar las reglas cada tanto con él\n\nTono de madre que cuenta lo que vivió, sin dar sermones ni recetas. Con algunos subtítulos."
+    },
+    {
+      "id": "longform-7-A",
+      "genre": "longform",
+      "scenario": 7,
+      "style": "A",
+      "variety": "es-MX",
+      "request": "Quiero un artículo de viaje largo, de unas 800 palabras, sobre una semana recorriendo el sureste de México en el Tren Maya con mi hijo de 8 años."
+    },
+    {
+      "id": "longform-7-B",
+      "genre": "longform",
+      "scenario": 7,
+      "style": "B",
+      "variety": "es-MX",
+      "request": "Escribo para una revista de viajes en familia y quiero mandarles un artículo de unas 800 palabras sobre nuestra semana en tren por el sureste con mi hijo Emiliano, de 8 años. Notas:\n\n- ruta: Cancún – Valladolid – Mérida – Campeche – Palenque, siete días\n- en Valladolid nadamos en un cenote y él no quería salirse\n- en Chichén Itzá hacía un calor tremendo, mejor ir a primera hora\n- Mérida: lo que más le gustó fue la marquesita y el paseo de Montejo en la noche\n- Campeche: las murallas y los fuertes, se la pasó jugando a los piratas\n- Palenque: la selva y los monos aulladores lo dejaron impresionado\n- el tren: cómodo y con buena vista; un tramo llegó con más de una hora de retraso\n- consejos: llevar snacks y algo para entretenerlo en los trayectos largos, comprar boletos con anticipación, repelente siempre\n- lo mejor: ver el viaje a través de sus ojos y que no pidiera la tablet en toda la semana\n\nTono cálido, de crónica, con subtítulos por parada."
+    },
+    {
+      "id": "longform-8-A",
+      "genre": "longform",
+      "scenario": 8,
+      "style": "A",
+      "variety": "es-AR",
+      "request": "Escribime un artículo largo para la página de los bomberos voluntarios de San Pedro por sus 140 años. Unas 800 palabras."
+    },
+    {
+      "id": "longform-8-B",
+      "genre": "longform",
+      "scenario": 8,
+      "style": "B",
+      "variety": "es-AR",
+      "request": "Me pidieron un artículo de unas 800 palabras para la web del cuartel de Bomberos Voluntarios de San Pedro (provincia de Buenos Aires) por los 140 años. Te paso lo que juntamos con la comisión:\n\n- fundado en 1884 por un grupo de vecinos después de un incendio en un almacén de ramos generales del centro\n- primero tenían una bomba a mano tirada por caballos\n- en 1928 llegó la primera autobomba, comprada con una colecta de todo el pueblo\n- el incendio más recordado: el del molino harinero en 1962, trabajaron dos días seguidos\n- en 1993 se incorporaron las primeras mujeres al cuerpo activo\n- hoy son 48 bomberos activos, 12 cadetes y 5 unidades\n- además de incendios: accidentes en la ruta 9, rescates en el río, inundaciones\n- el jefe actual, comandante Raúl Benítez: \"Acá nadie cobra un peso, lo hacemos porque es nuestro pueblo\"\n- la celebración: desfile el 20 de octubre y cena aniversario en el cuartel\n\nTono emotivo pero sin exagerar, con subtítulos. Que cierre invitando a sumarse como voluntario o socio protector."
+    }
+  ]
+}

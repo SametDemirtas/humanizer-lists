@@ -1,0 +1,755 @@
+{
+  "language": "it",
+  "cases": [
+    {
+      "text": "Ecco una possibile descrizione per la tua cover:",
+      "hits": [
+        "it-chat-ecco-descrizione"
+      ]
+    },
+    {
+      "text": "ECCO UNA DESCRIZIONE SEO PER IL TUO POSTER",
+      "hits": [
+        "it-chat-ecco-descrizione"
+      ]
+    },
+    {
+      "text": "Ecco una versione con il nome sul retro.",
+      "misses": [
+        "it-chat-ecco-descrizione"
+      ]
+    },
+    {
+      "text": "Posso anche adattare il testo per Instagram.",
+      "misses": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Spero che questa descrizione ti piaccia.",
+      "hits": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Assolutamente! Qui trovi titolo e tag.",
+      "hits": [
+        "it-chat-certo-ecco"
+      ]
+    },
+    {
+      "text": "La tazza, certo, è lavabile. Ecco come.",
+      "misses": [
+        "it-chat-certo-ecco"
+      ]
+    },
+    {
+      "text": "Scrivici a [inserisci email] per ordini speciali.",
+      "hits": [
+        "it-segnaposto-parentesi"
+      ]
+    },
+    {
+      "text": "if(a.data[\"datawrapper-height\"]) return;",
+      "misses": [
+        "it-segnaposto-parentesi"
+      ]
+    },
+    {
+      "text": "- **Materiale:** cotone 100%",
+      "hits": [
+        "it-markdown-grassetto"
+      ]
+    },
+    {
+      "text": "Titolo\n### Dettagli",
+      "hits": [
+        "it-markdown-titoletto"
+      ]
+    },
+    {
+      "text": "Elevare la tua routine non è mai stato così semplice.",
+      "hits": [
+        "it-eleva-il-tuo"
+      ]
+    },
+    {
+      "text": "Questa stampa eleverà il tuo arredamento.",
+      "hits": [
+        "it-eleva-il-tuo"
+      ]
+    },
+    {
+      "text": "porterà il tuo stile a un nuovo livello",
+      "hits": [
+        "it-al-livello-successivo"
+      ]
+    },
+    {
+      "text": "Perché li amerai",
+      "hits": [
+        "it-perche-lo-amerai"
+      ]
+    },
+    {
+      "text": "Di' addio alle tazze anonime e ciao alla tua nuova preferita.",
+      "hits": [
+        "it-di-addio-e-benvenuto"
+      ]
+    },
+    {
+      "text": "Di’ addio alle tazze anonime e dai il benvenuto a questa.",
+      "hits": [
+        "it-di-addio-e-benvenuto"
+      ]
+    },
+    {
+      "text": "Scopri l’eleganza del marmo rosa.",
+      "hits": [
+        "it-scopri-la-magia"
+      ]
+    },
+    {
+      "text": "LASCIATI INCANTARE da questi colori.",
+      "hits": [
+        "it-lasciati-conquistare"
+      ]
+    },
+    {
+      "text": "Ci siamo lasciati ispirare dai mosaici di Ravenna.",
+      "misses": [
+        "it-lasciati-conquistare"
+      ]
+    },
+    {
+      "text": "Che tu stia lavorando o rilassandoti, questa felpa è comoda.",
+      "hits": [
+        "it-che-tu-sia-o"
+      ]
+    },
+    {
+      "text": "Sia che tu sia alto o basso, la taglia è unica.",
+      "misses": [
+        "it-che-tu-sia-o"
+      ]
+    },
+    {
+      "text": "Tazza 330 ml.\nImmagina di bere il caffè in rifugio.",
+      "hits": [
+        "it-immagina-apertura"
+      ]
+    },
+    {
+      "text": "In un mondo in cui tutto corre, rallenta.",
+      "hits": [
+        "it-in-un-mondo-dove"
+      ]
+    },
+    {
+      "text": "Il segreto? La pazienza.",
+      "misses": [
+        "it-domanda-secca"
+      ]
+    },
+    {
+      "text": "Che stai aspettando? Ordinala!",
+      "hits": [
+        "it-cosa-aspetti"
+      ]
+    },
+    {
+      "text": "Acquistala subito!",
+      "hits": [
+        "it-ordina-ora"
+      ]
+    },
+    {
+      "text": "Ordinalo oggi stesso.",
+      "hits": [
+        "it-ordina-ora"
+      ]
+    },
+    {
+      "text": "Aggiungile subito al carrello.",
+      "hits": [
+        "it-aggiungilo-al-carrello"
+      ]
+    },
+    {
+      "text": "Rendi indimenticabile il loro grande giorno!",
+      "hits": [
+        "it-rendi-speciale"
+      ]
+    },
+    {
+      "text": "Portala ovunque tu vada.",
+      "hits": [
+        "it-sempre-con-te"
+      ]
+    },
+    {
+      "text": "Strapperà più di un sorriso.",
+      "hits": [
+        "it-strappare-un-sorriso"
+      ]
+    },
+    {
+      "text": "Per un tocco in più di colore.",
+      "hits": [
+        "it-un-tocco-di"
+      ]
+    },
+    {
+      "text": "Un design senza tempo.",
+      "hits": [
+        "it-senza-tempo"
+      ]
+    },
+    {
+      "text": "Siamo rimasti senza tempo: spediamo domani.",
+      "misses": [
+        "it-senza-tempo"
+      ]
+    },
+    {
+      "text": "Il tuo alleato perfetto per le giornate in ufficio.",
+      "hits": [
+        "it-compagno-ideale"
+      ]
+    },
+    {
+      "text": "Trasforma ogni sorso in un momento di relax.",
+      "hits": [
+        "it-trasforma-in"
+      ]
+    },
+    {
+      "text": "Una vera opera d’arte da indossare.",
+      "hits": [
+        "it-piccolo-capolavoro"
+      ]
+    },
+    {
+      "text": "È il regalo ideale per la maestra.",
+      "hits": [
+        "it-regalo-perfetto"
+      ]
+    },
+    {
+      "text": "Un’idea regalo originale per Natale.",
+      "hits": [
+        "it-regalo-perfetto"
+      ]
+    },
+    {
+      "text": "Pensata per tutte le amanti dello yoga.",
+      "hits": [
+        "it-per-chi-ama"
+      ]
+    },
+    {
+      "text": "Confezionata con amore nel nostro laboratorio.",
+      "hits": [
+        "it-fatto-con-amore"
+      ]
+    },
+    {
+      "text": "Una cover che non passerà inosservata.",
+      "hits": [
+        "it-non-passa-inosservato"
+      ]
+    },
+    {
+      "text": "Non e' solo una felpa, ma un modo di vivere la montagna.",
+      "hits": [
+        "it-non-e-solo-x-e"
+      ]
+    },
+    {
+      "text": "Non solo bella ma anche resistente.",
+      "misses": [
+        "it-non-e-solo-x-e"
+      ]
+    },
+    {
+      "text": "Più che un semplice cuscino.",
+      "hits": [
+        "it-piu-di-un-semplice"
+      ]
+    },
+    {
+      "text": "Disponibile fino ad esaurimento scorte.",
+      "hits": [
+        "it-scorte-limitate"
+      ]
+    },
+    {
+      "text": "Non fartela scappare!",
+      "hits": [
+        "it-non-lasciartelo-sfuggire"
+      ]
+    },
+    {
+      "text": "Vale la pena ricordare che è stampata su ordinazione.",
+      "hits": [
+        "it-e-importante-sottolineare"
+      ]
+    },
+    {
+      "text": "Insomma, una tazza come tante.",
+      "misses": [
+        "it-in-conclusione"
+      ]
+    },
+    {
+      "text": "Scopri la collezione. Non esiti a contattarci per domande.",
+      "hits": [
+        "it-registro-misto"
+      ]
+    },
+    {
+      "text": "Non esiti a contattarci. Le risponderemo entro un giorno.",
+      "misses": [
+        "it-registro-misto"
+      ]
+    },
+    {
+      "text": "**Descrizione del prodotto:** tazza in ceramica",
+      "hits": [
+        "it-etichette-titolo-descrizione"
+      ]
+    },
+    {
+      "text": "Tazza—regalo",
+      "hits": [
+        "it-lineetta-em-dash"
+      ]
+    },
+    {
+      "text": "La scritta «Ancora un capitolo» è in corsivo.",
+      "hits": [
+        "it-caporali"
+      ]
+    },
+    {
+      "text": "Piace a GRANDI E PICCINI.",
+      "hits": [
+        "it-grandi-e-piccini"
+      ]
+    },
+    {
+      "text": "grandi e piccinissimi",
+      "misses": [
+        "it-grandi-e-piccini"
+      ]
+    },
+    {
+      "text": "Se preferisci, posso riscriverlo in modo più breve.",
+      "misses": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Vuoi che lo adatti a un tono più leggero?",
+      "hits": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Se mi fornisci il nome della scuola, completo il testo.",
+      "hits": [
+        "it-chat-chiede-dettagli"
+      ]
+    },
+    {
+      "text": "Ho messo tra parentesi quadre i dati da sostituire.",
+      "hits": [
+        "it-chat-segnaposto-nota"
+      ]
+    },
+    {
+      "text": "Raccontatemelo nei commenti!",
+      "hits": [
+        "it-cta-commenti"
+      ]
+    },
+    {
+      "text": "Il sindaco ha detto che non si tratta solo di traffico, ma anche di salute.",
+      "hits": [
+        "it-non-si-tratta-solo-ma"
+      ]
+    },
+    {
+      "text": "Gli invitati troveranno il segnaposto accanto al bicchiere. Ecco un esempio pratico.",
+      "misses": [
+        "it-chat-segnaposto-nota",
+        "it-ecco-bozza"
+      ]
+    },
+    {
+      "text": "Se mi dici la data, prenoto. E tu cosa porti?",
+      "misses": [
+        "it-chat-chiede-dettagli",
+        "it-cta-commenti"
+      ]
+    },
+    {
+      "text": "La riunione di lunedì è spostata a martedì alle 10, nella sala al secondo piano. Porto io i verbali.",
+      "misses": "all"
+    },
+    {
+      "text": "Ieri sera al club del libro abbiamo discusso Calvino. Non solo Marta, ma anche Paolo l'ha trovato noioso.",
+      "misses": "all"
+    },
+    {
+      "text": "Il comune ha aperto due chilometri di pista ciclabile in via Garibaldi; i lavori sono durati sei mesi.",
+      "misses": "all"
+    },
+    {
+      "text": "Ieri il sindaco, diciamocelo chiaramente, ha evitato la domanda.",
+      "hits": [
+        "it-diciamolo"
+      ]
+    },
+    {
+      "text": "Diciamo che il film mi è piaciuto.",
+      "misses": [
+        "it-diciamolo"
+      ]
+    },
+    {
+      "text": "È innegabile che la stagione sia andata male.",
+      "hits": [
+        "it-non-si-puo-negare"
+      ]
+    },
+    {
+      "text": "Le nuove regole sollevano dubbi tra i genitori.",
+      "hits": [
+        "it-solleva-interrogativi"
+      ]
+    },
+    {
+      "text": "Ha sollevato la questione in assemblea.",
+      "misses": [
+        "it-solleva-interrogativi"
+      ]
+    },
+    {
+      "text": "La piazza, a detta di tanti, è più bella così.",
+      "hits": [
+        "it-a-detta-di-molti"
+      ]
+    },
+    {
+      "text": "Come spesso succede, il treno era in ritardo.",
+      "hits": [
+        "it-come-spesso-accade"
+      ]
+    },
+    {
+      "text": "Non mancano però le difficoltà.",
+      "hits": [
+        "it-non-mancano-pero"
+      ]
+    },
+    {
+      "text": "Non mancano poi le iniziative per i bambini.",
+      "misses": [
+        "it-non-mancano-pero"
+      ]
+    },
+    {
+      "text": "Lavorare da casa non significa lavorare meno. Significa lavorare diversamente.",
+      "hits": [
+        "it-non-significa-ma"
+      ]
+    },
+    {
+      "text": "Non è mai troppo tardi per ricominciare.",
+      "hits": [
+        "it-mai-troppo-tardi"
+      ]
+    },
+    {
+      "text": "È un modo concreto per aiutare il quartiere.",
+      "hits": [
+        "it-passo-concreto"
+      ]
+    },
+    {
+      "text": "Il risultato? Duecento chili di rifiuti.",
+      "hits": [
+        "it-domanda-secca"
+      ]
+    },
+    {
+      "text": "Qual è il risultato della partita?",
+      "misses": [
+        "it-domanda-secca"
+      ]
+    },
+    {
+      "text": "Spostamenti più sicuri, rapidi e sostenibili.",
+      "hits": [
+        "it-triade-piu"
+      ]
+    },
+    {
+      "text": "La realtà è che i fondi non bastano.",
+      "hits": [
+        "it-diciamolo"
+      ]
+    },
+    {
+      "text": "Questa scelta rappresenta una svolta per il quartiere.",
+      "hits": [
+        "it-occasione-per"
+      ]
+    },
+    {
+      "text": "Sarà un'ottima occasione per conoscerci.",
+      "misses": [
+        "it-occasione-per"
+      ]
+    },
+    {
+      "text": "Il vecchio forno porta con sé una lunga storia.",
+      "hits": [
+        "it-porta-con-se"
+      ]
+    },
+    {
+      "text": "Non è una semplice panetteria, ma un punto di incontro.",
+      "hits": [
+        "it-piu-di-un-semplice"
+      ]
+    },
+    {
+      "text": "La mostra va oltre la semplice esposizione di quadri.",
+      "hits": [
+        "it-piu-di-un-semplice"
+      ]
+    },
+    {
+      "text": "Non si tratta di vincere, ma di partecipare.",
+      "hits": [
+        "it-non-si-tratta-solo-ma"
+      ]
+    },
+    {
+      "text": "Viviamo in un momento storico in cui tutto cambia in fretta.",
+      "hits": [
+        "it-in-un-mondo-dove"
+      ]
+    },
+    {
+      "text": "Spero che questo post ti piaccia!",
+      "misses": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Posso anche allungare il testo se serve.",
+      "misses": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Se vuoi, posso adattarlo a un tono più formale.",
+      "hits": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Posso anche renderlo più breve o più informale.",
+      "hits": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Se vuoi, posso personalizzarlo con i dettagli reali del tuo evento.",
+      "hits": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Ci vediamo sabato!\n\n---\n\nSe vuoi, posso aggiungere una foto.",
+      "hits": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Se vuoi, posso preparare io la torta per sabato.",
+      "misses": [
+        "it-chat-offerta-tono"
+      ]
+    },
+    {
+      "text": "Se mi dai qualche dettaglio in più, posso rendere il post più preciso.",
+      "hits": [
+        "it-chat-chiede-dettagli"
+      ]
+    },
+    {
+      "text": "Se mi fornisci i dati reali, li inserisco al posto degli esempi.",
+      "hits": [
+        "it-chat-chiede-dettagli"
+      ]
+    },
+    {
+      "text": "Se mi fornisci il codice fiscale, procedo con l'iscrizione.",
+      "misses": [
+        "it-chat-chiede-dettagli"
+      ]
+    },
+    {
+      "text": "Perfetto! Ecco una possibile descrizione:",
+      "hits": [
+        "it-chat-certo-ecco"
+      ]
+    },
+    {
+      "text": "Certo! Ecco il link della riunione.",
+      "misses": [
+        "it-chat-certo-ecco"
+      ]
+    },
+    {
+      "text": "Certo! Ecco il testo della canzone che cercavi.",
+      "misses": [
+        "it-chat-certo-ecco"
+      ]
+    },
+    {
+      "text": "Ecco una bozza che puoi personalizzare.",
+      "hits": [
+        "it-chat-ecco-descrizione"
+      ]
+    },
+    {
+      "text": "Ciao Luca, ecco la bozza per il tuo intervento di lunedì.",
+      "misses": [
+        "it-chat-ecco-descrizione"
+      ]
+    },
+    {
+      "text": "Scrivi a [la tua email] per informazioni.",
+      "hits": [
+        "it-segnaposto-parentesi"
+      ]
+    },
+    {
+      "text": "«Il [nome] non lo ricordo», ha ammesso il testimone.",
+      "misses": [
+        "it-segnaposto-parentesi"
+      ]
+    },
+    {
+      "text": "Ha detto che [la città] merita più attenzione.",
+      "misses": [
+        "it-segnaposto-parentesi"
+      ]
+    },
+    {
+      "text": "Porta il tuo inglese al livello successivo.",
+      "hits": [
+        "it-al-livello-successivo"
+      ]
+    },
+    {
+      "text": "Questo chef porta la cucina emiliana a un altro livello.",
+      "misses": [
+        "it-al-livello-successivo"
+      ]
+    },
+    {
+      "text": "E voi, avete già provato il nuovo percorso?",
+      "hits": [
+        "it-cta-commenti"
+      ]
+    },
+    {
+      "text": "E tu? Quale lingua stai imparando?",
+      "hits": [
+        "it-cta-commenti"
+      ]
+    },
+    {
+      "text": "Io sto bene. E tu?",
+      "misses": [
+        "it-cta-commenti"
+      ]
+    },
+    {
+      "text": "E tu, come stai?",
+      "misses": [
+        "it-cta-commenti"
+      ]
+    },
+    {
+      "text": "Diciamocelo: la verità è che nessuno ci aveva pensato.",
+      "hits": [
+        "it-diciamolo"
+      ]
+    },
+    {
+      "text": "E' innegabile che il traffico sia aumentato.",
+      "hits": [
+        "it-non-si-puo-negare"
+      ]
+    },
+    {
+      "text": "Non e' mai troppo tardi per cambiare.",
+      "hits": [
+        "it-mai-troppo-tardi"
+      ]
+    },
+    {
+      "text": "La buona notizia e' che si può rimediare.",
+      "hits": [
+        "it-buona-notizia"
+      ]
+    },
+    {
+      "text": "Non e' un semplice parco giochi.",
+      "hits": [
+        "it-piu-di-un-semplice"
+      ]
+    },
+    {
+      "text": "In sintesi, il guasto è risolto.",
+      "misses": [
+        "it-in-conclusione"
+      ]
+    },
+    {
+      "text": "E' importante sottolineare che l'ufficio resta chiuso.",
+      "hits": [
+        "it-e-importante-sottolineare"
+      ]
+    },
+    {
+      "text": "È bene ricordare che la consegna è il 12.",
+      "misses": [
+        "it-e-importante-sottolineare"
+      ]
+    },
+    {
+      "text": "Il risultato? Il 90 per cento degli alunni tornerebbe.",
+      "hits": [
+        "it-domanda-secca"
+      ]
+    },
+    {
+      "text": "Il nuovo ponte rappresenta un passo avanti per il quartiere.",
+      "hits": [
+        "it-occasione-per"
+      ]
+    },
+    {
+      "text": "Oggi più che mai serve unità.",
+      "misses": "all"
+    }
+  ]
+}

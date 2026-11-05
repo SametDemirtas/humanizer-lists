@@ -1,0 +1,9 @@
+node_modules/
+# Third-party texts rebuilt by the eval/rebuild-*.mjs scripts; never commit them.
+*/eval/corpus-local/
+# mC4 shards downloaded by the rebuild scripts.
+*/eval/.cache/
+.DS_Store
+.env
+.env.*
+*.keys.env

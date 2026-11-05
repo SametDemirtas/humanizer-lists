@@ -1,0 +1,169 @@
+{
+  "language": "de",
+  "cases": [
+    {
+      "text": "Gerne! Hier ist ein Entwurf für deinen Blog:\n\n## Neue Radwege in der Stadt\n\nWer in den letzten Wochen durch die Innenstadt geradelt ist, hat es gemerkt.",
+      "hits": ["de-chat-hier-ist", "de-markdown-heading", "de-wer-in-den-letzten"]
+    },
+    {
+      "text": "Viele Grüße\n[Ihr Name]\n[Position / Abteilung]\n\n---\n\nFalls Sie mir Datum, Park und Uhrzeit nennen, fülle ich die Platzhalter für Sie aus.",
+      "hits": ["de-platzhalter", "de-chat-anpassen", "de-chat-klammern"]
+    },
+    {
+      "text": "Soll ich den Text lockerer gestalten oder kürzen?",
+      "hits": ["de-chat-anpassen"]
+    },
+    {
+      "text": "Wenn du möchtest, schreibe ich ihn in einem persönlicheren Ton (du statt Sie).",
+      "hits": ["de-chat-anpassen"]
+    },
+    {
+      "text": "Welche Tipps haben bei Ihnen funktioniert? Schreiben Sie es gerne in die Kommentare!",
+      "hits": ["de-kommentare-aufruf"]
+    },
+    {
+      "text": "Teilt eure Erfahrungen in den Kommentaren, ich bin gespannt!",
+      "hits": ["de-kommentare-aufruf"]
+    },
+    {
+      "text": "Vielleicht liegt darin der eigentliche Gewinn solcher Tage.",
+      "hits": ["de-eigentlicher-gewinn"]
+    },
+    {
+      "text": "Und vielleicht ist genau das der grösste Gewinn: Gemeinschaft entsteht beim Tun.",
+      "hits": ["de-eigentlicher-gewinn", "de-vielleicht-genau-das"]
+    },
+    {
+      "text": "Die Bäckerei ist ein echtes Stück Handwerk.",
+      "hits": ["de-stueck-abstrakt"]
+    },
+    {
+      "text": "Sie sagte: „Das reicht mir.\" Dann ging sie.",
+      "hits": ["de-anfuehrung-gemischt"]
+    },
+    {
+      "text": "**Betreff:** Neue Öffnungszeiten der Bibliothek",
+      "hits": ["de-betreff-zeile", "de-markdown-bold"]
+    },
+    {
+      "text": "Hier ist ein Entwurf für Ihre E-Mail an die Kollegen:\n\nLiebe Kolleginnen und Kollegen,",
+      "hits": ["de-chat-hier-ist"]
+    },
+    {
+      "text": "**Entwurf:** LinkedIn-Beitrag",
+      "hits": ["de-chat-hier-ist", "de-markdown-bold"]
+    },
+    {
+      "text": "Wenn du mir Datum, Ort und Uhrzeit nennst, passe ich die E-Mail gern genauer an.",
+      "hits": ["de-chat-anpassen"]
+    },
+    {
+      "text": "Wenn du möchtest, passe ich den Beitrag gern an, z. B. mit einer persönlichen Anekdote oder in einem lockereren bzw. formelleren Ton.",
+      "hits": ["de-chat-anpassen"]
+    },
+    {
+      "text": "*Hinweis: Die porträtierte Person und ihre Zitate sind frei erfunden und dienen der Veranschaulichung.*",
+      "hits": ["de-chat-fiktiv"]
+    },
+    {
+      "text": "Die Angaben in eckigen Klammern kannst du durch deine eigenen Details ersetzen.",
+      "hits": ["de-chat-klammern"]
+    },
+    {
+      "text": "Viele Grüße\n[Dein Name]",
+      "hits": ["de-platzhalter"]
+    },
+    {
+      "text": "Ich bin sehr gespannt auf eure Erfahrungen in den Kommentaren!",
+      "hits": ["de-kommentare-aufruf"]
+    },
+    {
+      "text": "Das hat mir geholfen.\n\n👉 **Und ihr?** Welchen Spartipp setzt ihr zu Hause um?",
+      "hits": ["de-kommentare-aufruf"]
+    },
+    {
+      "text": "Abschliessend lässt sich sagen, dass beides seine Vorteile hat.",
+      "hits": ["de-zusammenfassend"]
+    },
+    {
+      "text": "Sie sagte: „Das reicht mir.“ Dann ging sie.",
+      "misses": ["de-anfuehrung-gemischt"]
+    },
+    {
+      "text": "Wir waren mude, aber glucklich.",
+      "misses": ["de-muede-aber-zufrieden"]
+    },
+    {
+      "text": "Der größte Gewinn des Konzerns stammt aus dem Auslandsgeschäft.",
+      "misses": ["de-eigentlicher-gewinn"]
+    },
+    {
+      "text": "Bitte geben Sie im Betreff die Kundennummer an.",
+      "misses": ["de-betreff-zeile"]
+    },
+    {
+      "text": "Ich passe die Vorhänge morgen an die neuen Fenster an.",
+      "misses": ["de-chat-anpassen"]
+    },
+    {
+      "text": "Wenn Sie mir die Unterlagen schicken, prüfe ich sie bis Freitag.",
+      "misses": ["de-chat-anpassen"]
+    },
+    {
+      "text": "Das Zitat wurde gekürzt [...], die Hervorhebung [im Original fett] stammt vom Autor.",
+      "misses": ["de-platzhalter"]
+    },
+    {
+      "text": "Am Samstag haben rund 250 Freiwillige den Stadtpark gesäubert. Insgesamt kamen 420 Kilogramm Abfall zusammen, darunter Glasscherben und ein alter Einkaufswagen.",
+      "misses": "all"
+    },
+    {
+      "text": "Die neue Bibliothek öffnet ab Montag schon um 8 Uhr. Wer abends kommen möchte, kann donnerstags bis 20 Uhr bleiben.",
+      "misses": "all"
+    },
+    {
+      "text": "Das ist kein Problem, sagte der Hausmeister, und schloss die Tür auf.",
+      "misses": "all"
+    },
+    {
+      "text": "Liebe Kolleginnen und Kollegen, ab Montag gelten neue Regeln für die Mülltrennung in der Teeküche. Viele Grüße, Jana",
+      "misses": "all"
+    },
+    {
+      "text": "Hallo Tom,\n\nGerne, ich komme am Samstag vorbei und bringe einen Kuchen mit.",
+      "misses": "all"
+    },
+    {
+      "text": "Hier ist ein kurzer Bericht über unser Sommerfest:\nAm Samstag kamen über 200 Gäste.",
+      "misses": "all"
+    },
+    {
+      "text": "Wenn du mir die Adresse schickst, kann ich das Paket morgen losschicken.",
+      "misses": "all"
+    },
+    {
+      "text": "Soll ich die Präsentation für Montag noch kürzer machen?",
+      "misses": "all"
+    },
+    {
+      "text": "Der Vater erklärte: „Er [ihr Sohn] war immer ein ruhiger Junge.“",
+      "misses": "all"
+    },
+    {
+      "text": "Hinweis: Alle Namen wurden von der Redaktion geändert und sind frei erfunden.",
+      "misses": "all"
+    },
+    {
+      "text": "Ergänzungen der Redaktion stehen in eckigen Klammern.",
+      "misses": "all"
+    },
+    {
+      "text": "Mir geht es gut, viel Stress im Job. Und du?",
+      "misses": "all"
+    },
+    {
+      "text": "Ein großes Dankeschön an alle, die das Fest möglich gemacht haben! Für viele ist der Verein ein Stück Heimat.",
+      "misses": "all"
+    }
+  ]
+}

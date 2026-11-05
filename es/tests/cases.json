@@ -1,0 +1,821 @@
+{
+  "language": "es",
+  "cases": [
+    {
+      "text": "Sumergite en la magia de la Patagonia con esta lámina.",
+      "hits": [
+        "es-sumergete-en"
+      ]
+    },
+    {
+      "text": "Adéntrate en el bosque con este póster.",
+      "misses": [
+        "es-sumergete-en"
+      ]
+    },
+    {
+      "text": "SUMÉRGETE EN EL MUNDO DEL CAFÉ.",
+      "hits": [
+        "es-sumergete-en"
+      ]
+    },
+    {
+      "text": "Taza de cerámica. Descubre cómo queda en tu mesa.",
+      "hits": [
+        "es-descubre-opener"
+      ]
+    },
+    {
+      "text": "Dile hola a tu madre de mi parte.",
+      "misses": "all"
+    },
+    {
+      "text": "En este mundo tan acelerado, una pausa con café.",
+      "hits": [
+        "es-en-un-mundo-donde"
+      ]
+    },
+    {
+      "text": "Ya sea como regalo o simplemente para ti, viene en caja.",
+      "hits": [
+        "es-ya-sea-para-o"
+      ]
+    },
+    {
+      "text": "¡No busques más, la encontraste!",
+      "hits": [
+        "es-no-busques-mas"
+      ]
+    },
+    {
+      "text": "¿Y qué mejor forma de celebrarlo?",
+      "hits": [
+        "es-que-mejor-manera-de"
+      ]
+    },
+    {
+      "text": "No sólo abriga, sino que además decora.",
+      "hits": [
+        "es-no-solo-sino"
+      ]
+    },
+    {
+      "text": "No solamente es bonita, sino que también es resistente.",
+      "hits": [
+        "es-no-solo-sino"
+      ]
+    },
+    {
+      "text": "No es solamente una remera; es un pedacito de Buenos Aires.",
+      "hits": [
+        "es-no-es-solo-un"
+      ]
+    },
+    {
+      "text": "Eleve su decoración con esta lámina.",
+      "hits": [
+        "es-eleva-tu"
+      ]
+    },
+    {
+      "text": "Eleva cualquier espacio con esta lámina.",
+      "hits": [
+        "es-eleva-tu"
+      ]
+    },
+    {
+      "text": "Llevá tu mate al próximo nivel.",
+      "hits": [
+        "es-al-siguiente-nivel"
+      ]
+    },
+    {
+      "text": "Llévala contigo adonde vayas.",
+      "hits": [
+        "es-a-donde-vayas"
+      ]
+    },
+    {
+      "text": "¡No os quedéis sin la vuestra!",
+      "hits": [
+        "es-no-esperes-mas"
+      ]
+    },
+    {
+      "text": "No son solo unos calcetines: son un recuerdo del viaje.",
+      "hits": [
+        "es-no-es-solo-un"
+      ]
+    },
+    {
+      "text": "Una manta donde el estilo y la comodidad se encuentran.",
+      "hits": [
+        "es-donde-se-une-con"
+      ]
+    },
+    {
+      "text": "Si quieres, también te preparo una versión más corta.",
+      "hits": [
+        "es-chat-ofrezco"
+      ]
+    },
+    {
+      "text": "Un must have para este verano.",
+      "hits": [
+        "es-un-imprescindible"
+      ]
+    },
+    {
+      "text": "Estas pegatinas son todo un imprescindible.",
+      "hits": [
+        "es-un-imprescindible"
+      ]
+    },
+    {
+      "text": "Le da ese toque mágico que buscabas.",
+      "hits": [
+        "es-toque-de-magia"
+      ]
+    },
+    {
+      "text": "Sumale un toque verde a tu escritorio.",
+      "hits": [
+        "es-anade-un-toque"
+      ]
+    },
+    {
+      "text": "Colores VIBRANTES y duraderos.",
+      "hits": [
+        "es-vibrante"
+      ]
+    },
+    {
+      "text": "Desbloquea todo tu potencial con esta agenda.",
+      "hits": [
+        "es-desata-tu"
+      ]
+    },
+    {
+      "text": "Sobresale entre la multitud con esta gorra.",
+      "hits": [
+        "es-destaca-entre-la-multitud"
+      ]
+    },
+    {
+      "text": "El regalo para la fanática de los gatos en tu vida.",
+      "hits": [
+        "es-amante-en-tu-vida"
+      ]
+    },
+    {
+      "text": "Sorprende a sus seres queridos esta Navidad.",
+      "hits": [
+        "es-seres-queridos"
+      ]
+    },
+    {
+      "text": "Realice su pedido ahora mismo.",
+      "hits": [
+        "es-haz-tu-pedido-hoy"
+      ]
+    },
+    {
+      "text": "Pide las tuyas ya.",
+      "hits": [
+        "es-consigue-el-tuyo"
+      ]
+    },
+    {
+      "text": "¡Stock limitado!",
+      "hits": [
+        "es-antes-de-que-se-agoten"
+      ]
+    },
+    {
+      "text": "¿A qué estás esperando?",
+      "hits": [
+        "es-no-esperes-mas"
+      ]
+    },
+    {
+      "text": "Añádela a tu cesta.",
+      "hits": [
+        "es-agregalo-al-carrito"
+      ]
+    },
+    {
+      "text": "Merece la pena mencionar que es reversible.",
+      "hits": [
+        "es-cabe-destacar"
+      ]
+    },
+    {
+      "text": "En conclusión, una manta para todo el año.",
+      "hits": [
+        "es-en-resumen"
+      ]
+    },
+    {
+      "text": "Está hecha de algodón grueso, permitiéndote llevar peso.",
+      "hits": [
+        "es-gerund-rider"
+      ]
+    },
+    {
+      "text": "¿Te gustaría que redacte también otra versión más corta?",
+      "hits": [
+        "es-chat-ofrezco"
+      ]
+    },
+    {
+      "text": "Por supuesto. Esta es la descripción.",
+      "hits": [
+        "es-chat-aqui-tienes"
+      ]
+    },
+    {
+      "text": "Taza bonita.\n**Palabras clave:** taza, café",
+      "hits": [
+        "es-palabras-clave-line"
+      ]
+    },
+    {
+      "text": "Tenés envío gratis. Si quieres más modelos, avísanos.",
+      "hits": [
+        "es-mix-voseo-tu"
+      ]
+    },
+    {
+      "text": "Taza\n### Cuidados\nLavar a mano.",
+      "hits": [
+        "es-markdown-heading"
+      ]
+    },
+    {
+      "text": "Detalles:\n👉 Envío a todo México",
+      "hits": [
+        "es-emoji-bullets"
+      ]
+    },
+    {
+      "text": "Este diseño está a otro nivel.",
+      "misses": [
+        "es-al-siguiente-nivel"
+      ]
+    },
+    {
+      "text": "Imprescindible lavar del revés.",
+      "misses": [
+        "es-un-imprescindible"
+      ]
+    },
+    {
+      "text": "Un toque de color para la cocina.",
+      "misses": [
+        "es-toque-de-magia"
+      ]
+    },
+    {
+      "text": "Ya sea en tela o en papel, el diseño es el mismo.",
+      "misses": [
+        "es-ya-sea-que"
+      ]
+    },
+    {
+      "text": "No solo eso: también hay versión en verde.",
+      "misses": [
+        "es-no-solo-sino"
+      ]
+    },
+    {
+      "text": "Taza de 330 ml. ¿Otro color? Pregúntame.",
+      "misses": [
+        "es-question-first"
+      ]
+    },
+    {
+      "text": "Colores vivos.",
+      "misses": [
+        "es-vibrante"
+      ]
+    },
+    {
+      "text": "Sos de Rosario y tenés envío gratis.",
+      "misses": [
+        "es-mix-voseo-tu"
+      ]
+    },
+    {
+      "text": "Neceser SOS para bodas. Si tienes dudas, escríbeme.",
+      "misses": [
+        "es-mix-voseo-tu"
+      ]
+    },
+    {
+      "text": "Juguete que despierta su creatividad.",
+      "misses": [
+        "es-desata-tu"
+      ]
+    },
+    {
+      "text": "Claramente la mejor taza para el mate cocido.",
+      "misses": [
+        "es-chat-aqui-tienes"
+      ]
+    },
+    {
+      "text": "Lo descubrí por casualidad.",
+      "misses": [
+        "es-descubre-opener"
+      ]
+    },
+    {
+      "text": "No hace falta esforzarse para limpiarla.",
+      "misses": [
+        "es-sin-esfuerzo"
+      ]
+    },
+    {
+      "text": "Cada sorbete de bambú va en su funda.",
+      "misses": [
+        "es-cada-sorbo"
+      ]
+    },
+    {
+      "text": "Taza de cerámica blanca de 330 ml con un gato dormido dibujado en negro. Se puede meter en el lavavajillas y en el microondas. La envío en una caja con papel de seda para que no se rompa.",
+      "misses": "all"
+    },
+    {
+      "text": "Camiseta unisex de algodón peinado. El estampado es serigrafía a dos tintas, así que no se cuartea con los lavados. Si dudas entre dos tallas, coge la grande: el corte es justo.",
+      "misses": "all"
+    },
+    {
+      "text": "Lámina A4 impresa en papel mate de 250 g. Va sin marco. La dibujé un domingo de lluvia mirando las macetas del balcón.",
+      "misses": "all"
+    },
+    {
+      "text": "Remera de algodón con un colectivo de la línea 60 en el pecho. Talles del S al XXL. Si no sabés qué talle elegir, escribinos y te pasamos las medidas.",
+      "misses": "all"
+    },
+    {
+      "text": "Playera negra con un ajolote rosa. Es de algodón y la tinta es a base de agua. Hacemos envíos a todo México por paquetería.",
+      "misses": "all"
+    },
+    {
+      "text": "Manta de punto grueso de 130 x 170 cm en color mostaza. Se lava a máquina en frío y se seca en tendedero, nunca en secadora.",
+      "misses": "all"
+    },
+    {
+      "text": "Bolsa de tela de 38 x 42 cm con asas largas, para llevar al hombro. Cabe un portátil de 13 pulgadas. Lavar del revés.",
+      "misses": "all"
+    },
+    {
+      "text": "Pack de 10 pegatinas de vinilo mate, de 5 a 7 cm. Aguantan el agua, así que puedes ponerlas en la botella.",
+      "misses": "all"
+    },
+    {
+      "text": "Calcomanías de lotería mexicana, set de 10. Vinil brillante, resistente al agua. Miden unos 6 cm de alto.",
+      "misses": "all"
+    },
+    {
+      "text": "Funda de silicona para iPhone 13 con margaritas. Tiene los bordes un poco elevados para que la cámara no toque la mesa.",
+      "misses": "all"
+    },
+    {
+      "text": "Funda para celular con cactus. Es de TPU flexible y deja los botones libres. Si no está tu modelo, consultanos por mensaje.",
+      "misses": "all"
+    },
+    {
+      "text": "Póster de 50 x 70 cm de la sierra de Guadarrama nevada. Impresión giclée en papel de algodón. Se envía enrollado en tubo.",
+      "misses": "all"
+    },
+    {
+      "text": "¡Gracias por pasarte por la tienda! Esta taza la hice para mi hermana, que no arranca sin café, y al final la subí aquí.",
+      "misses": "all"
+    },
+    {
+      "text": "Libreta A5 con tapa de cartón reciclado y 96 hojas cuadriculadas. Cosida a mano con hilo encerado.",
+      "misses": "all"
+    },
+    {
+      "text": "Taza con la frase «Primero el café, luego los problemas». 350 ml. Apta para microondas.",
+      "misses": "all"
+    },
+    {
+      "text": "Si prefieres, te lo puedo reescribir con un tono más cercano.",
+      "hits": [
+        "es-chat-ofrece-tono"
+      ]
+    },
+    {
+      "text": "¿Quieres que lo acorte para Instagram?",
+      "hits": [
+        "es-chat-ofrece-tono"
+      ]
+    },
+    {
+      "text": "Si me indicas la ciudad, adapto el texto.",
+      "hits": [
+        "es-chat-pide-datos"
+      ]
+    },
+    {
+      "text": "Completa los datos entre corchetes antes de enviarlo.",
+      "hits": [
+        "es-chat-corchetes"
+      ]
+    },
+    {
+      "text": "Déjame tu opinión en los comentarios.",
+      "hits": [
+        "es-cta-comentarios"
+      ]
+    },
+    {
+      "text": "El alcalde dijo que no se trata solo de tráfico, sino de salud.",
+      "hits": [
+        "es-no-se-trata-solo-sino"
+      ]
+    },
+    {
+      "text": "Si me das tu número, te llamo. ¿Y tú qué opinas?",
+      "misses": [
+        "es-chat-pide-datos"
+      ]
+    },
+    {
+      "text": "La reunión del lunes pasa al martes a las diez, en la sala del segundo piso. Llevo yo el acta.",
+      "misses": "all"
+    },
+    {
+      "text": "Anoche en el club de lectura hablamos de Cortázar. No solo a Marta, sino también a Pablo le pareció largo.",
+      "misses": [
+        "es-no-se-trata-solo-sino"
+      ]
+    },
+    {
+      "text": "El ayuntamiento abrió dos kilómetros de carril bici en la calle Mayor; las obras duraron seis meses.",
+      "misses": "all"
+    },
+    {
+      "text": "¿Venís a la cena? Si tienes tiempo, trae vino.",
+      "misses": [
+        "es-mix-voseo-tu"
+      ]
+    },
+    {
+      "text": "¿Preferís el rojo? Si tienes dudas, escribidnos.",
+      "misses": [
+        "es-mix-voseo-tu"
+      ]
+    },
+    {
+      "text": "Si querés, también tienes la versión azul.",
+      "hits": [
+        "es-mix-voseo-tu"
+      ]
+    },
+    {
+      "text": "Leer no es solamente un pasatiempo, sino una forma de pensar.",
+      "hits": [
+        "es-no-x-sino-y"
+      ]
+    },
+    {
+      "text": "Ahorrar no implica pasar frío ni vivir a oscuras, sino consumir con criterio.",
+      "hits": [
+        "es-no-x-sino-y"
+      ]
+    },
+    {
+      "text": "Su éxito no se medirá solo en kilómetros construidos, sino en cuántas personas los usen.",
+      "hits": [
+        "es-no-x-sino-y"
+      ]
+    },
+    {
+      "text": "No solo es una cuestión de dinero, sino de tiempo.",
+      "misses": [
+        "es-no-x-sino-y"
+      ]
+    },
+    {
+      "text": "La inteligencia artificial no es ni una amenaza ni una salvación.",
+      "hits": [
+        "es-ni-ni-veredicto"
+      ]
+    },
+    {
+      "text": "No es ni un sí rotundo, porque faltan datos.",
+      "misses": [
+        "es-ni-ni-veredicto"
+      ]
+    },
+    {
+      "text": "Bien planificada, la reforma ahorra dinero; mal planificada, lo multiplica.",
+      "hits": [
+        "es-bien-mal-gestionado"
+      ]
+    },
+    {
+      "text": "El verdadero desafío consiste en mantener el hábito.",
+      "hits": [
+        "es-el-reto-esta-en"
+      ]
+    },
+    {
+      "text": "La clave reside en la constancia.",
+      "misses": [
+        "es-el-reto-esta-en"
+      ]
+    },
+    {
+      "text": "Quiero compartirles una iniciativa que nos hace mucha ilusión.",
+      "hits": [
+        "es-queria-compartir"
+      ]
+    },
+    {
+      "text": "Os escribo para contaros cómo fue la excursión.",
+      "hits": [
+        "es-queria-compartir"
+      ]
+    },
+    {
+      "text": "Me gusta compartir piso con gente tranquila.",
+      "misses": [
+        "es-queria-compartir"
+      ]
+    },
+    {
+      "text": "Hola a todos, espero que estéis muy bien.",
+      "hits": [
+        "es-queria-compartir"
+      ]
+    },
+    {
+      "text": "Espero que te encuentres bien después de la operación.",
+      "hits": [
+        "es-queria-compartir"
+      ]
+    },
+    {
+      "text": "La panadería busca ser el punto de encuentro de los vecinos por las mañanas.",
+      "hits": [
+        "es-espacio-de-encuentro"
+      ]
+    },
+    {
+      "text": "Punto de encuentro: estación de Atocha, 8:00.",
+      "misses": [
+        "es-espacio-de-encuentro"
+      ]
+    },
+    {
+      "text": "¡Juntos podemos hacer una gran diferencia!",
+      "hits": [
+        "es-marca-la-diferencia"
+      ]
+    },
+    {
+      "text": "Este detalle marcará la diferencia en tu casa.",
+      "misses": [
+        "es-marca-la-diferencia"
+      ]
+    },
+    {
+      "text": "La compañía dejó de ser una startup para convertirse en una multinacional.",
+      "hits": [
+        "es-dejar-de-ser-para-convertirse"
+      ]
+    },
+    {
+      "text": "La buena noticia es que hay solución.",
+      "hits": [
+        "es-la-buena-noticia"
+      ]
+    },
+    {
+      "text": "Teletrabajo: lo que nadie os dice antes de empezar.",
+      "hits": [
+        "es-lo-que-nadie-te-cuenta"
+      ]
+    },
+    {
+      "text": "La lectura no es un lujo. Es una necesidad.",
+      "hits": [
+        "es-no-es-x-es-y"
+      ]
+    },
+    {
+      "text": "Mejorar el aislamiento sin renunciar al confort es posible.",
+      "hits": [
+        "es-sin-grandes-sacrificios"
+      ]
+    },
+    {
+      "text": "Se puede empezar sin grandes inversiones.",
+      "hits": [
+        "es-sin-grandes-sacrificios"
+      ]
+    },
+    {
+      "text": "¿Qué hábito te ha funcionado? Te leo en los comentarios 👇",
+      "hits": [
+        "es-cta-comentarios"
+      ]
+    },
+    {
+      "text": "Cuéntame en los comentarios cuál es tu libro favorito.",
+      "hits": [
+        "es-cta-comentarios"
+      ]
+    },
+    {
+      "text": "Me encantaría leerlas en los comentarios.",
+      "hits": [
+        "es-cta-comentarios"
+      ]
+    },
+    {
+      "text": "Y a ti, ¿qué te ha funcionado mejor?",
+      "misses": "all"
+    },
+    {
+      "text": "Y a vosotros, ¿qué libro os gustaría leer?",
+      "misses": "all"
+    },
+    {
+      "text": "Abrir una panadería es mucho más que abrir un negocio.",
+      "hits": [
+        "es-mucho-mas-que"
+      ]
+    },
+    {
+      "text": "Esto no es más que un simple trámite.",
+      "misses": [
+        "es-mas-que-un-simple"
+      ]
+    },
+    {
+      "text": "Por supuesto, el nombre del archivo puede ser cualquiera.",
+      "misses": [
+        "es-chat-aqui-tienes"
+      ]
+    },
+    {
+      "text": "Por supuesto, aquí tienes una versión más corta.",
+      "hits": [
+        "es-chat-aqui-tienes"
+      ]
+    },
+    {
+      "text": "¡Claro! Te propongo esta descripción.",
+      "hits": [
+        "es-chat-aqui-tienes"
+      ]
+    },
+    {
+      "text": "Es esencial que realices las tareas para subir al siguiente nivel.",
+      "misses": [
+        "es-al-siguiente-nivel"
+      ]
+    },
+    {
+      "text": "El verdadero reto reside en mantener el hábito.",
+      "hits": [
+        "es-el-reto-esta-en"
+      ]
+    },
+    {
+      "text": "Lleva el confort de tu hogar al siguiente nivel.",
+      "hits": [
+        "es-al-siguiente-nivel"
+      ]
+    },
+    {
+      "text": "El equipo lleva tres partidos sin perder y pasa al siguiente nivel.",
+      "misses": [
+        "es-al-siguiente-nivel"
+      ]
+    },
+    {
+      "text": "Ideal para el amante del café en tu vida.",
+      "hits": [
+        "es-amante-en-tu-vida"
+      ]
+    },
+    {
+      "text": "¿Has visto alguna vez un fan tan pesado en tu vida?",
+      "misses": [
+        "es-amante-en-tu-vida"
+      ]
+    },
+    {
+      "text": "¿Buscas un regalo? ¡No busques más!",
+      "hits": [
+        "es-no-busques-mas"
+      ]
+    },
+    {
+      "text": "No busques más excusas y ponte a entrenar.",
+      "misses": [
+        "es-no-busques-mas"
+      ]
+    },
+    {
+      "text": "Si te gusta bucear, puedes sumergirte en las aguas de Cabo de Palos.",
+      "misses": [
+        "es-sumergete-en"
+      ]
+    },
+    {
+      "text": "Título SEO: Taza con montañas",
+      "hits": [
+        "es-titulo-label"
+      ]
+    },
+    {
+      "text": "Título: Fuga de agua en el baño\nDescripción: Desde el lunes gotea la tubería del lavabo.",
+      "misses": [
+        "es-titulo-label"
+      ]
+    },
+    {
+      "text": "Hola Juan, te comparto la propuesta para la reunión del jueves.",
+      "misses": [
+        "es-chat-aqui-tienes"
+      ]
+    },
+    {
+      "text": "Buenos días, te dejo la versión final del informe.",
+      "misses": [
+        "es-chat-aqui-tienes"
+      ]
+    },
+    {
+      "text": "Aquí tienes una publicación para LinkedIn.",
+      "hits": [
+        "es-chat-aqui-tienes"
+      ]
+    },
+    {
+      "text": "¡Genial! Nos vemos el sábado en la plaza.",
+      "misses": "all"
+    },
+    {
+      "text": "Si quieres, puedo hacer la reserva para el viernes.",
+      "misses": "all"
+    },
+    {
+      "text": "Si quieres, puedo ajustar el tono o acortarlo.",
+      "hits": [
+        "es-chat-ofrece-tono"
+      ]
+    },
+    {
+      "text": "Si te parece, preparo una propuesta y te la mando el lunes.",
+      "misses": "all"
+    },
+    {
+      "text": "Si me indicas tu dirección, te lo envío mañana.",
+      "misses": "all"
+    },
+    {
+      "text": "Si me cuentas más detalles del club, puedo reescribirlo para que suene más a vosotros.",
+      "hits": [
+        "es-chat-pide-datos"
+      ]
+    },
+    {
+      "text": "He dejado entre corchetes los datos que puedes cambiar.",
+      "hits": [
+        "es-chat-corchetes"
+      ]
+    },
+    {
+      "text": "Las aclaraciones entre corchetes son del traductor.",
+      "misses": [
+        "es-chat-corchetes"
+      ]
+    },
+    {
+      "text": "Esto no significa que no te quiera, sino que necesito tiempo.",
+      "misses": [
+        "es-no-x-sino-y"
+      ]
+    },
+    {
+      "text": "Espero que esta propuesta os sirva para la reunión.",
+      "misses": [
+        "es-chat-espero"
+      ]
+    },
+    {
+      "text": "Espero que este texto te sea útil.",
+      "hits": [
+        "es-chat-espero"
+      ]
+    }
+  ]
+}
